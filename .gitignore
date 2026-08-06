@@ -21,3 +21,9 @@ preview.html
 # logs
 npm-debug.log*
 yarn-error.log*
+
+# Raw camera originals kept alongside the repo for convenience. These are the
+# multi-megabyte source files; the web-sized versions that the site actually uses
+# live in public/images/ and ARE committed.
+people/
+
