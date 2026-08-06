@@ -4,7 +4,7 @@
 
 ## What the lab studies
 
-The lab runs two coupled research programmes.
+The lab runs two coupled research programs.
 
 1. **The nuclear mRNA life cycle.** How pre-mRNAs are transcribed and processed on chromatin; how and why some mRNAs are degraded in the nucleus rather than exported (the lab's "PUND" genes — predicted to undergo nuclear degradation); and what controls the rate at which transcripts move between subcellular compartments.
 
@@ -60,7 +60,7 @@ The lab is currently recruiting postdoctoral fellows and accepting rotation stud
 
 ## Pages
 
-- [Research](https://churchman.med.harvard.edu/research): both research programmes in detail, including the open questions currently being pursued.
+- [Research](https://churchman.med.harvard.edu/research): both research programs in detail, including the open questions currently being pursued.
 - [Publications](https://churchman.med.harvard.edu/publications): all 62 publications, searchable. Machine-readable at https://churchman.med.harvard.edu/publications.json
 - [Team](https://churchman.med.harvard.edu/team): current members and where alumni went next.
 - [Stirling Churchman](https://churchman.med.harvard.edu/stirling): PI biography, awards and talks.
