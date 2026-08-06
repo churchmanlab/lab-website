@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Research — Churchman Lab</title><meta name="description" content="The Churchman Lab studies two coupled problems: how the life cycle of a nuclear mRNA is controlled from transcription through degradation, and how the nuclear and mitochondrial genomes coordinate expression to build the OXPHOS machinery. We develop the quantitative methods needed to measure both."><link rel="canonical" href="https://churchman.med.harvard.edu/lab-website/research"><meta property="og:type" content="website"><meta property="og:title" content="Research — Churchman Lab"><meta property="og:description" content="The Churchman Lab studies two coupled problems: how the life cycle of a nuclear mRNA is controlled from transcription through degradation, and how the nuclear and mitochondrial genomes coordinate expression to build the OXPHOS machinery. We develop the quantitative methods needed to measure both."><meta property="og:url" content="https://churchman.med.harvard.edu/lab-website/research"><meta property="og:site_name" content="Churchman Lab"><meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="text/plain" href="/lab-website/llms.txt" title="Plain-text summary for AI assistants"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ResearchOrganization","@id":"https://churchman.med.harvard.edu/#lab","name":"Churchman Lab","alternateName":"Churchman Laboratory","url":"https://churchman.med.harvard.edu","description":"From the nucleus to mitochondria, we study the many layers of gene regulation.","parentOrganization":{"@type":"CollegeOrUniversity","name":"Harvard Medical School","url":"https://hms.harvard.edu/"},"department":{"@type":"Organization","name":"Department of Genetics"},"address":{"@type":"PostalAddress","streetAddress":"New Research Building, Room 356, 77 Avenue Louis Pasteur","addressLocality":"Boston","addressRegion":"MA","postalCode":"02115","addressCountry":"USA"},"employee":{"@id":"https://churchman.med.harvard.edu/stirling#person"},"sameAs":["https://scholar.google.com/citations?user=Mufcdt0AAAAJ","https://github.com/churchmanlab"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Research — Churchman Lab","url":"https://churchman.med.harvard.edu/research","description":"The Churchman Lab studies two coupled problems: how the life cycle of a nuclear mRNA is controlled from transcription through degradation, and how the nuclear and mitochondrial genomes coordinate expression to build the OXPHOS machinery. We develop the quantitative methods needed to measure both.","about":{"@id":"https://churchman.med.harvard.edu/#lab"},"mainEntity":{"@type":"ResearchProject","name":"Gene regulation from the nucleus to the mitochondria","description":"The Churchman Lab studies two coupled problems: how the life cycle of a nuclear mRNA is controlled from transcription through degradation, and how the nuclear and mitochondrial genomes coordinate expression to build the OXPHOS machinery. We develop the quantitative methods needed to measure both.","parentOrganization":{"@id":"https://churchman.med.harvard.edu/#lab"}}}</script><link rel="stylesheet" href="/lab-website/_astro/contact.DZ9NP5Qc.css"></head> <body> <a class="skip" href="#main">Skip to content</a> <header class="site-header"> <div class="wrap"> <a class="brand" href="/lab-website/">Churchman Lab</a> <nav class="site-nav" aria-label="Primary"> <a href="/lab-website/research"> Research </a><a href="/lab-website/team"> Team </a><a href="/lab-website/publications"> Publications </a><a href="/lab-website/tools"> Tools &amp; Protocols </a><a href="/lab-website/join"> Join Us </a><a href="/lab-website/contact"> Contact </a> </nav> </div> </header> <main id="main">  <section class="section" style="padding-bottom:34px"> <div class="wrap"> <p class="eyebrow">Research</p> <h1>Two genomes, one proteome</h1> <div class="prose"> <p class="lede">
+Eukaryotic cells run gene expression out of two separate genomes — the nuclear one and the small circular
+          one inside mitochondria — using entirely different machinery, and they have to keep the output balanced.
+          We want to know how.
+</p> <p>
+The lab works on this from two directions. One is the <a href="#mrna-life-cycle">life cycle of a nuclear
+          mRNA</a>: how it is transcribed and processed on chromatin, whether it is exported or destroyed in the
+          nucleus, how fast it moves between compartments, and what determines all of that. The other is
+<a href="#mitonuclear">mitonuclear co-regulation</a>: how the thirteen proteins encoded by human mtDNA stay
+          in step with the hundreds of nuclear-encoded subunits they have to assemble with.
+</p> <p>
+Both questions were, until recently, hard to ask because nobody could measure the relevant quantities.
+          So a large fraction of what we do is method development — NET-seq, nano-COP, subcellular TimeLapse-seq,
+          mitoribosome profiling, mtFiber-seq. We publish the protocols and the code, because a method that only
+          works in one lab is not much of a method.
+</p> </div> </div> </section> <section class="section"> <div class="wrap"> <div class="box" style="display:grid;grid-template-columns:1fr 1fr;gap:32px"> <div> <h3 style="margin-top:0">If you are a prospective student or postdoc</h3> <p style="margin-bottom:0;font-size:.95rem;color:var(--ink-2)">
+Each section below ends with the questions we do not yet have answers to. Those are the projects. If one
+            of them is the reason you cannot sleep, say so in your email — it is the most useful thing you can tell
+            us.
+</p> </div> <div> <h3 style="margin-top:0">If you are a collaborator or journalist</h3> <p style="margin-bottom:0;font-size:.95rem;color:var(--ink-2)">
+The short version: cells make thousands of RNA molecules a minute and control every step of what happens
+            to them. We invent ways to watch those steps in living cells, including inside mitochondria, where
+            failures cause metabolic and neurodegenerative disease.
+</p> </div> </div> </div> </section>  <section class="section" id="mrna-life-cycle"> <div class="wrap"> <div class="section-head"> <p class="eyebrow">Programme one</p> <h2>The nuclear mRNA life cycle</h2> <p class="lede">
+mRNA life cycles are dynamic and diverse. Before translation an mRNA is released from chromatin and
+          exported from the nucleus; in the cytoplasm ribosomes load onto it and it is eventually degraded.
+          Regulatory mechanisms control every one of those transitions — and we can now measure them.
+</p> </div> <img src="https://images.squarespace-cdn.com/content/v1/5ec5b23719ae3633499776a3/f033b8f6-8aeb-429b-a7d5-c975d5cda3de/Figure_3.png?format=1400w" alt="Schematic of the mRNA life cycle across subcellular compartments" loading="lazy" style="border-radius:3px;margin-bottom:44px"> <div class="two-col"> <div> <h3>How are pre-mRNAs transcribed and processed on chromatin?</h3> <p class="prose">
+Human genes carry many introns that must be excised to make a functional mRNA. We built direct RNA
+            nanopore sequencing methods — nanopore analysis of co-transcriptional processing (nano-COP) — to watch
+            pre-mRNA processing without the length biases that come with cDNA synthesis and PCR.
+</p> <p class="prose">
+About 60% of introns are removed co-transcriptionally, while the pre-mRNA is still attached to Pol II,
+            but splicing catalysis largely happens after Pol II has travelled thousands more nucleotides. Looking
+            across whole transcripts, we found introns tend to be excised in one or occasionally two preferred
+            orders, constant across cell types and alternative splicing, and identified <em>cis</em>-elements that
+            control that order.
+</p> </div> <div> <img src="https://images.squarespace-cdn.com/content/v1/5ec5b23719ae3633499776a3/4ad0a382-aea2-4fb5-a51d-9e3970b0d836/timelapse-seq.png?format=800w" alt="Subcellular TimeLapse-seq schematic" loading="lazy" style="border-radius:3px"> </div> </div> <div class="box" style="margin-top:34px"> <h4>Open questions</h4> <p style="margin-bottom:0;color:var(--ink-2)">
+How fast are RNA binding proteins and spliceosomal subunits loaded onto nascent RNA? How do
+<em>cis</em>-elements control splicing order?
+</p> <p style="margin:.9rem 0 0;font-size:.86rem;color:var(--ink-3)">
+Background reading: Drexler, Choquet &amp; Churchman, <em>Mol Cell</em> 2020 · Choquet et al.,
+<em>Nat Struct Mol Biol</em> 2023
+</p> </div> <div style="margin-top:52px"> <h3>How and why are mRNAs targeted for nuclear degradation?</h3> <p class="prose">
+Textbooks say mRNAs get exported. But the nuclear RNA exosome degrades introns, antisense RNAs and other
+          non-coding RNAs, and we found nuclear mRNA degradation plays a much broader regulatory role than anyone
+          expected.
+</p> <p class="prose">
+Using subcellular TimeLapse-seq we tracked the age of RNAs as they crossed subcellular compartments and
+          derived half-lives at subcellular resolution with a Bayesian model — chromatin release, nuclear export,
+          polysome loading, and nuclear and cytoplasmic degradation rates, for every human mRNA. For roughly 10% of
+          genes a simple life-cycle model does not fit; you need substantial nuclear degradation. We call these
+          PUNDs — predicted to undergo nuclear degradation — and for these genes more than 85% of transcripts are
+          never exported at all. Many of them are themselves genes of RNA biology: ribosomal subunits, splicing
+          factors, nuclear export factors. PUND transcripts share features — incomplete splicing, long poly(A)
+          tails — that may be how the degradation machinery finds them.
+</p> </div> <div class="box" style="margin-top:20px"> <h4>Open questions</h4> <p style="margin-bottom:0;color:var(--ink-2)">
+How are PUND transcripts recognised and targeted for nuclear decay? What is nuclear mRNA degradation
+          actually <em>for</em>?
+</p> </div> <div style="margin-top:52px"> <h3>How is mRNA subcellular localisation controlled?</h3> <p class="prose">
+RNAs do not all move through the cell at the same speed — flow rates vary more than a hundredfold between
+          genes and compartments. Functionally related genes share similar flow rates, and the targets of many RNA
+          binding proteins move differently from everything else. We measured poly(A) tails with subcellular
+          resolution and showed tail length reflects subcellular half-life, then used machine learning to find the
+          genetic and molecular features that predict flow, including transcription factors and sequence elements.
+</p> </div> <div class="box" style="margin-top:20px"> <h4>Open questions</h4> <p style="margin-bottom:0;color:var(--ink-2)">
+How do mRNAs flow to organelles and other compartments? How do transcript isoforms change RNA flow?
+</p> <p style="margin:.9rem 0 0;font-size:.86rem;color:var(--ink-3)">
+Background reading: Ietswaart et al., <em>Mol Cell</em> 2024
+</p> </div> </div> </section>  <section class="section" id="single-molecule"> <div class="wrap"> <div class="section-head"> <p class="eyebrow">Method</p> <h2>Single-molecule views of transcription and chromatin</h2> </div> <div class="two-col"> <div class="prose"> <p>
+Population averages hide coordination. Using long-read chromatin fiber sequencing (Fiber-seq) we can
+            place RNA polymerases within their native chromatin context at single-molecule and near
+            single-nucleotide resolution along fibers up to 30 kb long.
+</p> <p>
+What emerges is pervasive direct coordination — and anti-coordination — between nearby Pol II genes,
+            Pol III genes, transcribed enhancers and insulator elements. That coordination is spatially limited and
+            depends on whether insulators are simultaneously bound to the same DNA molecule. These are relationships
+            you simply cannot see in bulk data.
+</p> </div> <div> <img src="https://images.squarespace-cdn.com/content/v1/5ec5b23719ae3633499776a3/d53c123a-2206-44d5-8b6f-3512215aee5b/AGTD+poster%404x.png?format=800w" alt="Single-molecule chromatin fiber sequencing" loading="lazy" style="border-radius:3px"> </div> </div> </div> </section>  <section class="section" id="mitonuclear"> <div class="wrap"> <div class="section-head"> <p class="eyebrow">Programme two</p> <h2>Mitonuclear co-regulation</h2> <p class="lede">
+Human mtDNA descends from a eubacterial genome and has shrunk to 16.5 kb encoding just thirteen proteins,
+          all of them core subunits of the OXPHOS complexes. Every other subunit is nuclear-encoded. Get the balance
+          wrong and subunits accumulate discordantly — mitonuclear imbalance. How does a cell coordinate expression
+          across two systems with entirely separate machinery?
+</p> </div> <div class="two-col"> <div class="prose"> <p>
+Our first work here asked simply whether the two systems are coordinated at all. By adapting ribosome
+            profiling to mitochondrial protein synthesis we showed that translation of nuclear- and
+            mitochondrial-encoded OXPHOS subunits is balanced, in both yeast and human cells.
+</p> <p> <strong>mtDNA packaging.</strong> Human cells carry hundreds of mtDNA molecules across the mitochondrial
+            network. Each is over 5 µm long and compressed into a 100 nm nucleoprotein complex — a nucleoid. Using
+            mtFiber-seq we measured accessibility of full-length mtDNA molecules across human cell types and found
+            most nucleoids are inaccessible, with the fraction varying by cell type and mitochondrial function.
+            Unlike nuclear compaction, mtDNA accessibility is largely all-or-none, which suggests genome activation
+            is itself a layer of regulation.
+</p> <p> <strong>The mitochondrial mRNA life cycle.</strong> Two promoters in the non-coding region generate
+            near-genome-length polycistronic transcripts, cleaved into individual mRNAs with little or no 5′ UTR. We
+            measured production, processing, ribosome arrival and turnover with TimeLapse-seq and direct nanopore
+            RNA sequencing, then modelled protein synthesis — and found that turnover rate and translation
+            efficiency, not transcription, mostly account for mitochondrial protein synthesis levels.
+</p> </div> <div> <img src="https://images.squarespace-cdn.com/content/v1/5ec5b23719ae3633499776a3/57198b25-5b5c-417a-a9cf-18f79aff0bce/mtDNA_scheme.png?format=800w" alt="Schematic of mitochondrial DNA organisation" loading="lazy" style="border-radius:3px;margin-bottom:18px"> <img src="https://images.squarespace-cdn.com/content/v1/5ec5b23719ae3633499776a3/e1709984-56e8-4bdd-98d9-72022ee3c00c/mitochondria+metabolome2.png?format=800w" alt="Mitochondria and the metabolome" loading="lazy" style="border-radius:3px"> </div> </div> <div style="margin-top:52px"> <h3>Which nuclear-encoded factors and metabolites control mitochondrial gene expression?</h3> <p class="prose">
+In yeast, translation activators are nuclear-encoded, imported into mitochondria, and promote translation
+          of specific mRNAs through their 5′ UTRs. To find the human equivalents we built genome-wide CRISPR screens
+          for factors that shift the balance between mitochondrial-encoded COX1 and nuclear-encoded COX4. The screens
+          recovered known regulators such as TACO1 — whose mutations cause Leigh syndrome — alongside genes with no
+          established mitochondrial role. We are currently pursuing PREPL, highly expressed in brain, and NME6, a
+          nucleotide diphosphate kinase.
+</p> </div> <div style="margin-top:44px"> <h3>How does mitonuclear co-regulation work in neurons?</h3> <p class="prose">
+Neurons depend heavily on mitochondrial function and have a complex, polarised morphology that makes
+          balanced expression across two genomes genuinely hard. We are asking whether that structure makes neurons
+          more vulnerable to mitonuclear imbalance under genetic or physiological stress — and whether that
+          vulnerability is relevant to neurodegenerative disease.
+</p> </div> <div class="box" style="margin-top:24px"> <h4>Open questions</h4> <p style="margin-bottom:0;color:var(--ink-2)">
+What is the spatial organisation of mtDNA regulation and expression? How is mitochondrial translation
+          regulated? Do mitochondrial metabolite pools influence mitochondrial gene regulation? Is nuclear- and
+          mitochondrial-encoded expression balanced in neurons, and does that balance differ between the soma and
+          neurite-localised mitochondria?
+</p> <p style="margin:.9rem 0 0;font-size:.86rem;color:var(--ink-3)">
+Background reading: Couvillion et al., <em>Nature</em> 2016 · Soto et al., <em>Genome Biol</em> 2022 ·
+          Kramer &amp; Prakash et al., <em>Nat Cell Biol</em> 2023 · Isaac et al., <em>Nat Struct Mol Biol</em> 2024 ·
+          McShane et al., <em>Mol Cell</em> 2024
+</p> </div> </div> </section> <section class="section"> <div class="wrap"> <div class="btn-row"> <a class="btn" href="/lab-website/join">Work on these questions with us</a> <a class="btn ghost" href="/lab-website/publications">See all publications</a> <a class="btn ghost" href="/lab-website/tools">Methods, code and protocols</a> </div> </div> </section>  </main> <footer class="site-footer"> <div class="wrap"> <div class="footer-grid"> <div> <h4>Churchman Lab</h4> <p style="font-size:.9rem;color:var(--ink-2);max-width:34ch;margin:0"> Department of Genetics<br> Blavatnik Institute, Harvard Medical School<br> New Research Building, Room 356<br> 77 Avenue Louis Pasteur<br> Boston, MA 02115 </p> </div> <div> <h4>Explore</h4> <ul> <li><a href="/lab-website/research">Research</a></li> <li><a href="/lab-website/team">Team</a></li> <li><a href="/lab-website/publications">Publications</a></li> <li><a href="/lab-website/tools">Tools &amp; protocols</a></li> <li><a href="/lab-website/fun">Lab life</a></li> </ul> </div> <div> <h4>Elsewhere</h4> <ul> <li><a href="https://github.com/churchmanlab">GitHub</a></li> <li><a href="https://scholar.google.com/citations?user=Mufcdt0AAAAJ">Google Scholar</a></li> <li><a href="https://www.ncbi.nlm.nih.gov/myncbi/lee.churchman.1/bibliography/public/">NCBI bibliography</a></li> <li><a href="https://x.com/fiddle">@fiddle</a></li> <li><a href="/lab-website/join">Join the lab</a></li> </ul> </div> </div> <div class="colophon"> <span>Paintings by <a href="https://matthewmarks.com/artists/leidy-churchman">Leidy Churchman</a>.</span> <span>Prototype rebuild — <a href="/lab-website/llms.txt">llms.txt</a></span> </div> </div> </footer> </body></html>

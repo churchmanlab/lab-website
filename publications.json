@@ -1,0 +1,1112 @@
+{
+  "lab": "Churchman Lab",
+  "institution": "Harvard Medical School",
+  "source": "https://churchman.med.harvard.edu/publications",
+  "fullList": "https://www.ncbi.nlm.nih.gov/myncbi/lee.churchman.1/bibliography/public/",
+  "lastSynced": null,
+  "legend": "*equal authorship; #co-corresponding authorship; Churchman Lab members in bold.",
+  "count": 62,
+  "publications": [
+    {
+      "title": "HuD controls widespread RNA stability to drive neuronal activity-dependent responses",
+      "authors": "Duffy EE#, Patop I*#, Kalaora S, Assad EG, Koren SA, Traunmüller L, Krüttner S, Pajarillo NS, Finander B, Barsdale Z, Macias MM, Feng MY, Paulo JA, Griffith EC, Kalish BT, Gygi SP, Churchman LS#, Greenberg ME#",
+      "labAuthors": [
+        "Duffy EE",
+        "Patop I",
+        "Churchman LS",
+        "Greenberg ME"
+      ],
+      "journal": "bioRxiv",
+      "year": 2025,
+      "volume": null,
+      "pages": null,
+      "type": "preprint",
+      "section": "preprints",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Translational activators align mRNAs at the small mitoribosomal subunit for translation initiation",
+      "authors": "Bridgers JB*, Carlström A*, Sherpa D*, Couvillion MT, Rovšnik U, Gao J, Wan B, Shao S#, Ott M#, Churchman LS#",
+      "labAuthors": [
+        "Bridgers JB",
+        "Couvillion MT",
+        "Churchman LS"
+      ],
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2025,
+      "volume": null,
+      "pages": null,
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Transcription arrest induces formation of RNA granules in mitochondria",
+      "authors": "Hansen KG, Baxter-Koenigs A, Weiss CA, McShane E, Churchman LS",
+      "labAuthors": [
+        "Hansen KG",
+        "Baxter-Koenigs A",
+        "Weiss CA",
+        "McShane E",
+        "Churchman LS"
+      ],
+      "journal": "Life Science Alliance",
+      "year": 2025,
+      "volume": "8(9)",
+      "pages": "e202403082",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "A molecular switch at the yeast mitoribosomal tunnel exit controls cytochrome b synthesis",
+      "authors": "Carlström A, Bridgers JB, Couvillion M, Singh AP, Forné I, Imhof A, Churchman LS#, Ott M#",
+      "labAuthors": [
+        "Carlström A",
+        "Bridgers JB",
+        "Couvillion M",
+        "Churchman LS"
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": 2025,
+      "volume": "53(13)",
+      "pages": null,
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "HIF regulates multiple translated endogenous retroviruses: Implications for cancer immunotherapy",
+      "authors": "Jiang Q, Braun DA, Clauser KR, Ramesh V, Shirole NH, Duke-Cohan JE, Nabilsi N, Kramer NJ, Forman C, Lippincott IE, Klaeger S, Phulphagar KM, Chea V, Kim N, Vanasse AP, Saad E, Parsons T, Carr-Reynolds M, Carulli I, Pinjusic K, Jiang Y, Li R, Syamala S, Rachimi S, Verzani EK, Stevens JD, Lane WJ, Camp SY, Meli K, Pappalardi MB, Herbert ZT, Qiu X, Cejas P, Long HW, Shukla SA, Van Allen EM, Choueiri TK, Churchman LS, Abelin JG, Gurer C, MacBeath G, Childs RW, Carr SA, Keskin DB, Wu CJ, Kaelin WG Jr",
+      "labAuthors": [
+        "Kramer NJ",
+        "Churchman LS"
+      ],
+      "journal": "Cell",
+      "year": 2025,
+      "volume": "188(7)",
+      "pages": "1807–1827.e34",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Genetic regulation of nascent RNA maturation revealed by direct RNA nanopore sequencing",
+      "authors": "Choquet K, Chaumont LP, Bache S, Baxter-Koenigs AR, Churchman LS",
+      "labAuthors": [
+        "Choquet K",
+        "Chaumont LP",
+        "Bache S",
+        "Baxter-Koenigs AR",
+        "Churchman LS"
+      ],
+      "journal": "Genome Research",
+      "year": 2025,
+      "volume": "35(4)",
+      "pages": "712–724",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Context-specific inhibition of mitochondrial ribosomes by phenicol and oxazolidinone antibiotics",
+      "authors": "Bibel B, Raskar T, Couvillion M, Lee M, Kleinman JI, Takeuchi-Tomita N, Churchman LS, Fraser JS, Fujimori DG",
+      "labAuthors": [
+        "Couvillion M",
+        "Churchman LS"
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": 2025,
+      "volume": "53(3)",
+      "pages": null,
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "RNA polymerases reshape chromatin and coordinate transcription on individual fibers",
+      "authors": "Tullius TW, Isaac RS, Ranchalis J, Dubocanin D, Churchman LS#, Stergachis AB#",
+      "labAuthors": [
+        "Tullius TW",
+        "Isaac RS",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2024,
+      "volume": "84",
+      "pages": "3209–3222.e5",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Genome-wide quantification of RNA flow across subcellular compartments reveals determinants of the mammalian transcript life cycle",
+      "authors": "Ietswaart R#*, Smalec BM*, Xu A*, Choquet K, McShane E, Jowhar ZM, Guegler CK, Baxter-Koenigs AR, West ER, Fu BXH, Gilbert L, Floor SN#, Churchman LS#",
+      "labAuthors": [
+        "Ietswaart R",
+        "Smalec BM",
+        "Choquet K",
+        "McShane E",
+        "Guegler CK",
+        "Baxter-Koenigs AR",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2024,
+      "volume": "84",
+      "pages": "2765–2784.e16",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "A kinetic dichotomy between mitochondrial and nuclear gene expression drives OXPHOS biogenesis",
+      "authors": "McShane E, Couvillion M, Ietswaart R, Prakash G, Smalec BM, Soto I, Baxter-Koenigs AR, Choquet K, Churchman LS",
+      "labAuthors": [
+        "McShane E",
+        "Couvillion M",
+        "Ietswaart R",
+        "Prakash G",
+        "Smalec BM",
+        "Soto I",
+        "Baxter-Koenigs AR",
+        "Choquet K",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2024,
+      "volume": "84",
+      "pages": "1541–1555.e11",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Post-transcriptional splicing can occur in a slow-moving zone around the gene",
+      "authors": "Coté A, O'Farrell A, Dardani I, Dunagin M, Coté C, Wan Y, Bayatpour S, Drexler HL, Alexander KA, Chen F, Wassie AT, Patel R, Pham K, Boyden ES, Berger S, Phillips-Cremins J, Churchman LS, Raj A",
+      "labAuthors": [
+        "Drexler HL",
+        "Churchman LS"
+      ],
+      "journal": "eLife",
+      "year": 2024,
+      "volume": "12",
+      "pages": null,
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Proteome-scale movements and compartment connectivity during the eukaryotic cell cycle",
+      "authors": "Litsios A, Grys BT, Kraus OZ, Friesen H, Ross C, Masinas MPD, Forster DT, Couvillion MT, Timmermann S, Billmann M, Myers C, Johnsson N, Churchman LS, Boone C, Andrews BJ",
+      "labAuthors": [
+        "Couvillion MT",
+        "Churchman LS"
+      ],
+      "journal": "Cell",
+      "year": 2024,
+      "volume": "187",
+      "pages": "1490–1507.e21",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA",
+      "authors": "Isaac RS, Tullius TW*, Hansen KG*, Dubocanin D, Couvillion M, Stergachis AB#, Churchman LS#",
+      "labAuthors": [
+        "Isaac RS",
+        "Tullius TW",
+        "Hansen KG",
+        "Couvillion M",
+        "Churchman LS"
+      ],
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2024,
+      "volume": "31",
+      "pages": "568–577",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Regulators of mitonuclear balance link mitochondrial metabolism to mtDNA expression",
+      "authors": "Kramer NJ*, Prakash G*, Choquet K, Soto I, Petrova B, Merens HE, Kanarek N, Churchman LS",
+      "labAuthors": [
+        "Kramer NJ",
+        "Prakash G",
+        "Choquet K",
+        "Soto I",
+        "Merens HE",
+        "Churchman LS"
+      ],
+      "journal": "Nature Cell Biology",
+      "year": 2023,
+      "volume": "25",
+      "pages": "1575–1589",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "RNA Polymerase II pausing temporally coordinates cell cycle progression and erythroid differentiation",
+      "authors": "Martell DJ, Merens HE, Caulier A, Fiorini C, Ulirsch J, Ietswaart R, Choquet K, Graziadei G, Brancaleoni V, Cappellini MD, Scott C, Roberts N, Proven M, Roy NBA, Babbs C, Higgs DR, Sankaran VG#, Churchman LS#",
+      "labAuthors": [
+        "Martell DJ",
+        "Merens HE",
+        "Ietswaart R",
+        "Choquet K",
+        "Churchman LS"
+      ],
+      "journal": "Developmental Cell",
+      "year": 2023,
+      "volume": "58",
+      "pages": "2112–2127.e4",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Pre-mRNA splicing order is predetermined and maintains splicing fidelity across multi-intronic transcripts",
+      "authors": "Choquet K, Baxter-Koenigs AR, Dülk SL, Smalec BM, Rouskin S, Churchman LS",
+      "labAuthors": [
+        "Choquet K",
+        "Baxter-Koenigs AR",
+        "Smalec BM",
+        "Churchman LS"
+      ],
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2023,
+      "volume": "30",
+      "pages": "1064–1076",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Intronic small nucleolar RNAs regulate host gene splicing through base pairing with their adjacent intronic sequences",
+      "authors": "Bergeron D, Faucher-Giguère L, Emmerichs A-K, Choquet K, Song KS, Deschamps-Francoeur G, Fafard-Couture É, Rivera A, Couture S, Churchman LS, Heyd F, Abou Elela S, Scott MS",
+      "labAuthors": [
+        "Choquet K",
+        "Churchman LS"
+      ],
+      "journal": "Genome Biology",
+      "year": 2023,
+      "volume": "24",
+      "pages": "160",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Balanced mitochondrial and cytosolic translatomes underlie the biogenesis of human respiratory complexes",
+      "authors": "Soto I*, Couvillion M*, Hansen KG, McShane E, Moran JC, Barrientos A, Churchman LS",
+      "labAuthors": [
+        "Soto I",
+        "Couvillion M",
+        "Hansen KG",
+        "McShane E",
+        "Churchman LS"
+      ],
+      "journal": "Genome Biology",
+      "year": 2022,
+      "volume": "23(1)",
+      "pages": "170",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Transcription elongation is finely tuned by dozens of regulatory factors",
+      "authors": "Couvillion M*, Harlen KM*, Lachance KC*, Trotta KL, Smith E, Brion C, Smalec BM, Churchman LS",
+      "labAuthors": [
+        "Couvillion M",
+        "Harlen KM",
+        "Lachance KC",
+        "Trotta KL",
+        "Smith E",
+        "Smalec BM",
+        "Churchman LS"
+      ],
+      "journal": "eLife",
+      "year": 2022,
+      "volume": "11",
+      "pages": null,
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Hsf1 activation by proteotoxic stress requires concurrent protein synthesis",
+      "authors": "Tye BW, Churchman LS",
+      "labAuthors": [
+        "Tye BW",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Biology of the Cell",
+      "year": 2021,
+      "volume": "32(19)",
+      "pages": "1800–1806",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Essential histone chaperones collaborate to regulate transcription and chromatin integrity",
+      "authors": "Viktorovskaya O, Chuang J, Jain D, Reim NI, López-Rivera F, Murawska M, Spatt D, Churchman LS, Park PJ, Winston F",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Genes & Development",
+      "year": 2021,
+      "volume": "35(9-10)",
+      "pages": "698–712",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "GeneWalk identifies relevant gene functions for a biological context using network representation learning",
+      "authors": "Ietswaart R, Gyori BM, Bachman JA, Sorger PK, Churchman LS",
+      "labAuthors": [
+        "Ietswaart R",
+        "Churchman LS"
+      ],
+      "journal": "Genome Biology",
+      "year": 2021,
+      "volume": "22(1)",
+      "pages": "55",
+      "type": "research",
+      "section": "research",
+      "doi": "10.1186/s13059-021-02264-8",
+      "pmid": null,
+      "url": "https://doi.org/10.1186/s13059-021-02264-8"
+    },
+    {
+      "title": "Single-molecule regulatory architectures captured by chromatin fiber sequencing",
+      "authors": "Stergachis AB, Debo BM, Haugen E, Churchman LS, Stamatoyannopoulos JA",
+      "labAuthors": [
+        "Stergachis AB",
+        "Churchman LS"
+      ],
+      "journal": "Science",
+      "year": 2020,
+      "volume": "368",
+      "pages": "1449–1454",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "The yeast exoribonuclease Xrn1 and associated factors modulate RNA polymerase II processivity in 5' and 3' gene regions",
+      "authors": "Fischer J, Song YS, Yosef N, di Iulio J, Churchman LS, Choder M",
+      "labAuthors": [
+        "di Iulio J",
+        "Churchman LS"
+      ],
+      "journal": "Journal of Biological Chemistry",
+      "year": 2020,
+      "volume": "295",
+      "pages": "11435–11454",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Splicing kinetics and coordination revealed by direct nascent RNA sequencing through nanopores",
+      "authors": "Drexler HL, Choquet K, Churchman LS",
+      "labAuthors": [
+        "Drexler HL",
+        "Choquet K",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2020,
+      "volume": "77(5)",
+      "pages": "985–998.e8",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Proteotoxicity from aberrant ribosome biogenesis compromises cell fitness",
+      "authors": "Tye BW, Commins N, Ryazanova LV, Wühr M, Springer M, Pincus D, Churchman LS",
+      "labAuthors": [
+        "Tye BW",
+        "Churchman LS"
+      ],
+      "journal": "eLife",
+      "year": 2019,
+      "volume": "8",
+      "pages": null,
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Spt6 is required for the fidelity of promoter selection",
+      "authors": "Doris SM, Chuang J, Viktorovskaya O, Murawska M, Spatt D, Churchman LS, Winston F",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2018,
+      "volume": "72(4)",
+      "pages": "687–699.e6",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Cell-cycle modulation of transcription termination factor Sen1",
+      "authors": "Mischo HE, Chun Y, Harlen KM, Smalec BM, Dhir S, Churchman LS, Buratowski S",
+      "labAuthors": [
+        "Harlen KM",
+        "Smalec BM",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2018,
+      "volume": "70(2)",
+      "pages": "312–326.e7",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Set2 methyltransferase facilitates cell cycle progression by maintaining transcriptional fidelity",
+      "authors": "Dronamraju R, Jha DK, Eser U, Adams AT, Dominguez D, Choudhury R, Chiang Y-C, Rathmell WK, Emanuele MJ, Churchman LS, Strahl BD",
+      "labAuthors": [
+        "Eser U",
+        "Churchman LS"
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": 2018,
+      "volume": "46(3)",
+      "pages": "1331–1344",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "The ground state and evolution of promoter region directionality",
+      "authors": "Jin Y*, Eser U*, Struhl K#, Churchman LS#",
+      "labAuthors": [
+        "Eser U",
+        "Churchman LS"
+      ],
+      "journal": "Cell",
+      "year": 2017,
+      "volume": "170(5)",
+      "pages": "889–898.e10",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "BET bromodomain proteins function as master transcription elongation factors independent of CDK9 recruitment",
+      "authors": "Winter GE*, Mayer A*, Buckley DL*, Erb MA, Roderick JE, Vittori S, Reyes JM, di Iulio J, Souza A, Ott CJ, Roberts JM, Zeid R, Scott TG, Paulk J, Lachance K, Olson CM, Dastjerdi S, Bauer S, Lin CY, Gray NS, Kelliher MA, Churchman LS#, Bradner JE#",
+      "labAuthors": [
+        "Mayer A",
+        "di Iulio J",
+        "Lachance K",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2017,
+      "volume": "67(1)",
+      "pages": "5–18.e19",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Total RNA-seq to identify pharmacological effects on specific stages of mRNA synthesis",
+      "authors": "Boswell SA, Snavely A, Landry HM, Churchman LS, Gray JM, Springer M",
+      "labAuthors": [
+        "Landry HM",
+        "Churchman LS"
+      ],
+      "journal": "Nature Chemical Biology",
+      "year": 2017,
+      "volume": "13(5)",
+      "pages": "501–507",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Subgenic Pol II interactomes identify region-specific transcription elongation regulators",
+      "authors": "Harlen KM, Churchman LS",
+      "labAuthors": [
+        "Harlen KM",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Systems Biology",
+      "year": 2017,
+      "volume": "13(1)",
+      "pages": "900",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Comprehensive RNA polymerase II interactomes reveal distinct and varied roles for each phospho-CTD residue",
+      "authors": "Harlen KM, Trotta KL, Smith EE, Mosaheb MM, Fuchs SM, Churchman LS",
+      "labAuthors": [
+        "Harlen KM",
+        "Trotta KL",
+        "Smith EE",
+        "Churchman LS"
+      ],
+      "journal": "Cell Reports",
+      "year": 2016,
+      "volume": "15(10)",
+      "pages": "2147–2158",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Synchronized mitochondrial and cytosolic translation programs",
+      "authors": "Couvillion MT, Soto IC, Shipkovenska G, Churchman LS",
+      "labAuthors": [
+        "Couvillion MT",
+        "Soto IC",
+        "Shipkovenska G",
+        "Churchman LS"
+      ],
+      "journal": "Nature",
+      "year": 2016,
+      "volume": "533(7604)",
+      "pages": "499–503",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution",
+      "authors": "Mayer A*, di Iulio J*, Maleri S, Eser U, Vierstra J, Reynolds A, Sandstrom R, Stamatoyannopoulos JA, Churchman LS",
+      "labAuthors": [
+        "Mayer A",
+        "di Iulio J",
+        "Maleri S",
+        "Eser U",
+        "Churchman LS"
+      ],
+      "journal": "Cell",
+      "year": 2015,
+      "volume": "161(3)",
+      "pages": "541–554",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Single mammalian cells compensate for differences in cellular volume and DNA copy number through independent global transcriptional mechanisms",
+      "authors": "Padovan-Merhar O, Nair GP, Biaesch AG, Mayer A, Scarfone S, Foley SW, Wu AR, Churchman LS, Singh A, Raj A",
+      "labAuthors": [
+        "Mayer A",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2015,
+      "volume": "58(2)",
+      "pages": "339–352",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "A chromatin-based mechanism for limiting divergent noncoding transcription",
+      "authors": "Marquardt S, Escalante-Chong R, Pho N, Wang J, Churchman LS, Springer M, Buratowski S",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Cell",
+      "year": 2014,
+      "volume": "157(7)",
+      "pages": "1712–1723",
+      "type": "research",
+      "section": "research",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "The regulation and function of post-transcriptional RNA splicing",
+      "authors": "Choquet K, Patop IL, Churchman LS",
+      "labAuthors": [
+        "Choquet K",
+        "Patop IL",
+        "Churchman LS"
+      ],
+      "journal": "Nature Reviews Genetics",
+      "year": 2025,
+      "volume": "26(6)",
+      "pages": "378–394",
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Central dogma rates in human mitochondria",
+      "authors": "McShane E, Churchman LS",
+      "labAuthors": [
+        "McShane E",
+        "Churchman LS"
+      ],
+      "journal": "Human Molecular Genetics",
+      "year": 2024,
+      "volume": "33(R1)",
+      "pages": "R34–R41",
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Timing is everything: advances in quantifying splicing kinetics",
+      "authors": "Merens HE, Choquet K, Baxter-Koenigs AR, Churchman LS",
+      "labAuthors": [
+        "Merens HE",
+        "Choquet K",
+        "Baxter-Koenigs AR",
+        "Churchman LS"
+      ],
+      "journal": "Trends in Cell Biology",
+      "year": 2024,
+      "volume": null,
+      "pages": null,
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Human mitoribosome profiling: a re-engineered approach tailored to study mitochondrial translation",
+      "authors": "Soto I, Couvillion M, Churchman LS",
+      "labAuthors": [
+        "Soto I",
+        "Couvillion M",
+        "Churchman LS"
+      ],
+      "journal": "Methods in Molecular Biology",
+      "year": 2024,
+      "volume": "2661",
+      "pages": "257–280",
+      "type": "protocol",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Revealing nascent RNA processing dynamics with nano-COP",
+      "authors": "Drexler HL, Choquet K, Merens HE, Tang PS, Simpson JT, Churchman LS",
+      "labAuthors": [
+        "Drexler HL",
+        "Choquet K",
+        "Merens HE",
+        "Churchman LS"
+      ],
+      "journal": "Nature Protocols",
+      "year": 2021,
+      "volume": "16(3)",
+      "pages": "1343–1375",
+      "type": "protocol",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "The long and the short of the RNA polymerase C-terminal domain and phase separation",
+      "authors": "Isaac RS, Churchman LS",
+      "labAuthors": [
+        "Isaac RS",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2019,
+      "volume": "73(6)",
+      "pages": "1087–1088",
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "The multiple levels of mitonuclear coregulation",
+      "authors": "Isaac RS, McShane E, Churchman LS",
+      "labAuthors": [
+        "Isaac RS",
+        "McShane E",
+        "Churchman LS"
+      ],
+      "journal": "Annual Review of Genetics",
+      "year": 2018,
+      "volume": "52",
+      "pages": "511–533",
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Pause & go: from the discovery of RNA polymerase pausing to its functional implications",
+      "authors": "Mayer A, Landry HM, Churchman LS",
+      "labAuthors": [
+        "Mayer A",
+        "Landry HM",
+        "Churchman LS"
+      ],
+      "journal": "Current Opinion in Cell Biology",
+      "year": 2017,
+      "volume": "46",
+      "pages": "72–80",
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "A detailed protocol for subcellular RNA sequencing (subRNA-seq)",
+      "authors": "Mayer A, Churchman LS",
+      "labAuthors": [
+        "Mayer A",
+        "Churchman LS"
+      ],
+      "journal": "Current Protocols in Molecular Biology",
+      "year": 2017,
+      "volume": "120",
+      "pages": "4.29.1–4.29.18",
+      "type": "protocol",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "The code and beyond: transcription regulation by the RNA polymerase II carboxy-terminal domain",
+      "authors": "Harlen KM, Churchman LS",
+      "labAuthors": [
+        "Harlen KM",
+        "Churchman LS"
+      ],
+      "journal": "Nature Reviews Molecular Cell Biology",
+      "year": 2017,
+      "volume": "18(4)",
+      "pages": "263–273",
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Not just noise: genomics and genetics bring long noncoding RNAs into focus",
+      "authors": "Churchman LS",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2017,
+      "volume": "65(1)",
+      "pages": "1–2",
+      "type": "review",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Mitochondrial ribosome (mitoribosome) profiling for monitoring mitochondrial translation in vivo",
+      "authors": "Couvillion MT, Churchman LS",
+      "labAuthors": [
+        "Couvillion MT",
+        "Churchman LS"
+      ],
+      "journal": "Current Protocols in Molecular Biology",
+      "year": 2017,
+      "volume": "119",
+      "pages": "4.28.1–4.28.25",
+      "type": "protocol",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Native elongating transcript sequencing (NET-seq)",
+      "authors": "Churchman LS, Weissman JS",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Current Protocols in Molecular Biology",
+      "year": 2012,
+      "volume": "Chapter 4",
+      "pages": "Unit 4.14.1–17",
+      "type": "protocol",
+      "section": "reviews",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Single-molecule fluorescence imaging of processive myosin with enhanced background suppression using linear zero-mode waveguides (ZMWs) and convex lens induced confinement (CLIC)",
+      "authors": "Elting MW, Leslie SR, Churchman LS, Korlach J, McFaul CMJ, Leith JS, Levene MJ, Cohen AE, Spudich JA",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Optics Express",
+      "year": 2013,
+      "volume": "21(1)",
+      "pages": "1189–1202",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Colocalization of fluorescent probes: accurate and precise registration with nanometer resolution",
+      "authors": "Churchman LS, Spudich JA",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Cold Spring Harbor Protocols",
+      "year": 2012,
+      "volume": "2012(2)",
+      "pages": "141–149",
+      "type": "protocol",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Single-molecule high-resolution colocalization of single probes",
+      "authors": "Churchman LS, Spudich JA",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Cold Spring Harbor Protocols",
+      "year": 2012,
+      "volume": "2012(2)",
+      "pages": "242–245",
+      "type": "protocol",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "H3K4 trimethylation by Set1 promotes efficient termination by the Nrd1-Nab3-Sen1 pathway",
+      "authors": "Terzi N, Churchman LS, Vasiljeva L, Weissman J, Buratowski S",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Molecular and Cellular Biology",
+      "year": 2011,
+      "volume": "31(17)",
+      "pages": "3569–3583",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Nascent transcript sequencing visualizes transcription at nucleotide resolution",
+      "authors": "Churchman LS, Weissman JS",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Nature",
+      "year": 2011,
+      "volume": "469(7330)",
+      "pages": "368–373",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Optimized localization analysis for single-molecule tracking and super-resolution microscopy",
+      "authors": "Mortensen KI*, Churchman LS*, Spudich JA, Flyvbjerg H",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Nature Methods",
+      "year": 2010,
+      "volume": "7(5)",
+      "pages": "377–381",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Rapid creation and quantitative monitoring of high coverage shRNA libraries",
+      "authors": "Bassik MC, Lebbink RJ, Churchman LS, Ingolia NT, Patena W, LeProust EM, Schuldiner M, Weissman JS, McManus MT",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Nature Methods",
+      "year": 2009,
+      "volume": "6(6)",
+      "pages": "443–445",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Colocalization of fluorescent probes: accurate and precise registration with nanometer resolution",
+      "authors": "Churchman LS, Spudich JA",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Single-Molecule Techniques: A Laboratory Manual",
+      "year": 2007,
+      "volume": null,
+      "pages": "73–84",
+      "type": "protocol",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "A non-Gaussian distribution quantifies distances measured with fluorescence localization techniques",
+      "authors": "Churchman LS, Flyvbjerg H, Spudich JA",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Biophysical Journal",
+      "year": 2006,
+      "volume": "90(2)",
+      "pages": "668–671",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Single molecule high-resolution colocalization of Cy3 and Cy5 attached to macromolecules measures intramolecular distances through time",
+      "authors": "Churchman LS, Ökten Z, Rock RS, Dawson JF, Spudich JA",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2005,
+      "volume": "102(5)",
+      "pages": "1419–1423",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    },
+    {
+      "title": "Myosin VI walks hand-over-hand along actin",
+      "authors": "Ökten Z, Churchman LS, Rock RS, Spudich JA",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2004,
+      "volume": "11(9)",
+      "pages": "884–887",
+      "type": "research",
+      "section": "earlier",
+      "doi": null,
+      "pmid": null,
+      "url": null
+    }
+  ]
+}

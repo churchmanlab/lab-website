@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Assistant crawlers are explicitly welcome. A lab website exists to be read, and an
+# accurate answer from an assistant is worth more than a blocked one.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://churchman.med.harvard.edu/sitemap-index.xml
