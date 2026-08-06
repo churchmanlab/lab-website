@@ -23,6 +23,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Job-level so the build and the link checker always agree on the base path.
+    # check-links.mjs resolves hrefs against SITE_BASE; when only the build step
+    # set it, the checker saw base "/" and reported every prefixed link as broken.
+    env:
+      SITE: https://churchmanlab.github.io
+      SITE_BASE: /lab-website
     steps:
       - uses: actions/checkout@v4
 
@@ -34,9 +40,6 @@ jobs:
       - run: npm ci
 
       - name: Build
-        env:
-          SITE: https://churchmanlab.github.io
-          SITE_BASE: /lab-website
         run: npm run build
 
       - name: Check for broken internal links
