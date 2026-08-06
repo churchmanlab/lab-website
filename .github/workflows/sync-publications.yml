@@ -1,0 +1,44 @@
+name: Sync publications from PubMed
+
+# Runs on the 1st of every month and opens a pull request if PubMed has anything new.
+# Nothing goes live until you look at it — new entries need their lab-member bolding
+# checked, which is the one thing a script cannot do for you.
+on:
+  schedule:
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Sync from PubMed
+        env:
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+        run: npm run sync:pubs -- --add
+
+      - name: Open a pull request if anything changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Sync publications from PubMed"
+          branch: chore/sync-publications
+          title: "Publications: new entries from PubMed"
+          body: |
+            Automated monthly sync against `Churchman LS[Author]`.
+
+            **Before merging:** any newly added entries need Churchman lab members
+            wrapped in `**double asterisks**`, and may need moving between the
+            research / reviews / preprints sections.
+          delete-branch: true

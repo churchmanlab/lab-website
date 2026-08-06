@@ -1,0 +1,77 @@
+---
+import Base from "../layouts/Base.astro";
+import site from "../data/site.json";
+import { u } from "../lib/path.js";
+
+const img = (p, w = 1200) => `${site.cdn}${p}?format=${w}w`;
+
+const description =
+  "Contact the Churchman Lab, Department of Genetics, Harvard Medical School, New Research Building Room 356, 77 Avenue Louis Pasteur, Boston MA 02115.";
+
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact — Churchman Lab",
+  url: `${site.url}/contact`,
+  description,
+  about: { "@id": `${site.url}/#lab` },
+};
+---
+
+<Base title="Contact" description={description} jsonld={jsonld}>
+  <section class="section" style="padding-bottom:34px">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Get in touch</h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap two-col">
+      <div>
+        <h2>Who to email</h2>
+        {site.contacts.map((c) => (
+          <div class="qa">
+            <h3>{c.role}</h3>
+            <p style="margin-bottom:0">
+              {c.name} — <a href={`mailto:${c.email}`}>{c.email}</a>
+            </p>
+          </div>
+        ))}
+
+        <div class="box accent" style="margin-top:30px">
+          <p style="margin-bottom:0">
+            Interested in joining the lab? Read <a href={u("/join")}>what we look for and how to apply</a> before
+            emailing — it will make your email much easier to write.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Where we are</h2>
+        <p>
+          {site.department}<br />
+          {site.division}, {site.institution}<br />
+          {site.address.line1}<br />
+          {site.address.line2}<br />
+          {site.address.city}, {site.address.state} {site.address.zip}
+        </p>
+        <p class="side-note">
+          The M2 shuttle runs regularly from Cambridge to the Longwood Medical Area —
+          <a href="https://www.masco.org/directions/m2-cambridge-harvard-shuttle">schedule</a>.
+        </p>
+        <p style="margin-top:1.5rem">
+          <a class="btn ghost" href="https://maps.google.com/?q=77+Avenue+Louis+Pasteur,+Boston,+MA+02115">
+            Open in Maps
+          </a>
+        </p>
+        <img
+          src={img("/1621977752948-W2V3NSGIOOGGYCSN38YK/kevins_plates.jpg", 1000)}
+          alt="Plates in the Churchman lab"
+          loading="lazy"
+          style="border-radius:3px;margin-top:28px"
+        />
+      </div>
+    </div>
+  </section>
+</Base>

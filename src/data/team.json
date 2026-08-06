@@ -1,0 +1,107 @@
+{
+  "current": [
+    {
+      "name": "L. Stirling Churchman",
+      "degree": "PhD",
+      "role": "Professor of Genetics, Harvard Medical School",
+      "email": "churchman@genetics.med.harvard.edu",
+      "photo": "/68f0980f-329e-4fc3-9608-e5dab89444f1/P1090037.jpg",
+      "href": "/stirling",
+      "pi": true
+    },
+    {
+      "name": "Mary Couvillion",
+      "degree": "PhD",
+      "role": "Computational Biologist",
+      "detail": "Analysis wizard",
+      "photo": "/1595875061421-7P11J3TFTFIYRG8XQTJF/P1080315.JPG"
+    },
+    {
+      "name": "Mike Kourkoulakos",
+      "role": "Technician / Lab Manager",
+      "detail": "BS/MS Biology, Tufts University",
+      "email": "mike_kourkoulakos@hms.harvard.edu",
+      "photo": "/93fa9ae4-7bd9-4b61-bb60-3d1b45823325/P1090011.jpg"
+    },
+    {
+      "name": "Inés Patop",
+      "degree": "PhD",
+      "role": "Postdoctoral Fellow",
+      "detail": "PhD in Molecular and Cellular Biology, Brandeis University",
+      "award": "The Parkinson's Foundation Postdoctoral Fellowship",
+      "email": "ines_patop@hms.harvard.edu",
+      "photo": "/b15ce46a-d9d2-4b1d-b2cb-0aeb7632db64/P1080920.JPG"
+    },
+    {
+      "name": "Nick Ide",
+      "degree": "PhD",
+      "role": "Postdoctoral Fellow",
+      "detail": "PhD in Biological Science, Columbia University",
+      "award": "Helen Hay Whitney Postdoctoral Fellowship",
+      "email": "nick_ide@hms.harvard.edu",
+      "photo": "/2065178f-d397-4640-8dc1-19e9e69b4985/nick_ide_med.jpg"
+    },
+    {
+      "name": "Ana-Maria Raicu",
+      "degree": "PhD",
+      "role": "Postdoctoral Fellow",
+      "detail": "PhD in Cellular and Molecular Biology, Michigan State University",
+      "award": "Ruth L. Kirschstein National Research Service Award F32",
+      "email": "ana-maria_raicu@hms.harvard.edu",
+      "photo": "/3c677f7c-9d14-490e-9a5a-5a2b3aac73df/P1080927.JPG"
+    },
+    {
+      "name": "Hope Merens",
+      "role": "MCO Graduate Student",
+      "detail": "BA in Biochemistry and Neurobiology, MS in Chemistry, University of Pennsylvania",
+      "award": "National Science Foundation Graduate Fellowship",
+      "email": "hmerens@g.harvard.edu",
+      "photo": "/1590358480113-TKC9C9LW9RXPUCYUIWPO/P1080792.JPG"
+    },
+    {
+      "name": "Gyan Prakash",
+      "role": "Biological Sciences in Public Health Graduate Student",
+      "detail": "MS in Biochemistry, McGill University",
+      "email": "gprakash@g.harvard.edu",
+      "photo": "/1629736272585-7U081LIM7BMP136BW0QD/P1080817.JPG"
+    },
+    {
+      "name": "Lisa Hansen",
+      "role": "BBS Graduate Student",
+      "detail": "BA in Biochemistry and Neuroscience, University of Colorado Boulder",
+      "email": "lisahansen@g.harvard.edu",
+      "photo": "/041fb738-31b4-4b57-997a-5bf86dfbe7b4/P1080973.JPG"
+    },
+    {
+      "name": "Claire Nuessmeier",
+      "role": "Chemical Biology Graduate Student",
+      "detail": "BS in Biochemistry and Molecular Biology, Marquette University",
+      "email": "clairenuessmeier@g.harvard.edu",
+      "photo": "/c25eba22-6358-464b-b461-3f8d6faf4cfb/P1090002.JPG"
+    }
+  ],
+  "alumniPostdocs": [
+    { "name": "Andreas Mayer, PhD", "now": "Group Leader, Max Planck Institute for Molecular Genetics, Berlin", "href": "https://www.molgen.mpg.de/3670877/Nascent_transcription" },
+    { "name": "Umut Eser, PhD", "now": "Co-Founder & CTO, Weave", "href": "https://www.weave.bio/" },
+    { "name": "Julia di Iulio, PhD", "now": "Director of Bioinformatics, Vir Biotechnology", "href": "https://www.vir.bio/" },
+    { "name": "Andrew Stergachis, MD, PhD", "now": "Associate Professor of Genome Sciences, University of Washington", "href": "https://stergachislab.org/" },
+    { "name": "Iliana Soto, PhD", "now": "Biomedical Program Director, Kaiser University" },
+    { "name": "Danya Martell-Smart, PhD", "now": "Patent Agent, Wilson Sonsini" },
+    { "name": "Karine Choquet, PhD", "now": "Assistant Professor, Université de Sherbrooke", "href": "https://www.choquetlab.com/" },
+    { "name": "Robert Ietswaart, PhD", "now": "Co-Founder and CSO, Cellforma", "href": "https://www.cellforma.com/" },
+    { "name": "Nick Kramer, PhD", "now": "Senior Scientist, Scribe Therapeutics", "href": "https://www.scribetx.com/" },
+    { "name": "R. Stefan Isaac, PhD", "now": "Assistant Professor of Biochemistry and Cell Biology, Boston University", "href": "https://www.bumc.bu.edu/biochemcellbio/profiles/stefan-isaac/" },
+    { "name": "Erik McShane, PhD", "now": "Senior Scientist, Flagship Labs 103, Flagship Pioneering" },
+    { "name": "Katja Hansen, PhD", "now": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau" }
+  ],
+  "alumniStudents": [
+    { "name": "Kevin Harlen, PhD", "now": "AI & Data Manager, Deloitte Consulting" },
+    { "name": "Heather Landry Drexler, PhD", "now": "Director of Strategy, Sail Biomedicines" },
+    { "name": "Blake Tye, PhD", "now": "Research Associate, Wellington Management" },
+    { "name": "Kate Lachance, PhD", "now": "Consultant, McKinsey & Company" },
+    { "name": "Aaron Aker, PhD", "now": "Scientist, Molecular Loop" },
+    { "name": "Brendan Smalec, PhD", "now": "Consultant, Bain & Company" },
+    { "name": "Tommy Tullius, PhD", "now": "Postdoctoral Fellow, Levine Lab, Princeton University" },
+    { "name": "Jake Bridgers, PhD" }
+  ]
+}

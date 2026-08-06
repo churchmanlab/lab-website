@@ -1,0 +1,25 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/path.js";
+---
+
+<Base title="Page not found" description="That page does not exist on the Churchman Lab website.">
+  <section class="section">
+    <div class="wrap narrow" style="padding:60px 0">
+      <p class="eyebrow">404</p>
+      <h1>That page has moved or never existed</h1>
+      <p class="lede">
+        The site was rebuilt, and a few URLs changed. Here is where things live now.
+      </p>
+      <ul style="font-size:1rem;line-height:2.1">
+        <li><a href={u("/research")}>Research</a></li>
+        <li><a href={u("/publications")}>Publications</a></li>
+        <li><a href={u("/team")}>Team</a></li>
+        <li><a href={u("/tools/genewalk")}>GeneWalk</a></li>
+        <li><a href={u("/tools")}>Protocols</a></li>
+        <li><a href={u("/join")}>Join the lab</a></li>
+        <li><a href={u("/contact")}>Contact</a></li>
+      </ul>
+    </div>
+  </section>
+</Base>

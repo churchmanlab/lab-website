@@ -1,0 +1,59 @@
+name: Deploy to GitHub Pages
+
+# Every push to main rebuilds the preview at
+# https://churchmanlab.github.io/lab-website/
+#
+# One-time setup: repo Settings → Pages → Source: "GitHub Actions".
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build
+        env:
+          SITE: https://churchmanlab.github.io
+          SITE_BASE: /lab-website
+        run: npm run build
+
+      - name: Check for broken internal links
+        run: npm run check:links
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    # Pull requests build and link-check, but only main actually publishes.
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

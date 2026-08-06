@@ -1,0 +1,168 @@
+---
+import Base from "../../layouts/Base.astro";
+import site from "../../data/site.json";
+import { u } from "../../lib/path.js";
+
+const img = (p, w = 1400) => `${site.cdn}${p}?format=${w}w`;
+const S = "https://churchman.med.harvard.edu/s";
+
+const description =
+  "Methods, code and benchtop protocols from the Churchman Lab: GeneWalk, NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling, with analysis scripts on GitHub and post-publication corrections.";
+
+const protocols = [
+  {
+    group: "Transcription and splicing in the nucleus",
+    items: [
+      {
+        name: "nano-COP — nanopore analysis of co-transcriptional processing",
+        cite: "Drexler HL, Choquet K, Merens HE, Tang PS, Simpson JT, Churchman LS (2021) Revealing nascent RNA processing dynamics with nano-COP. Nature Protocols 16(3):1343–1375.",
+        links: [
+          { label: "Protocol PDF", href: `${S}/nanoCOP_protocol_2021.pdf` },
+          { label: "Analysis scripts", href: "https://github.com/churchmanlab/nano-COP" },
+        ],
+        erratum:
+          "Page 18, In-house 10× poly(A) buffer (for poly(A) tailing only) should read: “Contains 25 mM MnCl₂, 10 mM DTT, and 5 mg/ml BSA. Mix 1 μl of 1 M MnCl₂, 4 μl of 100 mM DTT, 4 μl of 50 mg/ml BSA, and 31 μl of nuclease-free water.” 1 M MnCl₂ can be purchased from Sigma (cat. no. M1785).",
+      },
+      {
+        name: "subRNA-seq — subcellular RNA sequencing",
+        cite: "Mayer A, Churchman LS (2017) A Detailed Protocol for Subcellular RNA Sequencing (subRNA-seq). Current Protocols in Molecular Biology 120:4.29.1–4.29.18.",
+        links: [{ label: "Protocol PDF", href: `${S}/subRNA-seq_protocol_2017.pdf` }],
+      },
+      {
+        name: "NET-seq in yeast",
+        cite: "Churchman LS, Weissman JS (2012) Native elongating transcript sequencing (NET-seq). Current Protocols in Molecular Biology, Chapter 4:Unit 4.14.1–17.",
+        links: [
+          { label: "Protocol PDF", href: `${S}/Churchman-and-Weissman-2012-Native-elongating-transcript-sequencing-NET-seq.pdf` },
+          { label: "Analysis scripts", href: "https://github.com/churchmanlab/Nature2011yeast_NETseq" },
+        ],
+      },
+      {
+        name: "NET-seq in mammalian cells",
+        cite: "Mayer A, Churchman LS (2016) Genome-wide profiling of RNA polymerase transcription at nucleotide resolution in human cells with native elongating transcript sequencing. Nature Protocols 11(4):813–833.",
+        links: [{ label: "Protocol PDF", href: `${S}/NET-seq_protocol_2016.pdf` }],
+      },
+      {
+        name: "NET-seq in metazoans (updated)",
+        cite: "Martell-Smart D, Ietswaart R, Smalec B, Churchman LS (2020) Profiling metazoan transcription genome-wide with nucleotide resolution using NET-seq. protocols.io.",
+        links: [
+          { label: "Online protocol", href: "https://www.protocols.io/view/profiling-metazoan-transcription-genome-wide-with-bpymmpu6" },
+          { label: "Analysis scripts", href: "https://github.com/churchmanlab/MiMB2019NETseq" },
+        ],
+      },
+    ],
+  },
+  {
+    group: "Mitochondrial gene expression",
+    items: [
+      {
+        name: "Mitoribosome profiling in yeast",
+        cite: "Couvillion MT, Churchman LS (2017) Mitochondrial Ribosome (Mitoribosome) Profiling for Monitoring Mitochondrial Translation In Vivo. Current Protocols in Molecular Biology 119:4.28.1–4.28.25.",
+        links: [{ label: "Protocol PDF", href: `${S}/Mitoribosome_profiling_protocol_2017.pdf` }],
+      },
+      {
+        name: "Human mitoribosome profiling",
+        cite: "Soto I, Couvillion M, Churchman LS (2024) Human mitoribosome profiling: a re-engineered approach tailored to study mitochondrial translation. Methods in Molecular Biology 2661:257–280.",
+        links: [{ label: "Find on PubMed", href: "https://pubmed.ncbi.nlm.nih.gov/?term=%22Human+mitoribosome+profiling%22" }],
+      },
+    ],
+  },
+];
+
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Tools and protocols — Churchman Lab",
+  url: `${site.url}/tools`,
+  description,
+  about: { "@id": `${site.url}/#lab` },
+  hasPart: protocols.flatMap((g) =>
+    g.items.map((p) => ({ "@type": "HowTo", name: p.name, description: p.cite })),
+  ),
+};
+---
+
+<Base title="Tools & Protocols" description={description} jsonld={jsonld}>
+  <section class="section" style="padding-bottom:34px">
+    <div class="wrap">
+      <p class="eyebrow">Tools &amp; protocols</p>
+      <h1>Methods we want other people to use</h1>
+      <p class="lede prose">
+        A method that only works in the lab that invented it is not much of a method. Everything below is published,
+        with the code on <a href={site.links.github}>GitHub</a> and the corrections we have issued since publication
+        listed alongside the original protocol.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cards">
+        <article class="card">
+          <img src={img("/1611858854846-JNHMOUR285ZFO6OFCARD/Fig1_schema_GenBio_website1-01.png", 800)} alt="GeneWalk schematic" loading="lazy" />
+          <h3>GeneWalk</h3>
+          <p>
+            Works out which of a gene's annotated functions are actually relevant in <em>your</em> experimental
+            context, using representation learning on a condition-specific gene network.
+          </p>
+          <a class="more" href={u("/tools/genewalk")}>Full tutorial and documentation →</a>
+        </article>
+        <article class="card">
+          <img src={img("/1621977665726-XM9YCZAYU5OIO5D7FX5R/IMG_3891.JPG", 800)} alt="Bench work in the Churchman lab" loading="lazy" />
+          <h3>Benchtop protocols</h3>
+          <p>
+            NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling — published protocols with PDFs and
+            matching analysis pipelines.
+          </p>
+          <a class="more" href="#protocols">Jump to protocols →</a>
+        </article>
+        <article class="card">
+          <img src={img("/1590250128313-4ZJLKLY3XW4TH40HJC2W/conv_tx.jpg", 800)} alt="Transcription schematic" loading="lazy" />
+          <h3>Code</h3>
+          <p>
+            Analysis pipelines for every method we publish, plus GeneWalk itself, live under the churchmanlab
+            organisation on GitHub.
+          </p>
+          <a class="more" href={site.links.github}>github.com/churchmanlab →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="protocols">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Protocols</p>
+        <h2>Protocols from the lab</h2>
+      </div>
+
+      {protocols.map((g) => (
+        <div style="margin-bottom:44px">
+          <h3>{g.group}</h3>
+          {g.items.map((p) => (
+            <div class="qa">
+              <h3 style="font-family:var(--serif);font-size:1.12rem">{p.name}</h3>
+              <p style="font-size:.88rem;color:var(--ink-3);margin-bottom:.5rem">{p.cite}</p>
+              <div class="pub-links">
+                {p.links.map((l) => <a href={u(l.href)}>{l.label}</a>)}
+              </div>
+              {p.erratum && (
+                <div class="box" style="margin-top:14px;background:#fff8e1;border-color:#f0e0b0">
+                  <h4 style="margin-top:0">Correction since publication</h4>
+                  <p style="margin-bottom:0;font-size:.9rem;color:#5c4a00">{p.erratum}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      ))}
+
+      <div class="box accent">
+        <p style="margin-bottom:0">
+          Trying one of these and hitting a wall? Email the corresponding author on the protocol, or
+          <a href={u("/contact")}>get in touch with the lab</a>. We would rather hear about a failure mode than have it
+          go unreported.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

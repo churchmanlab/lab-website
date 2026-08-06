@@ -1,0 +1,23 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# generated preview bundle (rebuild with `npm run preview:file`)
+preview.html
+
+# environment
+.env
+.env.production
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# logs
+npm-debug.log*
+yarn-error.log*

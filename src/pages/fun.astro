@@ -1,0 +1,99 @@
+---
+import Base from "../layouts/Base.astro";
+import site from "../data/site.json";
+
+const img = (p, w = 800) => `${site.cdn}${p}?format=${w}w`;
+
+const recent = [
+  { p: "/250abf1d-3a10-49a3-8bfb-88f9b187a480/IMG_1502.jpg", c: "Lab cruise on the Charles, 2022" },
+  { p: "/33ba4f2e-972b-41ed-a7c8-336ed375e990/IMG_1440.jpg", c: "Katja's baby shower" },
+  { p: "/2bb19fc9-679b-41aa-bc3e-fc5254bb182a/IMG_1485.jpg", c: "Gene Expression Keystone meeting" },
+  { p: "/c8f6969a-813f-4f42-829d-fde48168a86f/IMG_1509.jpg", c: "" },
+  { p: "/21852484-6548-49cf-aa74-2ac4e96ef866/IMG_0827.jpeg", c: "Lab party, 2021" },
+  { p: "/c5b542e6-ed1d-4d30-b333-4b0ca0ad8082/IMG_0834.jpeg", c: "" },
+  { p: "/f680bc70-e8eb-4f84-91dc-8db16414f3fb/IMG-0893.jpg", c: "Lab retreat, 2021" },
+  { p: "/417cccc7-150e-41ba-b35c-eb9acee369aa/IMG-0882.jpg", c: "" },
+  { p: "/df129860-5c29-4daa-84a4-543ea3c82400/IMG-0891.jpg", c: "" },
+  { p: "/72e7d471-695a-4ab1-a8eb-f0896238bbfb/IMG-0885.jpg", c: "" },
+  { p: "/a33bf7a1-1cf2-4f45-a413-6856b227f918/IMG-0889.jpg", c: "" },
+  { p: "/ea1b2dfc-efff-473d-b3fc-3fb37dcfa271/IMG-0904.jpg", c: "" },
+];
+
+const maine = [
+  "/1590323851475-17GKM174IN8VD0LXO92Y/IMG_20191010_140111.jpg",
+  "/1590323854363-F9KAR8PN1DHMTOJ4ZUKH/IMG_20191010_140129.jpg",
+  "/1590323860442-WQMGGLKSP8MG83UGOGCI/IMG_20191010_144357.jpg",
+  "/1590323862348-RR6QSW3B4D07VSRGQPGP/IMG_20191010_144807.jpg",
+  "/1590323845021-UYIURQYOEY0H0U21HBQI/IMG_20191009_101727.jpg",
+  "/1590323853795-7WFSEWDF8T6GH84YVM3S/IMG_20191010_140058.jpg",
+  "/1590323836698-P0R7MGKBBVIAXHC4XTFP/Image+from+iOS+%285%29.jpg",
+  "/1590323825282-ZE13V9V5XXX4HVTTS2O2/Bild+von+iOS.jpg",
+  "/1590323817288-2R7DJ9KV6K9DHYP03N6N/Image+from+iOS+%281%29.jpg",
+  "/1590323818879-8KNI0U5ZCWDQFGRI42S5/Image+from+iOS+%283%29.jpg",
+  "/1590323813570-G6SN4O2V7BNUFNFGAKOH/Image+from+iOS+%284%29.jpg",
+  "/1590323837038-LHQXSM1GNV3OGCAVN1QZ/Image+from+iOS+%282%29.jpg",
+];
+
+const early = [
+  { p: "/1590324122823-07ZDF6EXQ2FPS8SS2ZTP/aaf7d-boxes.jpg", c: "First day of the Churchman lab — lots of boxes" },
+  { p: "/1590324116127-7XJ3NMZZBMXATB9GSR85/2e4cb-sushi.jpg", c: "First holiday party, with lots of sushi and sake" },
+  { p: "/1590324100852-HCYEQ5N35327EAV8OA8S/76388-churchmanlab2012.jpg", c: "First Churchman lab retreat" },
+  { p: "/1590324082424-EYDOMB99OE2YAB5YVO7F/f5854-andreas_welcome.jpg", c: "Celebrating Andreas joining the lab" },
+  { p: "/1590324063680-W6NKXRLICET5JR0GPHEM/7a970-retreatlabphoto.jpg", c: "Second lab retreat" },
+  { p: "/1590324034177-XAWR8K9U42G1RSHF00IT/a14fc-image-asset.png", c: "Heather tells us one of her great ideas" },
+  { p: "/1590324040604-LPEOVABSLE6QAIV4HOZ3/fbe01-harlen-reese-asbmb-symposium.jpg", c: "Kevin wins a poster prize" },
+];
+
+const description =
+  "Lab life in the Churchman Lab: annual retreats, celebrations, thesis defences and boat trips on the Charles, from the lab's first day in 2011 to now.";
+---
+
+<Base title="Lab Life" description={description}>
+  <section class="section" style="padding-bottom:34px">
+    <div class="wrap">
+      <p class="eyebrow">Lab life</p>
+      <h1>Retreats, defences and boats on the Charles</h1>
+      <p class="lede prose">
+        The lab has taken an annual retreat since 2012. Prospective students always ask what a lab is actually like
+        day to day; this is the honest answer, in photographs.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <h2>Recent years</h2>
+      <div class="gallery">
+        {recent.map((g) => (
+          <figure style="margin:0">
+            <img src={img(g.p)} alt={g.c || "Churchman lab"} loading="lazy" />
+            {g.c && <figcaption class="figcap">{g.c}</figcaption>}
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Retreats in Maine</h2>
+      <div class="gallery">
+        {maine.map((p) => <img src={img(p)} alt="Churchman lab retreat in Maine" loading="lazy" />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>The early years</h2>
+      <div class="gallery">
+        {early.map((g) => (
+          <figure style="margin:0">
+            <img src={img(g.p)} alt={g.c} loading="lazy" />
+            <figcaption class="figcap">{g.c}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

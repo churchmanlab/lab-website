@@ -1,0 +1,172 @@
+---
+import Base from "../layouts/Base.astro";
+import site from "../data/site.json";
+import pubs from "../data/publications.json";
+import { u } from "../lib/path.js";
+
+const bold = (s) => s.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+const plainAuthors = (s) => s.replace(/\*\*/g, "").replace(/[*#]/g, "");
+const pubmedSearch = (t) =>
+  `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(`"${t}"`)}`;
+
+const all = pubs.sections.flatMap((s) => s.items.map((i) => ({ ...i, section: s.id })));
+const total = all.length;
+const years = [...new Set(all.map((i) => i.year))].sort((a, b) => b - a);
+const withLinks = all.filter((i) => i.doi || i.pmid).length;
+
+const description = `Complete list of ${total} publications from the Churchman Lab at Harvard Medical School, from single-molecule biophysics through NET-seq, nano-COP, subcellular TimeLapse-seq and mitochondrial gene expression. Searchable and linked to PubMed.`;
+
+// Each paper is emitted as a ScholarlyArticle so assistants and indexes can read the
+// bibliography as data rather than guessing from formatted text.
+const jsonld = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Publications — Churchman Lab",
+    url: `${site.url}/publications`,
+    description,
+    isPartOf: { "@id": `${site.url}/#website` },
+    about: { "@id": `${site.url}/#lab` },
+    hasPart: all.map((p) => ({
+      "@type": "ScholarlyArticle",
+      headline: p.title,
+      name: p.title,
+      datePublished: String(p.year),
+      author: plainAuthors(p.authors)
+        .split(/,\s*/)
+        .filter(Boolean)
+        .map((n) => ({ "@type": "Person", name: n.trim() })),
+      isPartOf: { "@type": "Periodical", name: p.journal },
+      ...(p.doi ? { identifier: `https://doi.org/${p.doi}`, sameAs: `https://doi.org/${p.doi}` } : {}),
+      ...(p.pmid ? { pmid: p.pmid } : {}),
+      publisher: { "@id": `${site.url}/#lab` },
+    })),
+  },
+];
+---
+
+<Base title="Publications" description={description} jsonld={jsonld}>
+  <section class="section" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow">Bibliography</p>
+      <h1>Publications</h1>
+      <p class="lede prose">
+        {total} papers from 2004 to today. Every entry links out to the published record. The full, always-current
+        list also lives in Stirling's <a href={pubs.fullListUrl}>NCBI bibliography</a> and on
+        <a href={site.links.googleScholar}>Google Scholar</a>.
+      </p>
+      <p class="legend">{pubs.legend}</p>
+
+      {withLinks < total && (
+        <p class="legend" style="color:#6b5000">
+          <span class="fill">Prototype note</span> — {total - withLinks} entries currently link to a PubMed title
+          search rather than a canonical DOI. Running <code>npm run sync:pubs</code> once on a machine with internet
+          access resolves every DOI and PMID automatically and rewrites this file.
+        </p>
+      )}
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="wrap">
+      <div class="pub-controls">
+        <input
+          type="search"
+          id="pub-search"
+          placeholder="Search titles, authors, journals, methods…"
+          aria-label="Search publications"
+        />
+        <select id="pub-year" aria-label="Filter by year">
+          <option value="">All years</option>
+          {years.map((y) => <option value={y}>{y}</option>)}
+        </select>
+        <select id="pub-type" aria-label="Filter by type">
+          <option value="">All types</option>
+          <option value="research">Research articles</option>
+          <option value="review">Reviews &amp; commentaries</option>
+          <option value="protocol">Protocols</option>
+          <option value="preprint">Preprints</option>
+        </select>
+        <span class="pub-count" id="pub-count">{total} publications</span>
+      </div>
+
+      {pubs.sections.map((s) => (
+        <div class="pub-group" data-group={s.id}>
+          <h2 class="pub-section-title">{s.title}</h2>
+          <ol class="pubs">
+            {s.items.map((p) => (
+              <li
+                class="pub"
+                data-year={p.year}
+                data-type={p.type}
+                data-text={`${p.title} ${plainAuthors(p.authors)} ${p.journal}`.toLowerCase()}
+              >
+                <div class="yr">{p.year}</div>
+                <div>
+                  <p class="ttl">
+                    {p.title}
+                    {p.highlight && <span class="tag">Key paper</span>}
+                  </p>
+                  <p class="au" set:html={bold(p.authors)} />
+                  <p class="jr">
+                    <em>{p.journal}</em>
+                    {p.volume && <span> {p.volume}</span>}
+                    {p.pages && <span>, {p.pages}</span>}
+                    {p.note && <span> ({p.note})</span>}
+                  </p>
+                  <div class="pub-links">
+                    {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}
+                    {p.pmid && <a href={`https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/`}>PubMed</a>}
+                    {!p.pmid && <a href={pubmedSearch(p.title)}>Find on PubMed</a>}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ))}
+
+      <p id="pub-empty" hidden style="padding:40px 0;color:var(--ink-3)">
+        No publications match that search.
+      </p>
+
+      <p style="margin-top:40px">
+        <a class="btn ghost" href={u("/publications.json")}>Download this bibliography as JSON</a>
+      </p>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const q = document.getElementById("pub-search");
+      const yr = document.getElementById("pub-year");
+      const ty = document.getElementById("pub-type");
+      const count = document.getElementById("pub-count");
+      const empty = document.getElementById("pub-empty");
+      const items = Array.from(document.querySelectorAll(".pub"));
+      const groups = Array.from(document.querySelectorAll(".pub-group"));
+
+      function apply() {
+        const term = q.value.trim().toLowerCase();
+        const year = yr.value;
+        const type = ty.value;
+        let shown = 0;
+        items.forEach((el) => {
+          const ok =
+            (!term || el.dataset.text.includes(term)) &&
+            (!year || el.dataset.year === year) &&
+            (!type || el.dataset.type === type);
+          el.hidden = !ok;
+          if (ok) shown++;
+        });
+        groups.forEach((g) => {
+          g.hidden = !g.querySelector(".pub:not([hidden])");
+        });
+        count.textContent = shown + (shown === 1 ? " publication" : " publications");
+        empty.hidden = shown !== 0;
+      }
+
+      [q, yr, ty].forEach((el) => el.addEventListener("input", apply));
+    })();
+  </script>
+</Base>
