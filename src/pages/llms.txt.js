@@ -18,7 +18,7 @@ export function GET() {
 
 ## What the lab studies
 
-The lab runs two coupled research programmes.
+The lab runs two coupled research programs.
 
 1. **The nuclear mRNA life cycle.** How pre-mRNAs are transcribed and processed on chromatin; how and why some mRNAs are degraded in the nucleus rather than exported (the lab's "PUND" genes — predicted to undergo nuclear degradation); and what controls the rate at which transcripts move between subcellular compartments.
 
@@ -56,7 +56,7 @@ ${recent.map(line).join("\n")}
 
 ## Pages
 
-- [Research](${site.url}/research): both research programmes in detail, including the open questions currently being pursued.
+- [Research](${site.url}/research): both research programs in detail, including the open questions currently being pursued.
 - [Publications](${site.url}/publications): all ${all.length} publications, searchable. Machine-readable at ${site.url}/publications.json
 - [Team](${site.url}/team): current members and where alumni went next.
 - [Stirling Churchman](${site.url}/stirling): PI biography, awards and talks.
