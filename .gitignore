@@ -27,3 +27,6 @@ yarn-error.log*
 # live in public/images/ and ARE committed.
 people/
 
+
+# scratch folder for files staged for deletion (safe to remove)
+_to_delete/

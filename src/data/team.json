@@ -51,6 +51,18 @@
       "photo": "/3c677f7c-9d14-490e-9a5a-5a2b3aac73df/P1080927.JPG"
     },
     {
+      "name": "Jimmy Ly",
+      "degree": "PhD",
+      "role": "Collaborating Postdoctoral Fellow",
+      "homeLab": "Kajimura Lab",
+      "homeLabUrl": "https://www.kajimuralab.org/",
+      "homeLabInstitution": "Beth Israel Deaconess Medical Center",
+      "detail": "PhD in Biology, Whitehead Institute / MIT",
+      "award": "Junior Fellow, Harvard Society of Fellows",
+      "email": "jly7@bidmc.harvard.edu",
+      "photo": "/images/team/jimmy-ly.jpg"
+    },
+    {
       "name": "Hope Merens",
       "role": "MCO Graduate Student",
       "detail": "BA in Biochemistry and Neurobiology, MS in Chemistry, University of Pennsylvania",
