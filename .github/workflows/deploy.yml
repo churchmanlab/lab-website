@@ -45,6 +45,9 @@ jobs:
       - name: Check for broken internal links
         run: npm run check:links
 
+      - name: Check for British spellings
+        run: npm run check:spelling
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

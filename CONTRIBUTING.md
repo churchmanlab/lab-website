@@ -97,11 +97,32 @@ Other commands:
 
 ```bash
 npm run build              # static build into dist/
+npm run check              # astro check + links + spelling, all three
 npm run check:links        # verify no internal link is broken
+npm run check:spelling     # verify no British spellings crept in
 npm run preview:file       # build + bundle everything into one shareable HTML file
 npm run sync:pubs          # pull DOIs and PMIDs from PubMed
 npm run sync:pubs -- --add # ...and append papers PubMed has that the site doesn't
 ```
+
+## American spelling, everywhere
+
+The site uses American spelling: `program`, not `programme`. `localization`, `organization`,
+`analyze`, `visualize`, `synchronized`, `neighboring`, `color`, `fiber`, `center`, `modeled`,
+`signaling`, `license`. This matches the lab's published papers, and mixing the two conventions
+in one page looks careless.
+
+This is enforced, not just requested — `npm run check:spelling` fails the build on any British
+spelling it recognizes, and the deploy workflow runs it on every push and pull request. The word
+list lives in `scripts/check-spelling.mjs`; add to it if you hit one it doesn't know.
+
+Two deliberate exemptions:
+
+- **`src/data/publications.json` is never checked.** Paper titles and journal names are
+  quotations. If a paper was published with "colour" in the title, it stays "colour".
+- **Words that only look British.** `analysis`, `catalysis`, `paralysis` and `organism` are
+  correct American English and the checker knows to leave them alone. Same for proper nouns —
+  if an institution spells itself "Centre", don't let a find-and-replace rename it.
 
 ## House rules
 
@@ -110,4 +131,5 @@ npm run sync:pubs -- --add # ...and append papers PubMed has that the site doesn
 - If CI fails on `check:links`, you almost certainly wrote `href="/team"` instead of
   `href={u("/team")}`. Internal links go through the `u()` helper so they survive being served
   from a subpath. See `src/lib/path.js`.
+- If CI fails on `check:spelling`, the error names the file, line and the American form to use.
 - Photographs of people: ask them first.

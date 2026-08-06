@@ -9,7 +9,7 @@ const fullTitle = path === "/" ? `${site.name} — ${site.institution}` : `${tit
 const canonical = new URL(path, site.url).href;
 
 // Every page carries the lab's identity graph so assistants and search engines
-// resolve "Churchman Lab" to the right organisation and person.
+// resolve "Churchman Lab" to the right organization and person.
 const orgGraph = {
   "@context": "https://schema.org",
   "@type": "ResearchOrganization",

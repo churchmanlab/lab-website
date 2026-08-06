@@ -44,7 +44,7 @@ const jsonld = [
       { "@type": "HowToStep", name: "Install GeneWalk", text: "Run pip install genewalk. Python 3.5 or higher is required; a fresh virtual environment avoids dependency conflicts." },
       { "@type": "HowToStep", name: "Run GeneWalk", text: "genewalk --project myproject --genes /path/to/genes.csv --id_type mgi_id --nproc 4. Expect 6–12 hours single-threaded, 1–2 hours parallelised, with 16–32 GB RAM." },
       { "@type": "HowToStep", name: "Interpret the results", text: "genewalk_results.csv ranks GO annotations per gene by FDR-adjusted p-value. Use global_padj across all genes and gene_padj when focusing on one gene." },
-      { "@type": "HowToStep", name: "Visualise", text: "Open figures/index.html for bar charts per gene and interactive scatterplots identifying regulator and moonlighting genes." },
+      { "@type": "HowToStep", name: "Visualize", text: "Open figures/index.html for bar charts per gene and interactive scatterplots identifying regulator and moonlighting genes." },
     ],
   },
 ];
@@ -129,7 +129,7 @@ genewalk --project qki \
         <p style="color:var(--ink-2)">
           A random-walk representation learning algorithm (<a href="https://arxiv.org/abs/1403.6652">DeepWalk</a>,
           originally built for social networks) converts nodes to vectors. Groups of genes and GO terms that are
-          mechanistically or functionally linked show up most often as neighbouring pairs on the sampled walks, and
+          mechanistically or functionally linked show up most often as neighboring pairs on the sampled walks, and
           end up with similar vectors as measured by cosine similarity.
         </p>
       </div>
@@ -175,10 +175,10 @@ genewalk --project qki \
     </div>
   </section>
 
-  <section class="section" id="visualisation">
+  <section class="section" id="visualization">
     <div class="wrap">
       <div class="section-head">
-        <h2>Visualisation</h2>
+        <h2>Visualization</h2>
         <p class="prose">
           GeneWalk writes figures into <code>&lt;project&gt;/figures</code>; open <code>index.html</code> in a
           browser to see all of them. Per-gene bar charts rank annotations by <code>-log10(global_padj)</code> with
@@ -193,7 +193,7 @@ genewalk --project qki \
         <img src={img("/1611865866060-W2I7935R4XWKE3ZNB92T/Moonlighter_scatterplot.png", 700)} alt="Moonlighter scatterplot" loading="lazy" />
       </div>
       <p style="margin-top:22px;color:var(--ink-2)">
-        To be more selective, re-run only the visualisation stage with a tighter FDR (1–10 minutes):
+        To be more selective, re-run only the visualization stage with a tighter FDR (1–10 minutes):
       </p>
       <pre><code>genewalk --project qki --genes /path/to/genes.csv \
   --id_type mgi_id --stage visual --alpha_fdr 0.075</code></pre>

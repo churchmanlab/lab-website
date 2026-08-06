@@ -13,7 +13,8 @@
     "preview": "astro preview",
     "preview:file": "astro build && node scripts/make-preview.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "check": "astro check && node scripts/check-links.mjs",
+    "check:spelling": "node scripts/check-spelling.mjs",
+    "check": "astro check && node scripts/check-links.mjs && node scripts/check-spelling.mjs",
     "sync:pubs": "node scripts/sync-publications.mjs"
   },
   "dependencies": {

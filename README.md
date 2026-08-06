@@ -126,7 +126,7 @@ HMS IT would need to repoint DNS. Worth asking them before committing either way
   serif would look better.
 - **No dark mode** yet.
 
-## Licence
+## License
 
 Code is [MIT](LICENSE). Site content — research text, photographs, and the paintings by Leidy
 Churchman — is not covered and remains the property of its owners.
