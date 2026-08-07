@@ -8,50 +8,17 @@ const pi = site.contacts[0];
 
 const description =
   "The Churchman Lab at Harvard Medical School is recruiting postdoctoral fellows and rotation students. What we look for, what projects are open, what to put in your email, and what to expect from the process.";
-
-// FAQPage markup means an assistant asked "is the Churchman lab hiring, and how do I apply?"
-// can answer from the actual page rather than paraphrasing.
-const faqs = [
-  {
-    q: "Is the Churchman Lab currently hiring?",
-    a: "Yes. We are recruiting postdoctoral fellows and are taking rotation students from Harvard graduate programs. Research technician and staff openings are posted on the Harvard Medical School careers site when they exist.",
-  },
-  {
-    q: "What background do I need to join the Churchman Lab?",
-    a: "We recruit from biology, chemistry, physics, computer science, mathematics, engineering and related fields. There is no single required background. Roughly half the lab does substantial computational work and roughly half is primarily at the bench; many people do both.",
-  },
-  {
-    q: "How do I apply for a postdoc in the Churchman Lab?",
-    a: "Email Stirling Churchman at churchman@genetics.med.harvard.edu with your CV and a short description of why you want to do a postdoc in this lab. Naming the specific question you want to work on is the most useful thing you can include.",
-  },
-  {
-    q: "How do rotations work?",
-    a: "Current Harvard graduate students interested in rotating should email Stirling directly. Rotation projects are scoped so that there is a real result at the end rather than an unfinished setup.",
-  },
-];
-
-const jsonld = [
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  },
-];
 ---
 
-<Base title="Join Us" description={description} jsonld={jsonld}>
+<Base title="Join Us" description={description}>
   <section class="section" style="padding-bottom:30px">
     <div class="wrap">
       <p class="eyebrow">Join us</p>
       <h1>We are hiring postdocs and taking rotation students</h1>
       <p class="lede prose">
-        The lab is a mix of biologists, chemists, physicists and computational scientists, and it works because of
-        that mix. If you want to build a measurement that does not exist yet and then use it to answer a real
-        question about gene regulation, this is a good place to do it.
+        We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want
+        to answer a question about gene regulation with our novel set of methods (or develop your own method!), we
+        should talk!
       </p>
     </div>
   </section>
@@ -75,41 +42,21 @@ const jsonld = [
         <div class="qa">
           <h3>Postdoctoral fellows</h3>
           <p>
-            We are actively recruiting. Projects are available across both research programs — the nuclear mRNA
-            life cycle and mitonuclear co-regulation — and in method development that cuts across both.
-          </p>
-          <p style="margin-bottom:0">
-            <span class="fill">TO CONFIRM</span> — number of positions and target start window, e.g. "two positions,
-            starting anytime in 2026–27."
+            We are always actively recruiting. Projects are available across both research programs — the nuclear
+            mRNA life cycle and mitonuclear co-regulation — and in method development that cuts across both.
           </p>
         </div>
 
         <div class="qa">
           <h3>Rotation students</h3>
           <p>
-            We take rotation students from Harvard's graduate programs, including BBS, MCO, Chemical Biology and
-            Biological Sciences in Public Health. Email Stirling before the rotation period to talk about what you
-            might work on.
+            We take rotation students from Harvard's graduate programs, including BBS, MCO, Chemical Biology,
+            Systems Biology and Biological Sciences in Public Health. Email Stirling to set up a meeting to discuss
+            potential rotation projects!
           </p>
           <p style="margin-bottom:0">
-            <span class="fill">TO CONFIRM</span> — how many rotation students you can take per block, and whether
-            there is a period when you are not taking any.
-          </p>
-        </div>
-
-        <div class="qa">
-          <h3>Research technicians and staff</h3>
-          <p style="margin-bottom:0">
-            <span class="fill">TO CONFIRM</span> — whether there is a current opening. If yes, link the HMS careers
-            posting here; if not, say so plainly, because candidates otherwise email to ask.
-          </p>
-        </div>
-
-        <div class="qa">
-          <h3>Undergraduates and visiting students</h3>
-          <p style="margin-bottom:0">
-            <span class="fill">TO CONFIRM</span> — whether you take undergraduates, and through which program.
-            This is one of the most common unanswered questions on lab websites.
+            We prefer to have one rotation student at a time, but can make exceptions. We’ll be taking 1-2 students
+            this year.
           </p>
         </div>
       </div>
@@ -121,26 +68,25 @@ const jsonld = [
           <ul style="font-size:.94rem;color:var(--ink-2);padding-left:1.1em">
             <li>your CV</li>
             <li>
-              a short paragraph on why <em>this</em> lab — ideally naming a specific open question from the
-              <a href={u("/research")}>research page</a> that you want to work on
+              a short paragraph on why this lab, ideally naming an open question that would be well addressed in
+              our lab and why it grabs your attention
             </li>
-            <li>names of two or three references</li>
           </ul>
           <p style="font-size:.94rem">
-            You do not need a full research proposal. A clear paragraph beats a polished generic letter.
+            You do not need a full research proposal, just a good starting point for a conversation.
           </p>
           <p style="font-size:.94rem;margin-bottom:0">
-            <strong>Rotation students.</strong> Just email Stirling — no formal application.
+            <strong>Rotation students.</strong> Just email Stirling, no formal application required, but your CV and
+            a brief note on “why us” can help shape our first conversation.
           </p>
         </div>
 
         <div class="box" style="margin-top:24px">
           <h4 style="margin-top:0">What happens after you email</h4>
           <p style="font-size:.94rem;color:var(--ink-2);margin-bottom:0">
-            <span class="fill">TO CONFIRM</span> — your actual process and rough timeline. Something like: Stirling
-            replies within two weeks; promising applicants have a video call; candidates then visit for a day, give
-            a chalk talk, and meet everyone in the lab. Candidates find this enormously reassuring and almost no lab
-            site states it.
+            Stirling replies within two weeks, and if she doesn’t, please email again. Hiring needs change faster
+            than this website is updated, so if there is space, promising applicants have a video call; candidates
+            then visit for a day, give a seminar, and meet everyone in the lab.
           </p>
         </div>
       </div>
@@ -154,24 +100,30 @@ const jsonld = [
       </div>
       <div class="cards">
         <div>
-          <h4>Curiosity that survives contact with a hard measurement</h4>
+          <h4>Curiosity, resourcefulness, and dedication with an open mind</h4>
           <p style="font-size:.94rem;color:var(--ink-2)">
-            Most of our projects begin because the existing method cannot answer the question. People do well here
-            when a broken assay reads as interesting rather than discouraging.
+            Many of our projects begin because the existing method cannot answer the question. Or a foundational
+            question is stalled, and our existing tools can push it forward. Or the data don’t add up, so a new
+            hypothesis emerges.
           </p>
         </div>
         <div>
           <h4>Comfort being the only one in the room with your background</h4>
           <p style="font-size:.94rem;color:var(--ink-2)">
-            A physicist explaining a fitting procedure to a biochemist, and vice versa, is a normal Tuesday. That
-            only works if you are willing to ask the naive question out loud.
+            We all have different backgrounds, so none of us understands everything. We work together to help fill
+            each other's gaps. Some of us come in with tremendous bench experience, and some with none at all. Some
+            of us have never used a programming language and for some of us, it’s all we know. A willingness to
+            learn is all we ask, and we firmly believe that our sum is greater than its parts! And besides, we all
+            love learning new things.
           </p>
         </div>
         <div>
           <h4>Care about other people's science</h4>
           <p style="font-size:.94rem;color:var(--ink-2)">
-            Nearly every paper on our <a href={u("/publications")}>publications page</a> has multiple lab authors. That
-            is not an accident of scale; it is how the lab is meant to run.
+            Nearly every paper on our <a href={u("/publications")}>publications page</a> has multiple lab authors,
+            which is reflected in how we naturally love to jump in and help with projects while leading our own.
+            Everyone has their own project they are leading, but we support the projects around us because it's fun.
+            Science is hard enough; we make the rest fun with strong team spirit and a positive lab environment.
           </p>
         </div>
       </div>
@@ -188,9 +140,7 @@ const jsonld = [
           fellowship applications actively and early.
         </p>
         <p class="prose" style="margin-bottom:0">
-          <span class="fill">TO CONFIRM</span> — whether lab funding is available for postdocs without an external
-          fellowship, and whether you help international candidates with visa sponsorship. Both materially change
-          who applies.
+          However, lab funding is available for postdocs without an external Fellowship.
         </p>
       </div>
       <div>
@@ -220,19 +170,4 @@ const jsonld = [
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap narrow">
-      <h2>Common questions</h2>
-      {faqs.map((f) => (
-        <div class="qa">
-          <h3>{f.q}</h3>
-          <p style="margin-bottom:0;color:var(--ink-2)">{f.a}</p>
-        </div>
-      ))}
-      <div class="btn-row">
-        <a class="btn" href={`mailto:${pi.email}`}>Email Stirling</a>
-        <a class="btn ghost" href={u("/research")}>Read the open questions first</a>
-      </div>
-    </div>
-  </section>
 </Base>
