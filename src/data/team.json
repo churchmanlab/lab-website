@@ -93,26 +93,26 @@
     }
   ],
   "alumniPostdocs": [
-    { "name": "Andreas Mayer, PhD", "now": "Group Leader, Max Planck Institute for Molecular Genetics, Berlin", "href": "https://www.molgen.mpg.de/3670877/Nascent_transcription" },
-    { "name": "Umut Eser, PhD", "now": "Co-Founder & CTO, Weave", "href": "https://www.weave.bio/" },
-    { "name": "Julia di Iulio, PhD", "now": "Director of Bioinformatics, Vir Biotechnology", "href": "https://www.vir.bio/" },
-    { "name": "Andrew Stergachis, MD, PhD", "now": "Associate Professor of Genome Sciences, University of Washington", "href": "https://stergachislab.org/" },
-    { "name": "Iliana Soto, PhD", "now": "Biomedical Program Director, Kaiser University" },
+    { "name": "Andreas Mayer, PhD", "now": "Professor of RNA Biology and Genomics, Medical University of Innsbruck", "href": "https://www.linkedin.com/in/andreasmayer1/" },
+    { "name": "Umut Eser, PhD", "now": "Head of Generative AI, Johnson & Johnson Innovative Medicines", "href": "https://www.linkedin.com/in/umuteser/" },
+    { "name": "Julia di Iulio, PhD", "now": "Senior Director, Vir Biotechnology", "href": "https://www.vir.bio/" },
+    { "name": "Andrew Stergachis, MD, PhD", "now": "Associate Professor of Medicine and Genome Sciences, University of Washington", "href": "https://stergachislab.org/" },
+    { "name": "Iliana Soto, PhD", "now": "Biomedical Sciences Program Director, Keiser University, Miami Campus" },
     { "name": "Danya Martell-Smart, PhD", "now": "Patent Agent, Wilson Sonsini" },
     { "name": "Karine Choquet, PhD", "now": "Assistant Professor, Université de Sherbrooke", "href": "https://www.choquetlab.com/" },
     { "name": "Robert Ietswaart, PhD", "now": "Co-Founder and CSO, Cellforma", "href": "https://www.cellforma.com/" },
-    { "name": "Nick Kramer, PhD", "now": "Senior Scientist, Scribe Therapeutics", "href": "https://www.scribetx.com/" },
+    { "name": "Nick Kramer, PhD", "now": "Senior Scientist, Illumina", "href": "https://www.linkedin.com/in/nicholas-kramer-69a123183/" },
     { "name": "R. Stefan Isaac, PhD", "now": "Assistant Professor of Biochemistry and Cell Biology, Boston University", "href": "https://www.bumc.bu.edu/biochemcellbio/profiles/stefan-isaac/" },
     { "name": "Erik McShane, PhD", "now": "Senior Scientist, Flagship Labs 103, Flagship Pioneering" },
     { "name": "Katja Hansen, PhD", "now": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau" }
   ],
   "alumniStudents": [
-    { "name": "Kevin Harlen, PhD", "now": "AI & Data Manager, Deloitte Consulting" },
-    { "name": "Heather Landry Drexler, PhD", "now": "Director of Strategy, Sail Biomedicines" },
-    { "name": "Blake Tye, PhD", "now": "Research Associate, Wellington Management" },
+    { "name": "Kevin Harlen, PhD", "now": "Associate VP, AI & Data Solutions, Deloitte" },
+    { "name": "Heather Landry Drexler, PhD", "now": "R&D Strategy & Performance Excellence Director, Amgen" },
+    { "name": "Blake Tye, PhD", "now": "Global Industry Analyst, Biopharma Equity Research, Wellington Management" },
     { "name": "Kate Lachance, PhD", "now": "Consultant, McKinsey & Company" },
-    { "name": "Aaron Aker, PhD", "now": "Scientist, Molecular Loop" },
-    { "name": "Brendan Smalec, PhD", "now": "Consultant, Bain & Company" },
+    { "name": "Aaron Aker, PhD", "now": "Scientist, Integrated DNA Technologies" },
+    { "name": "Brendan Smalec, PhD", "now": "Senior Manager, Bain & Company" },
     { "name": "Tommy Tullius, PhD", "now": "Postdoctoral Fellow, Levine Lab, Princeton University" },
     { "name": "Jake Bridgers, PhD" }
   ]
