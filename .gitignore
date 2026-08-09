@@ -27,6 +27,13 @@ yarn-error.log*
 # live in public/images/ and ARE committed.
 people/
 
+# Source PDFs staged for `npm run pubs:images`. Same idea as people/ — these are the
+# heavy originals; the rendered thumbnails in public/images/pubs/ ARE committed.
+/pdfs/
+
+# Local exports from Photos used to build the web-sized lab-life albums.
+.photo-import/
+
 
 # scratch folder for files staged for deletion (safe to remove)
 _to_delete/

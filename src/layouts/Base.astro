@@ -6,7 +6,9 @@ import { u } from "../lib/path.js";
 const { title, description, jsonld = [], image } = Astro.props;
 const path = Astro.url.pathname.replace(/\/$/, "") || "/";
 const fullTitle = path === "/" ? `${site.name} — ${site.institution}` : `${title} — ${site.name}`;
-const canonical = new URL(path, site.url).href;
+const publicSite = Astro.site ?? new URL(site.url);
+const canonical = new URL(path, publicSite).href;
+const socialImage = new URL(u(image || "/og.png"), publicSite).href;
 
 // Every page carries the lab's identity graph so assistants and search engines
 // resolve "Churchman Lab" to the right organization and person.
@@ -46,14 +48,22 @@ const blocks = [orgGraph, ...(Array.isArray(jsonld) ? jsonld : [jsonld])].filter
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href={u("/favicon.png")} />
     <link rel="canonical" href={canonical} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={site.name} />
-    {image && <meta property="og:image" content={image} />}
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Churchman Lab over Synchronized mitochondrial and cytosolic translation programs, a painting by Leidy Churchman" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content="Churchman Lab over Synchronized mitochondrial and cytosolic translation programs, a painting by Leidy Churchman" />
     <link rel="alternate" type="text/plain" href={u("/llms.txt")} title="Plain-text summary for AI assistants" />
     {blocks.map((b) => (
       <script type="application/ld+json" set:html={JSON.stringify(b)} />
@@ -102,20 +112,9 @@ const blocks = [orgGraph, ...(Array.isArray(jsonld) ? jsonld : [jsonld])].filter
               <li><a href={u("/fun")}>Lab life</a></li>
             </ul>
           </div>
-          <div>
-            <h4>Elsewhere</h4>
-            <ul>
-              <li><a href={site.links.github}>GitHub</a></li>
-              <li><a href={site.links.googleScholar}>Google Scholar</a></li>
-              <li><a href={site.links.ncbiBibliography}>NCBI bibliography</a></li>
-              <li><a href={site.links.x}>@fiddle</a></li>
-              <li><a href={u("/join")}>Join the lab</a></li>
-            </ul>
-          </div>
         </div>
         <div class="colophon">
           <span>Paintings by <a href="https://matthewmarks.com/artists/leidy-churchman">Leidy Churchman</a>.</span>
-          <span>Prototype rebuild — <a href={u("/llms.txt")}>llms.txt</a></span>
         </div>
       </div>
     </footer>

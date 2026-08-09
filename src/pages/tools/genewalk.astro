@@ -3,7 +3,7 @@ import Base from "../../layouts/Base.astro";
 import site from "../../data/site.json";
 import { u } from "../../lib/path.js";
 
-const img = (p, w = 1000) => `${site.cdn}${p}?format=${w}w`;
+const img = (p) => u(p);
 const S = "https://churchman.med.harvard.edu/s";
 const GH = "https://github.com/churchmanlab/genewalk";
 const PAPER = "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02264-8";
@@ -71,7 +71,7 @@ const jsonld = [
 
   <section class="section" style="padding-top:0">
     <div class="wrap">
-      <img src={img("/1595269401783-567RLW9VUUN3HAHE20K4/Fig1_schema7_websiteA-01.jpg", 1500)} alt="GeneWalk overview schematic" loading="lazy" style="border-radius:3px" />
+      <img src={img("/images/tools/genewalk-hero.webp")} alt="GeneWalk overview schematic" loading="lazy" style="border-radius:3px" />
     </div>
   </section>
 
@@ -146,10 +146,10 @@ genewalk --project qki \
       </div>
 
       <div class="gallery" style="margin-top:30px">
-        <img src={img("/1590345454385-GZ01AH74EONU0PJTWGLM/7bd2b-fig1_schema7_website2-01.png", 700)} alt="GeneWalk network assembly" loading="lazy" />
-        <img src={img("/1590345513974-SLNUATX047XWF5P2PT91/1e76a-qki_pc_network_circ_web2-01.png", 700)} alt="GeneWalk subnetwork" loading="lazy" />
-        <img src={img("/1590345614157-HZDBDJZ4PS4RC8CEQ9WE/19ce9-fig1_schema7_website3-01.png", 700)} alt="Representation learning" loading="lazy" />
-        <img src={img("/1590345554492-Z61QPI7Y8T2X5SWTBMQB/5b65b-fig1_schema7_website4-01-01.png", 700)} alt="Significance testing" loading="lazy" />
+        <img src={img("/images/tools/network-assembly.png")} alt="GeneWalk network assembly" loading="lazy" />
+        <img src={img("/images/tools/qki-network.png")} alt="GeneWalk subnetwork" loading="lazy" />
+        <img src={img("/images/tools/representation-learning.png")} alt="Representation learning" loading="lazy" />
+        <img src={img("/images/tools/significance-testing.png")} alt="Significance testing" loading="lazy" />
       </div>
     </div>
   </section>
@@ -170,7 +170,7 @@ genewalk --project qki \
         </p>
       </div>
       <div>
-        <img src={img("/1611859593820-W43NS70WA5QFR33MJK4U/QKI_output_file_screenshot2.png", 900)} alt="Example GeneWalk output file" loading="lazy" style="border-radius:3px" />
+        <img src={img("/images/tools/qki-output.webp")} alt="Example GeneWalk output file" loading="lazy" style="border-radius:3px" />
       </div>
     </div>
   </section>
@@ -188,9 +188,9 @@ genewalk --project qki \
         </p>
       </div>
       <div class="gallery">
-        <img src={img("/1611863575957-C9HERTSGSSE0YAM2SBD2/barplot_PLP1_97623_x_mlog10global_padj_y_GO.png", 700)} alt="Per-gene GO relevance bar chart" loading="lazy" />
-        <img src={img("/1611864018524-DPS01M1DYCVWGC02YBQP/Regulator_scatterplot.jpg", 700)} alt="Regulator scatterplot" loading="lazy" />
-        <img src={img("/1611865866060-W2I7935R4XWKE3ZNB92T/Moonlighter_scatterplot.png", 700)} alt="Moonlighter scatterplot" loading="lazy" />
+        <img src={img("/images/tools/go-relevance-barplot.webp")} alt="Per-gene GO relevance bar chart" loading="lazy" />
+        <img src={img("/images/tools/regulator-scatterplot.webp")} alt="Regulator scatterplot" loading="lazy" />
+        <img src={img("/images/tools/moonlighter-scatterplot.webp")} alt="Moonlighter scatterplot" loading="lazy" />
       </div>
       <p style="margin-top:22px;color:var(--ink-2)">
         To be more selective, re-run only the visualization stage with a tighter FDR (1–10 minutes):

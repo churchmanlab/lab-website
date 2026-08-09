@@ -18,13 +18,12 @@ Edit `src/data/team.json`. Copy an existing entry in `"current"` and fill it in:
   "detail": "PhD in Something, Some University",
   "award": "Optional fellowship name",
   "email": "your_name@hms.harvard.edu",
-  "photo": "/1234567890-ABCDEFG/photo.JPG"
+  "photo": "/images/team/your-name.jpg"
 }
 ```
 
-`photo` is the path after the CDN prefix. Until the images are migrated off Squarespace, get it
-by right-clicking a photo on the current site, copying the image address, and taking everything
-after `.../5ec5b23719ae3633499776a3`.
+Export the photo at roughly 1200px on its longest edge and place it in `public/images/team/`.
+The `photo` value is its site path, beginning with `/images/team/`.
 
 Leave `degree`, `detail`, `award` and `email` out entirely if they don't apply — don't put empty
 strings.
@@ -64,9 +63,32 @@ To add one by hand, edit `src/data/publications.json`:
 ```
 
 `type` is `research`, `review`, `protocol` or `preprint`. Leave `doi` and `pmid` as `null` —
-`npm run sync:pubs` fills them in. Add `"highlight": true` to give it a "Key paper" tag and
-include it in `llms.txt`. `*` marks equal authorship and `#` co-corresponding, exactly as on the
-old site; put them immediately after the closing asterisks, like `**Ietswaart R**#*`.
+`npm run sync:pubs` fills them in. `*` marks equal authorship and `#` co-corresponding, exactly
+as on the old site; put them immediately after the closing asterisks, like `**Ietswaart R**#*`.
+
+### Publication images
+
+Entries can carry a thumbnail, shown at the right of the row. Rows without one are just text —
+there is no placeholder, so images can accumulate over time.
+
+```bash
+npm run pubs:images -- --dry-run  # report what is fetchable
+npm run pubs:images               # fetch, render and record
+```
+
+Images come from three places, in priority order:
+
+1. **A journal cover.** Set `"image": "/images/pubs/cover-….jpg"` and `"imageKind": "cover"` by
+   hand. A cover the lab earned beats a page of text, so it always wins.
+2. **A PDF you stage yourself** at `pdfs/<slug>.pdf` — the dry run prints the exact filename to
+   use. This is the route for bioRxiv preprints: bioRxiv sits behind Cloudflare and answers
+   scripted requests with 429, so save the PDF from your browser and drop it in.
+3. **Europe PMC**, automatically, for anything with a free publisher PDF.
+
+NIH/HHS Public Access author manuscripts are detected and skipped — their first page is a PMC
+cover sheet rather than the published article. Those entries get `"noImage"` with the reason,
+which also stops the script retrying them. Set `"noImage": true` by hand on anything else whose
+thumbnail you don't want.
 
 ### Wording on a page
 
@@ -76,10 +98,9 @@ top unless you mean to.
 
 ### Recruitment status
 
-`src/pages/join.astro`. Anything still marked `TO CONFIRM` in a yellow highlight needs a real
-answer; search the file for that phrase. The `faqs` array near the top of that file feeds both
-the visible questions at the bottom of the page **and** the structured data that AI assistants
-read, so keep the answers accurate — an assistant will repeat them verbatim.
+Recruitment details live in `src/pages/join.astro` and the summary in `src/pages/llms.txt.js`.
+Review both whenever hiring status, rotation availability, funding or the application process
+changes so visitors and AI assistants receive the same answer.
 
 ### Address, emails, navigation
 
@@ -103,6 +124,7 @@ npm run check:spelling     # verify no British spellings crept in
 npm run preview:file       # build + bundle everything into one shareable HTML file
 npm run sync:pubs          # pull DOIs and PMIDs from PubMed
 npm run sync:pubs -- --add # ...and append papers PubMed has that the site doesn't
+npm run pubs:images        # render publication thumbnails (needs `brew install poppler`)
 ```
 
 ## American spelling, everywhere

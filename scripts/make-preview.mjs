@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Bundles the built site into ONE self-contained preview.html that works from a
- * file:// URL — so the prototype can be opened by double-clicking, with no server.
+ * file:// URL — so the site can be reviewed by double-clicking, with no server.
  * This is a viewing aid only; the real site is the dist/ directory.
  */
 import { readFile, writeFile, readdir } from "node:fs/promises";
@@ -70,24 +70,15 @@ const doc = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Churchman Lab — prototype rebuild</title>
+<title>Churchman Lab</title>
 <style>
 ${await css()}
-.pv-banner{background:#17161a;color:#f2efe9;font-size:.82rem;padding:9px 0}
-.pv-banner .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-.pv-banner b{color:#fff}
-.pv-banner a{color:#f0b8bf}
 .pv-page{display:none}
 .pv-page.on{display:block}
 .site-nav a.on{color:var(--ink);border-bottom-color:var(--accent)}
 </style>
 </head>
 <body>
-<div class="pv-banner"><div class="wrap">
-  <b>Prototype</b>
-  <span>Rebuild of churchman.med.harvard.edu as a code-based site. Images load from the current Squarespace CDN. Nothing here is live.</span>
-</div></div>
-
 <header class="site-header"><div class="wrap">
   <a class="brand" href="#/">Churchman Lab</a>
   <nav class="site-nav" aria-label="Primary">${nav}</nav>

@@ -15,7 +15,7 @@
   },
   "contacts": [
     { "role": "Principal Investigator", "name": "L. Stirling Churchman", "email": "churchman@genetics.med.harvard.edu" },
-    { "role": "Lab Manager", "name": "Mike Kourkoulakos", "email": "mike_kourkoulakos@hms.harvard.edu" },
+    { "role": "Lab Manager", "name": "Maddie Flanagan", "email": "madison_flanagan@hms.harvard.edu" },
     { "role": "Administrative Assistant", "name": "Kimberly Potter", "email": "churchman_admin@hms.harvard.edu" }
   ],
   "links": {
@@ -23,15 +23,15 @@
     "ncbiBibliography": "https://www.ncbi.nlm.nih.gov/myncbi/lee.churchman.1/bibliography/public/",
     "github": "https://github.com/churchmanlab",
     "x": "https://x.com/fiddle",
-    "cv": "https://churchman.med.harvard.edu/s/CV_Churchman_April_2025_public.pdf"
+    "cv": "/documents/CV_Churchman_April_2025_public.pdf"
   },
   "nav": [
     { "label": "Research", "href": "/research" },
     { "label": "Team", "href": "/team" },
     { "label": "Publications", "href": "/publications" },
     { "label": "Tools & Protocols", "href": "/tools" },
+    { "label": "Lab Life", "href": "/fun" },
     { "label": "Join Us", "href": "/join" },
     { "label": "Contact", "href": "/contact" }
-  ],
-  "cdn": "https://images.squarespace-cdn.com/content/v1/5ec5b23719ae3633499776a3"
+  ]
 }

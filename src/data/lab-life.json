@@ -1,0 +1,1754 @@
+{
+  "albums": [
+    {
+      "id": "2025-retreat",
+      "title": "2025 Lab Retreat",
+      "date": "September 29–30, 2025",
+      "location": "The farm, Alstead, New Hampshire",
+      "description": "Two days of chalk talks, cooking, games, hiking and early autumn color.",
+      "cover": [
+        {
+          "file": "IMG_2300",
+          "alt": "Churchman Lab group portrait on the farmhouse steps"
+        },
+        {
+          "file": "IMG_4588",
+          "alt": "A lab member giving a chalk talk beside the farmhouse chalkboard"
+        },
+        {
+          "file": "IMG_4591",
+          "alt": "Lab members riding bikes on the hillside"
+        },
+        {
+          "file": "IMG_0501",
+          "alt": "The lab gathered around the farmhouse table for dinner"
+        },
+        {
+          "file": "IMG_0506",
+          "alt": "The farmhouse surrounded by early autumn trees"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "IMG_2264",
+            "IMG_2265",
+            "IMG_2266",
+            "IMG_2267",
+            "IMG_2268",
+            "IMG_2269",
+            "IMG_2270",
+            "IMG_2271",
+            "IMG_2272",
+            "IMG_2273",
+            "IMG_2274",
+            "IMG_2275",
+            "IMG_2276",
+            "IMG_2277",
+            "IMG_2278",
+            "IMG_2279",
+            "IMG_2280",
+            "IMG_2281",
+            "IMG_2282",
+            "IMG_2283",
+            "IMG_2284",
+            "IMG_2285",
+            "IMG_2286",
+            "IMG_2287",
+            "IMG_2288",
+            "IMG_2289",
+            "IMG_2290",
+            "IMG_2291",
+            "IMG_2292",
+            "IMG_2293",
+            "IMG_2294",
+            "IMG_2295",
+            "IMG_2296",
+            "IMG_2297",
+            "IMG_2298",
+            "IMG_2299",
+            "IMG_2300",
+            "IMG_2301",
+            "IMG_2302",
+            "IMG_2303",
+            "IMG_2304",
+            "IMG_2305",
+            "IMG_2306",
+            "IMG_2307",
+            "IMG_2308",
+            "IMG_2309",
+            "IMG_2310",
+            "IMG_2311"
+          ]
+        },
+        {
+          "credit": "Claire Nuessmeier",
+          "files": [
+            "IMG_0617",
+            "IMG_0621",
+            "IMG_0622",
+            "IMG_0626",
+            "IMG_0629",
+            "IMG_0630",
+            "IMG_0631"
+          ]
+        },
+        {
+          "credit": "Hope Merens",
+          "files": [
+            "IMG_3165",
+            "IMG_3166",
+            "IMG_3167",
+            "IMG_3168",
+            "IMG_3169",
+            "IMG_3170",
+            "IMG_3173",
+            "IMG_3174",
+            "IMG_3176",
+            "IMG_3177",
+            "IMG_3178",
+            "IMG_3179"
+          ]
+        },
+        {
+          "credit": "Lisa Hansen",
+          "files": [
+            "IMG_4576",
+            "IMG_4584",
+            "IMG_4586",
+            "IMG_4587",
+            "IMG_4588",
+            "IMG_4591",
+            "IMG_4594",
+            "IMG_4597",
+            "IMG_4598",
+            "IMG_4601",
+            "IMG_4607",
+            "IMG_4608",
+            "IMG_4609"
+          ]
+        },
+        {
+          "credit": "Ines Patop",
+          "files": [
+            "IMG_0501",
+            "IMG_0502",
+            "IMG_0503",
+            "IMG_0504",
+            "IMG_0505",
+            "IMG_0506",
+            "IMG_0507"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2024-retreat",
+      "title": "2024 Lab Retreat",
+      "date": "September 16–18, 2024",
+      "location": "The farm, Alstead, New Hampshire",
+      "description": "Chalk talks, shared meals, orchard apples, hiking and a late-summer group portrait.",
+      "cover": [
+        {
+          "file": "001",
+          "alt": "Churchman Lab group portrait on the farmhouse steps"
+        },
+        {
+          "file": "008",
+          "alt": "Lab members listening to a chalk talk in the farmhouse"
+        },
+        {
+          "file": "014",
+          "alt": "A shared retreat dinner roasting in the farmhouse kitchen"
+        },
+        {
+          "file": "031",
+          "alt": "Four lab members smiling together during a hike"
+        },
+        {
+          "file": "041",
+          "alt": "A woodland pond near the retreat farmhouse"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005",
+            "006",
+            "007",
+            "008",
+            "009"
+          ]
+        },
+        {
+          "credit": "Hope Merens",
+          "files": [
+            "010",
+            "011",
+            "012",
+            "013",
+            "014",
+            "015",
+            "016",
+            "017",
+            "018",
+            "019",
+            "020",
+            "021",
+            "022",
+            "023"
+          ]
+        },
+        {
+          "credit": "Lisa Hansen",
+          "files": [
+            "024",
+            "025",
+            "026",
+            "027",
+            "028"
+          ]
+        },
+        {
+          "credit": "Mike Kourkoulakos",
+          "files": [
+            "029",
+            "030"
+          ]
+        },
+        {
+          "credit": "Ana-Maria Raicu",
+          "files": [
+            "031",
+            "032",
+            "033",
+            "034",
+            "035",
+            "036",
+            "037",
+            "038",
+            "039",
+            "040",
+            "041",
+            "042",
+            "043",
+            "044"
+          ]
+        },
+        {
+          "credit": "Mary Couvillion",
+          "files": [
+            "045",
+            "046"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2023-retreat",
+      "title": "2023 Lab Retreat",
+      "date": "August 14–16, 2023",
+      "location": "The farm, Alstead, New Hampshire",
+      "description": "Summer hiking, group portraits, farmhouse cooking and an impromptu dance on the lawn.",
+      "cover": [
+        {
+          "file": "002",
+          "alt": "Churchman Lab group beside a woodland pond"
+        },
+        {
+          "file": "006",
+          "alt": "Lab members gathered at a mountain overlook"
+        },
+        {
+          "file": "009",
+          "alt": "Churchman Lab group portrait on the farmhouse steps"
+        },
+        {
+          "file": "027",
+          "alt": "A shakshuka-style retreat meal in a cast-iron pan"
+        },
+        {
+          "file": "029",
+          "alt": "Two lab members dancing on the farmhouse lawn"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Robert Ietswaart",
+          "files": [
+            "001",
+            "002",
+            "003",
+            "004"
+          ]
+        },
+        {
+          "credit": "Gyan Prakash",
+          "files": [
+            "005"
+          ]
+        },
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "006",
+            "007",
+            "008",
+            "009",
+            "010",
+            "011",
+            "012",
+            "013",
+            "014",
+            "015",
+            "016",
+            "017",
+            "018",
+            "019",
+            "020",
+            "021",
+            "022",
+            "023",
+            "024",
+            "025"
+          ]
+        },
+        {
+          "credit": "Ryan Acbay",
+          "files": [
+            "026",
+            "027",
+            "028",
+            "029"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2022-retreat",
+      "title": "2022 Lab Retreat",
+      "date": "October 7–9, 2022",
+      "location": "East Alstead, New Hampshire",
+      "description": "Autumn color, chalk talks, communal cooking, drone portraits and hikes around the farm.",
+      "cover": [
+        {
+          "file": "006",
+          "alt": "Churchman Lab group looking up at a drone camera"
+        },
+        {
+          "file": "017",
+          "alt": "A lab member presenting beside the retreat chalkboard"
+        },
+        {
+          "file": "026",
+          "alt": "Lab members cooking together in the farmhouse kitchen"
+        },
+        {
+          "file": "053",
+          "alt": "Five lab members taking a selfie beside an autumn pond"
+        },
+        {
+          "file": "056",
+          "alt": "An autumn stream surrounded by bright foliage"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "002",
+            "003",
+            "004",
+            "005",
+            "006",
+            "007",
+            "008",
+            "009",
+            "010",
+            "011",
+            "012",
+            "013",
+            "014",
+            "015",
+            "016",
+            "017",
+            "018",
+            "019",
+            "020",
+            "021",
+            "022",
+            "023",
+            "024",
+            "025",
+            "026",
+            "027",
+            "028",
+            "029",
+            "030",
+            "031"
+          ]
+        },
+        {
+          "credit": "Jake Bridgers",
+          "files": [
+            "032",
+            "033",
+            "034",
+            "035"
+          ]
+        },
+        {
+          "credit": "Hope Merens",
+          "files": [
+            "036",
+            "037",
+            "038",
+            "039",
+            "040",
+            "041",
+            "042",
+            "043",
+            "044",
+            "045",
+            "046",
+            "047",
+            "048",
+            "049",
+            "050",
+            "051",
+            "052"
+          ]
+        },
+        {
+          "credit": "Gyan Prakash",
+          "files": [
+            "053",
+            "054",
+            "055",
+            "056",
+            "057",
+            "058",
+            "059",
+            "060",
+            "061",
+            "062",
+            "063"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2021-retreat",
+      "title": "2021 Lab Retreat",
+      "date": "September 2021",
+      "location": "Boston area",
+      "description": "An outdoor local retreat with backyard chalk talks, a farm visit, alpacas and plenty of dog cameos.",
+      "cover": [
+        {
+          "file": "002",
+          "alt": "Churchman Lab gathered for an outdoor chalk talk"
+        },
+        {
+          "file": "010",
+          "alt": "A dog meeting an alpaca during the retreat farm visit"
+        },
+        {
+          "file": "014",
+          "alt": "A pond and green woodland under a blue September sky"
+        },
+        {
+          "file": "007",
+          "alt": "The outdoor chalkboard and chairs ready for a retreat session"
+        },
+        {
+          "file": "008",
+          "alt": "A lab member greeting an alpaca at a local farm"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Dan Davidi",
+          "files": [
+            "001",
+            "002"
+          ]
+        },
+        {
+          "credit": "Hope Merens",
+          "files": [
+            "003",
+            "004",
+            "005",
+            "006",
+            "007"
+          ]
+        },
+        {
+          "credit": "Brendan Smalec",
+          "files": [
+            "008",
+            "009"
+          ]
+        },
+        {
+          "credit": "Robert Ietswaart",
+          "files": [
+            "010",
+            "011",
+            "012",
+            "013",
+            "014",
+            "015",
+            "016"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2019-retreat",
+      "title": "2019 Lab Retreat",
+      "date": "October 9–11, 2019",
+      "location": "Maine coast",
+      "description": "Kayaking, chalk talks, shared cooking and a cold-weather group portrait on the shore.",
+      "cover": [
+        {
+          "file": "photo-05",
+          "alt": "Churchman Lab group portrait on a rocky Maine beach beside the kayaks"
+        },
+        {
+          "file": "photo-01",
+          "alt": "Lab members gathered around a long table during the retreat"
+        },
+        {
+          "file": "photo-08",
+          "alt": "Four lab members preparing a shared retreat meal"
+        },
+        {
+          "file": "photo-12",
+          "alt": "A lab member leading a chalk talk in the retreat house"
+        },
+        {
+          "file": "photo-14",
+          "alt": "Colorful kayaks lined up along the Maine shoreline"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-01",
+            "photo-02",
+            "photo-03",
+            "photo-04",
+            "photo-05",
+            "photo-06",
+            "photo-07",
+            "photo-08",
+            "photo-09",
+            "photo-10",
+            "photo-11",
+            "photo-12",
+            "photo-13",
+            "photo-14",
+            "photo-15",
+            "photo-16",
+            "photo-17",
+            "photo-18",
+            "photo-19",
+            "photo-20",
+            "photo-21",
+            "photo-22",
+            "photo-23",
+            "photo-24",
+            "photo-25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2018-retreat",
+      "title": "2018 Lab Retreat",
+      "date": "October 7–9, 2018",
+      "location": "Maine",
+      "description": "A summit hike, big group selfies, shared meals and an evening back at the house.",
+      "cover": [
+        {
+          "file": "photo-06",
+          "alt": "Churchman Lab group portrait at a mountain overlook"
+        },
+        {
+          "file": "photo-01",
+          "alt": "Lab members crowding together for a retreat selfie"
+        },
+        {
+          "file": "photo-03",
+          "alt": "The lab gathered around the dinner table"
+        },
+        {
+          "file": "photo-08",
+          "alt": "View from the summit during the retreat hike"
+        },
+        {
+          "file": "photo-10",
+          "alt": "Lab members celebrating together at the retreat house"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-01",
+            "photo-02",
+            "photo-03",
+            "photo-04",
+            "photo-05",
+            "photo-06",
+            "photo-07",
+            "photo-08",
+            "photo-09",
+            "photo-10",
+            "photo-11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2017-retreat",
+      "title": "2017 Lab Retreat",
+      "date": "October 5–7, 2017",
+      "location": "Maine coast",
+      "description": "A boat trip, rocky shoreline walks, lobster dinner and plenty of sea air.",
+      "cover": [
+        {
+          "file": "photo-02",
+          "alt": "Churchman Lab gathered together on a boat"
+        },
+        {
+          "file": "photo-12",
+          "alt": "The lab sharing a lobster dinner"
+        },
+        {
+          "file": "photo-08",
+          "alt": "Lab members exploring the rocky Maine shoreline"
+        },
+        {
+          "file": "photo-01",
+          "alt": "A Maine harbor seen during the retreat"
+        },
+        {
+          "file": "photo-14",
+          "alt": "A lab member holding up a freshly caught lobster"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-01",
+            "photo-02",
+            "photo-03",
+            "photo-04",
+            "photo-05",
+            "photo-06",
+            "photo-07",
+            "photo-08",
+            "photo-09",
+            "photo-10",
+            "photo-11",
+            "photo-12",
+            "photo-13",
+            "photo-14",
+            "photo-15",
+            "photo-16",
+            "photo-17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2016-retreat",
+      "title": "2016 Lab Retreat",
+      "date": "October 13–15, 2016",
+      "location": "West Tremont, Maine",
+      "description": "Chalk talks, a lobster dinner, a fire outside the retreat house and hikes around Jordan Pond and Bubble Rock.",
+      "cover": [
+        {
+          "file": "photo-04",
+          "alt": "Churchman Lab members lined up together on a dock in West Tremont"
+        },
+        {
+          "file": "photo-03",
+          "alt": "Lab members sharing a lobster dinner at the retreat house"
+        },
+        {
+          "file": "photo-01",
+          "alt": "Churchman Lab standing beside Jordan Pond during the retreat hike"
+        },
+        {
+          "file": "photo-06",
+          "alt": "Lab members gathered around an evening fire"
+        },
+        {
+          "file": "photo-07",
+          "alt": "Chalk talks and notes inside the 2016 retreat house"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-01",
+            "photo-02",
+            "photo-03",
+            "photo-04",
+            "photo-05",
+            "photo-06",
+            "photo-07"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2015-retreat",
+      "title": "2015 Lab Retreat",
+      "date": "September 20–22, 2015",
+      "location": "Bernard, Marshall Brook and Tremont, Maine",
+      "description": "The fourth annual retreat combined chalk talks at the house, time by the harbor, games on the lawn and a long series of group portraits on the dock.",
+      "cover": [
+        {
+          "file": "photo-012",
+          "alt": "Churchman Lab group portrait on a dock in Bernard, Maine"
+        },
+        {
+          "file": "photo-023",
+          "alt": "Lab members playing a lawn game outside the 2015 retreat house"
+        },
+        {
+          "file": "photo-035",
+          "alt": "A lab member giving a chalk talk during the retreat"
+        },
+        {
+          "file": "photo-039",
+          "alt": "The harbor at dusk near the retreat house"
+        },
+        {
+          "file": "photo-042",
+          "alt": "Lab members gathered around the dinner table"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013",
+            "photo-014",
+            "photo-015",
+            "photo-016",
+            "photo-017",
+            "photo-018",
+            "photo-019",
+            "photo-020",
+            "photo-021",
+            "photo-022",
+            "photo-023",
+            "photo-024",
+            "photo-025",
+            "photo-026",
+            "photo-027",
+            "photo-028",
+            "photo-029",
+            "photo-030",
+            "photo-031",
+            "photo-032",
+            "photo-033",
+            "photo-034",
+            "photo-035",
+            "photo-036",
+            "photo-037",
+            "photo-038",
+            "photo-039",
+            "photo-040",
+            "photo-041",
+            "photo-042",
+            "photo-043",
+            "photo-044",
+            "photo-045",
+            "photo-046",
+            "photo-047"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2014-retreat",
+      "title": "2014 Lab Retreat",
+      "date": "October 24–26, 2014",
+      "location": "West Tremont and Acadia National Park, Maine",
+      "description": "The third annual retreat brought chalk talks, shared cooking and hikes around Jordan Pond, Bubble Rock and western Mount Desert Island.",
+      "cover": [
+        {
+          "file": "photo-097",
+          "alt": "Churchman Lab group portrait outside the retreat house on the Maine coast"
+        },
+        {
+          "file": "photo-026",
+          "alt": "Lab members gathered on a rocky summit during the retreat hike"
+        },
+        {
+          "file": "photo-044",
+          "alt": "The lab sharing a lobster dinner at the retreat house"
+        },
+        {
+          "file": "photo-036",
+          "alt": "Jordan Pond and the Bubbles in Acadia National Park"
+        },
+        {
+          "file": "photo-084",
+          "alt": "Lab members scrambling over rocks on an Acadia hike"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013",
+            "photo-014",
+            "photo-015",
+            "photo-016",
+            "photo-017",
+            "photo-018",
+            "photo-019",
+            "photo-020",
+            "photo-021",
+            "photo-022",
+            "photo-023",
+            "photo-024",
+            "photo-025",
+            "photo-026",
+            "photo-027",
+            "photo-028",
+            "photo-029",
+            "photo-030",
+            "photo-031",
+            "photo-032",
+            "photo-033",
+            "photo-034",
+            "photo-035",
+            "photo-036",
+            "photo-037",
+            "photo-038",
+            "photo-039",
+            "photo-040",
+            "photo-041",
+            "photo-042",
+            "photo-043",
+            "photo-044",
+            "photo-045",
+            "photo-046",
+            "photo-047",
+            "photo-048",
+            "photo-049",
+            "photo-050",
+            "photo-051",
+            "photo-052",
+            "photo-053",
+            "photo-054",
+            "photo-055",
+            "photo-056",
+            "photo-057",
+            "photo-058",
+            "photo-059",
+            "photo-060",
+            "photo-061",
+            "photo-062",
+            "photo-063",
+            "photo-064",
+            "photo-065",
+            "photo-066",
+            "photo-067",
+            "photo-068",
+            "photo-069",
+            "photo-070",
+            "photo-071",
+            "photo-072",
+            "photo-073",
+            "photo-074",
+            "photo-075",
+            "photo-076",
+            "photo-077",
+            "photo-078",
+            "photo-079",
+            "photo-080",
+            "photo-081",
+            "photo-082",
+            "photo-083",
+            "photo-084",
+            "photo-085",
+            "photo-086",
+            "photo-087",
+            "photo-088",
+            "photo-089",
+            "photo-090",
+            "photo-091",
+            "photo-092",
+            "photo-093",
+            "photo-094",
+            "photo-095",
+            "photo-096",
+            "photo-097",
+            "photo-098",
+            "photo-099",
+            "photo-100",
+            "photo-101",
+            "photo-102",
+            "photo-103",
+            "photo-104",
+            "photo-105"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2013-retreat",
+      "title": "2013 Lab Retreat",
+      "date": "October 4–6, 2013",
+      "location": "West Tremont, Mount Desert Island, Maine",
+      "description": "The second annual retreat paired chalk talks and shared meals with coastal hikes—even as a federal shutdown closed Acadia National Park.",
+      "cover": [
+        {
+          "file": "photo-002",
+          "alt": "Churchman Lab group portrait outside the retreat house"
+        },
+        {
+          "file": "photo-075",
+          "alt": "The lab gathered around the table for a lobster dinner"
+        },
+        {
+          "file": "photo-039",
+          "alt": "Lab members beside a road closure during the federal government shutdown"
+        },
+        {
+          "file": "photo-068",
+          "alt": "Lab members taking in the view from a rocky summit"
+        },
+        {
+          "file": "photo-094",
+          "alt": "Autumn reflections on a quiet lake in Maine"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013",
+            "photo-014",
+            "photo-015",
+            "photo-016",
+            "photo-017",
+            "photo-018",
+            "photo-019",
+            "photo-020",
+            "photo-021",
+            "photo-022",
+            "photo-023",
+            "photo-024",
+            "photo-025",
+            "photo-026",
+            "photo-027",
+            "photo-028",
+            "photo-029",
+            "photo-030",
+            "photo-031",
+            "photo-032",
+            "photo-033",
+            "photo-034",
+            "photo-035",
+            "photo-036",
+            "photo-037",
+            "photo-038",
+            "photo-039",
+            "photo-040",
+            "photo-041",
+            "photo-042",
+            "photo-043",
+            "photo-044",
+            "photo-045",
+            "photo-046",
+            "photo-047",
+            "photo-048",
+            "photo-049",
+            "photo-050",
+            "photo-051",
+            "photo-052",
+            "photo-053",
+            "photo-054",
+            "photo-055",
+            "photo-056",
+            "photo-057",
+            "photo-058",
+            "photo-059",
+            "photo-060",
+            "photo-061",
+            "photo-062",
+            "photo-063",
+            "photo-064",
+            "photo-065",
+            "photo-066",
+            "photo-067",
+            "photo-068",
+            "photo-069",
+            "photo-070",
+            "photo-071",
+            "photo-072",
+            "photo-073",
+            "photo-074",
+            "photo-075",
+            "photo-076",
+            "photo-077",
+            "photo-078",
+            "photo-079",
+            "photo-080",
+            "photo-081",
+            "photo-082",
+            "photo-083",
+            "photo-084",
+            "photo-085",
+            "photo-086",
+            "photo-087",
+            "photo-088",
+            "photo-089",
+            "photo-090",
+            "photo-091",
+            "photo-092",
+            "photo-093",
+            "photo-094",
+            "photo-095",
+            "photo-096",
+            "photo-097",
+            "photo-098",
+            "photo-099",
+            "photo-100",
+            "photo-101"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2012-retreat",
+      "title": "2012 Lab Retreat",
+      "date": "October 6–9, 2012",
+      "location": "West Tremont and Acadia National Park, Maine",
+      "description": "The first annual Churchman Lab retreat established the tradition: scientific chalk talks, shared cooking and long autumn hikes on Mount Desert Island.",
+      "cover": [
+        {
+          "file": "photo-194",
+          "alt": "Churchman Lab group portrait at a mountain overlook in Acadia"
+        },
+        {
+          "file": "photo-091",
+          "alt": "The lab gathered around the table for a lobster dinner"
+        },
+        {
+          "file": "photo-078",
+          "alt": "Lab members together beside a mountain lake"
+        },
+        {
+          "file": "photo-126",
+          "alt": "Churchman Lab group portrait during the first annual retreat"
+        },
+        {
+          "file": "photo-185",
+          "alt": "Autumn coastline and mountains in Acadia National Park"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Andreas Mayer",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013",
+            "photo-014",
+            "photo-015",
+            "photo-016",
+            "photo-017",
+            "photo-018",
+            "photo-019",
+            "photo-020",
+            "photo-021",
+            "photo-022",
+            "photo-023",
+            "photo-024",
+            "photo-025",
+            "photo-026",
+            "photo-027",
+            "photo-028",
+            "photo-029",
+            "photo-030",
+            "photo-031",
+            "photo-032",
+            "photo-033",
+            "photo-034",
+            "photo-035",
+            "photo-036",
+            "photo-037",
+            "photo-038",
+            "photo-039",
+            "photo-040",
+            "photo-041",
+            "photo-042",
+            "photo-043",
+            "photo-044",
+            "photo-045",
+            "photo-046",
+            "photo-047",
+            "photo-048",
+            "photo-049",
+            "photo-050",
+            "photo-051",
+            "photo-052",
+            "photo-053",
+            "photo-054",
+            "photo-055",
+            "photo-056",
+            "photo-057",
+            "photo-058",
+            "photo-059",
+            "photo-060",
+            "photo-061",
+            "photo-062",
+            "photo-063",
+            "photo-064",
+            "photo-065",
+            "photo-066",
+            "photo-067",
+            "photo-068",
+            "photo-069",
+            "photo-070",
+            "photo-071",
+            "photo-072",
+            "photo-073",
+            "photo-074",
+            "photo-075",
+            "photo-076",
+            "photo-077",
+            "photo-078",
+            "photo-079",
+            "photo-080",
+            "photo-081",
+            "photo-082",
+            "photo-083",
+            "photo-084",
+            "photo-085",
+            "photo-086",
+            "photo-087",
+            "photo-088",
+            "photo-089",
+            "photo-090",
+            "photo-091",
+            "photo-092"
+          ]
+        },
+        {
+          "credit": "Mary Couvillion",
+          "files": [
+            "photo-093",
+            "photo-094",
+            "photo-095",
+            "photo-096",
+            "photo-097",
+            "photo-098",
+            "photo-099",
+            "photo-100",
+            "photo-101",
+            "photo-102",
+            "photo-103",
+            "photo-104",
+            "photo-105",
+            "photo-106",
+            "photo-107",
+            "photo-108",
+            "photo-109",
+            "photo-110",
+            "photo-111",
+            "photo-112",
+            "photo-113",
+            "photo-114",
+            "photo-115",
+            "photo-116",
+            "photo-117",
+            "photo-118",
+            "photo-119",
+            "photo-120",
+            "photo-121",
+            "photo-122",
+            "photo-123",
+            "photo-124",
+            "photo-125",
+            "photo-126",
+            "photo-127",
+            "photo-128",
+            "photo-129",
+            "photo-130",
+            "photo-131"
+          ]
+        },
+        {
+          "credit": "Magdalena Murawska",
+          "files": [
+            "photo-132",
+            "photo-133",
+            "photo-134",
+            "photo-135",
+            "photo-136",
+            "photo-137",
+            "photo-138",
+            "photo-139",
+            "photo-140",
+            "photo-141",
+            "photo-142",
+            "photo-143",
+            "photo-144",
+            "photo-145",
+            "photo-146",
+            "photo-147",
+            "photo-148",
+            "photo-149",
+            "photo-150",
+            "photo-151",
+            "photo-152",
+            "photo-153",
+            "photo-154",
+            "photo-155",
+            "photo-156",
+            "photo-157",
+            "photo-158",
+            "photo-159",
+            "photo-160",
+            "photo-161",
+            "photo-162",
+            "photo-163",
+            "photo-164",
+            "photo-165",
+            "photo-166",
+            "photo-167",
+            "photo-168",
+            "photo-169",
+            "photo-170",
+            "photo-171",
+            "photo-172",
+            "photo-173",
+            "photo-174",
+            "photo-175",
+            "photo-176",
+            "photo-177",
+            "photo-178",
+            "photo-179",
+            "photo-180",
+            "photo-181",
+            "photo-182",
+            "photo-183",
+            "photo-184",
+            "photo-185",
+            "photo-186",
+            "photo-187",
+            "photo-188",
+            "photo-189",
+            "photo-190",
+            "photo-191",
+            "photo-192",
+            "photo-193",
+            "photo-194",
+            "photo-195",
+            "photo-196",
+            "photo-197",
+            "photo-198",
+            "photo-199",
+            "photo-200",
+            "photo-201",
+            "photo-202",
+            "photo-203"
+          ]
+        }
+      ]
+    }
+  ],
+  "eventAlbums": [
+    {
+      "id": "2026-hope-defense",
+      "title": "Hope’s PhD Defense",
+      "date": "April 2, 2026",
+      "location": "VSC 350, Harvard Medical School",
+      "description": "Friends and colleagues filling the room before Hope’s PhD defense at Harvard Medical School.",
+      "cover": [
+        {
+          "file": "photo-002",
+          "alt": "Friends and colleagues gathering for Hope’s PhD defense"
+        },
+        {
+          "file": "photo-003",
+          "alt": "The audience waiting for Hope’s defense to begin"
+        },
+        {
+          "file": "photo-001",
+          "alt": "VSC 350 before Hope’s PhD defense"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2025-candidate-dinner",
+      "title": "Claire & Lisa Become PhD Candidates",
+      "date": "April 16, 2025",
+      "location": "Harvard Square, Cambridge",
+      "description": "A lab dinner in Harvard Square celebrating Claire and Lisa becoming PhD candidates.",
+      "cover": [
+        {
+          "file": "photo-002",
+          "alt": "Claire and Lisa celebrating over colorful drinks in Harvard Square"
+        },
+        {
+          "file": "photo-004",
+          "alt": "A Churchman Lab member raising a drink at the candidate dinner"
+        },
+        {
+          "file": "photo-001",
+          "alt": "Claire and Lisa laughing together at their candidate dinner"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2024-jake-defense",
+      "title": "Jake’s Thesis Defense",
+      "date": "August 22, 2024",
+      "location": "Harvard Medical School",
+      "description": "Group portraits after Jake’s thesis defense, with the lab rearranging itself beneath a handmade congratulations banner.",
+      "cover": [
+        {
+          "file": "photo-001",
+          "alt": "The Churchman Lab gathered beneath a congratulations banner after Jake’s defense"
+        },
+        {
+          "file": "photo-006",
+          "alt": "Jake and lab members posing together after his thesis defense"
+        },
+        {
+          "file": "photo-009",
+          "alt": "A playful group portrait during Jake’s defense celebration"
+        },
+        {
+          "file": "photo-013",
+          "alt": "The final Churchman Lab portrait from Jake’s thesis defense"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2023-tommy-defense",
+      "title": "Tommy’s Thesis Defense",
+      "date": "November 3, 2023",
+      "location": "Harvard Medical School",
+      "description": "Group portraits from Tommy Tullius’s thesis celebration beneath a handmade “Congrats Dr. Tullius” banner.",
+      "cover": [
+        {
+          "file": "photo-002",
+          "alt": "Tommy Tullius surrounded by lab members after his thesis defense"
+        },
+        {
+          "file": "photo-001",
+          "alt": "The Churchman Lab beneath a Congrats Dr. Tullius banner"
+        },
+        {
+          "file": "photo-003",
+          "alt": "A final group portrait from Tommy’s thesis celebration"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2022-charles-cruise",
+      "title": "Lab Cruise on the Charles",
+      "date": "June 30, 2022",
+      "location": "Charles River, Cambridge",
+      "description": "A summer evening on the Charles with a very patient photographer and increasingly exuberant group portraits.",
+      "cover": [
+        { "file": "photo-005", "alt": "Churchman Lab group portrait aboard a boat on the Charles River" },
+        { "file": "photo-001", "alt": "The green riverbank seen from the boat" },
+        { "file": "photo-003", "alt": "Lab members gathering for a group photograph on the boat" },
+        { "file": "photo-009", "alt": "The lab making faces during a group portrait" },
+        { "file": "photo-013", "alt": "A final group portrait from the Charles River cruise" }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006", "photo-007",
+            "photo-008", "photo-009", "photo-010", "photo-011", "photo-012", "photo-013"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2022-keystone",
+      "title": "Gene Expression Keystone Meeting",
+      "date": "June 23, 2022",
+      "location": "Plaza Galería",
+      "description": "A late-night gathering after the Gene Expression Keystone meeting at Plaza Galería.",
+      "cover": [
+        { "file": "photo-003", "alt": "Churchman Lab friends gathered around a table after the Keystone meeting" },
+        { "file": "photo-005", "alt": "A late-night group selfie at the Gene Expression Keystone meeting" },
+        { "file": "photo-001", "alt": "The interior of Plaza Galería" },
+        { "file": "photo-002", "alt": "The bar at Plaza Galería after the meeting" }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": ["photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006"]
+        }
+      ]
+    },
+    {
+      "id": "2022-katja-baby-shower",
+      "title": "Katja’s Baby Shower",
+      "date": "June 4, 2022",
+      "location": "Back Bay, Boston",
+      "description": "An outdoor baby shower for Katja, with friends, family and plenty of group portraits.",
+      "cover": [
+        { "file": "photo-003", "alt": "Friends and lab members gathered for Katja’s baby shower" },
+        { "file": "photo-009", "alt": "A second group portrait at Katja’s outdoor baby shower" }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006",
+            "photo-007", "photo-008", "photo-009", "photo-010", "photo-011"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2021-lab-party",
+      "title": "Lab Summer Cruise",
+      "date": "August 10, 2021",
+      "location": "Cambridge riverside",
+      "description": "Riverside group portraits from the lab’s 2021 summer cruise on the Charles.",
+      "cover": [
+        { "file": "photo-001", "alt": "Churchman Lab group portrait beside the Charles River" },
+        { "file": "photo-006", "alt": "Lab members waving during the 2021 summer party" }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006",
+            "photo-007", "photo-008", "photo-009", "photo-010", "photo-011"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2019-blake-defense",
+      "title": "Blake’s Thesis Defense & Celebration",
+      "date": "May 31, 2019",
+      "location": "Harvard Medical School",
+      "description": "Preparations for Blake Tye’s thesis defense followed by an exuberant celebration with Jenga and an ice luge.",
+      "cover": [
+        {
+          "file": "photo-005",
+          "alt": "Blake celebrating after his thesis defense"
+        },
+        {
+          "file": "photo-006",
+          "alt": "Blake celebrating in his graduation gown"
+        },
+        {
+          "file": "photo-009",
+          "alt": "Blake playing a towering game of Jenga during his thesis celebration"
+        },
+        {
+          "file": "photo-008",
+          "alt": "A toast during Blake’s thesis celebration"
+        },
+        {
+          "file": "photo-003",
+          "alt": "Churchman Lab members preparing together on Blake’s defense day"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003"
+          ]
+        },
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2019-heather-defense",
+      "title": "Heather’s Thesis Defense",
+      "date": "May 14, 2019",
+      "location": "Harvard Medical School",
+      "description": "Heather Drexler’s thesis defense followed by a lab group portrait, a congratulatory cake and a celebratory toast.",
+      "cover": [
+        { "file": "photo-001", "alt": "Heather Drexler with friends and lab members after her thesis defense" },
+        { "file": "photo-002", "alt": "A cake reading Congratulations Dr. Drexler" },
+        { "file": "photo-003", "alt": "Heather celebrating after her thesis defense" }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": [
+            "photo-001", "photo-002", "photo-003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2015-seth-farewell",
+      "title": "Ice Cream Outing",
+      "date": "May 15, 2015",
+      "location": "JP Licks, One Brigham Circle",
+      "description": "A farewell ice-cream outing for Seth, with the lab gathered outside JP Licks at One Brigham Circle.",
+      "cover": [
+        {
+          "file": "photo-001",
+          "alt": "The Churchman Lab gathered outside JP Licks for Seth’s farewell"
+        },
+        {
+          "file": "photo-007",
+          "alt": "A second group portrait during Seth’s farewell ice-cream outing"
+        },
+        {
+          "file": "photo-014",
+          "alt": "The lab smiling together after ice cream at One Brigham Circle"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013",
+            "photo-014"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2013-harpoon-outing",
+      "title": "Harpoon Brewery Outing",
+      "date": "May 21, 2013",
+      "location": "Harpoon Brewery, Boston",
+      "description": "A day that followed the lab from its benches to a Harpoon Brewery tour and dinner.",
+      "cover": [
+        {
+          "file": "photo-009",
+          "alt": "Churchman Lab members sharing dinner after the Harpoon Brewery tour"
+        },
+        {
+          "file": "photo-006",
+          "alt": "The lab touring the Harpoon Brewery production floor"
+        },
+        {
+          "file": "photo-011",
+          "alt": "Lab members posing together at Harpoon Brewery"
+        },
+        {
+          "file": "photo-002",
+          "alt": "Churchman Lab members setting out for the brewery outing"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2012-lab-move-in",
+      "title": "Inside the New Lab",
+      "date": "January 16, 2012",
+      "location": "Harvard Medical School",
+      "description": "The new lab’s benches, instruments, cold storage, coffee station and unmistakable red chairs.",
+      "cover": [
+        { "file": "photo-006", "alt": "A wide view across the newly equipped Churchman Lab" },
+        { "file": "photo-001", "alt": "The first coffee station being put to work" },
+        { "file": "photo-004", "alt": "Red chairs in the new lab meeting area" },
+        { "file": "photo-007", "alt": "Newly labeled equipment arranged across a lab bench" },
+        { "file": "photo-022", "alt": "Door sign for L. Stirling Churchman outside the new lab" }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006",
+            "photo-007", "photo-008", "photo-009", "photo-010", "photo-011", "photo-012",
+            "photo-013", "photo-014", "photo-015", "photo-016", "photo-017", "photo-018",
+            "photo-019", "photo-020", "photo-021", "photo-022"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2011-first-year",
+      "title": "The Lab’s First Year",
+      "date": "Summer–winter 2011",
+      "location": "Harvard Medical School and Cambridge",
+      "description": "Boxes arriving for the new lab, the first Churchman Lab outing for ice cream on Nava’s birthday, and the Churchman–Gray holiday party at FuGaKu.",
+      "cover": [
+        { "file": "photo-002", "alt": "Churchman and Gray lab members getting ice cream for Nava’s birthday" },
+        { "file": "photo-003", "alt": "The first Churchman–Gray holiday party over sushi at FuGaKu" },
+        { "file": "photo-001", "alt": "Boxes of equipment arriving for the new Churchman Lab" }
+      ],
+      "groups": [
+        {
+          "credit": "Churchman Lab members",
+          "files": ["photo-001", "photo-002", "photo-003"]
+        }
+      ]
+    }
+  ]
+}

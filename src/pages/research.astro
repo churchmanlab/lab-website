@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import site from "../data/site.json";
 import { u } from "../lib/path.js";
 
-const img = (p, w = 1000) => `${site.cdn}${p}?format=${w}w`;
+const img = (p) => u(p);
 
 const description =
   "The Churchman Lab studies how nuclear- and mitochondrial-encoded genes are regulated throughout the life cycles of their transcripts to maintain a balanced proteome. We develop and apply quantitative methods to investigate the control of nuclear-encoded mRNA life cycles and the co-regulation of mitochondrial-encoded and nuclear-encoded OXPHOS genes.";
@@ -46,7 +46,7 @@ const jsonld = {
           awry.
         </p>
         <p>
-          Both programs require measurements that were not previously possible, so much of our work is method
+          Both programs require measurements that were not previously possible, so much of our work has been method
           development — NET-seq, nano-COP, subcellular TimeLapse-seq, mitoribosome profiling and mtFiber-seq.
           Insights gained from these new views on gene expression lead to deeper understanding of how RNA life
           cycles are regulated in healthy cells and how their misregulation leads to disease.
@@ -70,7 +70,8 @@ const jsonld = {
       </div>
 
       <img
-        src={img("/f033b8f6-8aeb-429b-a7d5-c975d5cda3de/Figure_3.png", 1400)}
+        class="research-cartoon research-cartoon-wide"
+        src={img("/images/research/mrna-life-cycle.png")}
         alt="Schematic of the mRNA life cycle across subcellular compartments"
         loading="lazy"
         style="border-radius:3px;margin-bottom:44px"
@@ -94,7 +95,7 @@ const jsonld = {
           </p>
         </div>
         <div>
-          <img src={img("/4ad0a382-aea2-4fb5-a51d-9e3970b0d836/timelapse-seq.png", 800)} alt="Subcellular TimeLapse-seq schematic" loading="lazy" style="border-radius:3px" />
+          <img class="research-cartoon" src={img("/images/research/timelapse-seq.png")} alt="Subcellular TimeLapse-seq schematic" loading="lazy" style="border-radius:3px" />
         </div>
       </div>
 
@@ -141,19 +142,70 @@ const jsonld = {
       </div>
 
       <div style="margin-top:52px">
-        <h3>How is mRNA subcellular localization controlled?</h3>
+        <h3>How can RNA dynamics be measured in any RNA-seq experiment?</h3>
         <p class="prose">
-          Using subcellular TimeLapse-seq to measure the rates of transitions between cellular compartments, we
-          found that RNAs do not flow across the cell at the same rates. Our study revealed wide variations
-          (&gt;100-fold) in RNA flow rates between genes and subcellular compartments. Functionally related genes
-          experienced similar rates of RNA flow, and the targets of many RNA binding proteins exhibited different
-          flow rates compared to other genes. We measured poly(A) tails with subcellular resolution and showed that
-          tail lengths reflect subcellular RNA half-lives, and identified genetic and molecular features that
-          predict RNA flow using machine learning, including transcription factors and sequence elements.
+          Metabolic labeling separates synthesis from decay, but the chemical recoding step it usually requires
+          damages RNA and does not survive droplet-based single-cell protocols. Analog intrinsic recoding sequencing
+          (AIR-seq) removes that step. Cells are labeled with N4-hydroxycytidine, the active compound of the
+          antiviral molnupiravir, which is incorporated into RNA by RNA polymerase II and base-pairs ambiguously, so
+          new transcripts carry C-to-T and T-to-C mismatches in otherwise standard libraries.
+        </p>
+        <p class="prose">
+          Fraction-new estimates from AIR-seq agree with subcellular TimeLapse-seq, hold across library types and
+          sequencing depths, and work in single cells with the unmodified 10x workflow. A single labeled snapshot
+          orders cells around the cell cycle and gives new RNA a roughly one-hour lead over total RNA, which sharpens
+          RNA velocity estimates. Modeling those rates revealed offset synthesis and degradation programs for
+          nuclear- and mitochondrial-encoded OXPHOS transcripts that leave steady-state abundance unchanged.
         </p>
       </div>
 
       <div class="box" style="margin-top:20px">
+        <h4>Open questions</h4>
+        <p style="margin-bottom:0;color:var(--ink-2)">
+          Can RNA dynamics be measured in tissues and <em>in vivo</em>? Which other recoding analogs report on RNA
+          age?
+        </p>
+        <p style="margin:.9rem 0 0;font-size:.86rem;color:var(--ink-3)">
+          Background reading: Hansen &amp; Couvillion et al., <em>bioRxiv</em> 2026
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RNA flow ============ -->
+  <section class="section" id="rna-flow">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Method</p>
+        <h2>Measuring RNA flow across subcellular compartments</h2>
+      </div>
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            Using subcellular TimeLapse-seq to measure the rates of transitions between cellular compartments, we
+            found that RNAs do not flow across the cell at the same rates. Our study revealed wide variations
+            (&gt;100-fold) in RNA flow rates between genes and subcellular compartments. Functionally related genes
+            experienced similar rates of RNA flow, and the targets of many RNA binding proteins exhibited different
+            flow rates compared to other genes.
+          </p>
+          <p>
+            We measured poly(A) tails with subcellular resolution and showed that tail lengths reflect subcellular
+            RNA half-lives. Machine learning identified genetic and molecular features that predict RNA flow,
+            including transcription factors and sequence elements.
+          </p>
+        </div>
+        <div>
+          <img
+            class="research-cartoon"
+            src={img("/images/research/rna-flow.webp")}
+            alt="Subcellular TimeLapse-seq measurements of RNA flow through the cell"
+            loading="lazy"
+            style="border-radius:3px"
+          />
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:34px">
         <h4>Open questions</h4>
         <p style="margin-bottom:0;color:var(--ink-2)">
           How do mRNAs flow to organelles and other compartments? How do transcript isoforms impact RNA flow?
@@ -161,33 +213,6 @@ const jsonld = {
         <p style="margin:.9rem 0 0;font-size:.86rem;color:var(--ink-3)">
           Background reading: Ietswaart et al., <em>Mol Cell</em> 2024
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ single molecule ============ -->
-  <section class="section" id="single-molecule">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Method</p>
-        <h2>Single-molecule views of transcription and chromatin</h2>
-      </div>
-      <div class="two-col">
-        <div class="prose">
-          <p>
-            Population-average measurements obscure coordination between transcription units. Using long-read
-            chromatin fiber sequencing (Fiber-seq), we place RNA polymerases within their native chromatin context
-            at single-molecule and near single-nucleotide resolution along fibers up to 30 kb in length.
-          </p>
-          <p>
-            These data reveal pervasive direct coordination, and anti-coordination, between nearby Pol II genes,
-            Pol III genes, transcribed enhancers and insulator elements. The coordination is spatially limited and
-            depends on whether insulators are simultaneously bound to the same DNA molecule.
-          </p>
-        </div>
-        <div>
-          <img src={img("/d53c123a-2206-44d5-8b6f-3512215aee5b/AGTD+poster%404x.png", 800)} alt="Single-molecule chromatin fiber sequencing" loading="lazy" style="border-radius:3px" />
-        </div>
       </div>
     </div>
   </section>
@@ -217,15 +242,6 @@ const jsonld = {
             quantitatively dissecting each step.
           </p>
           <p>
-            <strong>mtDNA packaging.</strong> Human cells contain hundreds of mtDNA molecules distributed throughout
-            the mitochondrial network. These molecules, over 5 µm in length, are compressed into 100 nm
-            nucleoprotein complexes called nucleoids. Using mtFiber-seq, we measured the accessibility of
-            full-length mtDNA molecules in various human cell types and found that most nucleoids are inaccessible,
-            with the proportion varying by cell type and mitochondrial function. Unlike nuclear genome compaction,
-            mtDNA accessibility is largely all-or-none, suggesting that genome activation may represent an
-            additional layer of gene expression regulation.
-          </p>
-          <p>
             <strong>The mitochondrial mRNA life cycle.</strong> The non-coding region of the genome contains two
             promoters that generate near-genome-length polycistronic transcripts, which are then cleaved into
             individual mRNAs with little to no 5′ UTR. We measured RNA production, processing, ribosome arrival and
@@ -235,8 +251,14 @@ const jsonld = {
           </p>
         </div>
         <div>
-          <img src={img("/57198b25-5b5c-417a-a9cf-18f79aff0bce/mtDNA_scheme.png", 800)} alt="Schematic of mitochondrial DNA organization" loading="lazy" style="border-radius:3px;margin-bottom:18px" />
-          <img src={img("/e1709984-56e8-4bdd-98d9-72022ee3c00c/mitochondria+metabolome2.png", 800)} alt="Mitochondria and the metabolome" loading="lazy" style="border-radius:3px" />
+          <img
+            class="research-cartoon"
+            src={img("/images/research/mtdna-scheme.png")}
+            alt="Schematic of mitochondrial DNA organization"
+            loading="lazy"
+            style="border-radius:3px;margin-bottom:24px"
+          />
+          <img class="research-cartoon" src={img("/images/research/mitochondria-metabolome.png")} alt="Mitochondria and the metabolome" loading="lazy" style="border-radius:3px" />
         </div>
       </div>
 
@@ -280,6 +302,43 @@ const jsonld = {
     </div>
   </section>
 
+  <!-- ============ mitochondrial single molecule ============ -->
+  <section class="section" id="mtfiber-seq">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Method</p>
+        <h2>Single-molecule views of mitochondrial DNA packaging</h2>
+      </div>
+      <div class="two-col">
+        <div class="prose">
+          <p>
+            Human cells contain hundreds to thousands of mtDNA molecules distributed throughout the mitochondrial
+            network. Each molecule, more than 5 µm in length, is compressed into a nucleoprotein complex called a
+            nucleoid. To measure how individual nucleoids are packaged, we developed mtFiber-seq, a long-read
+            single-molecule accessibility method that profiles full-length mtDNA molecules at near single-nucleotide
+            resolution.
+          </p>
+          <p>
+            mtFiber-seq revealed that human mtDNA undergoes largely all-or-none global compaction, with most
+            nucleoids existing in an inaccessible, inactive state. Highly accessible nucleoids are occupied by
+            transcription and replication machinery and selectively form the triple-stranded displacement loop. We
+            also found that TFAM controls the fraction of inaccessible nucleoids through a nucleation-and-spreading
+            mechanism, identifying genome accessibility as a layer of mitochondrial gene regulation.
+          </p>
+          <p class="figcap">Isaac et al., <em>Nature Structural &amp; Molecular Biology</em> 2024</p>
+        </div>
+        <div>
+          <img
+            src={img("/images/research/isaac-fig1.jpg")}
+            alt="mtFiber-seq accessibility measurements across individual full-length mitochondrial DNA molecules"
+            loading="lazy"
+            style="border-radius:3px"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="wrap">
       <div class="btn-row">
@@ -289,4 +348,16 @@ const jsonld = {
       </div>
     </div>
   </section>
+
+  <style>
+    .research-cartoon {
+      width: 84%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .research-cartoon-wide {
+      max-width: 920px;
+    }
+  </style>
 </Base>

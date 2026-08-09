@@ -4,32 +4,35 @@ import site from "../data/site.json";
 import pubs from "../data/publications.json";
 import { u } from "../lib/path.js";
 
-const img = (p, w = 1200) => `${site.cdn}${p}?format=${w}w`;
+const img = (p) => u(p);
 
 const highlights = [
   {
-    title: "How RNA flows through the cell",
+    title: "Two genomes run on different clocks",
     blurb:
-      "From synthesis and chromatin release to nuclear export, ribosome engagement and eventual degradation, we quantified the life cycles of human transcripts genome-wide — and found that hundreds of genes are degraded in the nucleus and never exported at all.",
-    img: "/495c8095-5a22-4ed6-96ff-00c645c70182/tweet+image.png",
-    href: "/research#mrna-life-cycle",
-    cite: "Ietswaart et al., Molecular Cell 2024",
+      "By measuring RNA production, processing, ribosome association and degradation across both genomes, we found that nearly every step runs at a starkly different rate. The mitoribosome acts as a key point of coordination between the two systems.",
+    img: "/images/pubs/cover-molcell-2024-kinetic-dichotomy.jpg",
+    imgAlt:
+      "A kinetic dichotomy between mitochondrial and nuclear gene expression processes, a painting by Leidy Churchman",
+    href: "/research#mitonuclear",
+    cite: "McShane et al., Molecular Cell 2024",
   },
   {
     title: "Single-molecule views of transcription and chromatin",
     blurb:
       "Long-read chromatin fiber sequencing lets us see RNA polymerases in their native chromatin context along 30 kb fibers, revealing direct coordination and anti-coordination between neighboring genes, enhancers and insulators.",
-    img: "/d53c123a-2206-44d5-8b6f-3512215aee5b/AGTD+poster%404x.png",
-    href: "/research#single-molecule",
+    img: "/images/research/agtd-poster.png",
+    href: "https://doi.org/10.1016/j.molcel.2024.08.013",
+    linkLabel: "Read the paper →",
     cite: "Tullius et al., Molecular Cell 2024",
   },
   {
-    title: "How mitochondrial DNA is packaged",
+    title: "RNA kinetics from an ordinary RNA-seq library",
     blurb:
-      "Unlike the nuclear genome, human mtDNA compacts in an all-or-none fashion, with most nucleoids sitting in an inaccessible, inactive state. TFAM sets the fraction that stays open, acting by nucleation and spreading.",
-    img: "/e0cb862a-b1e2-4026-af49-fb46fa3e9ff3/Isaac_Fig1.jpg",
-    href: "/research#mitonuclear",
-    cite: "Isaac et al., Nature Structural & Molecular Biology 2024",
+      "AIR-seq marks new RNA with N4-hydroxycytidine, which base-pairs ambiguously and so shows up as mismatches in standard libraries — no chemical conversion, no enrichment. RNA synthesis and decay rates now come out of ordinary bulk and single-cell experiments.",
+    img: "/images/research/air-seq-workflow.jpg",
+    href: "/research#mrna-life-cycle",
+    cite: "Hansen & Couvillion et al., bioRxiv 2026",
   },
 ];
 
@@ -56,7 +59,7 @@ const jsonld = {
 };
 ---
 
-<Base title="Home" description={description} jsonld={jsonld} image={img("/84d82d85-dc45-4cf2-b950-0e00a3abad5c/Leidy+Churchman_Untitled_2024.jpg")}>
+<Base title="Home" description={description} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
@@ -74,11 +77,14 @@ const jsonld = {
       </div>
       <div class="hero-art">
         <img
-          src={img("/84d82d85-dc45-4cf2-b950-0e00a3abad5c/Leidy+Churchman_Untitled_2024.jpg", 1000)}
-          alt="Untitled (2024), a painting by Leidy Churchman"
+          src={img("/images/site/hero-art.webp")}
+          alt="Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA, a painting by Leidy Churchman"
           loading="eager"
         />
-        <p class="figcap">Leidy Churchman, <em>Untitled</em> (2024)</p>
+        <p class="figcap">
+          Leidy Churchman, <em>Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA</em>
+          (2024)
+        </p>
       </div>
     </div>
   </section>
@@ -92,11 +98,11 @@ const jsonld = {
       <div class="cards">
         {highlights.map((h) => (
           <article class="card">
-            <img src={img(h.img, 800)} alt="" loading="lazy" />
+            <img src={img(h.img)} alt={h.imgAlt ?? ""} loading="lazy" />
             <h3>{h.title}</h3>
             <p>{h.blurb}</p>
             <p class="figcap" style="margin-top:-.3rem">{h.cite}</p>
-            <a class="more" href={u(h.href)}>How this fits together →</a>
+            <a class="more" href={u(h.href)}>{h.linkLabel ?? "How this fits together →"}</a>
           </article>
         ))}
       </div>
@@ -119,7 +125,7 @@ const jsonld = {
       </div>
       <div>
         <img
-          src={img("/1590102780891-H84K8O9XST2P38738BZI/Sabrina+Shrestha+-+917B8AAD-B4E0-4F53-A344-6C25A60D26C7.jpeg", 900)}
+          src={img("/images/site/lab-group.jpg")}
           alt="Members of the Churchman lab together"
           loading="lazy"
           style="border-radius:3px"
@@ -132,7 +138,7 @@ const jsonld = {
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Use our work</p>
-        <h2>Methods, code and protocols, meant to be picked up by other labs</h2>
+        <h2>Methods, code and protocols, all publicly available</h2>
       </div>
       <div class="cards">
         <article class="card">

@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import site from "../data/site.json";
 import { u } from "../lib/path.js";
 
-const img = (p, w = 800) => `${site.cdn}${p}?format=${w}w`;
+const img = (p) => u(p);
 
 const description =
   "L. Stirling Churchman is Professor of Genetics at Harvard Medical School. She pioneered NET-seq and leads a lab studying how gene expression is coordinated across the cell, from the nucleus to the mitochondria.";
@@ -96,7 +96,7 @@ const jsonld = {
 
       <aside>
         <img
-          src={img("/68f0980f-329e-4fc3-9608-e5dab89444f1/P1090037.jpg", 700)}
+          src={img("/images/team/stirling-churchman.webp")}
           alt="L. Stirling Churchman"
           loading="eager"
           style="border-radius:3px"
