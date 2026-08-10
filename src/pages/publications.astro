@@ -12,7 +12,6 @@ const pubmedSearch = (t) =>
 const all = pubs.sections.flatMap((s) => s.items.map((i) => ({ ...i, section: s.id })));
 const total = all.length;
 const years = [...new Set(all.map((i) => i.year))].sort((a, b) => b - a);
-const withLinks = all.filter((i) => i.doi || i.pmid).length;
 
 const description = `Complete list of ${total} publications from the Churchman Lab at Harvard Medical School, from single-molecule biophysics through NET-seq, nano-COP, subcellular TimeLapse-seq and mitochondrial gene expression. Searchable and linked to PubMed.`;
 
@@ -39,6 +38,7 @@ const jsonld = [
       isPartOf: { "@type": "Periodical", name: p.journal },
       ...(p.doi ? { identifier: `https://doi.org/${p.doi}`, sameAs: `https://doi.org/${p.doi}` } : {}),
       ...(p.pmid ? { pmid: p.pmid } : {}),
+      ...(p.pdf ? { associatedMedia: { "@type": "MediaObject", contentUrl: `${site.url}${p.pdf}`, encodingFormat: "application/pdf" } } : {}),
       publisher: { "@id": `${site.url}/#lab` },
     })),
   },
@@ -51,19 +51,11 @@ const jsonld = [
       <p class="eyebrow">Bibliography</p>
       <h1>Publications</h1>
       <p class="lede prose">
-        {total} papers from 2004 to today. Every entry links out to the published record. The full, always-current
-        list also lives in Stirling's <a href={pubs.fullListUrl}>NCBI bibliography</a> and on
+        {total} papers from 2004 to today. The full list also is found in Stirling's{" "}
+        <a href={pubs.fullListUrl}>NCBI bibliography</a> and on{" "}
         <a href={site.links.googleScholar}>Google Scholar</a>.
       </p>
       <p class="legend">{pubs.legend}</p>
-
-      {withLinks < total && (
-        <p class="legend" style="color:#6b5000">
-          <span class="fill">Prototype note</span> — {total - withLinks} entries currently link to a PubMed title
-          search rather than a canonical DOI. Running <code>npm run sync:pubs</code> once on a machine with internet
-          access resolves every DOI and PMID automatically and rewrites this file.
-        </p>
-      )}
     </div>
   </section>
 
@@ -96,30 +88,44 @@ const jsonld = [
           <ol class="pubs">
             {s.items.map((p) => (
               <li
-                class="pub"
+                class:list={["pub", p.image && "has-thumb"]}
                 data-year={p.year}
                 data-type={p.type}
                 data-text={`${p.title} ${plainAuthors(p.authors)} ${p.journal}`.toLowerCase()}
               >
                 <div class="yr">{p.year}</div>
                 <div>
-                  <p class="ttl">
-                    {p.title}
-                    {p.highlight && <span class="tag">Key paper</span>}
-                  </p>
+                  <p class="ttl">{p.title}</p>
                   <p class="au" set:html={bold(p.authors)} />
                   <p class="jr">
                     <em>{p.journal}</em>
                     {p.volume && <span> {p.volume}</span>}
                     {p.pages && <span>, {p.pages}</span>}
-                    {p.note && <span> ({p.note})</span>}
+                    {"note" in p && p.note && <span> ({p.note})</span>}
                   </p>
                   <div class="pub-links">
+                    {p.pdf && <a href={u(p.pdf)} type="application/pdf">PDF</a>}
                     {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}
                     {p.pmid && <a href={`https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/`}>PubMed</a>}
                     {!p.pmid && <a href={pubmedSearch(p.title)}>Find on PubMed</a>}
                   </div>
                 </div>
+                {p.image && (
+                  <a
+                    class:list={["pub-thumb", p.imageKind === "cover" && "is-cover"]}
+                    href={p.pdf ? u(p.pdf) : p.doi ? `https://doi.org/${p.doi}` : pubmedSearch(p.title)}
+                    aria-label={`${p.imageKind === "cover" ? "Journal cover" : "First page"} — ${p.title}${p.pdf ? "; open PDF" : ""}`}
+                  >
+                    <img
+                      src={u(p.image)}
+                      alt=""
+                      width={p.imageW}
+                      height={p.imageH}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                )}
               </li>
             ))}
           </ol>

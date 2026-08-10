@@ -24,7 +24,7 @@ changes are one field in a JSON file and can be made entirely on github.com.
 ```
 src/
   data/            the content that changes most — edit these first
-    publications.json    62 papers; kept current by scripts/sync-publications.mjs
+    publications.json    publication bibliography; kept current by scripts/sync-publications.mjs
     team.json            current members and alumni
     site.json            address, emails, nav, external links
   pages/           one file per page
@@ -46,10 +46,12 @@ scripts/
 | --- | --- |
 | `npm run dev` | Local dev server with live reload |
 | `npm run build` | Static build into `dist/` |
+| `npm run check` | Type-checks pages and verifies links and spelling |
 | `npm run check:links` | Verifies every internal link resolves |
 | `npm run preview:file` | Build, then bundle everything into one shareable `dist/preview.html` |
 | `npm run sync:pubs` | Fill in DOIs and PMIDs from PubMed |
 | `npm run sync:pubs -- --add` | ...and append papers PubMed has that the site doesn't |
+| `npm run pubs:images` | Fetch or render publication thumbnails |
 
 ## Publications maintain themselves
 
@@ -62,9 +64,6 @@ emitted as schema.org `ScholarlyArticle` markup.
 volume and page numbers, and reports papers PubMed knows about that the site doesn't. A GitHub
 Action runs it on the 1st of each month and opens a pull request. New entries still need a human
 to bold the lab members — that's the one thing the script can't infer.
-
-> Most entries currently link to a PubMed title search rather than a canonical DOI, because the
-> environment this was built in had no access to NCBI. One `npm run sync:pubs` fixes all of them.
 
 ## Built to be read by machines as well as people
 
@@ -101,27 +100,15 @@ SITE=https://churchman.med.harvard.edu npm run build     # the real domain, even
 
 ## Deploying
 
-Pushing to `main` builds and publishes to GitHub Pages automatically. One-time setup in repo
-**Settings → Pages → Source: GitHub Actions**. Pull requests build and link-check but don't
-publish.
-
-For the monthly publication sync to open pull requests, also enable **Settings → Actions →
-General → Allow GitHub Actions to create and approve pull requests**.
+The GitHub Actions workflow is ready, but hosted runners are not currently picking up jobs for
+this repository. Until that is fixed, build the Pages version locally and publish `dist/` to the
+`gh-pages` branch as described in `CLAUDE.md`.
 
 Going live on `churchman.med.harvard.edu` is a separate decision: the domain is Harvard's, so
 HMS IT would need to repoint DNS. Worth asking them before committing either way.
 
 ## Known gaps
 
-- **Images and PDFs are still hotlinked to Squarespace.** Fine while that subscription is
-  active; they vanish the day it lapses. Before going live, download them into `public/images/`
-  and update the `img()` helper at the top of each page. Same for the protocol PDFs and code
-  files under `churchman.med.harvard.edu/s/`.
-- **`TO CONFIRM` markers on the Join Us page** need real answers — number of positions, whether
-  you take undergraduates, funding for postdocs without a fellowship, visa sponsorship, and your
-  actual review timeline. Search `src/pages/join.astro` for the phrase.
-- **Lab manager mismatch.** The team page says Mike Kourkoulakos; the old contact page said
-  Maddie Flanagan. This repo uses the former.
 - **Fonts are system fonts**, chosen so the preview renders without network access. A licensed
   serif would look better.
 - **No dark mode** yet.

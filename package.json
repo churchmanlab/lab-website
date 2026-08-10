@@ -5,7 +5,7 @@
   "private": true,
   "description": "Website for the Churchman Lab, Department of Genetics, Harvard Medical School",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.12.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -15,10 +15,15 @@
     "check:links": "node scripts/check-links.mjs",
     "check:spelling": "node scripts/check-spelling.mjs",
     "check": "astro check && node scripts/check-links.mjs && node scripts/check-spelling.mjs",
-    "sync:pubs": "node scripts/sync-publications.mjs"
+    "sync:pubs": "node scripts/sync-publications.mjs",
+    "pubs:images": "node scripts/fetch-pub-images.mjs"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.2.0",
-    "astro": "^5.0.0"
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^5.9.3"
   }
 }

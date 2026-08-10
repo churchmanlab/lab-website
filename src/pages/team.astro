@@ -4,9 +4,14 @@ import site from "../data/site.json";
 import team from "../data/team.json";
 import { u } from "../lib/path.js";
 
-// Photos migrated into the repo start with /images/; everything else is still on the
-// Squarespace CDN. Migrating a photo is now just a matter of changing the path.
-const img = (p, w = 600) => (p.startsWith("/images/") ? u(p) : `${site.cdn}${p}?format=${w}w`);
+const img = (p) => u(p);
+const initials = (name) =>
+  name
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
 const description =
   "The Churchman Lab is a multidisciplinary group of biologists, chemists, physicists and computational scientists at Harvard Medical School, led by Professor L. Stirling Churchman. Current members and lab alumni.";
@@ -68,7 +73,13 @@ const jsonld = {
       <div class="people">
         {team.current.map((p) => (
           <article class="person">
-            <img src={img(p.photo)} alt={p.name} loading="lazy" />
+            {p.photo ? (
+              <img src={img(p.photo)} alt={p.name} loading="lazy" />
+            ) : (
+              <div class="portrait-placeholder" role="img" aria-label={`${p.name} — photo forthcoming`}>
+                {initials(p.name)}
+              </div>
+            )}
             {/* kept on one line: a line break here renders as a space before the comma */}
             <p class="nm">{p.href ? <a href={u(p.href)} style="color:inherit">{p.name}</a> : p.name}{p.degree && <span style="font-weight:400;color:var(--ink-3)">, {p.degree}</span>}</p>
             <p class="rl">{p.role}</p>
@@ -85,7 +96,7 @@ const jsonld = {
       </div>
 
       <div class="box accent" style="margin-top:52px">
-        <h3 style="margin-top:0">There is room for one more</h3>
+        <h3 style="margin-top:0">There is room for more</h3>
         <p style="margin-bottom:0;color:var(--ink-2)">
           We are recruiting postdoctoral fellows and taking rotation students.
           <a href={u("/join")}>See what we look for and how to apply →</a>
@@ -117,6 +128,29 @@ const jsonld = {
           <li>
             <span class="nm">{a.href ? <a href={u(a.href)}>{a.name}</a> : a.name}</span>
             {a.now && <span class="now">{a.now}</span>}
+          </li>
+        ))}
+      </ul>
+
+      <h3 style="margin-top:40px">Former undergraduate students</h3>
+      <ul class="alumni-list">
+        {team.alumniUndergraduates.map((a) => (
+          <li>
+            <span class="nm">{a.href ? <a href={a.href}>{a.name}</a> : a.name}</span>
+            {a.award && <span class="path"><b>Thesis award:</b> {a.award}</span>}
+            {a.program && <span class="path"><b>Graduate program:</b> {a.program}</span>}
+            {a.now && <span class="path"><b>Now:</b> {a.now}</span>}
+          </li>
+        ))}
+      </ul>
+
+      <h3 style="margin-top:40px">Former technicians and lab managers</h3>
+      <ul class="alumni-list">
+        {team.alumniTechnicians.map((a) => (
+          <li>
+            <span class="nm">{a.href ? <a href={a.href}>{a.name}</a> : a.name}</span>
+            <span class="path"><b>Graduate program:</b> {a.program}</span>
+            <span class="path"><b>Now:</b> {a.now}</span>
           </li>
         ))}
       </ul>

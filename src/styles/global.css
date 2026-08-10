@@ -111,7 +111,13 @@ p { margin: 0 0 1.15em; }
 
 /* ---------- team ---------- */
 .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 34px 26px; }
-.person img { aspect-ratio: 1/1; object-fit: cover; border-radius: 2px; filter: saturate(.94); }
+.person img, .portrait-placeholder { aspect-ratio: 1/1; width: 100%; border-radius: 2px; }
+.person img { object-fit: cover; filter: saturate(.94); }
+.portrait-placeholder {
+  display: grid; place-items: center;
+  background: var(--paper-2); border: 1px solid var(--line);
+  color: var(--ink-3); font-family: var(--serif); font-size: 2.4rem;
+}
 .person .nm { font-family: var(--serif); font-size: 1.06rem; font-weight: 600; margin: .8rem 0 .1rem; }
 .person .rl { font-size: .85rem; color: var(--ink); margin: 0 0 .3rem; font-weight: 550; }
 .person .dt { font-size: .8rem; color: var(--ink-3); margin: 0 0 .3rem; line-height: 1.45; }
@@ -121,6 +127,8 @@ p { margin: 0 0 1.15em; }
 .alumni-list li { break-inside: avoid; margin-bottom: 1rem; font-size: .92rem; }
 .alumni-list .nm { font-weight: 600; color: var(--ink); display: block; }
 .alumni-list .now { color: var(--ink-3); font-size: .86rem; }
+.alumni-list .path { color: var(--ink-3); display: block; font-size: .86rem; line-height: 1.5; }
+.alumni-list .path b { color: var(--ink-2); font-weight: 600; }
 
 /* ---------- publications ---------- */
 .pub-controls {
@@ -147,7 +155,18 @@ ol.pubs { list-style: none; padding: 0; margin: 0; }
 .pub .jr em { font-style: italic; }
 .pub-links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: .5rem; }
 .pub-links a { font-size: .8rem; font-weight: 560; }
-.tag { display: inline-block; font-size: .68rem; font-weight: 650; letter-spacing: .07em; text-transform: uppercase; padding: .15em .5em; border-radius: 2px; background: var(--accent-wash); color: var(--accent); vertical-align: 2px; margin-left: .5em; }
+
+/* Only rows that have an image get a third column, so the rest keep the full text width. */
+.pub.has-thumb { grid-template-columns: 62px 1fr 92px; }
+.pub-thumb { display: block; align-self: start; line-height: 0; border: 1px solid var(--line); background: #fff; transition: border-color .15s, transform .15s; }
+.pub-thumb img { width: 100%; height: auto; display: block; }
+.pub-thumb:hover, .pub-thumb:focus-visible { border-color: var(--accent); transform: translateY(-2px); }
+/* A page of text needs the border to read as a page; cover art carries its own edge. */
+.pub-thumb.is-cover { border-color: transparent; box-shadow: 0 1px 6px rgb(0 0 0 / .22); }
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-thumb, .pub-thumb:hover, .pub-thumb:focus-visible { transition: none; transform: none; }
+}
 .legend { font-size: .82rem; color: var(--ink-3); font-style: italic; }
 
 /* ---------- callouts / boxes ---------- */
@@ -173,9 +192,143 @@ code:not(pre code) { background: var(--paper-2); border: 1px solid var(--line); 
 .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
 .gallery img { aspect-ratio: 4/3; object-fit: cover; border-radius: 2px; }
 
+/* ---------- lab-life albums ---------- */
+.collection-index { padding-top: 0; border-top: 0 !important; }
+.collection-index-head { display: flex; align-items: end; justify-content: space-between; gap: 34px; margin-bottom: 26px; }
+.collection-index-head h2 { margin-bottom: .45rem; }
+.collection-index-head .prose { color: var(--ink-2); margin-bottom: 0; }
+.collection-load-all { flex: 0 0 auto; cursor: pointer; font: inherit; }
+.collection-load-all:disabled { color: var(--ink-3); cursor: default; opacity: .72; }
+.collection-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.collection-card {
+  appearance: none; border: 1px solid var(--line); border-radius: 3px; background: var(--paper-2);
+  color: inherit; cursor: pointer; padding: 24px; text-align: left; font: inherit;
+  display: flex; flex-direction: column; min-height: 430px; overflow: hidden;
+  transition: border-color .18s ease, transform .18s ease, background .18s ease;
+}
+.collection-card:hover { border-color: var(--ink-3); background: var(--paper); transform: translateY(-2px); }
+.collection-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.collection-card[aria-expanded="true"] { border-color: var(--accent); background: var(--paper); }
+.collection-card-preview {
+  display: grid; grid-template-columns: 1.35fr 1fr; gap: 4px; height: 175px;
+  margin: -24px -24px 20px; overflow: hidden; background: var(--paper-2); border-bottom: 1px solid var(--line);
+}
+.collection-card-preview img { width: 100%; height: 100%; object-fit: cover; transition: transform .22s ease, filter .22s ease; }
+.collection-card:hover .collection-card-preview img { transform: scale(1.018); filter: saturate(1.05); }
+.collection-card strong { display: block; margin: .55rem 0 .75rem; font-family: var(--serif); font-size: clamp(1.45rem, 2.5vw, 2rem); line-height: 1.08; }
+.collection-card-description { color: var(--ink-2); line-height: 1.55; }
+.collection-card-meta { color: var(--ink-3); font-size: .82rem; margin-top: auto; padding-top: 22px; }
+.collection-card-action { color: var(--accent); font-size: .86rem; font-weight: 650; margin-top: .65rem; }
+.album-collection[hidden] { display: none; }
+.album-collection { scroll-margin-top: 18px; }
+.album-collection-intro { padding-bottom: 34px; background: var(--paper-2); border-top: 3px solid var(--accent) !important; }
+.album-collection-intro-head { display: flex; align-items: end; justify-content: space-between; gap: 34px; }
+.album-collection-intro h2:focus { outline: none; }
+.album-collection-intro .prose { color: var(--ink-2); margin-bottom: 0; }
+.collection-back { flex: 0 0 auto; cursor: pointer; font: inherit; }
+.lab-life-album { border-top: 1px solid var(--line) !important; }
+.lab-life-album + .lab-life-album { border-top: 1px solid var(--line) !important; }
+.album-head { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 28px; }
+.album-head h2 { margin-bottom: .25rem; }
+.album-head .prose { color: var(--ink-2); margin-bottom: 0; }
+.album-meta { color: var(--ink-3); font-size: .9rem; font-weight: 560; margin: 0 0 .75rem; }
+.album-open { flex: 0 0 auto; margin-bottom: .2rem; cursor: pointer; font: inherit; }
+
+.album-cover {
+  display: grid;
+  grid-template-columns: 1.35fr 1.35fr 1fr 1fr;
+  grid-template-rows: repeat(2, clamp(155px, 20vw, 235px));
+  gap: 10px;
+}
+.album-cover-photo, .album-thumb {
+  appearance: none; border: 0; padding: 0; margin: 0; overflow: hidden;
+  background: var(--paper-2); cursor: zoom-in; border-radius: 2px;
+}
+.album-cover-photo.is-main { grid-column: 1 / 3; grid-row: 1 / 3; }
+.album-cover.is-two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: clamp(230px, 34vw, 430px);
+}
+.album-cover.is-two-up .album-cover-photo.is-main { grid-column: auto; grid-row: auto; }
+.album-cover-photo img, .album-thumb img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .22s ease, filter .22s ease;
+}
+.album-cover-photo img:not([src]), .album-thumb img:not([src]) { opacity: 0; }
+.album-cover-photo:hover img, .album-thumb:hover img { transform: scale(1.018); filter: saturate(1.05); }
+.album-cover-photo:focus-visible, .album-thumb:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 3px;
+}
+.album-credit { color: var(--ink-3); font-size: .82rem; margin: .8rem 0 0; }
+
+.album-drawer { margin-top: 26px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.album-drawer summary {
+  cursor: pointer; list-style-position: outside; padding: 16px 4px;
+  color: var(--accent); font-size: .9rem; font-weight: 650;
+}
+.album-drawer summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.album-drawer[open] summary { border-bottom: 1px solid var(--line); }
+.album-groups { padding: 6px 0 28px; }
+.album-group { padding-top: 26px; }
+.album-group h3 { font-family: var(--sans); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.album-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 8px; }
+.album-thumb { aspect-ratio: 1; }
+
+body:has(.photo-lightbox[open]) { overflow: hidden; }
+.photo-lightbox {
+  width: min(96vw, 1440px); max-width: none;
+  height: min(94dvh, 1050px); max-height: none;
+  padding: 0; border: 0; overflow: visible; background: transparent; color: #fff;
+}
+.photo-lightbox::backdrop { background: rgb(10 10 12 / .94); backdrop-filter: blur(5px); }
+.lightbox-shell {
+  position: relative; display: grid; grid-template-columns: 58px minmax(0, 1fr) 58px;
+  align-items: center; width: 100%; height: 100%; gap: 14px;
+}
+.lightbox-figure { margin: 0; min-width: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; height: 100%; align-items: center; }
+.lightbox-figure img { max-width: 100%; max-height: calc(94dvh - 58px); width: auto; height: auto; margin: auto; object-fit: contain; }
+.lightbox-caption { display: flex; justify-content: space-between; gap: 22px; padding-top: 10px; color: #ddd; font-size: .8rem; line-height: 1.4; }
+.lightbox-caption [data-lightbox-counter] { color: #aaa; white-space: nowrap; }
+.lightbox-nav, .lightbox-close {
+  appearance: none; border: 1px solid rgb(255 255 255 / .24); background: rgb(20 20 23 / .66); color: #fff;
+  width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font: 500 1.35rem/1 var(--sans);
+}
+.lightbox-nav:hover, .lightbox-close:hover { background: rgb(255 255 255 / .14); border-color: rgb(255 255 255 / .5); }
+.lightbox-nav:focus-visible, .lightbox-close:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.lightbox-close { position: absolute; z-index: 2; top: 4px; right: 0; font-size: 1.8rem; }
+
+@media (max-width: 700px) {
+  .collection-index-head { display: block; }
+  .collection-load-all { margin-top: 16px; }
+  .collection-cards { grid-template-columns: 1fr; }
+  .collection-card { min-height: 400px; padding: 20px; }
+  .collection-card-preview { height: 165px; margin: -20px -20px 18px; }
+  .album-collection-intro-head { display: block; }
+  .collection-back { margin-top: 18px; }
+  .album-head { display: block; }
+  .album-open { margin-top: .65rem; }
+  .album-cover { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; gap: 7px; }
+  .album-cover.is-two-up { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+  .album-cover-photo { aspect-ratio: 1; }
+  .album-cover-photo.is-main { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 4/3; }
+  .album-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 6px; }
+
+  .photo-lightbox { width: 100vw; height: 100dvh; }
+  .lightbox-shell { grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 3px; padding: 8px; }
+  .lightbox-figure img { max-height: calc(100dvh - 76px); }
+  .lightbox-nav, .lightbox-close { width: 40px; height: 40px; font-size: 1.08rem; }
+  .lightbox-close { top: 8px; right: 8px; font-size: 1.45rem; }
+  .lightbox-caption { font-size: .72rem; padding: 7px 3px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .album-cover-photo img, .album-thumb img { transition: none; }
+  .album-cover-photo:hover img, .album-thumb:hover img { transform: none; }
+}
+
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--line); margin-top: 70px; padding: 46px 0 60px; background: var(--paper-2); }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; max-width: 760px; }
 .site-footer h4 { font-size: .74rem; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-3); margin-bottom: .8rem; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: .45rem; font-size: .9rem; }
@@ -194,9 +347,13 @@ code:not(pre code) { background: var(--paper-2); border: 1px solid var(--line); 
   .pub-controls { position: static; }
   .pub { grid-template-columns: 1fr; gap: 4px; }
   .pub .yr { padding-top: 0; }
+  /* Year spans the row so the thumbnail can sit beside the citation, not under it. */
+  .pub.has-thumb { grid-template-columns: 1fr 72px; column-gap: 14px; }
+  .pub.has-thumb .yr { grid-column: 1 / -1; }
 }
 
 @media print {
-  .site-header, .site-footer, .pub-controls, .btn-row { display: none; }
+  .site-header, .site-footer, .pub-controls, .btn-row, .pub-thumb { display: none; }
+  .pub.has-thumb { grid-template-columns: 62px 1fr; }
   body { background: #fff; font-size: 11pt; }
 }

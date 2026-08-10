@@ -5,7 +5,7 @@
       "degree": "PhD",
       "role": "Professor of Genetics, Harvard Medical School",
       "email": "churchman@genetics.med.harvard.edu",
-      "photo": "/68f0980f-329e-4fc3-9608-e5dab89444f1/P1090037.jpg",
+      "photo": "/images/team/stirling-churchman.webp",
       "href": "/stirling",
       "pi": true
     },
@@ -14,14 +14,13 @@
       "degree": "PhD",
       "role": "Computational Biologist",
       "detail": "Analysis wizard",
-      "photo": "/1595875061421-7P11J3TFTFIYRG8XQTJF/P1080315.JPG"
+      "photo": "/images/team/mary-couvillion.jpg"
     },
     {
-      "name": "Mike Kourkoulakos",
+      "name": "Maddie Flanagan",
       "role": "Technician / Lab Manager",
-      "detail": "BS/MS Biology, Tufts University",
-      "email": "mike_kourkoulakos@hms.harvard.edu",
-      "photo": "/93fa9ae4-7bd9-4b61-bb60-3d1b45823325/P1090011.jpg"
+      "detail": "BS in Cellular and Molecular Biology, Northeastern University",
+      "email": "madison_flanagan@hms.harvard.edu"
     },
     {
       "name": "Inés Patop",
@@ -30,7 +29,7 @@
       "detail": "PhD in Molecular and Cellular Biology, Brandeis University",
       "award": "The Parkinson's Foundation Postdoctoral Fellowship",
       "email": "ines_patop@hms.harvard.edu",
-      "photo": "/b15ce46a-d9d2-4b1d-b2cb-0aeb7632db64/P1080920.JPG"
+      "photo": "/images/team/ines-patop.jpg"
     },
     {
       "name": "Nick Ide",
@@ -39,7 +38,7 @@
       "detail": "PhD in Biological Science, Columbia University",
       "award": "Helen Hay Whitney Postdoctoral Fellowship",
       "email": "nick_ide@hms.harvard.edu",
-      "photo": "/2065178f-d397-4640-8dc1-19e9e69b4985/nick_ide_med.jpg"
+      "photo": "/images/team/nick-ide.jpg"
     },
     {
       "name": "Ana-Maria Raicu",
@@ -48,7 +47,7 @@
       "detail": "PhD in Cellular and Molecular Biology, Michigan State University",
       "award": "Ruth L. Kirschstein National Research Service Award F32",
       "email": "ana-maria_raicu@hms.harvard.edu",
-      "photo": "/3c677f7c-9d14-490e-9a5a-5a2b3aac73df/P1080927.JPG"
+      "photo": "/images/team/ana-maria-raicu.jpg"
     },
     {
       "name": "Jimmy Ly",
@@ -68,28 +67,28 @@
       "detail": "BA in Biochemistry and Neurobiology, MS in Chemistry, University of Pennsylvania",
       "award": "National Science Foundation Graduate Fellowship",
       "email": "hmerens@g.harvard.edu",
-      "photo": "/1590358480113-TKC9C9LW9RXPUCYUIWPO/P1080792.JPG"
+      "photo": "/images/team/hope-merens.webp"
     },
     {
       "name": "Gyan Prakash",
       "role": "Biological Sciences in Public Health Graduate Student",
       "detail": "MS in Biochemistry, McGill University",
       "email": "gprakash@g.harvard.edu",
-      "photo": "/1629736272585-7U081LIM7BMP136BW0QD/P1080817.JPG"
+      "photo": "/images/team/gyan-prakash.jpg"
     },
     {
       "name": "Lisa Hansen",
       "role": "BBS Graduate Student",
       "detail": "BA in Biochemistry and Neuroscience, University of Colorado Boulder",
       "email": "lisahansen@g.harvard.edu",
-      "photo": "/041fb738-31b4-4b57-997a-5bf86dfbe7b4/P1080973.JPG"
+      "photo": "/images/team/lisa-hansen.jpg"
     },
     {
       "name": "Claire Nuessmeier",
       "role": "Chemical Biology Graduate Student",
       "detail": "BS in Biochemistry and Molecular Biology, Marquette University",
       "email": "clairenuessmeier@g.harvard.edu",
-      "photo": "/c25eba22-6358-464b-b461-3f8d6faf4cfb/P1090002.JPG"
+      "photo": "/images/team/claire-nuessmeier.jpg"
     }
   ],
   "alumniPostdocs": [
@@ -97,23 +96,93 @@
     { "name": "Umut Eser, PhD", "now": "Head of Generative AI, Johnson & Johnson Innovative Medicines", "href": "https://www.linkedin.com/in/umuteser/" },
     { "name": "Julia di Iulio, PhD", "now": "Senior Director, Vir Biotechnology", "href": "https://www.vir.bio/" },
     { "name": "Andrew Stergachis, MD, PhD", "now": "Associate Professor of Medicine and Genome Sciences, University of Washington", "href": "https://stergachislab.org/" },
-    { "name": "Iliana Soto, PhD", "now": "Biomedical Sciences Program Director, Keiser University, Miami Campus" },
-    { "name": "Danya Martell-Smart, PhD", "now": "Patent Agent, Wilson Sonsini" },
+    { "name": "Iliana Pascal (Soto), PhD", "now": "Biomedical Sciences Program Director, Keiser University, Miami Campus", "href": "https://www.linkedin.com/in/iliana-pascal-0a4739103/" },
+    { "name": "Danya Martell-Smart, PhD", "now": "Patent Agent, Wilson Sonsini", "href": "https://www.linkedin.com/in/danya-j-martell-smart-48337315/" },
     { "name": "Karine Choquet, PhD", "now": "Assistant Professor, Université de Sherbrooke", "href": "https://www.choquetlab.com/" },
-    { "name": "Robert Ietswaart, PhD", "now": "Co-Founder and CSO, Cellforma", "href": "https://www.cellforma.com/" },
-    { "name": "Nick Kramer, PhD", "now": "Senior Scientist, Illumina", "href": "https://www.linkedin.com/in/nicholas-kramer-69a123183/" },
+    { "name": "Robert Ietswaart, PhD", "now": "Incoming Assistant Professor, Department of Biological Sciences, The University of Texas at Dallas (Fall 2026)", "href": "https://www.linkedin.com/in/robertietswaart/" },
+    { "name": "Nick Kramer, PhD", "now": "Staff Scientist, Illumina", "href": "https://www.linkedin.com/in/nicholas-kramer-69a123183/" },
     { "name": "R. Stefan Isaac, PhD", "now": "Assistant Professor of Biochemistry and Cell Biology, Boston University", "href": "https://www.bumc.bu.edu/biochemcellbio/profiles/stefan-isaac/" },
-    { "name": "Erik McShane, PhD", "now": "Senior Scientist, Flagship Labs 103, Flagship Pioneering" },
-    { "name": "Katja Hansen, PhD", "now": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau" }
+    { "name": "Erik McShane, PhD", "now": "Senior Scientist, Flagship Labs 103, Flagship Pioneering", "href": "https://www.linkedin.com/in/erik-mcshane-5381a315b/" },
+    { "name": "Katja Hansen, PhD", "now": "Postdoctoral Fellow, RPTU Kaiserslautern-Landau", "href": "https://www.linkedin.com/in/katja-hansen-3b9a78b3/" }
   ],
   "alumniStudents": [
-    { "name": "Kevin Harlen, PhD", "now": "Associate VP, AI & Data Solutions, Deloitte" },
-    { "name": "Heather Landry Drexler, PhD", "now": "R&D Strategy & Performance Excellence Director, Amgen" },
-    { "name": "Blake Tye, PhD", "now": "Global Industry Analyst, Biopharma Equity Research, Wellington Management" },
-    { "name": "Kate Lachance, PhD", "now": "Consultant, McKinsey & Company" },
-    { "name": "Aaron Aker, PhD", "now": "Scientist, Integrated DNA Technologies" },
-    { "name": "Brendan Smalec, PhD", "now": "Senior Manager, Bain & Company" },
-    { "name": "Tommy Tullius, PhD", "now": "Postdoctoral Fellow, Levine Lab, Princeton University" },
-    { "name": "Jake Bridgers, PhD" }
+    { "name": "Kevin Harlen, PhD", "now": "Associate VP, AI & Data Solutions, Deloitte", "href": "https://www.linkedin.com/in/kevin-harlen-ph-d-846162105/" },
+    { "name": "Heather Drexler (Landry), PhD", "now": "R&D Strategy & Performance Excellence Director, Amgen", "href": "https://www.linkedin.com/in/heather-drexler-36403a46/" },
+    { "name": "Blake Tye, PhD", "now": "Global Industry Analyst, Biopharma Equity Research, Wellington Management", "href": "https://www.linkedin.com/in/blakewellstye/" },
+    { "name": "Kate Lafontant (Lachance), PhD", "now": "Asset Leader, Wave, McKinsey & Company", "href": "https://www.linkedin.com/in/katelafontant/" },
+    { "name": "Aaron Aker, PhD", "now": "Application Scientist–NGS, Integrated DNA Technologies", "href": "https://www.linkedin.com/in/aaron-aker/" },
+    { "name": "Brendan Smalec, PhD", "now": "Senior Manager, Bain & Company", "href": "https://www.linkedin.com/in/brendansmalec/" },
+    { "name": "Tommy Tullius, PhD", "now": "Postdoctoral Fellow, Levine Lab, Princeton University", "href": "https://www.linkedin.com/in/tommy-tullius-phd-4922305b/" },
+    { "name": "Jake Bridgers, PhD", "href": "https://www.linkedin.com/in/joseph-bridgers-071524142/" }
+  ],
+  "alumniTechnicians": [
+    {
+      "name": "Joseph Ling",
+      "program": "MD, Morehouse School of Medicine",
+      "now": "Founder and CEO, Lucid Management; refractive surgeon",
+      "href": "https://www.linkedin.com/in/joseph-ling-364a5126/"
+    },
+    {
+      "name": "Kristine L. Trotta",
+      "program": "PhD, UCSF Tetrad Graduate Program",
+      "now": "Technical project manager and molecular biologist; most recently at Breaking",
+      "href": "https://www.linkedin.com/in/kristinetrotta/"
+    },
+    {
+      "name": "Erin Smith",
+      "program": "MEd in Science, Stanford University",
+      "now": "Curriculum Specialist, California Academy of Sciences; Biology Teacher and New Teacher Mentor, Berkeley Unified School District",
+      "href": "https://www.linkedin.com/in/erin-smith-8ab13a90/"
+    },
+    {
+      "name": "Brian Debo",
+      "program": "DPhil in Clinical Medicine, University of Oxford",
+      "now": "Group Manager, Ludwig Cancer Research, University of Oxford",
+      "href": "https://www.linkedin.com/in/brian-debo-a3152b3b9/"
+    },
+    {
+      "name": "Justin D. Falk, DO",
+      "program": "DO, Lake Erie College of Osteopathic Medicine",
+      "now": "Neurology Resident Physician, Emory University School of Medicine",
+      "href": "https://www.linkedin.com/in/justin-falk/"
+    },
+    {
+      "name": "Autum Koenigs",
+      "program": "MD/PhD Program, University of Washington",
+      "now": "MD/PhD student, University of Washington"
+    },
+    {
+      "name": "Mike Kourkoulakos",
+      "program": "Molecular Biology Graduate Program, Princeton University",
+      "now": "Incoming graduate student, Princeton University (Fall 2026)",
+      "href": "https://www.linkedin.com/in/mike-kourkoulakos-397939219/"
+    }
+  ],
+  "alumniUndergraduates": [
+    {
+      "name": "Leah Rosen, PhD",
+      "award": "Thomas Temple Hoopes Prize for her senior thesis",
+      "program": "PhD in Bioinformatics, University of Cambridge / EMBL-EBI",
+      "now": "Postdoctoral researcher, Lappalainen Lab, SciLifeLab",
+      "href": "https://uk.linkedin.com/in/leahurosen"
+    },
+    {
+      "name": "David Sokolov",
+      "program": "PhD in Molecular and Cellular Biology, University of Washington",
+      "now": "Graduate student, Sullivan Lab, Fred Hutch Cancer Center",
+      "href": "https://www.fredhutch.org/en/news/spotlight/2025/07/latinatlas.html"
+    },
+    {
+      "name": "Devin Bowen Wan",
+      "program": "PhD in Biomedical Sciences, The University of Hong Kong",
+      "now": "PhD student, He Lab, HKU School of Biomedical Sciences",
+      "href": "https://hk.linkedin.com/in/devin-wan-a57016196"
+    },
+    {
+      "name": "Raquel Merino Urteaga",
+      "program": "PhD in Developmental Biology and Biophysics, Johns Hopkins University",
+      "now": "Researcher, Ha Lab, Program in Cellular and Molecular Medicine, Boston Children's Hospital / HHMI",
+      "href": "https://www.linkedin.com/in/raquel-merino-urteaga-b14984225"
+    }
   ]
 }

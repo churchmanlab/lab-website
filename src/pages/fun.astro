@@ -1,99 +1,413 @@
 ---
 import Base from "../layouts/Base.astro";
-import site from "../data/site.json";
+import labLife from "../data/lab-life.json";
+import { u } from "../lib/path.js";
 
-const img = (p, w = 800) => `${site.cdn}${p}?format=${w}w`;
+const prepareAlbum = (album) => {
+  const photos = album.groups.flatMap((group) =>
+    group.files.map((file) => ({ file, credit: group.credit })),
+  );
+  const photoIndex = new Map();
+  photos.forEach((photo, index) => photoIndex.set(photo.file, { ...photo, index }));
+  const coverAlt = new Map(album.cover.map((photo) => [photo.file, photo.alt]));
+  const photoPath = (file, size = "thumbs") => u(`/images/lab-life/${album.id}/${size}/${file}.jpg`);
+  const cover = album.cover.map((photo) => {
+    const index = photos.findIndex((candidate) => candidate.file === photo.file);
+    return {
+      ...photo,
+      credit: index >= 0 ? photos[index].credit : "Churchman Lab",
+      index: Math.max(index, 0),
+    };
+  });
+  const clientPhotos = photos.map((photo, index) => ({
+    full: photoPath(photo.file, "full"),
+    alt: coverAlt.get(photo.file) || `${album.title} photograph ${index + 1} by ${photo.credit}`,
+    caption: `${album.title} · Photo by ${photo.credit}`,
+  }));
 
-const recent = [
-  { p: "/250abf1d-3a10-49a3-8bfb-88f9b187a480/IMG_1502.jpg", c: "Lab cruise on the Charles, 2022" },
-  { p: "/33ba4f2e-972b-41ed-a7c8-336ed375e990/IMG_1440.jpg", c: "Katja's baby shower" },
-  { p: "/2bb19fc9-679b-41aa-bc3e-fc5254bb182a/IMG_1485.jpg", c: "Gene Expression Keystone meeting" },
-  { p: "/c8f6969a-813f-4f42-829d-fde48168a86f/IMG_1509.jpg", c: "" },
-  { p: "/21852484-6548-49cf-aa74-2ac4e96ef866/IMG_0827.jpeg", c: "Lab party, 2021" },
-  { p: "/c5b542e6-ed1d-4d30-b333-4b0ca0ad8082/IMG_0834.jpeg", c: "" },
-  { p: "/f680bc70-e8eb-4f84-91dc-8db16414f3fb/IMG-0893.jpg", c: "Lab retreat, 2021" },
-  { p: "/417cccc7-150e-41ba-b35c-eb9acee369aa/IMG-0882.jpg", c: "" },
-  { p: "/df129860-5c29-4daa-84a4-543ea3c82400/IMG-0891.jpg", c: "" },
-  { p: "/72e7d471-695a-4ab1-a8eb-f0896238bbfb/IMG-0885.jpg", c: "" },
-  { p: "/a33bf7a1-1cf2-4f45-a413-6856b227f918/IMG-0889.jpg", c: "" },
-  { p: "/ea1b2dfc-efff-473d-b3fc-3fb37dcfa271/IMG-0904.jpg", c: "" },
-];
+  const credits = [...new Set(album.groups.map((group) => group.credit))];
 
-const maine = [
-  "/1590323851475-17GKM174IN8VD0LXO92Y/IMG_20191010_140111.jpg",
-  "/1590323854363-F9KAR8PN1DHMTOJ4ZUKH/IMG_20191010_140129.jpg",
-  "/1590323860442-WQMGGLKSP8MG83UGOGCI/IMG_20191010_144357.jpg",
-  "/1590323862348-RR6QSW3B4D07VSRGQPGP/IMG_20191010_144807.jpg",
-  "/1590323845021-UYIURQYOEY0H0U21HBQI/IMG_20191009_101727.jpg",
-  "/1590323853795-7WFSEWDF8T6GH84YVM3S/IMG_20191010_140058.jpg",
-  "/1590323836698-P0R7MGKBBVIAXHC4XTFP/Image+from+iOS+%285%29.jpg",
-  "/1590323825282-ZE13V9V5XXX4HVTTS2O2/Bild+von+iOS.jpg",
-  "/1590323817288-2R7DJ9KV6K9DHYP03N6N/Image+from+iOS+%281%29.jpg",
-  "/1590323818879-8KNI0U5ZCWDQFGRI42S5/Image+from+iOS+%283%29.jpg",
-  "/1590323813570-G6SN4O2V7BNUFNFGAKOH/Image+from+iOS+%284%29.jpg",
-  "/1590323837038-LHQXSM1GNV3OGCAVN1QZ/Image+from+iOS+%282%29.jpg",
-];
+  return { ...album, photos, photoIndex, coverAlt, photoPath, cover, clientPhotos, credits };
+};
 
-const early = [
-  { p: "/1590324122823-07ZDF6EXQ2FPS8SS2ZTP/aaf7d-boxes.jpg", c: "First day of the Churchman lab — lots of boxes" },
-  { p: "/1590324116127-7XJ3NMZZBMXATB9GSR85/2e4cb-sushi.jpg", c: "First holiday party, with lots of sushi and sake" },
-  { p: "/1590324100852-HCYEQ5N35327EAV8OA8S/76388-churchmanlab2012.jpg", c: "First Churchman lab retreat" },
-  { p: "/1590324082424-EYDOMB99OE2YAB5YVO7F/f5854-andreas_welcome.jpg", c: "Celebrating Andreas joining the lab" },
-  { p: "/1590324063680-W6NKXRLICET5JR0GPHEM/7a970-retreatlabphoto.jpg", c: "Second lab retreat" },
-  { p: "/1590324034177-XAWR8K9U42G1RSHF00IT/a14fc-image-asset.png", c: "Heather tells us one of her great ideas" },
-  { p: "/1590324040604-LPEOVABSLE6QAIV4HOZ3/fbe01-harlen-reese-asbmb-symposium.jpg", c: "Kevin wins a poster prize" },
-];
+const retreatAlbums = labLife.albums.map(prepareAlbum);
+const eventAlbums = labLife.eventAlbums.map(prepareAlbum);
+const eventAlbumById = new Map(eventAlbums.map((album) => [album.id, album]));
+const pickEventAlbums = (ids) => ids.map((id) => eventAlbumById.get(id)).filter(Boolean);
+
+const collections = [
+  {
+    id: "retreats",
+    eyebrow: "Annual tradition · 2012–2025",
+    title: "Lab retreats",
+    description: "Chalk talks, shared meals, long hikes and the annual group portrait—one retreat for every year we gathered.",
+    albums: retreatAlbums,
+    previewAlbumIds: ["2025-retreat", "2012-retreat"],
+  },
+  {
+    id: "milestones",
+    eyebrow: "Thesis days & new candidates · 2019–2026",
+    title: "Milestones & defenses",
+    description: "Thesis defenses, candidacy dinners and the celebrations that follow big scientific milestones.",
+    albums: pickEventAlbums([
+      "2026-hope-defense",
+      "2025-candidate-dinner",
+      "2024-jake-defense",
+      "2023-tommy-defense",
+      "2019-blake-defense",
+      "2019-heather-defense",
+    ]),
+    previewAlbumIds: ["2025-candidate-dinner", "2024-jake-defense"],
+  },
+  {
+    id: "outings",
+    eyebrow: "Boats, dinners & celebrations · 2013–2022",
+    title: "Outings & celebrations",
+    description: "Cruises, conferences, baby showers and send-offs from the life of the lab beyond Longwood Avenue.",
+    albums: pickEventAlbums([
+      "2022-charles-cruise",
+      "2022-keystone",
+      "2022-katja-baby-shower",
+      "2021-lab-party",
+      "2015-seth-farewell",
+      "2013-harpoon-outing",
+    ]),
+    previewAlbumIds: ["2022-charles-cruise", "2013-harpoon-outing"],
+  },
+  {
+    id: "beginnings",
+    eyebrow: "The first years · 2011–2012",
+    title: "Building the lab",
+    description: "The original empty room, unpacking day and the small collection of photographs from the lab’s first year.",
+    albums: pickEventAlbums(["2012-lab-move-in", "2011-first-year"]),
+    previewAlbumIds: ["2012-lab-move-in", "2011-first-year"],
+  },
+].map((collection) => {
+  const previews = collection.previewAlbumIds.map((albumId) => {
+    const album = collection.albums.find((candidate) => candidate.id === albumId);
+    const photo = album?.cover[0];
+    return album && photo ? { src: album.photoPath(photo.file), alt: photo.alt } : null;
+  }).filter(Boolean);
+
+  return {
+    ...collection,
+    previews,
+    photoCount: collection.albums.reduce((sum, album) => sum + album.photos.length, 0),
+  };
+});
+
+const totalAlbums = collections.reduce((sum, collection) => sum + collection.albums.length, 0);
+const totalPhotos = collections.reduce((sum, collection) => sum + collection.photoCount, 0);
+
+const clientAlbums = Object.fromEntries(
+  collections.flatMap((collection) => collection.albums.map((album) => [album.id, album.clientPhotos])),
+);
 
 const description =
-  "Lab life in the Churchman Lab: annual retreats, celebrations, thesis defences and boat trips on the Charles, from the lab's first day in 2011 to now.";
+  "Lab life in the Churchman Lab: annual retreats, celebrations, thesis defenses and boat trips on the Charles, from the lab's first day in 2011 to now.";
 ---
 
 <Base title="Lab Life" description={description}>
   <section class="section" style="padding-bottom:34px">
     <div class="wrap">
       <p class="eyebrow">Lab life</p>
-      <h1>Retreats, defences and boats on the Charles</h1>
+      <h1>Retreats, milestones and boats on the Charles</h1>
       <p class="lede prose">
-        The lab has taken an annual retreat since 2012. Prospective students always ask what a lab is actually like
-        day to day; this is the honest answer, in photographs.
+        The lab has taken an annual retreat since 2012. Here's a glimpse of what life in the Churchman lab is like.
       </p>
     </div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <section class="section collection-index">
     <div class="wrap">
-      <h2>Recent years</h2>
-      <div class="gallery">
-        {recent.map((g) => (
-          <figure style="margin:0">
-            <img src={img(g.p)} alt={g.c || "Churchman lab"} loading="lazy" />
-            {g.c && <figcaption class="figcap">{g.c}</figcaption>}
-          </figure>
+      <div class="collection-index-head">
+        <div>
+          <p class="eyebrow">Through the years</p>
+          <h2>Choose a collection</h2>
+          <p class="prose">
+            Browse a few highlights, then open any collection to explore its {totalAlbums} albums and {totalPhotos}
+            photographs.
+          </p>
+        </div>
+        <button class="btn collection-load-all" type="button" data-load-all-collections>
+          Open all collections
+        </button>
+      </div>
+
+      <div class="collection-cards">
+        {collections.map((collection) => (
+          <button
+            class="collection-card"
+            type="button"
+            data-collection-toggle={collection.id}
+            aria-controls={`collection-${collection.id}`}
+            aria-expanded="false"
+            aria-label={`Explore ${collection.title}`}
+          >
+            <span class="collection-card-preview" aria-hidden="true">
+              {collection.previews.map((preview) => (
+                <img src={preview?.src} alt="" loading="lazy" decoding="async" />
+              ))}
+            </span>
+            <span class="eyebrow">{collection.eyebrow}</span>
+            <strong>{collection.title}</strong>
+            <span class="collection-card-description">{collection.description}</span>
+            <span class="collection-card-meta">{collection.albums.length} albums <span aria-hidden="true">·</span> {collection.photoCount} photographs</span>
+            <span class="collection-card-action" data-collection-action>Explore collection <span aria-hidden="true">↓</span></span>
+          </button>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <h2>Retreats in Maine</h2>
-      <div class="gallery">
-        {maine.map((p) => <img src={img(p)} alt="Churchman lab retreat in Maine" loading="lazy" />)}
-      </div>
-    </div>
-  </section>
+  {collections.map((collection) => (
+    <div
+      class="album-collection"
+      id={`collection-${collection.id}`}
+      data-collection-panel={collection.id}
+      hidden
+    >
+      <section class="section album-collection-intro">
+        <div class="wrap">
+          <div class="album-collection-intro-head">
+            <div>
+              <p class="eyebrow">{collection.eyebrow}</p>
+              <h2 tabindex="-1" data-collection-heading>{collection.title}</h2>
+              <p class="prose">{collection.description}</p>
+            </div>
+            <button class="btn collection-back" type="button" data-collection-back={collection.id}>
+              Back to collections <span aria-hidden="true">↑</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-  <section class="section">
-    <div class="wrap">
-      <h2>The early years</h2>
-      <div class="gallery">
-        {early.map((g) => (
-          <figure style="margin:0">
-            <img src={img(g.p)} alt={g.c} loading="lazy" />
-            <figcaption class="figcap">{g.c}</figcaption>
-          </figure>
-        ))}
-      </div>
+      {collection.albums.map((album) => (
+        <section class="section lab-life-album">
+          <div class="wrap">
+            <div class="album-head">
+              <div>
+                <h2>{album.title}</h2>
+                <p class="album-meta">{album.date} <span aria-hidden="true">·</span> {album.location}</p>
+                <p class="prose">{album.description}</p>
+              </div>
+              <button class="btn album-open" type="button" data-album-id={album.id} data-photo-index="0">
+                Open album <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class:list={["album-cover", { "is-two-up": album.cover.length === 2 }]} aria-label={`${album.title} highlights`}>
+              {album.cover.map((photo, index) => (
+                <button
+                  class:list={["album-cover-photo", { "is-main": index === 0 }]}
+                  type="button"
+                  data-album-id={album.id}
+                  data-photo-index={photo.index}
+                  aria-label={`Open album at: ${photo.alt}`}
+                >
+                  <img
+                    data-src={album.photoPath(photo.file)}
+                    alt={photo.alt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              ))}
+            </div>
+
+            <p class="album-credit">
+              {album.photos.length} photographs <span aria-hidden="true">·</span> Photos by {album.credits.join(", ")}
+            </p>
+
+            <details class="album-drawer">
+              <summary>Browse all {album.photos.length} photographs</summary>
+              <div class="album-groups">
+                {album.groups.map((group) => {
+                  const creditId = `credit-${album.id}-${group.credit.replaceAll(" ", "-").toLowerCase()}`;
+                  return (
+                    <section class="album-group" aria-labelledby={creditId}>
+                      <h3 id={creditId}>Photos by {group.credit}</h3>
+                      <div class="album-grid">
+                        {group.files.map((file) => {
+                          const photo = album.photoIndex.get(file);
+                          return (
+                            <button
+                              class="album-thumb"
+                              type="button"
+                              data-album-id={album.id}
+                              data-photo-index={photo?.index || 0}
+                              aria-label={`Open photograph by ${group.credit}`}
+                            >
+                              <img
+                                data-src={album.photoPath(file)}
+                                alt={album.coverAlt.get(file) || `${album.title} photograph by ${group.credit}`}
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+            </details>
+          </div>
+        </section>
+      ))}
     </div>
-  </section>
+  ))}
+
+  <dialog class="photo-lightbox" id="lab-life-lightbox" aria-label="Lab life photo viewer">
+    <div class="lightbox-shell">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close photo viewer">×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous photograph">←</button>
+      <figure class="lightbox-figure">
+        <img data-lightbox-image alt="" />
+        <figcaption class="lightbox-caption" aria-live="polite">
+          <span data-lightbox-caption></span>
+          <span data-lightbox-counter></span>
+        </figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next photograph">→</button>
+    </div>
+  </dialog>
+
+  <script id="lab-life-photo-data" type="application/json" set:html={JSON.stringify(clientAlbums)}></script>
+  <script>
+    const dataNode = document.querySelector("#lab-life-photo-data");
+    const dialog = document.querySelector("#lab-life-lightbox");
+    const image = dialog?.querySelector("[data-lightbox-image]");
+    const caption = dialog?.querySelector("[data-lightbox-caption]");
+    const counter = dialog?.querySelector("[data-lightbox-counter]");
+    const albums = dataNode ? JSON.parse(dataNode.textContent || "{}") : {};
+
+    const loadDeferredImages = (root, selector = "img[data-src]") => {
+      root.querySelectorAll(selector).forEach((node) => {
+        if (!(node instanceof HTMLImageElement) || !node.dataset.src) return;
+        node.src = node.dataset.src;
+        delete node.dataset.src;
+      });
+    };
+
+    const collectionButtons = [...document.querySelectorAll("[data-collection-toggle]")];
+    const setCollectionOpen = (button, open, bringIntoView = false) => {
+      if (!(button instanceof HTMLButtonElement)) return;
+      const panelId = button.getAttribute("aria-controls");
+      const panel = panelId ? document.getElementById(panelId) : null;
+      if (!(panel instanceof HTMLElement)) return;
+
+      panel.hidden = !open;
+      button.setAttribute("aria-expanded", String(open));
+      const action = button.querySelector("[data-collection-action]");
+      if (action instanceof HTMLElement) action.innerHTML = open ? "Close collection ↑" : "Explore collection ↓";
+      if (open) {
+        loadDeferredImages(panel, ".album-cover img[data-src]");
+        if (bringIntoView) {
+          requestAnimationFrame(() => {
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            panel.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+            const heading = panel.querySelector("[data-collection-heading]");
+            if (heading instanceof HTMLElement) heading.focus({ preventScroll: true });
+          });
+        }
+      }
+    };
+
+    collectionButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setCollectionOpen(button, button.getAttribute("aria-expanded") !== "true", true);
+      });
+    });
+
+    document.querySelectorAll("[data-collection-back]").forEach((backButton) => {
+      backButton.addEventListener("click", () => {
+        const collectionId = backButton.getAttribute("data-collection-back");
+        const collectionButton = collectionButtons.find(
+          (button) => button.getAttribute("data-collection-toggle") === collectionId,
+        );
+        if (!(collectionButton instanceof HTMLButtonElement)) return;
+        setCollectionOpen(collectionButton, false);
+        collectionButton.scrollIntoView({ behavior: "smooth", block: "center" });
+        collectionButton.focus({ preventScroll: true });
+      });
+    });
+
+    document.querySelector("[data-load-all-collections]")?.addEventListener("click", (event) => {
+      collectionButtons.forEach((button) => setCollectionOpen(button, true));
+      if (event.currentTarget instanceof HTMLButtonElement) {
+        event.currentTarget.textContent = "All collections are open";
+        event.currentTarget.disabled = true;
+      }
+    });
+
+    document.querySelectorAll("details.album-drawer").forEach((drawer) => {
+      drawer.addEventListener("toggle", () => {
+        if (drawer instanceof HTMLDetailsElement && drawer.open) loadDeferredImages(drawer);
+      });
+    });
+
+    if (
+      dialog instanceof HTMLDialogElement &&
+      image instanceof HTMLImageElement &&
+      caption instanceof HTMLElement &&
+      counter instanceof HTMLElement
+    ) {
+      let photos = [];
+      let current = 0;
+      let lastTrigger = null;
+      let touchStartX = 0;
+
+      const showPhoto = (requested) => {
+        current = (requested + photos.length) % photos.length;
+        const photo = photos[current];
+        image.src = photo.full;
+        image.alt = photo.alt;
+        caption.textContent = photo.caption;
+        counter.textContent = `${current + 1} of ${photos.length}`;
+
+        for (const offset of [-1, 1]) {
+          const neighbor = photos[(current + offset + photos.length) % photos.length];
+          const preload = new Image();
+          preload.src = neighbor.full;
+        }
+      };
+
+      const openAlbum = (trigger) => {
+        photos = albums[trigger.dataset.albumId || ""] || [];
+        if (!photos.length) return;
+        lastTrigger = trigger;
+        showPhoto(Number(trigger.dataset.photoIndex || 0));
+        if (!dialog.open) dialog.showModal();
+      };
+
+      document.querySelectorAll("[data-album-id][data-photo-index]").forEach((trigger) => {
+        trigger.addEventListener("click", () => openAlbum(trigger));
+      });
+
+      dialog.querySelector("[data-lightbox-close]")?.addEventListener("click", () => dialog.close());
+      dialog.querySelector("[data-lightbox-prev]")?.addEventListener("click", () => showPhoto(current - 1));
+      dialog.querySelector("[data-lightbox-next]")?.addEventListener("click", () => showPhoto(current + 1));
+
+      dialog.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") showPhoto(current - 1);
+        if (event.key === "ArrowRight") showPhoto(current + 1);
+      });
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener("close", () => {
+        image.removeAttribute("src");
+        lastTrigger?.focus();
+      });
+      dialog.addEventListener("touchstart", (event) => {
+        touchStartX = event.changedTouches[0]?.screenX || 0;
+      }, { passive: true });
+      dialog.addEventListener("touchend", (event) => {
+        const distance = (event.changedTouches[0]?.screenX || 0) - touchStartX;
+        if (Math.abs(distance) > 50) showPhoto(current + (distance < 0 ? 1 : -1));
+      }, { passive: true });
+    }
+  </script>
 </Base>

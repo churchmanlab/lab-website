@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import site from "../data/site.json";
 import { u } from "../lib/path.js";
 
-const img = (p, w = 1200) => `${site.cdn}${p}?format=${w}w`;
+const img = (p) => u(p);
 
 const description =
   "Contact the Churchman Lab, Department of Genetics, Harvard Medical School, New Research Building Room 356, 77 Avenue Louis Pasteur, Boston MA 02115.";
@@ -42,7 +42,7 @@ const jsonld = {
         <div class="box accent" style="margin-top:30px">
           <p style="margin-bottom:0">
             Interested in joining the lab? Read <a href={u("/join")}>what we look for and how to apply</a> before
-            emailing — it will make your email much easier to write.
+            emailing.
           </p>
         </div>
       </div>
@@ -66,7 +66,7 @@ const jsonld = {
           </a>
         </p>
         <img
-          src={img("/1621977752948-W2V3NSGIOOGGYCSN38YK/kevins_plates.jpg", 1000)}
+          src={img("/images/site/contact-plates.jpg")}
           alt="Plates in the Churchman lab"
           loading="lazy"
           style="border-radius:3px;margin-top:28px"

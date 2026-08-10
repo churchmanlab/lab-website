@@ -6,11 +6,12 @@ import team from "../data/team.json";
 // site, so it can never drift out of date the way a hand-written file would.
 export function GET() {
   const all = pubs.sections.flatMap((s) => s.items);
-  const key = all.filter((p) => p.highlight);
   const recent = [...all].sort((a, b) => b.year - a.year).slice(0, 12);
   const strip = (s) => s.replace(/\*\*/g, "").replace(/[*#]/g, "");
+  // Titles that are questions already end in punctuation; don't append a second stop.
+  const stop = (t) => (/[?!.]$/.test(t) ? t : `${t}.`);
   const line = (p) =>
-    `- ${strip(p.authors).split(",")[0].trim()} et al. (${p.year}) ${p.title}. ${p.journal}.${p.doi ? ` https://doi.org/${p.doi}` : ""}`;
+    `- ${strip(p.authors).split(",")[0].trim()} et al. (${p.year}) ${stop(p.title)} ${p.journal}.${p.doi ? ` https://doi.org/${p.doi}` : ""}`;
 
   const body = `# Churchman Lab — Harvard Medical School
 
@@ -46,10 +47,6 @@ The lab is currently recruiting postdoctoral fellows and accepting rotation stud
 
 ${team.current.length} current members, plus ${team.alumniPostdocs.length + team.alumniStudents.length} alumni.
 
-## Key papers
-
-${key.map(line).join("\n")}
-
 ## Most recent papers
 
 ${recent.map(line).join("\n")}
@@ -59,6 +56,7 @@ ${recent.map(line).join("\n")}
 - [Research](${site.url}/research): both research programs in detail, including the open questions currently being pursued.
 - [Publications](${site.url}/publications): all ${all.length} publications, searchable. Machine-readable at ${site.url}/publications.json
 - [Team](${site.url}/team): current members and where alumni went next.
+- [Lab life](${site.url}/fun): retreats, thesis defenses, celebrations and other moments from the lab's history.
 - [Stirling Churchman](${site.url}/stirling): PI biography, awards and talks.
 - [Tools & protocols](${site.url}/tools): GeneWalk, plus published benchtop protocols for NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling.
 - [GeneWalk](${site.url}/tools/genewalk): installation, tutorial and interpretation guide.

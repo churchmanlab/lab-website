@@ -2,20 +2,51 @@
   "_comment": "Lab members are wrapped in **double asterisks**. * = equal authorship, # = co-corresponding. doi/pmid are filled in automatically by `npm run sync:pubs`.",
   "legend": "*equal authorship; #co-corresponding authorship; Churchman Lab members in bold.",
   "fullListUrl": "https://www.ncbi.nlm.nih.gov/myncbi/lee.churchman.1/bibliography/public/",
-  "lastSynced": null,
+  "lastSynced": "2026-08-06",
   "sections": [
     {
       "id": "preprints",
       "title": "Preprints",
       "items": [
         {
+          "authors": "**Nuessmeier CH**, **Prakash G**, **Hansen LN**, **Couvillion MT**, **Churchman LS**",
+          "title": "Mitochondrial RNA processing promotes translation by resolving structured precursor RNAs",
+          "journal": "bioRxiv",
+          "year": 2026,
+          "type": "preprint",
+          "doi": "10.64898/2026.07.30.741833",
+          "pmid": null,
+          "pdf": "/pdfs/2026-mitochondrial-rna-processing-promotes-translation-by.pdf"
+        },
+        {
+          "authors": "**Hansen LN**, **Couvillion MT**, **McShane E**, Azbukina N, Treutlein B, **Churchman LS**",
+          "title": "Analog intrinsic recoding measures RNA dynamics without chemical conversion",
+          "journal": "bioRxiv",
+          "year": 2026,
+          "type": "preprint",
+          "doi": "10.64898/2026.07.27.741041",
+          "pmid": null,
+          "pdf": "/pdfs/2026-analog-intrinsic-recoding-measures-rna-dynamics.pdf"
+        },
+        {
+          "authors": "**Merens HE**, **Raicu AM**, Carroll CL, **Kourkoulakos M**, Fiszbein A, **Churchman LS**",
+          "title": "SRSF1 shapes 3'-end site selection with differential dependence on U1 snRNP",
+          "journal": "bioRxiv",
+          "year": 2026,
+          "type": "preprint",
+          "doi": "10.64898/2026.04.01.715904",
+          "pmid": "41959273",
+          "pdf": "/pdfs/2026-srsf1-shapes-3-end-site-selection-with-differential.pdf"
+        },
+        {
           "authors": "**Duffy EE**#, **Patop I***#, Kalaora S, Assad EG, Koren SA, Traunmüller L, Krüttner S, Pajarillo NS, Finander B, Barsdale Z, Macias MM, Feng MY, Paulo JA, Griffith EC, Kalish BT, Gygi SP, **Churchman LS**#, **Greenberg ME**#",
-          "title": "HuD controls widespread RNA stability to drive neuronal activity-dependent responses",
+          "title": "Neuronal activity triggers widespread changes in RNA stability",
           "journal": "bioRxiv",
           "year": 2025,
           "type": "preprint",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1101/2025.09.05.674581",
+          "pmid": "40950030",
+          "pdf": "/pdfs/2025-neuronal-activity-triggers-widespread-changes-in-rna.pdf"
         }
       ]
     },
@@ -27,11 +58,31 @@
           "authors": "**Bridgers JB***, Carlström A*, Sherpa D*, **Couvillion MT**, Rovšnik U, Gao J, Wan B, Shao S#, Ott M#, **Churchman LS**#",
           "title": "Translational activators align mRNAs at the small mitoribosomal subunit for translation initiation",
           "journal": "Nature Structural & Molecular Biology",
-          "year": 2025,
-          "note": "in press",
+          "year": 2026,
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/s41594-025-01726-y",
+          "pmid": "41339860",
+          "volume": "33(2)",
+          "pages": "245–258",
+          "image": "/images/pubs/2026-translational-activators-align-mrnas-at-the-small.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691,
+          "pdf": "/pdfs/2026-translational-activators-align-mrnas-at-the-small.pdf"
+        },
+        {
+          "authors": "Wong AYL, Myers JW, **Prakash G**, Ma A, Brook JR, Petrova B, Bulut B, White R 3rd, Merz C, de Souza M, Maynard AG, Wang P, Yu A, Pohl NK, Weitman M, Silverman LB, Stegmaier K, **Churchman LS**, Cole PD, Brady DC, Kanarek N",
+          "title": "Copper depletion boosts CNS leukemia therapy by inhibiting nucleotide synthesis through impairment of mitochondrial complex IV activity",
+          "journal": "Nature Cancer",
+          "year": 2026,
+          "type": "research",
+          "doi": "10.1038/s43018-026-01177-4",
+          "pmid": "42185479",
+          "pdf": "/pdfs/2026-copper-depletion-boosts-cns-leukemia-therapy-by.pdf",
+          "image": "/images/pubs/2026-copper-depletion-boosts-cns-leukemia-therapy-by.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691
         },
         {
           "authors": "**Hansen KG**, **Baxter-Koenigs A**, **Weiss CA**, **McShane E**, **Churchman LS**",
@@ -41,8 +92,13 @@
           "volume": "8(9)",
           "pages": "e202403082",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.26508/lsa.202403082",
+          "pmid": "40523799",
+          "image": "/images/pubs/2025-transcription-arrest-induces-formation-of-rna.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2025-transcription-arrest-induces-formation-of-rna.pdf"
         },
         {
           "authors": "**Carlström A**, **Bridgers JB**, **Couvillion M**, Singh AP, Forné I, Imhof A, **Churchman LS**#, Ott M#",
@@ -51,8 +107,13 @@
           "year": 2025,
           "volume": "53(13)",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1093/nar/gkaf634",
+          "pmid": "40637229",
+          "image": "/images/pubs/2025-a-molecular-switch-at-the-yeast-mitoribosomal-tunnel.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2025-a-molecular-switch-at-the-yeast-mitoribosomal-tunnel.pdf"
         },
         {
           "authors": "Jiang Q, Braun DA, Clauser KR, Ramesh V, Shirole NH, Duke-Cohan JE, Nabilsi N, **Kramer NJ**, Forman C, Lippincott IE, Klaeger S, Phulphagar KM, Chea V, Kim N, Vanasse AP, Saad E, Parsons T, Carr-Reynolds M, Carulli I, Pinjusic K, Jiang Y, Li R, Syamala S, Rachimi S, Verzani EK, Stevens JD, Lane WJ, Camp SY, Meli K, Pappalardi MB, Herbert ZT, Qiu X, Cejas P, Long HW, Shukla SA, Van Allen EM, Choueiri TK, **Churchman LS**, Abelin JG, Gurer C, MacBeath G, Childs RW, Carr SA, Keskin DB, Wu CJ, Kaelin WG Jr",
@@ -62,8 +123,13 @@
           "volume": "188(7)",
           "pages": "1807–1827.e34",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.cell.2025.01.046",
+          "pmid": "40023154",
+          "pdf": "/pdfs/2025-hif-regulates-multiple-translated-endogenous.pdf",
+          "image": "/images/pubs/2025-hif-regulates-multiple-translated-endogenous.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
         },
         {
           "authors": "**Choquet K**, **Chaumont LP**, **Bache S**, **Baxter-Koenigs AR**, **Churchman LS**",
@@ -73,8 +139,13 @@
           "volume": "35(4)",
           "pages": "712–724",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1101/gr.279203.124",
+          "pmid": "39952678",
+          "image": "/images/pubs/2025-genetic-regulation-of-nascent-rna-maturation.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2025-genetic-regulation-of-nascent-rna-maturation.pdf"
         },
         {
           "authors": "Bibel B, Raskar T, **Couvillion M**, Lee M, Kleinman JI, Takeuchi-Tomita N, **Churchman LS**, Fraser JS, Fujimori DG",
@@ -83,20 +154,29 @@
           "year": 2025,
           "volume": "53(3)",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1093/nar/gkaf046",
+          "pmid": "39907106",
+          "image": "/images/pubs/2025-context-specific-inhibition-of-mitochondrial.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2025-context-specific-inhibition-of-mitochondrial.pdf"
         },
         {
           "authors": "**Tullius TW**, **Isaac RS**, Ranchalis J, Dubocanin D, **Churchman LS**#, Stergachis AB#",
-          "title": "RNA polymerases reshape chromatin and coordinate transcription on individual fibers",
+          "title": "RNA polymerases reshape chromatin architecture and couple transcription on individual fibers",
           "journal": "Molecular Cell",
           "year": 2024,
-          "volume": "84",
+          "volume": "84(17)",
           "pages": "3209–3222.e5",
           "type": "research",
-          "highlight": true,
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2024.08.013",
+          "pmid": "39191261",
+          "pdf": "/pdfs/2024-rna-polymerases-reshape-chromatin-architecture-and.pdf",
+          "image": "/images/pubs/2024-rna-polymerases-reshape-chromatin-architecture-and.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**Ietswaart R**#*, **Smalec BM***, Xu A*, **Choquet K**, **McShane E**, Jowhar ZM, **Guegler CK**, **Baxter-Koenigs AR**, West ER, Fu BXH, Gilbert L, Floor SN#, **Churchman LS**#",
@@ -106,20 +186,29 @@
           "volume": "84",
           "pages": "2765–2784.e16",
           "type": "research",
-          "highlight": true,
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2024.06.008",
+          "pmid": "38964322",
+          "pdf": "/pdfs/2024-genome-wide-quantification-of-rna-flow-across.pdf",
+          "image": "/images/pubs/2024-genome-wide-quantification-of-rna-flow-across.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**McShane E**, **Couvillion M**, **Ietswaart R**, **Prakash G**, **Smalec BM**, **Soto I**, **Baxter-Koenigs AR**, **Choquet K**, **Churchman LS**",
-          "title": "A kinetic dichotomy between mitochondrial and nuclear gene expression drives OXPHOS biogenesis",
+          "title": "A kinetic dichotomy between mitochondrial and nuclear gene expression processes",
           "journal": "Molecular Cell",
           "year": 2024,
-          "volume": "84",
+          "volume": "84(8)",
           "pages": "1541–1555.e11",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2024.02.028",
+          "pmid": "38503286",
+          "image": "/images/pubs/2024-a-kinetic-dichotomy-between-mitochondrial-and.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675,
+          "pdf": "/pdfs/2024-a-kinetic-dichotomy-between-mitochondrial-and.pdf"
         },
         {
           "authors": "Coté A, O'Farrell A, Dardani I, Dunagin M, Coté C, Wan Y, Bayatpour S, **Drexler HL**, Alexander KA, Chen F, Wassie AT, Patel R, Pham K, Boyden ES, Berger S, Phillips-Cremins J, **Churchman LS**, Raj A",
@@ -128,8 +217,13 @@
           "year": 2024,
           "volume": "12",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.7554/eLife.91357",
+          "pmid": "38577979",
+          "image": "/images/pubs/2024-post-transcriptional-splicing-can-occur-in-a-slow.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2024-post-transcriptional-splicing-can-occur-in-a-slow.pdf"
         },
         {
           "authors": "Litsios A, Grys BT, Kraus OZ, Friesen H, Ross C, Masinas MPD, Forster DT, **Couvillion MT**, Timmermann S, Billmann M, Myers C, Johnsson N, **Churchman LS**, Boone C, Andrews BJ",
@@ -139,8 +233,13 @@
           "volume": "187",
           "pages": "1490–1507.e21",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.cell.2024.02.014",
+          "pmid": "38452761",
+          "pdf": "/pdfs/2024-proteome-scale-movements-and-compartment.pdf",
+          "image": "/images/pubs/2024-proteome-scale-movements-and-compartment.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**Isaac RS**, **Tullius TW***, **Hansen KG***, Dubocanin D, **Couvillion M**, Stergachis AB#, **Churchman LS**#",
@@ -150,9 +249,29 @@
           "volume": "31",
           "pages": "568–577",
           "type": "research",
-          "highlight": true,
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/s41594-024-01225-6",
+          "pmid": "38347148",
+          "image": "/images/pubs/2024-single-nucleoid-architecture-reveals-heterogeneous.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691,
+          "pdf": "/pdfs/2024-single-nucleoid-architecture-reveals-heterogeneous.pdf"
+        },
+        {
+          "authors": "Singh V, Moran JC, Itoh Y, **Soto IC**, Fontanesi F, **Couvillion M**, Huynen MA, **Churchman LS**, Barrientos A, Amunts A",
+          "title": "Structural basis of LRPPRC-SLIRP-dependent translation by the mitoribosome",
+          "journal": "Nature Structural & Molecular Biology",
+          "year": 2024,
+          "volume": "31(12)",
+          "pages": "1838–1847",
+          "type": "research",
+          "doi": "10.1038/s41594-024-01365-9",
+          "pmid": "39134711",
+          "image": "/images/pubs/2024-structural-basis-of-lrpprc-slirp-dependent.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691,
+          "pdf": "/pdfs/2024-structural-basis-of-lrpprc-slirp-dependent.pdf"
         },
         {
           "authors": "**Kramer NJ***, **Prakash G***, **Choquet K**, **Soto I**, Petrova B, **Merens HE**, Kanarek N, **Churchman LS**",
@@ -162,8 +281,13 @@
           "volume": "25",
           "pages": "1575–1589",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/s41556-023-01244-3",
+          "pmid": "37770567",
+          "pdf": "/pdfs/2023-regulators-of-mitonuclear-balance-link-mitochondrial.pdf",
+          "image": "/images/pubs/2023-regulators-of-mitonuclear-balance-link-mitochondrial.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691
         },
         {
           "authors": "**Martell DJ**, **Merens HE**, Caulier A, Fiorini C, Ulirsch J, **Ietswaart R**, **Choquet K**, Graziadei G, Brancaleoni V, Cappellini MD, Scott C, Roberts N, Proven M, Roy NBA, Babbs C, Higgs DR, Sankaran VG#, **Churchman LS**#",
@@ -173,8 +297,13 @@
           "volume": "58",
           "pages": "2112–2127.e4",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.devcel.2023.07.018",
+          "pmid": "37586368",
+          "pdf": "/pdfs/2023-rna-polymerase-ii-pausing-temporally-coordinates.pdf",
+          "image": "/images/pubs/2023-rna-polymerase-ii-pausing-temporally-coordinates.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
         },
         {
           "authors": "**Choquet K**, **Baxter-Koenigs AR**, Dülk SL, **Smalec BM**, Rouskin S, **Churchman LS**",
@@ -184,8 +313,13 @@
           "volume": "30",
           "pages": "1064–1076",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/s41594-023-01035-2",
+          "pmid": "37443198",
+          "pdf": "/pdfs/2023-pre-mrna-splicing-order-is-predetermined-and.pdf",
+          "image": "/images/pubs/2023-pre-mrna-splicing-order-is-predetermined-and.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
         },
         {
           "authors": "Bergeron D, Faucher-Giguère L, Emmerichs A-K, **Choquet K**, Song KS, Deschamps-Francoeur G, Fafard-Couture É, Rivera A, Couture S, **Churchman LS**, Heyd F, Abou Elela S, Scott MS",
@@ -195,8 +329,29 @@
           "volume": "24",
           "pages": "160",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1186/s13059-023-03002-y",
+          "pmid": "37415181",
+          "image": "/images/pubs/2023-intronic-small-nucleolar-rnas-regulate-host-gene.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691,
+          "pdf": "/pdfs/2023-intronic-small-nucleolar-rnas-regulate-host-gene.pdf"
+        },
+        {
+          "authors": "Khitun A, Brion C, Moqtaderi Z, Geisberg JV, **Churchman LS**, Struhl K",
+          "title": "Elongation rate of RNA polymerase II affects pausing patterns across 3' UTRs",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2023,
+          "volume": "299(11)",
+          "pages": "105289",
+          "type": "research",
+          "doi": "10.1016/j.jbc.2023.105289",
+          "pmid": "37748648",
+          "image": "/images/pubs/2023-elongation-rate-of-rna-polymerase-ii-affects-pausing.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 686,
+          "pdf": "/pdfs/2023-elongation-rate-of-rna-polymerase-ii-affects-pausing.pdf"
         },
         {
           "authors": "**Soto I***, **Couvillion M***, **Hansen KG**, **McShane E**, Moran JC, Barrientos A, **Churchman LS**",
@@ -206,8 +361,13 @@
           "volume": "23(1)",
           "pages": "170",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1186/s13059-022-02732-9",
+          "pmid": "35945592",
+          "image": "/images/pubs/2022-balanced-mitochondrial-and-cytosolic-translatomes.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691,
+          "pdf": "/pdfs/2022-balanced-mitochondrial-and-cytosolic-translatomes.pdf"
         },
         {
           "authors": "**Couvillion M***, **Harlen KM***, **Lachance KC***, **Trotta KL**, **Smith E**, Brion C, **Smalec BM**, **Churchman LS**",
@@ -216,8 +376,13 @@
           "year": 2022,
           "volume": "11",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.7554/eLife.78944",
+          "pmid": "35575476",
+          "image": "/images/pubs/2022-transcription-elongation-is-finely-tuned-by-dozens.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2022-transcription-elongation-is-finely-tuned-by-dozens.pdf"
         },
         {
           "authors": "**Tye BW**, **Churchman LS**",
@@ -227,8 +392,13 @@
           "volume": "32(19)",
           "pages": "1800–1806",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1091/mbc.E21-01-0014",
+          "pmid": "34191586",
+          "image": "/images/pubs/2021-hsf1-activation-by-proteotoxic-stress-requires.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2021-hsf1-activation-by-proteotoxic-stress-requires.pdf"
         },
         {
           "authors": "Viktorovskaya O, Chuang J, Jain D, Reim NI, López-Rivera F, Murawska M, Spatt D, **Churchman LS**, Park PJ, Winston F",
@@ -238,8 +408,13 @@
           "volume": "35(9-10)",
           "pages": "698–712",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1101/gad.348431.121",
+          "pmid": "33888559",
+          "image": "/images/pubs/2021-essential-histone-chaperones-collaborate-to-regulate.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2021-essential-histone-chaperones-collaborate-to-regulate.pdf"
         },
         {
           "authors": "**Ietswaart R**, Gyori BM, Bachman JA, Sorger PK, **Churchman LS**",
@@ -249,9 +424,13 @@
           "volume": "22(1)",
           "pages": "55",
           "type": "research",
-          "highlight": true,
           "doi": "10.1186/s13059-021-02264-8",
-          "pmid": null
+          "pmid": "33526072",
+          "image": "/images/pubs/2021-genewalk-identifies-relevant-gene-functions-for-a.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 693,
+          "pdf": "/pdfs/2021-genewalk-identifies-relevant-gene-functions-for-a.pdf"
         },
         {
           "authors": "**Stergachis AB**, Debo BM, Haugen E, **Churchman LS**, Stamatoyannopoulos JA",
@@ -261,8 +440,13 @@
           "volume": "368",
           "pages": "1449–1454",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1126/science.aaz1646",
+          "pmid": "32587015",
+          "pdf": "/pdfs/2020-single-molecule-regulatory-architectures-captured-by.pdf",
+          "image": "/images/pubs/2020-single-molecule-regulatory-architectures-captured-by.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 661
         },
         {
           "authors": "Fischer J, Song YS, Yosef N, **di Iulio J**, **Churchman LS**, Choder M",
@@ -272,8 +456,13 @@
           "volume": "295",
           "pages": "11435–11454",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1074/jbc.RA120.013426",
+          "pmid": "32518159",
+          "image": "/images/pubs/2020-the-yeast-exoribonuclease-xrn1-and-associated.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2020-the-yeast-exoribonuclease-xrn1-and-associated.pdf"
         },
         {
           "authors": "**Drexler HL**, **Choquet K**, **Churchman LS**",
@@ -283,9 +472,13 @@
           "volume": "77(5)",
           "pages": "985–998.e8",
           "type": "research",
-          "highlight": true,
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2019.11.017",
+          "pmid": "31839405",
+          "pdf": "/pdfs/2020-splicing-kinetics-and-coordination-revealed-by.pdf",
+          "image": "/images/pubs/2020-splicing-kinetics-and-coordination-revealed-by.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**Tye BW**, Commins N, Ryazanova LV, Wühr M, Springer M, Pincus D, **Churchman LS**",
@@ -294,8 +487,13 @@
           "year": 2019,
           "volume": "8",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.7554/eLife.43002",
+          "pmid": "30843788",
+          "image": "/images/pubs/2019-proteotoxicity-from-aberrant-ribosome-biogenesis.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2019-proteotoxicity-from-aberrant-ribosome-biogenesis.pdf"
         },
         {
           "authors": "Doris SM, Chuang J, Viktorovskaya O, Murawska M, Spatt D, **Churchman LS**, Winston F",
@@ -305,8 +503,13 @@
           "volume": "72(4)",
           "pages": "687–699.e6",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2018.09.005",
+          "pmid": "30318445",
+          "pdf": "/pdfs/2018-spt6-is-required-for-the-fidelity-of-promoter.pdf",
+          "image": "/images/pubs/2018-spt6-is-required-for-the-fidelity-of-promoter.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "Mischo HE, Chun Y, **Harlen KM**, **Smalec BM**, Dhir S, **Churchman LS**, Buratowski S",
@@ -316,8 +519,13 @@
           "volume": "70(2)",
           "pages": "312–326.e7",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2018.03.010",
+          "pmid": "29656924",
+          "image": "/images/pubs/2018-cell-cycle-modulation-of-transcription-termination.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675,
+          "pdf": "/pdfs/2018-cell-cycle-modulation-of-transcription-termination.pdf"
         },
         {
           "authors": "Dronamraju R, Jha DK, **Eser U**, Adams AT, Dominguez D, Choudhury R, Chiang Y-C, Rathmell WK, Emanuele MJ, **Churchman LS**, Strahl BD",
@@ -327,8 +535,13 @@
           "volume": "46(3)",
           "pages": "1331–1344",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1093/nar/gkx1276",
+          "pmid": "29294086",
+          "image": "/images/pubs/2018-set2-methyltransferase-facilitates-cell-cycle.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 672,
+          "pdf": "/pdfs/2018-set2-methyltransferase-facilitates-cell-cycle.pdf"
         },
         {
           "authors": "Jin Y*, **Eser U***, Struhl K#, **Churchman LS**#",
@@ -338,8 +551,13 @@
           "volume": "170(5)",
           "pages": "889–898.e10",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.cell.2017.07.006",
+          "pmid": "28803729",
+          "pdf": "/pdfs/2017-the-ground-state-and-evolution-of-promoter-region.pdf",
+          "image": "/images/pubs/2017-the-ground-state-and-evolution-of-promoter-region.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "Winter GE*, **Mayer A***, Buckley DL*, Erb MA, Roderick JE, Vittori S, Reyes JM, **di Iulio J**, Souza A, Ott CJ, Roberts JM, Zeid R, Scott TG, Paulk J, **Lachance K**, Olson CM, Dastjerdi S, Bauer S, Lin CY, Gray NS, Kelliher MA, **Churchman LS**#, Bradner JE#",
@@ -349,8 +567,13 @@
           "volume": "67(1)",
           "pages": "5–18.e19",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2017.06.004",
+          "pmid": "28673542",
+          "pdf": "/pdfs/2017-bet-bromodomain-proteins-function-as-master.pdf",
+          "image": "/images/pubs/2017-bet-bromodomain-proteins-function-as-master.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "Boswell SA, Snavely A, **Landry HM**, **Churchman LS**, Gray JM, Springer M",
@@ -360,8 +583,13 @@
           "volume": "13(5)",
           "pages": "501–507",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/nchembio.2317",
+          "pmid": "28263964",
+          "pdf": "/pdfs/2017-total-rna-seq-to-identify-pharmacological-effects-on.pdf",
+          "image": "/images/pubs/2017-total-rna-seq-to-identify-pharmacological-effects-on.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 683
         },
         {
           "authors": "**Harlen KM**, **Churchman LS**",
@@ -371,8 +599,13 @@
           "volume": "13(1)",
           "pages": "900",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.15252/msb.20167279",
+          "pmid": "28043953",
+          "image": "/images/pubs/2017-subgenic-pol-ii-interactomes-identify-region.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 683,
+          "pdf": "/pdfs/2017-subgenic-pol-ii-interactomes-identify-region.pdf"
         },
         {
           "authors": "**Harlen KM**, **Trotta KL**, **Smith EE**, Mosaheb MM, Fuchs SM, **Churchman LS**",
@@ -382,8 +615,13 @@
           "volume": "15(10)",
           "pages": "2147–2158",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.celrep.2016.05.010",
+          "pmid": "27239037",
+          "pdf": "/pdfs/2016-comprehensive-rna-polymerase-ii-interactomes-reveal.pdf",
+          "image": "/images/pubs/2016-comprehensive-rna-polymerase-ii-interactomes-reveal.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**Couvillion MT**, **Soto IC**, **Shipkovenska G**, **Churchman LS**",
@@ -393,9 +631,13 @@
           "volume": "533(7604)",
           "pages": "499–503",
           "type": "research",
-          "highlight": true,
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/nature18015",
+          "pmid": "27225121",
+          "image": "/images/pubs/2016-synchronized-mitochondrial-and-cytosolic-translation.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 683,
+          "pdf": "/pdfs/2016-synchronized-mitochondrial-and-cytosolic-translation.pdf"
         },
         {
           "authors": "**Mayer A***, **di Iulio J***, **Maleri S**, **Eser U**, Vierstra J, Reynolds A, Sandstrom R, Stamatoyannopoulos JA, **Churchman LS**",
@@ -405,9 +647,13 @@
           "volume": "161(3)",
           "pages": "541–554",
           "type": "research",
-          "highlight": true,
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.cell.2015.03.010",
+          "pmid": "25910208",
+          "image": "/images/pubs/2015-native-elongating-transcript-sequencing-reveals.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675,
+          "pdf": "/pdfs/2015-native-elongating-transcript-sequencing-reveals.pdf"
         },
         {
           "authors": "Padovan-Merhar O, Nair GP, Biaesch AG, **Mayer A**, Scarfone S, Foley SW, Wu AR, **Churchman LS**, Singh A, Raj A",
@@ -417,8 +663,13 @@
           "volume": "58(2)",
           "pages": "339–352",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2015.03.005",
+          "pmid": "25866248",
+          "pdf": "/pdfs/2015-single-mammalian-cells-compensate-for-differences-in.pdf",
+          "image": "/images/pubs/2015-single-mammalian-cells-compensate-for-differences-in.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "Marquardt S, Escalante-Chong R, Pho N, Wang J, **Churchman LS**, Springer M, Buratowski S",
@@ -428,8 +679,13 @@
           "volume": "157(7)",
           "pages": "1712–1723",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.cell.2014.06.038",
+          "pmid": "28915368",
+          "pdf": "/pdfs/2014-a-chromatin-based-mechanism-for-limiting-divergent.pdf",
+          "image": "/images/pubs/2014-a-chromatin-based-mechanism-for-limiting-divergent.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         }
       ]
     },
@@ -438,6 +694,33 @@
       "title": "Reviews, commentaries and protocols",
       "items": [
         {
+          "authors": "Zou J, **Churchman LS**, Xia B, Lvovs D, Fertig EJ, Zeng J, Goyal Y, Ma J",
+          "title": "How is agentic AI changing how we do science?",
+          "journal": "Cell Systems",
+          "year": 2026,
+          "volume": "17(5)",
+          "pages": "101617",
+          "type": "review",
+          "doi": "10.1016/j.cels.2026.101617",
+          "pmid": "42161243"
+        },
+        {
+          "authors": "**Raicu AM**, **Churchman LS**",
+          "title": "A splicing factor's unexpected detour to the mitochondrial surface",
+          "journal": "Molecular Cell",
+          "year": 2026,
+          "volume": "86(7)",
+          "pages": "1195–1196",
+          "type": "review",
+          "doi": "10.1016/j.molcel.2026.03.011",
+          "pmid": "41932306",
+          "pdf": "/pdfs/2026-a-splicing-factor-s-unexpected-detour-to-the.pdf",
+          "image": "/images/pubs/2026-a-splicing-factor-s-unexpected-detour-to-the.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
+        },
+        {
           "authors": "**Choquet K**, **Patop IL**, **Churchman LS**",
           "title": "The regulation and function of post-transcriptional RNA splicing",
           "journal": "Nature Reviews Genetics",
@@ -445,8 +728,13 @@
           "volume": "26(6)",
           "pages": "378–394",
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/s41576-025-00836-z",
+          "pmid": "40217094",
+          "pdf": "/pdfs/2025-the-regulation-and-function-of-post-transcriptional.pdf",
+          "image": "/images/pubs/2025-the-regulation-and-function-of-post-transcriptional.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691
         },
         {
           "authors": "**McShane E**, **Churchman LS**",
@@ -456,8 +744,13 @@
           "volume": "33(R1)",
           "pages": "R34–R41",
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1093/hmg/ddae036",
+          "pmid": "38779776",
+          "image": "/images/pubs/2024-central-dogma-rates-in-human-mitochondria.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 683,
+          "pdf": "/pdfs/2024-central-dogma-rates-in-human-mitochondria.pdf"
         },
         {
           "authors": "**Merens HE**, **Choquet K**, **Baxter-Koenigs AR**, **Churchman LS**",
@@ -465,8 +758,10 @@
           "journal": "Trends in Cell Biology",
           "year": 2024,
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.tcb.2024.03.007",
+          "pmid": "38777664",
+          "volume": "34",
+          "pages": "968-981"
         },
         {
           "authors": "**Soto I**, **Couvillion M**, **Churchman LS**",
@@ -476,8 +771,13 @@
           "volume": "2661",
           "pages": "257–280",
           "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1007/978-1-0716-3171-3_15",
+          "pmid": "37166642",
+          "pdf": "/pdfs/2024-human-mitoribosome-profiling-a-re-engineered.pdf",
+          "image": "/images/pubs/2024-human-mitoribosome-profiling-a-re-engineered.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 742
         },
         {
           "authors": "**Drexler HL**, **Choquet K**, **Merens HE**, Tang PS, Simpson JT, **Churchman LS**",
@@ -487,8 +787,13 @@
           "volume": "16(3)",
           "pages": "1343–1375",
           "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/s41596-020-00469-y",
+          "pmid": "33514943",
+          "pdf": "/pdfs/2021-revealing-nascent-rna-processing-dynamics-with-nano.pdf",
+          "image": "/images/pubs/2021-revealing-nascent-rna-processing-dynamics-with-nano.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 691
         },
         {
           "authors": "**Isaac RS**, **Churchman LS**",
@@ -498,8 +803,13 @@
           "volume": "73(6)",
           "pages": "1087–1088",
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2019.03.004",
+          "pmid": "30901560",
+          "pdf": "/pdfs/2019-the-long-and-the-short-of-the-rna-polymerase-c.pdf",
+          "image": "/images/pubs/2019-the-long-and-the-short-of-the-rna-polymerase-c.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**Isaac RS**, **McShane E**, **Churchman LS**",
@@ -509,8 +819,13 @@
           "volume": "52",
           "pages": "511–533",
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1146/annurev-genet-120417-031709",
+          "pmid": "30230928",
+          "pdf": "/pdfs/2018-the-multiple-levels-of-mitonuclear-coregulation.pdf",
+          "image": "/images/pubs/2018-the-multiple-levels-of-mitonuclear-coregulation.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
         },
         {
           "authors": "**Mayer A**, **Landry HM**, **Churchman LS**",
@@ -520,8 +835,13 @@
           "volume": "46",
           "pages": "72–80",
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.ceb.2017.03.002",
+          "pmid": "28363125",
+          "pdf": "/pdfs/2017-pause-go-from-the-discovery-of-rna-polymerase.pdf",
+          "image": "/images/pubs/2017-pause-go-from-the-discovery-of-rna-polymerase.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 674
         },
         {
           "authors": "**Mayer A**, **Churchman LS**",
@@ -531,8 +851,13 @@
           "volume": "120",
           "pages": "4.29.1–4.29.18",
           "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1002/cpmb.44",
+          "pmid": "28967997",
+          "pdf": "/pdfs/2017-a-detailed-protocol-for-subcellular-rna-sequencing.pdf",
+          "image": "/images/pubs/2017-a-detailed-protocol-for-subcellular-rna-sequencing.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
         },
         {
           "authors": "**Harlen KM**, **Churchman LS**",
@@ -542,8 +867,13 @@
           "volume": "18(4)",
           "pages": "263–273",
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/nrm.2017.10",
+          "pmid": "28248323",
+          "pdf": "/pdfs/2017-the-code-and-beyond-transcription-regulation-by-the.pdf",
+          "image": "/images/pubs/2017-the-code-and-beyond-transcription-regulation-by-the.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 683
         },
         {
           "authors": "**Churchman LS**",
@@ -553,8 +883,13 @@
           "volume": "65(1)",
           "pages": "1–2",
           "type": "review",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1016/j.molcel.2016.12.017",
+          "pmid": "28061329",
+          "pdf": "/pdfs/2017-not-just-noise-genomics-and-genetics-bring-long.pdf",
+          "image": "/images/pubs/2017-not-just-noise-genomics-and-genetics-bring-long.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**Couvillion MT**, **Churchman LS**",
@@ -564,8 +899,29 @@
           "volume": "119",
           "pages": "4.28.1–4.28.25",
           "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1002/cpmb.41",
+          "pmid": "28678443",
+          "pdf": "/pdfs/2017-mitochondrial-ribosome-mitoribosome-profiling-for.pdf",
+          "image": "/images/pubs/2017-mitochondrial-ribosome-mitoribosome-profiling-for.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
+        },
+        {
+          "authors": "**Mayer A**, **Churchman LS**",
+          "title": "Genome-wide profiling of RNA polymerase transcription at nucleotide resolution in human cells with native elongating transcript sequencing",
+          "journal": "Nature Protocols",
+          "year": 2016,
+          "volume": "11(4)",
+          "pages": "813–833",
+          "type": "protocol",
+          "doi": "10.1038/nprot.2016.047",
+          "pmid": "27010758",
+          "pdf": "/pdfs/2016-genome-wide-profiling-of-rna-polymerase.pdf",
+          "image": "/images/pubs/2016-genome-wide-profiling-of-rna-polymerase.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 686
         },
         {
           "authors": "**Churchman LS**, Weissman JS",
@@ -575,8 +931,13 @@
           "volume": "Chapter 4",
           "pages": "Unit 4.14.1–17",
           "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1002/0471142727.mb0414s98",
+          "pmid": "22470065",
+          "pdf": "/pdfs/2012-native-elongating-transcript-sequencing-net-seq.pdf",
+          "image": "/images/pubs/2012-native-elongating-transcript-sequencing-net-seq.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
         }
       ]
     },
@@ -592,8 +953,13 @@
           "volume": "21(1)",
           "pages": "1189–1202",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1364/OE.21.001189",
+          "pmid": "23389011",
+          "image": "/images/pubs/2013-single-molecule-fluorescence-imaging-of-processive.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673,
+          "pdf": "/pdfs/2013-single-molecule-fluorescence-imaging-of-processive.pdf"
         },
         {
           "authors": "**Churchman LS**, Spudich JA",
@@ -603,8 +969,13 @@
           "volume": "2012(2)",
           "pages": "141–149",
           "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1101/pdb.top067918",
+          "pmid": "22301660",
+          "pdf": "/pdfs/2012-colocalization-of-fluorescent-probes-accurate-and.pdf",
+          "image": "/images/pubs/2012-colocalization-of-fluorescent-probes-accurate-and.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 666
         },
         {
           "authors": "**Churchman LS**, Spudich JA",
@@ -614,8 +985,13 @@
           "volume": "2012(2)",
           "pages": "242–245",
           "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1101/pdb.prot067926",
+          "pmid": "22301661",
+          "pdf": "/pdfs/2012-single-molecule-high-resolution-colocalization-of.pdf",
+          "image": "/images/pubs/2012-single-molecule-high-resolution-colocalization-of.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 666
         },
         {
           "authors": "Terzi N, **Churchman LS**, Vasiljeva L, Weissman J, Buratowski S",
@@ -625,8 +1001,13 @@
           "volume": "31(17)",
           "pages": "3569–3583",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1128/MCB.05590-11",
+          "pmid": "21709022",
+          "image": "/images/pubs/2011-h3k4-trimethylation-by-set1-promotes-efficient.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 696,
+          "pdf": "/pdfs/2011-h3k4-trimethylation-by-set1-promotes-efficient.pdf"
         },
         {
           "authors": "**Churchman LS**, Weissman JS",
@@ -636,9 +1017,13 @@
           "volume": "469(7330)",
           "pages": "368–373",
           "type": "research",
-          "highlight": true,
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/nature09652",
+          "pmid": "21248844",
+          "image": "/images/pubs/2011-nascent-transcript-sequencing-visualizes.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 683,
+          "pdf": "/pdfs/2011-nascent-transcript-sequencing-visualizes.pdf"
         },
         {
           "authors": "Mortensen KI*, **Churchman LS***, Spudich JA, Flyvbjerg H",
@@ -648,8 +1033,13 @@
           "volume": "7(5)",
           "pages": "377–381",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/nmeth.1447",
+          "pmid": "20364147",
+          "pdf": "/pdfs/2010-optimized-localization-analysis-for-single-molecule.pdf",
+          "image": "/images/pubs/2010-optimized-localization-analysis-for-single-molecule.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 686
         },
         {
           "authors": "Bassik MC, Lebbink RJ, **Churchman LS**, Ingolia NT, Patena W, LeProust EM, Schuldiner M, Weissman JS, McManus MT",
@@ -659,8 +1049,13 @@
           "volume": "6(6)",
           "pages": "443–445",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/nmeth.1330",
+          "pmid": "19448642",
+          "pdf": "/pdfs/2009-rapid-creation-and-quantitative-monitoring-of-high.pdf",
+          "image": "/images/pubs/2009-rapid-creation-and-quantitative-monitoring-of-high.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 686
         },
         {
           "authors": "**Churchman LS**, Spudich JA",
@@ -668,9 +1063,7 @@
           "journal": "Single-Molecule Techniques: A Laboratory Manual",
           "year": 2007,
           "pages": "73–84",
-          "type": "protocol",
-          "doi": null,
-          "pmid": null
+          "type": "protocol"
         },
         {
           "authors": "**Churchman LS**, Flyvbjerg H, Spudich JA",
@@ -680,8 +1073,13 @@
           "volume": "90(2)",
           "pages": "668–671",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1529/biophysj.105.065599",
+          "pmid": "16258038",
+          "pdf": "/pdfs/2006-a-non-gaussian-distribution-quantifies-distances.pdf",
+          "image": "/images/pubs/2006-a-non-gaussian-distribution-quantifies-distances.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 675
         },
         {
           "authors": "**Churchman LS**, Ökten Z, Rock RS, Dawson JF, Spudich JA",
@@ -691,8 +1089,13 @@
           "volume": "102(5)",
           "pages": "1419–1423",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1073/pnas.0409487102",
+          "pmid": "15668396",
+          "image": "/images/pubs/2005-single-molecule-high-resolution-colocalization-of.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 686,
+          "pdf": "/pdfs/2005-single-molecule-high-resolution-colocalization-of.pdf"
         },
         {
           "authors": "Ökten Z, **Churchman LS**, Rock RS, Spudich JA",
@@ -702,8 +1105,13 @@
           "volume": "11(9)",
           "pages": "884–887",
           "type": "research",
-          "doi": null,
-          "pmid": null
+          "doi": "10.1038/nsmb815",
+          "pmid": "15286724",
+          "pdf": "/pdfs/2004-myosin-vi-walks-hand-over-hand-along-actin.pdf",
+          "image": "/images/pubs/2004-myosin-vi-walks-hand-over-hand-along-actin.jpg",
+          "imageKind": "firstpage",
+          "imageW": 520,
+          "imageH": 673
         }
       ]
     }
