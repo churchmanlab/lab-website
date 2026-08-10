@@ -32,37 +32,27 @@ The lab is currently recruiting postdoctoral fellows and accepting rotation stud
 
 11 current members, plus 20 alumni.
 
-## Key papers
-
-- Tullius TW et al. (2024) RNA polymerases reshape chromatin and coordinate transcription on individual fibers. Molecular Cell.
-- Ietswaart R et al. (2024) Genome-wide quantification of RNA flow across subcellular compartments reveals determinants of the mammalian transcript life cycle. Molecular Cell.
-- Isaac RS et al. (2024) Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA. Nature Structural & Molecular Biology.
-- Ietswaart R et al. (2021) GeneWalk identifies relevant gene functions for a biological context using network representation learning. Genome Biology. https://doi.org/10.1186/s13059-021-02264-8
-- Drexler HL et al. (2020) Splicing kinetics and coordination revealed by direct nascent RNA sequencing through nanopores. Molecular Cell.
-- Couvillion MT et al. (2016) Synchronized mitochondrial and cytosolic translation programs. Nature.
-- Mayer A et al. (2015) Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution. Cell.
-- Churchman LS et al. (2011) Nascent transcript sequencing visualizes transcription at nucleotide resolution. Nature.
-
 ## Most recent papers
 
-- Duffy EE et al. (2025) HuD controls widespread RNA stability to drive neuronal activity-dependent responses. bioRxiv.
-- Bridgers JB et al. (2025) Translational activators align mRNAs at the small mitoribosomal subunit for translation initiation. Nature Structural & Molecular Biology.
-- Hansen KG et al. (2025) Transcription arrest induces formation of RNA granules in mitochondria. Life Science Alliance.
-- Carlström A et al. (2025) A molecular switch at the yeast mitoribosomal tunnel exit controls cytochrome b synthesis. Nucleic Acids Research.
-- Jiang Q et al. (2025) HIF regulates multiple translated endogenous retroviruses: Implications for cancer immunotherapy. Cell.
-- Choquet K et al. (2025) Genetic regulation of nascent RNA maturation revealed by direct RNA nanopore sequencing. Genome Research.
-- Bibel B et al. (2025) Context-specific inhibition of mitochondrial ribosomes by phenicol and oxazolidinone antibiotics. Nucleic Acids Research.
-- Choquet K et al. (2025) The regulation and function of post-transcriptional RNA splicing. Nature Reviews Genetics.
-- Tullius TW et al. (2024) RNA polymerases reshape chromatin and coordinate transcription on individual fibers. Molecular Cell.
-- Ietswaart R et al. (2024) Genome-wide quantification of RNA flow across subcellular compartments reveals determinants of the mammalian transcript life cycle. Molecular Cell.
-- McShane E et al. (2024) A kinetic dichotomy between mitochondrial and nuclear gene expression drives OXPHOS biogenesis. Molecular Cell.
-- Coté A et al. (2024) Post-transcriptional splicing can occur in a slow-moving zone around the gene. eLife.
+- Nuessmeier CH et al. (2026) Mitochondrial RNA processing promotes translation by resolving structured precursor RNAs. bioRxiv. https://doi.org/10.64898/2026.07.30.741833
+- Hansen LN et al. (2026) Analog intrinsic recoding measures RNA dynamics without chemical conversion. bioRxiv. https://doi.org/10.64898/2026.07.27.741041
+- Merens HE et al. (2026) SRSF1 shapes 3'-end site selection with differential dependence on U1 snRNP. bioRxiv. https://doi.org/10.64898/2026.04.01.715904
+- Bridgers JB et al. (2026) Translational activators align mRNAs at the small mitoribosomal subunit for translation initiation. Nature Structural & Molecular Biology. https://doi.org/10.1038/s41594-025-01726-y
+- Wong AYL et al. (2026) Copper depletion boosts CNS leukemia therapy by inhibiting nucleotide synthesis through impairment of mitochondrial complex IV activity. Nature Cancer. https://doi.org/10.1038/s43018-026-01177-4
+- Zou J et al. (2026) How is agentic AI changing how we do science? Cell Systems. https://doi.org/10.1016/j.cels.2026.101617
+- Raicu AM et al. (2026) A splicing factor's unexpected detour to the mitochondrial surface. Molecular Cell. https://doi.org/10.1016/j.molcel.2026.03.011
+- Duffy EE et al. (2025) Neuronal activity triggers widespread changes in RNA stability. bioRxiv. https://doi.org/10.1101/2025.09.05.674581
+- Hansen KG et al. (2025) Transcription arrest induces formation of RNA granules in mitochondria. Life Science Alliance. https://doi.org/10.26508/lsa.202403082
+- Carlström A et al. (2025) A molecular switch at the yeast mitoribosomal tunnel exit controls cytochrome b synthesis. Nucleic Acids Research. https://doi.org/10.1093/nar/gkaf634
+- Jiang Q et al. (2025) HIF regulates multiple translated endogenous retroviruses: Implications for cancer immunotherapy. Cell. https://doi.org/10.1016/j.cell.2025.01.046
+- Choquet K et al. (2025) Genetic regulation of nascent RNA maturation revealed by direct RNA nanopore sequencing. Genome Research. https://doi.org/10.1101/gr.279203.124
 
 ## Pages
 
 - [Research](https://churchman.med.harvard.edu/research): both research programs in detail, including the open questions currently being pursued.
-- [Publications](https://churchman.med.harvard.edu/publications): all 62 publications, searchable. Machine-readable at https://churchman.med.harvard.edu/publications.json
+- [Publications](https://churchman.med.harvard.edu/publications): all 71 publications, searchable. Machine-readable at https://churchman.med.harvard.edu/publications.json
 - [Team](https://churchman.med.harvard.edu/team): current members and where alumni went next.
+- [Lab life](https://churchman.med.harvard.edu/fun): retreats, thesis defenses, celebrations and other moments from the lab's history.
 - [Stirling Churchman](https://churchman.med.harvard.edu/stirling): PI biography, awards and talks.
 - [Tools & protocols](https://churchman.med.harvard.edu/tools): GeneWalk, plus published benchtop protocols for NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling.
 - [GeneWalk](https://churchman.med.harvard.edu/tools/genewalk): installation, tutorial and interpretation guide.

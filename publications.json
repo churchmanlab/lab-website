@@ -3,12 +3,70 @@
   "institution": "Harvard Medical School",
   "source": "https://churchman.med.harvard.edu/publications",
   "fullList": "https://www.ncbi.nlm.nih.gov/myncbi/lee.churchman.1/bibliography/public/",
-  "lastSynced": null,
+  "lastSynced": "2026-08-06",
   "legend": "*equal authorship; #co-corresponding authorship; Churchman Lab members in bold.",
-  "count": 62,
+  "count": 71,
   "publications": [
     {
-      "title": "HuD controls widespread RNA stability to drive neuronal activity-dependent responses",
+      "title": "Mitochondrial RNA processing promotes translation by resolving structured precursor RNAs",
+      "authors": "Nuessmeier CH, Prakash G, Hansen LN, Couvillion MT, Churchman LS",
+      "labAuthors": [
+        "Nuessmeier CH",
+        "Prakash G",
+        "Hansen LN",
+        "Couvillion MT",
+        "Churchman LS"
+      ],
+      "journal": "bioRxiv",
+      "year": 2026,
+      "volume": null,
+      "pages": null,
+      "type": "preprint",
+      "section": "preprints",
+      "doi": "10.64898/2026.07.30.741833",
+      "pmid": null,
+      "url": "https://doi.org/10.64898/2026.07.30.741833"
+    },
+    {
+      "title": "Analog intrinsic recoding measures RNA dynamics without chemical conversion",
+      "authors": "Hansen LN, Couvillion MT, McShane E, Azbukina N, Treutlein B, Churchman LS",
+      "labAuthors": [
+        "Hansen LN",
+        "Couvillion MT",
+        "McShane E",
+        "Churchman LS"
+      ],
+      "journal": "bioRxiv",
+      "year": 2026,
+      "volume": null,
+      "pages": null,
+      "type": "preprint",
+      "section": "preprints",
+      "doi": "10.64898/2026.07.27.741041",
+      "pmid": null,
+      "url": "https://doi.org/10.64898/2026.07.27.741041"
+    },
+    {
+      "title": "SRSF1 shapes 3'-end site selection with differential dependence on U1 snRNP",
+      "authors": "Merens HE, Raicu AM, Carroll CL, Kourkoulakos M, Fiszbein A, Churchman LS",
+      "labAuthors": [
+        "Merens HE",
+        "Raicu AM",
+        "Kourkoulakos M",
+        "Churchman LS"
+      ],
+      "journal": "bioRxiv",
+      "year": 2026,
+      "volume": null,
+      "pages": null,
+      "type": "preprint",
+      "section": "preprints",
+      "doi": "10.64898/2026.04.01.715904",
+      "pmid": "41959273",
+      "url": "https://doi.org/10.64898/2026.04.01.715904"
+    },
+    {
+      "title": "Neuronal activity triggers widespread changes in RNA stability",
       "authors": "Duffy EE#, Patop I*#, Kalaora S, Assad EG, Koren SA, Traunmüller L, Krüttner S, Pajarillo NS, Finander B, Barsdale Z, Macias MM, Feng MY, Paulo JA, Griffith EC, Kalish BT, Gygi SP, Churchman LS#, Greenberg ME#",
       "labAuthors": [
         "Duffy EE",
@@ -22,9 +80,9 @@
       "pages": null,
       "type": "preprint",
       "section": "preprints",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1101/2025.09.05.674581",
+      "pmid": "40950030",
+      "url": "https://doi.org/10.1101/2025.09.05.674581"
     },
     {
       "title": "Translational activators align mRNAs at the small mitoribosomal subunit for translation initiation",
@@ -35,14 +93,31 @@
         "Churchman LS"
       ],
       "journal": "Nature Structural & Molecular Biology",
-      "year": 2025,
+      "year": 2026,
+      "volume": "33(2)",
+      "pages": "245–258",
+      "type": "research",
+      "section": "research",
+      "doi": "10.1038/s41594-025-01726-y",
+      "pmid": "41339860",
+      "url": "https://doi.org/10.1038/s41594-025-01726-y"
+    },
+    {
+      "title": "Copper depletion boosts CNS leukemia therapy by inhibiting nucleotide synthesis through impairment of mitochondrial complex IV activity",
+      "authors": "Wong AYL, Myers JW, Prakash G, Ma A, Brook JR, Petrova B, Bulut B, White R 3rd, Merz C, de Souza M, Maynard AG, Wang P, Yu A, Pohl NK, Weitman M, Silverman LB, Stegmaier K, Churchman LS, Cole PD, Brady DC, Kanarek N",
+      "labAuthors": [
+        "Prakash G",
+        "Churchman LS"
+      ],
+      "journal": "Nature Cancer",
+      "year": 2026,
       "volume": null,
       "pages": null,
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/s43018-026-01177-4",
+      "pmid": "42185479",
+      "url": "https://doi.org/10.1038/s43018-026-01177-4"
     },
     {
       "title": "Transcription arrest induces formation of RNA granules in mitochondria",
@@ -60,9 +135,9 @@
       "pages": "e202403082",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.26508/lsa.202403082",
+      "pmid": "40523799",
+      "url": "https://doi.org/10.26508/lsa.202403082"
     },
     {
       "title": "A molecular switch at the yeast mitoribosomal tunnel exit controls cytochrome b synthesis",
@@ -79,9 +154,9 @@
       "pages": null,
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1093/nar/gkaf634",
+      "pmid": "40637229",
+      "url": "https://doi.org/10.1093/nar/gkaf634"
     },
     {
       "title": "HIF regulates multiple translated endogenous retroviruses: Implications for cancer immunotherapy",
@@ -96,9 +171,9 @@
       "pages": "1807–1827.e34",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.cell.2025.01.046",
+      "pmid": "40023154",
+      "url": "https://doi.org/10.1016/j.cell.2025.01.046"
     },
     {
       "title": "Genetic regulation of nascent RNA maturation revealed by direct RNA nanopore sequencing",
@@ -116,9 +191,9 @@
       "pages": "712–724",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1101/gr.279203.124",
+      "pmid": "39952678",
+      "url": "https://doi.org/10.1101/gr.279203.124"
     },
     {
       "title": "Context-specific inhibition of mitochondrial ribosomes by phenicol and oxazolidinone antibiotics",
@@ -133,12 +208,12 @@
       "pages": null,
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1093/nar/gkaf046",
+      "pmid": "39907106",
+      "url": "https://doi.org/10.1093/nar/gkaf046"
     },
     {
-      "title": "RNA polymerases reshape chromatin and coordinate transcription on individual fibers",
+      "title": "RNA polymerases reshape chromatin architecture and couple transcription on individual fibers",
       "authors": "Tullius TW, Isaac RS, Ranchalis J, Dubocanin D, Churchman LS#, Stergachis AB#",
       "labAuthors": [
         "Tullius TW",
@@ -147,13 +222,13 @@
       ],
       "journal": "Molecular Cell",
       "year": 2024,
-      "volume": "84",
+      "volume": "84(17)",
       "pages": "3209–3222.e5",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2024.08.013",
+      "pmid": "39191261",
+      "url": "https://doi.org/10.1016/j.molcel.2024.08.013"
     },
     {
       "title": "Genome-wide quantification of RNA flow across subcellular compartments reveals determinants of the mammalian transcript life cycle",
@@ -173,12 +248,12 @@
       "pages": "2765–2784.e16",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2024.06.008",
+      "pmid": "38964322",
+      "url": "https://doi.org/10.1016/j.molcel.2024.06.008"
     },
     {
-      "title": "A kinetic dichotomy between mitochondrial and nuclear gene expression drives OXPHOS biogenesis",
+      "title": "A kinetic dichotomy between mitochondrial and nuclear gene expression processes",
       "authors": "McShane E, Couvillion M, Ietswaart R, Prakash G, Smalec BM, Soto I, Baxter-Koenigs AR, Choquet K, Churchman LS",
       "labAuthors": [
         "McShane E",
@@ -193,13 +268,13 @@
       ],
       "journal": "Molecular Cell",
       "year": 2024,
-      "volume": "84",
+      "volume": "84(8)",
       "pages": "1541–1555.e11",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2024.02.028",
+      "pmid": "38503286",
+      "url": "https://doi.org/10.1016/j.molcel.2024.02.028"
     },
     {
       "title": "Post-transcriptional splicing can occur in a slow-moving zone around the gene",
@@ -214,9 +289,9 @@
       "pages": null,
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.7554/eLife.91357",
+      "pmid": "38577979",
+      "url": "https://doi.org/10.7554/eLife.91357"
     },
     {
       "title": "Proteome-scale movements and compartment connectivity during the eukaryotic cell cycle",
@@ -231,9 +306,9 @@
       "pages": "1490–1507.e21",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.cell.2024.02.014",
+      "pmid": "38452761",
+      "url": "https://doi.org/10.1016/j.cell.2024.02.014"
     },
     {
       "title": "Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA",
@@ -251,9 +326,27 @@
       "pages": "568–577",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/s41594-024-01225-6",
+      "pmid": "38347148",
+      "url": "https://doi.org/10.1038/s41594-024-01225-6"
+    },
+    {
+      "title": "Structural basis of LRPPRC-SLIRP-dependent translation by the mitoribosome",
+      "authors": "Singh V, Moran JC, Itoh Y, Soto IC, Fontanesi F, Couvillion M, Huynen MA, Churchman LS, Barrientos A, Amunts A",
+      "labAuthors": [
+        "Soto IC",
+        "Couvillion M",
+        "Churchman LS"
+      ],
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2024,
+      "volume": "31(12)",
+      "pages": "1838–1847",
+      "type": "research",
+      "section": "research",
+      "doi": "10.1038/s41594-024-01365-9",
+      "pmid": "39134711",
+      "url": "https://doi.org/10.1038/s41594-024-01365-9"
     },
     {
       "title": "Regulators of mitonuclear balance link mitochondrial metabolism to mtDNA expression",
@@ -272,9 +365,9 @@
       "pages": "1575–1589",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/s41556-023-01244-3",
+      "pmid": "37770567",
+      "url": "https://doi.org/10.1038/s41556-023-01244-3"
     },
     {
       "title": "RNA Polymerase II pausing temporally coordinates cell cycle progression and erythroid differentiation",
@@ -292,9 +385,9 @@
       "pages": "2112–2127.e4",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.devcel.2023.07.018",
+      "pmid": "37586368",
+      "url": "https://doi.org/10.1016/j.devcel.2023.07.018"
     },
     {
       "title": "Pre-mRNA splicing order is predetermined and maintains splicing fidelity across multi-intronic transcripts",
@@ -311,9 +404,9 @@
       "pages": "1064–1076",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/s41594-023-01035-2",
+      "pmid": "37443198",
+      "url": "https://doi.org/10.1038/s41594-023-01035-2"
     },
     {
       "title": "Intronic small nucleolar RNAs regulate host gene splicing through base pairing with their adjacent intronic sequences",
@@ -328,9 +421,25 @@
       "pages": "160",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1186/s13059-023-03002-y",
+      "pmid": "37415181",
+      "url": "https://doi.org/10.1186/s13059-023-03002-y"
+    },
+    {
+      "title": "Elongation rate of RNA polymerase II affects pausing patterns across 3' UTRs",
+      "authors": "Khitun A, Brion C, Moqtaderi Z, Geisberg JV, Churchman LS, Struhl K",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Journal of Biological Chemistry",
+      "year": 2023,
+      "volume": "299(11)",
+      "pages": "105289",
+      "type": "research",
+      "section": "research",
+      "doi": "10.1016/j.jbc.2023.105289",
+      "pmid": "37748648",
+      "url": "https://doi.org/10.1016/j.jbc.2023.105289"
     },
     {
       "title": "Balanced mitochondrial and cytosolic translatomes underlie the biogenesis of human respiratory complexes",
@@ -348,9 +457,9 @@
       "pages": "170",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1186/s13059-022-02732-9",
+      "pmid": "35945592",
+      "url": "https://doi.org/10.1186/s13059-022-02732-9"
     },
     {
       "title": "Transcription elongation is finely tuned by dozens of regulatory factors",
@@ -370,9 +479,9 @@
       "pages": null,
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.7554/eLife.78944",
+      "pmid": "35575476",
+      "url": "https://doi.org/10.7554/eLife.78944"
     },
     {
       "title": "Hsf1 activation by proteotoxic stress requires concurrent protein synthesis",
@@ -387,9 +496,9 @@
       "pages": "1800–1806",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1091/mbc.E21-01-0014",
+      "pmid": "34191586",
+      "url": "https://doi.org/10.1091/mbc.E21-01-0014"
     },
     {
       "title": "Essential histone chaperones collaborate to regulate transcription and chromatin integrity",
@@ -403,9 +512,9 @@
       "pages": "698–712",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1101/gad.348431.121",
+      "pmid": "33888559",
+      "url": "https://doi.org/10.1101/gad.348431.121"
     },
     {
       "title": "GeneWalk identifies relevant gene functions for a biological context using network representation learning",
@@ -421,7 +530,7 @@
       "type": "research",
       "section": "research",
       "doi": "10.1186/s13059-021-02264-8",
-      "pmid": null,
+      "pmid": "33526072",
       "url": "https://doi.org/10.1186/s13059-021-02264-8"
     },
     {
@@ -437,9 +546,9 @@
       "pages": "1449–1454",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1126/science.aaz1646",
+      "pmid": "32587015",
+      "url": "https://doi.org/10.1126/science.aaz1646"
     },
     {
       "title": "The yeast exoribonuclease Xrn1 and associated factors modulate RNA polymerase II processivity in 5' and 3' gene regions",
@@ -454,9 +563,9 @@
       "pages": "11435–11454",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1074/jbc.RA120.013426",
+      "pmid": "32518159",
+      "url": "https://doi.org/10.1074/jbc.RA120.013426"
     },
     {
       "title": "Splicing kinetics and coordination revealed by direct nascent RNA sequencing through nanopores",
@@ -472,9 +581,9 @@
       "pages": "985–998.e8",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2019.11.017",
+      "pmid": "31839405",
+      "url": "https://doi.org/10.1016/j.molcel.2019.11.017"
     },
     {
       "title": "Proteotoxicity from aberrant ribosome biogenesis compromises cell fitness",
@@ -489,9 +598,9 @@
       "pages": null,
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.7554/eLife.43002",
+      "pmid": "30843788",
+      "url": "https://doi.org/10.7554/eLife.43002"
     },
     {
       "title": "Spt6 is required for the fidelity of promoter selection",
@@ -505,9 +614,9 @@
       "pages": "687–699.e6",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2018.09.005",
+      "pmid": "30318445",
+      "url": "https://doi.org/10.1016/j.molcel.2018.09.005"
     },
     {
       "title": "Cell-cycle modulation of transcription termination factor Sen1",
@@ -523,9 +632,9 @@
       "pages": "312–326.e7",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2018.03.010",
+      "pmid": "29656924",
+      "url": "https://doi.org/10.1016/j.molcel.2018.03.010"
     },
     {
       "title": "Set2 methyltransferase facilitates cell cycle progression by maintaining transcriptional fidelity",
@@ -540,9 +649,9 @@
       "pages": "1331–1344",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1093/nar/gkx1276",
+      "pmid": "29294086",
+      "url": "https://doi.org/10.1093/nar/gkx1276"
     },
     {
       "title": "The ground state and evolution of promoter region directionality",
@@ -557,9 +666,9 @@
       "pages": "889–898.e10",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.cell.2017.07.006",
+      "pmid": "28803729",
+      "url": "https://doi.org/10.1016/j.cell.2017.07.006"
     },
     {
       "title": "BET bromodomain proteins function as master transcription elongation factors independent of CDK9 recruitment",
@@ -576,9 +685,9 @@
       "pages": "5–18.e19",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2017.06.004",
+      "pmid": "28673542",
+      "url": "https://doi.org/10.1016/j.molcel.2017.06.004"
     },
     {
       "title": "Total RNA-seq to identify pharmacological effects on specific stages of mRNA synthesis",
@@ -593,9 +702,9 @@
       "pages": "501–507",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/nchembio.2317",
+      "pmid": "28263964",
+      "url": "https://doi.org/10.1038/nchembio.2317"
     },
     {
       "title": "Subgenic Pol II interactomes identify region-specific transcription elongation regulators",
@@ -610,9 +719,9 @@
       "pages": "900",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.15252/msb.20167279",
+      "pmid": "28043953",
+      "url": "https://doi.org/10.15252/msb.20167279"
     },
     {
       "title": "Comprehensive RNA polymerase II interactomes reveal distinct and varied roles for each phospho-CTD residue",
@@ -629,9 +738,9 @@
       "pages": "2147–2158",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.celrep.2016.05.010",
+      "pmid": "27239037",
+      "url": "https://doi.org/10.1016/j.celrep.2016.05.010"
     },
     {
       "title": "Synchronized mitochondrial and cytosolic translation programs",
@@ -648,9 +757,9 @@
       "pages": "499–503",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/nature18015",
+      "pmid": "27225121",
+      "url": "https://doi.org/10.1038/nature18015"
     },
     {
       "title": "Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution",
@@ -668,9 +777,9 @@
       "pages": "541–554",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.cell.2015.03.010",
+      "pmid": "25910208",
+      "url": "https://doi.org/10.1016/j.cell.2015.03.010"
     },
     {
       "title": "Single mammalian cells compensate for differences in cellular volume and DNA copy number through independent global transcriptional mechanisms",
@@ -685,9 +794,9 @@
       "pages": "339–352",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2015.03.005",
+      "pmid": "25866248",
+      "url": "https://doi.org/10.1016/j.molcel.2015.03.005"
     },
     {
       "title": "A chromatin-based mechanism for limiting divergent noncoding transcription",
@@ -701,9 +810,42 @@
       "pages": "1712–1723",
       "type": "research",
       "section": "research",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.cell.2014.06.038",
+      "pmid": "28915368",
+      "url": "https://doi.org/10.1016/j.cell.2014.06.038"
+    },
+    {
+      "title": "How is agentic AI changing how we do science?",
+      "authors": "Zou J, Churchman LS, Xia B, Lvovs D, Fertig EJ, Zeng J, Goyal Y, Ma J",
+      "labAuthors": [
+        "Churchman LS"
+      ],
+      "journal": "Cell Systems",
+      "year": 2026,
+      "volume": "17(5)",
+      "pages": "101617",
+      "type": "review",
+      "section": "reviews",
+      "doi": "10.1016/j.cels.2026.101617",
+      "pmid": "42161243",
+      "url": "https://doi.org/10.1016/j.cels.2026.101617"
+    },
+    {
+      "title": "A splicing factor's unexpected detour to the mitochondrial surface",
+      "authors": "Raicu AM, Churchman LS",
+      "labAuthors": [
+        "Raicu AM",
+        "Churchman LS"
+      ],
+      "journal": "Molecular Cell",
+      "year": 2026,
+      "volume": "86(7)",
+      "pages": "1195–1196",
+      "type": "review",
+      "section": "reviews",
+      "doi": "10.1016/j.molcel.2026.03.011",
+      "pmid": "41932306",
+      "url": "https://doi.org/10.1016/j.molcel.2026.03.011"
     },
     {
       "title": "The regulation and function of post-transcriptional RNA splicing",
@@ -719,9 +861,9 @@
       "pages": "378–394",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/s41576-025-00836-z",
+      "pmid": "40217094",
+      "url": "https://doi.org/10.1038/s41576-025-00836-z"
     },
     {
       "title": "Central dogma rates in human mitochondria",
@@ -736,9 +878,9 @@
       "pages": "R34–R41",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1093/hmg/ddae036",
+      "pmid": "38779776",
+      "url": "https://doi.org/10.1093/hmg/ddae036"
     },
     {
       "title": "Timing is everything: advances in quantifying splicing kinetics",
@@ -751,13 +893,13 @@
       ],
       "journal": "Trends in Cell Biology",
       "year": 2024,
-      "volume": null,
-      "pages": null,
+      "volume": "34",
+      "pages": "968-981",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.tcb.2024.03.007",
+      "pmid": "38777664",
+      "url": "https://doi.org/10.1016/j.tcb.2024.03.007"
     },
     {
       "title": "Human mitoribosome profiling: a re-engineered approach tailored to study mitochondrial translation",
@@ -773,9 +915,9 @@
       "pages": "257–280",
       "type": "protocol",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1007/978-1-0716-3171-3_15",
+      "pmid": "37166642",
+      "url": "https://doi.org/10.1007/978-1-0716-3171-3_15"
     },
     {
       "title": "Revealing nascent RNA processing dynamics with nano-COP",
@@ -792,9 +934,9 @@
       "pages": "1343–1375",
       "type": "protocol",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/s41596-020-00469-y",
+      "pmid": "33514943",
+      "url": "https://doi.org/10.1038/s41596-020-00469-y"
     },
     {
       "title": "The long and the short of the RNA polymerase C-terminal domain and phase separation",
@@ -809,9 +951,9 @@
       "pages": "1087–1088",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2019.03.004",
+      "pmid": "30901560",
+      "url": "https://doi.org/10.1016/j.molcel.2019.03.004"
     },
     {
       "title": "The multiple levels of mitonuclear coregulation",
@@ -827,9 +969,9 @@
       "pages": "511–533",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1146/annurev-genet-120417-031709",
+      "pmid": "30230928",
+      "url": "https://doi.org/10.1146/annurev-genet-120417-031709"
     },
     {
       "title": "Pause & go: from the discovery of RNA polymerase pausing to its functional implications",
@@ -845,9 +987,9 @@
       "pages": "72–80",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.ceb.2017.03.002",
+      "pmid": "28363125",
+      "url": "https://doi.org/10.1016/j.ceb.2017.03.002"
     },
     {
       "title": "A detailed protocol for subcellular RNA sequencing (subRNA-seq)",
@@ -862,9 +1004,9 @@
       "pages": "4.29.1–4.29.18",
       "type": "protocol",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1002/cpmb.44",
+      "pmid": "28967997",
+      "url": "https://doi.org/10.1002/cpmb.44"
     },
     {
       "title": "The code and beyond: transcription regulation by the RNA polymerase II carboxy-terminal domain",
@@ -879,9 +1021,9 @@
       "pages": "263–273",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/nrm.2017.10",
+      "pmid": "28248323",
+      "url": "https://doi.org/10.1038/nrm.2017.10"
     },
     {
       "title": "Not just noise: genomics and genetics bring long noncoding RNAs into focus",
@@ -895,9 +1037,9 @@
       "pages": "1–2",
       "type": "review",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1016/j.molcel.2016.12.017",
+      "pmid": "28061329",
+      "url": "https://doi.org/10.1016/j.molcel.2016.12.017"
     },
     {
       "title": "Mitochondrial ribosome (mitoribosome) profiling for monitoring mitochondrial translation in vivo",
@@ -912,9 +1054,26 @@
       "pages": "4.28.1–4.28.25",
       "type": "protocol",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1002/cpmb.41",
+      "pmid": "28678443",
+      "url": "https://doi.org/10.1002/cpmb.41"
+    },
+    {
+      "title": "Genome-wide profiling of RNA polymerase transcription at nucleotide resolution in human cells with native elongating transcript sequencing",
+      "authors": "Mayer A, Churchman LS",
+      "labAuthors": [
+        "Mayer A",
+        "Churchman LS"
+      ],
+      "journal": "Nature Protocols",
+      "year": 2016,
+      "volume": "11(4)",
+      "pages": "813–833",
+      "type": "protocol",
+      "section": "reviews",
+      "doi": "10.1038/nprot.2016.047",
+      "pmid": "27010758",
+      "url": "https://doi.org/10.1038/nprot.2016.047"
     },
     {
       "title": "Native elongating transcript sequencing (NET-seq)",
@@ -928,9 +1087,9 @@
       "pages": "Unit 4.14.1–17",
       "type": "protocol",
       "section": "reviews",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1002/0471142727.mb0414s98",
+      "pmid": "22470065",
+      "url": "https://doi.org/10.1002/0471142727.mb0414s98"
     },
     {
       "title": "Single-molecule fluorescence imaging of processive myosin with enhanced background suppression using linear zero-mode waveguides (ZMWs) and convex lens induced confinement (CLIC)",
@@ -944,9 +1103,9 @@
       "pages": "1189–1202",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1364/OE.21.001189",
+      "pmid": "23389011",
+      "url": "https://doi.org/10.1364/OE.21.001189"
     },
     {
       "title": "Colocalization of fluorescent probes: accurate and precise registration with nanometer resolution",
@@ -960,9 +1119,9 @@
       "pages": "141–149",
       "type": "protocol",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1101/pdb.top067918",
+      "pmid": "22301660",
+      "url": "https://doi.org/10.1101/pdb.top067918"
     },
     {
       "title": "Single-molecule high-resolution colocalization of single probes",
@@ -976,9 +1135,9 @@
       "pages": "242–245",
       "type": "protocol",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1101/pdb.prot067926",
+      "pmid": "22301661",
+      "url": "https://doi.org/10.1101/pdb.prot067926"
     },
     {
       "title": "H3K4 trimethylation by Set1 promotes efficient termination by the Nrd1-Nab3-Sen1 pathway",
@@ -992,9 +1151,9 @@
       "pages": "3569–3583",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1128/MCB.05590-11",
+      "pmid": "21709022",
+      "url": "https://doi.org/10.1128/MCB.05590-11"
     },
     {
       "title": "Nascent transcript sequencing visualizes transcription at nucleotide resolution",
@@ -1008,9 +1167,9 @@
       "pages": "368–373",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/nature09652",
+      "pmid": "21248844",
+      "url": "https://doi.org/10.1038/nature09652"
     },
     {
       "title": "Optimized localization analysis for single-molecule tracking and super-resolution microscopy",
@@ -1024,9 +1183,9 @@
       "pages": "377–381",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/nmeth.1447",
+      "pmid": "20364147",
+      "url": "https://doi.org/10.1038/nmeth.1447"
     },
     {
       "title": "Rapid creation and quantitative monitoring of high coverage shRNA libraries",
@@ -1040,9 +1199,9 @@
       "pages": "443–445",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/nmeth.1330",
+      "pmid": "19448642",
+      "url": "https://doi.org/10.1038/nmeth.1330"
     },
     {
       "title": "Colocalization of fluorescent probes: accurate and precise registration with nanometer resolution",
@@ -1056,8 +1215,6 @@
       "pages": "73–84",
       "type": "protocol",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
       "url": null
     },
     {
@@ -1072,9 +1229,9 @@
       "pages": "668–671",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1529/biophysj.105.065599",
+      "pmid": "16258038",
+      "url": "https://doi.org/10.1529/biophysj.105.065599"
     },
     {
       "title": "Single molecule high-resolution colocalization of Cy3 and Cy5 attached to macromolecules measures intramolecular distances through time",
@@ -1088,9 +1245,9 @@
       "pages": "1419–1423",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1073/pnas.0409487102",
+      "pmid": "15668396",
+      "url": "https://doi.org/10.1073/pnas.0409487102"
     },
     {
       "title": "Myosin VI walks hand-over-hand along actin",
@@ -1104,9 +1261,9 @@
       "pages": "884–887",
       "type": "research",
       "section": "earlier",
-      "doi": null,
-      "pmid": null,
-      "url": null
+      "doi": "10.1038/nsmb815",
+      "pmid": "15286724",
+      "url": "https://doi.org/10.1038/nsmb815"
     }
   ]
 }
