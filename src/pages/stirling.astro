@@ -1,12 +1,13 @@
 ---
 import Base from "../layouts/Base.astro";
+import RichText from "../components/RichText.astro";
 import site from "../data/site.json";
+import content from "../data/pages/stirling.json";
 import { u } from "../lib/path.js";
 
 const img = (p) => u(p);
 
-const description =
-  "L. Stirling Churchman is Professor of Genetics at Harvard Medical School. She pioneered NET-seq and leads a lab studying how gene expression is coordinated across the cell, from the nucleus to the mitochondria.";
+const description = content.seoDescription;
 
 // A single canonical Person record, referenced by @id from every other page.
 const jsonld = {
@@ -55,37 +56,11 @@ const jsonld = {
   <section class="section">
     <div class="wrap hero-grid" style="align-items:start">
       <div>
-        <p class="eyebrow">Principal investigator</p>
-        <h1>L. Stirling Churchman, PhD</h1>
-        <p class="lede" style="margin-bottom:1.6rem">Professor of Genetics, Harvard Medical School</p>
+        <p class="eyebrow">{content.eyebrow}</p>
+        <h1>{content.name}</h1>
+        <p class="lede" style="margin-bottom:1.6rem">{content.title}</p>
 
-        <div class="prose">
-          <p>
-            Stirling Churchman is Professor of Genetics at Harvard Medical School. Her research focuses on the
-            coordination of gene expression across the cell, from the nucleus to the mitochondria, in both health
-            and disease. The Churchman lab has developed innovative sequencing-based approaches to visualize gene
-            expression processes across the cell with high resolution.
-          </p>
-          <p>
-            Among her contributions, Churchman pioneered native elongating transcript sequencing (NET-seq), which
-            maps RNA polymerase genome-wide at nucleotide resolution. The lab also developed nanopore analysis of
-            co-transcriptional processing (nano-COP), designed to directly probe the dynamics and regulation of
-            pre-mRNA splicing <em>in vivo</em>, and more recently subcellular TimeLapse-seq, which tracks the life
-            cycles of RNAs from production to degradation as they progress through the cell.
-          </p>
-          <p>
-            The group also discovered that cytosolic and mitochondrial translation programs are synchronized
-            during mitochondrial biogenesis. By continually developing new approaches to analyze gene expression,
-            Churchman and her team aim to identify previously unappreciated layers of gene regulation and elucidate
-            the molecular mechanisms behind them.
-          </p>
-          <p>
-            Churchman has a BA in physics from Cornell University and a PhD in physics from Stanford University. She
-            did her postdoctoral work at the University of California, San Francisco, where she was a Merck Fellow
-            of the Damon Runyon Cancer Research Foundation. She joined the faculty of the Genetics Department at
-            Harvard Medical School in 2011. She was also a co-author of Harvard's report on Institutional Voice.
-          </p>
-        </div>
+        <RichText class="prose" html={content.biography} />
 
         <div class="btn-row">
           <a class="btn ghost" href={u(site.links.cv)}>Curriculum vitae (PDF)</a>
@@ -96,8 +71,8 @@ const jsonld = {
 
       <aside>
         <img
-          src={img("/images/team/stirling-churchman.webp")}
-          alt="L. Stirling Churchman"
+          src={img(content.photo)}
+          alt={content.photoAlt}
           loading="eager"
           style="border-radius:3px"
         />
@@ -105,16 +80,12 @@ const jsonld = {
         <dl class="meta">
           <dt>Awards</dt>
           <dd style="font-size:.92rem;color:var(--ink-2)">
-            Dale F. Frey Award for Breakthrough Scientists, Damon Runyon Cancer Research Foundation<br /><br />
-            Burroughs Wellcome Fund Career Award at the Scientific Interface<br /><br />
-            Glenn Award for Research in Biological Mechanisms of Aging
+            {content.awards.map((award, index) => <>{index > 0 && <><br /><br /></>}{award}</>)}
           </dd>
 
           <dt>Watch &amp; listen</dt>
           <dd style="font-size:.92rem">
-            <a href="https://www.youtube.com/watch?v=XAKMASk_fc4">Talk: tracking RNA life cycles</a><br />
-            <a href="https://www.youtube.com/watch?v=2YCgrx2wWfA">Harvard cartoon: mitonuclear coordination</a><br />
-            <a href="https://www.youtube.com/live/KLQA33z9A9A?t=9436s">WBUR's Curiosity Desk</a>
+            {content.media.map((item) => <><a href={item.href}>{item.label}</a><br /></>)}
           </dd>
 
           <dt>Contact</dt>

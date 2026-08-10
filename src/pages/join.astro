@@ -1,26 +1,23 @@
 ---
 import Base from "../layouts/Base.astro";
+import RichText from "../components/RichText.astro";
 import site from "../data/site.json";
+import content from "../data/pages/join.json";
 import { u } from "../lib/path.js";
 
 const img = (p) => u(p);
 const pi = site.contacts[0];
 
-const description =
-  "The Churchman Lab at Harvard Medical School is recruiting postdoctoral fellows and rotation students. What we look for, what projects are open, what to put in your email, and what to expect from the process.";
+const description = content.seoDescription;
 ---
 
 <Base title="Join Us" description={description}>
   <section class="section join-hero">
     <div class="wrap join-hero-grid">
       <div>
-        <p class="eyebrow">Join us</p>
-        <h1>We are hiring postdocs and taking rotation students</h1>
-        <p class="lede prose">
-          We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want
-          to answer a question about gene regulation with our novel set of methods or develop your own, our lab is the
-          place to do it!
-        </p>
+        <p class="eyebrow">{content.hero.eyebrow}</p>
+        <h1>{content.hero.title}</h1>
+        <RichText class="lede prose" html={content.hero.body} />
         <div class="btn-row">
           <a class="btn" href="#apply">How to apply</a>
         </div>
@@ -33,14 +30,12 @@ const description =
       </div>
       <figure class="join-art">
         <img
-          src={img("/images/site/join-transcription.jpg")}
-          alt="Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution, a painting by Leidy Churchman"
+          src={img(content.hero.image)}
+          alt={content.hero.imageAlt}
           loading="eager"
           fetchpriority="high"
         />
-        <figcaption class="figcap">
-          Leidy Churchman, <em>Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution</em> (2015)
-        </figcaption>
+        <figcaption class="figcap"><RichText inline html={content.hero.caption} /></figcaption>
       </figure>
     </div>
   </section>
@@ -50,51 +45,30 @@ const description =
       <div>
         <h2>Open positions</h2>
 
-        <div class="qa">
-          <h3>Postdoctoral fellows</h3>
-          <p>
-            We are always actively recruiting. Projects are available across both research programs — the nuclear
-            mRNA life cycle and mitonuclear co-regulation — and in method development that cuts across both.
-          </p>
-        </div>
-
-        <div class="qa">
-          <h3>Rotation students</h3>
-          <p>
-            We take rotation students from Harvard's graduate programs, including BBS, MCO, Chemical Biology,
-            Systems Biology and Biological Sciences in Public Health. Email Stirling to set up a meeting to discuss
-            potential rotation projects. There’s room for 1-2 students to join the lab in Summer 2027.
-          </p>
-        </div>
+        {content.positions.map((position) => (
+          <div class="qa">
+            <h3>{position.title}</h3>
+            <RichText html={position.body} />
+          </div>
+        ))}
       </div>
 
       <div>
         <div class="box accent" id="apply">
-          <h3 style="margin-top:0">How to apply</h3>
-          <p style="font-size:.94rem"><strong>Postdocs.</strong> Email Stirling (<a href={`mailto:${pi.email}`}>{pi.email}</a>) with:</p>
+          <h3 style="margin-top:0">{content.application.title}</h3>
+          <p style="font-size:.94rem"><strong>Postdocs.</strong> {content.application.postdocIntro} (<a href={`mailto:${pi.email}`}>{pi.email}</a>) with:</p>
           <ul style="font-size:.94rem;color:var(--ink-2);padding-left:1.1em">
-            <li>your CV</li>
-            <li>
-              a short paragraph on why this lab, ideally naming an open question that would be well addressed in
-              our lab and why it grabs your attention
-            </li>
+            {content.application.postdocItems.map((item) => <li>{item}</li>)}
           </ul>
-          <p style="font-size:.94rem">
-            You do not need a full research proposal, just a good starting point for a conversation.
-          </p>
+          <p style="font-size:.94rem">{content.application.postdocNote}</p>
           <p style="font-size:.94rem;margin-bottom:0">
-            <strong>Rotation students.</strong> Just email Stirling, no formal application required, but your CV and
-            a brief note on “why us” can help shape our first conversation.
+            <strong>Rotation students.</strong> {content.application.rotationNote}
           </p>
         </div>
 
         <div class="box" style="margin-top:24px">
-          <h4 style="margin-top:0">What happens after you email</h4>
-          <p style="font-size:.94rem;color:var(--ink-2);margin-bottom:0">
-            Stirling replies within two weeks, and if she doesn’t, please email again. Hiring needs change faster
-            than this website is updated, so if there is space, promising applicants have a video call; candidates
-            then visit for a day, give a seminar, and meet everyone in the lab.
-          </p>
+          <h4 style="margin-top:0">{content.application.processTitle}</h4>
+          <RichText class="small-copy" html={content.application.processBody} />
         </div>
       </div>
     </div>
@@ -103,36 +77,15 @@ const description =
   <section class="section" id="qualities">
     <div class="wrap">
       <div class="section-head">
-        <h2>What we look for</h2>
+        <h2>{content.qualitiesTitle}</h2>
       </div>
       <div class="cards">
-        <div>
-          <h4>Curiosity, resourcefulness, and dedication with an open mind</h4>
-          <p style="font-size:.94rem;color:var(--ink-2)">
-            Many of our projects begin because the existing method cannot answer the question. Or a foundational
-            question is stalled, and our existing tools can push it forward. Or the data don’t add up, so a new
-            hypothesis emerges. We look for people who can identify the next tractable step, pursue it rigorously
-            and revise their assumptions when the evidence requires it.
-          </p>
-        </div>
-        <div>
-          <h4>Comfort being the only one in the room with your background</h4>
-          <p style="font-size:.94rem;color:var(--ink-2)">
-            We all have different backgrounds, so none of us understands everything. We work together to help fill
-            each other's gaps. Some of us come in with tremendous bench experience, and some with none at all. Some
-            of us have never used a programming language and for some of us, it’s all we know. A willingness to
-            learn is all we ask, and we firmly believe that our sum is greater than its parts! And besides, we all
-            love learning new things.
-          </p>
-        </div>
-        <div>
-          <h4>Care about other people's science</h4>
-          <p style="font-size:.94rem;color:var(--ink-2)">
-            Nearly every paper on our <a href={u("/publications")}>publications page</a> has multiple lab authors,
-            which is reflected in how we naturally love to jump in and help with projects while leading our own. We
-            look for people who help maintain a rigorous, collaborative and supportive environment.
-          </p>
-        </div>
+        {content.qualities.map((quality) => (
+          <div>
+            <h4>{quality.title}</h4>
+            <RichText class="small-copy" html={quality.body} />
+          </div>
+        ))}
       </div>
     </div>
   </section>
@@ -140,15 +93,8 @@ const description =
   <section class="section">
     <div class="wrap">
       <div class="section-head">
-        <h2>How we use AI</h2>
-        <p class="prose" style="margin-bottom:0">
-          We are AI-curious, AI-aware, and AI-cautious. We are excited about AI’s potential to advance scientific
-          work, and we welcome people who are eager to use these tools—or open to learning about them—thoughtfully.
-          We use AI for exploration and assistance, not as evidence or authority, and we independently verify the
-          work it helps produce. Learning to use AI critically is becoming an important scientific skill, and we want
-          everyone in the lab to gain thoughtful experience with it while continuing to develop their own analytical,
-          coding, and writing abilities.
-        </p>
+        <h2>{content.ai.title}</h2>
+        <RichText class="prose" html={content.ai.body} />
       </div>
     </div>
   </section>
@@ -156,21 +102,12 @@ const description =
   <section class="section">
     <div class="wrap two-col">
       <div>
-        <h2>Funding and support</h2>
-        <p class="prose" style="margin-bottom:0">
-          While lab funding is available for trainees without an external fellowship, many people in the lab hold
-          their own fellowships: currently the Helen Hay Whitney, an NIH F32, an NSF Graduate Research Fellowship
-          and a Parkinson's Foundation fellowship are represented. We support fellowship applications actively and
-          early.
-        </p>
+        <h2>{content.funding.title}</h2>
+        <RichText class="prose" html={content.funding.body} />
       </div>
       <div>
-        <h2>Where people go afterwards</h2>
-        <p class="prose">
-          Lab alumni have gone on to faculty positions at the University of Washington, Boston University, the
-          Université de Sherbrooke and the Max Planck Institute for Molecular Genetics, and to senior scientific
-          roles in biotech and consulting.
-        </p>
+        <h2>{content.alumni.title}</h2>
+        <RichText class="prose" html={content.alumni.body} />
         <p style="margin-bottom:0">
           <a class="more" href={u("/team#alumni")}>See where everyone went →</a>
         </p>
@@ -181,14 +118,14 @@ const description =
   <section class="section" id="values">
     <div class="wrap">
       <div class="box">
-        <h2 style="margin-top:0">Our values</h2>
-        <p class="prose" style="margin-bottom:0">
-          We strongly affirm that anyone is welcome in the lab, regardless of race, gender identity, sexual
-          orientation, religion, ethnicity, nationality, or ability. We strive to create a supportive lab atmosphere
-          so that everyone feels welcome and can fulfill their potential.
-        </p>
+        <h2 style="margin-top:0">{content.values.title}</h2>
+        <RichText class="prose" html={content.values.body} />
       </div>
     </div>
   </section>
 
 </Base>
+
+<style>
+  .small-copy { font-size: .94rem; color: var(--ink-2); }
+</style>

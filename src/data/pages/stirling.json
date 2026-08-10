@@ -1,0 +1,28 @@
+{
+  "seoDescription": "L. Stirling Churchman is Professor of Genetics at Harvard Medical School. She pioneered NET-seq and leads a lab studying how gene expression is coordinated across the cell, from the nucleus to the mitochondria.",
+  "eyebrow": "Principal investigator",
+  "name": "L. Stirling Churchman, PhD",
+  "title": "Professor of Genetics, Harvard Medical School",
+  "biography": "<p>Stirling Churchman is Professor of Genetics at Harvard Medical School. Her research focuses on the coordination of gene expression across the cell, from the nucleus to the mitochondria, in both health and disease. The Churchman lab has developed innovative sequencing-based approaches to visualize gene expression processes across the cell with high resolution.</p><p>Among her contributions, Churchman pioneered native elongating transcript sequencing (NET-seq), which maps RNA polymerase genome-wide at nucleotide resolution. The lab also developed nanopore analysis of co-transcriptional processing (nano-COP), designed to directly probe the dynamics and regulation of pre-mRNA splicing <em>in vivo</em>, and more recently subcellular TimeLapse-seq, which tracks the life cycles of RNAs from production to degradation as they progress through the cell.</p><p>The group also discovered that cytosolic and mitochondrial translation programs are synchronized during mitochondrial biogenesis. By continually developing new approaches to analyze gene expression, Churchman and her team aim to identify previously unappreciated layers of gene regulation and elucidate the molecular mechanisms behind them.</p><p>Churchman has a BA in physics from Cornell University and a PhD in physics from Stanford University. She did her postdoctoral work at the University of California, San Francisco, where she was a Merck Fellow of the Damon Runyon Cancer Research Foundation. She joined the faculty of the Genetics Department at Harvard Medical School in 2011. She was also a co-author of Harvard's report on Institutional Voice.</p>",
+  "photo": "/images/team/stirling-churchman.webp",
+  "photoAlt": "L. Stirling Churchman",
+  "awards": [
+    "Dale F. Frey Award for Breakthrough Scientists, Damon Runyon Cancer Research Foundation",
+    "Burroughs Wellcome Fund Career Award at the Scientific Interface",
+    "Glenn Award for Research in Biological Mechanisms of Aging"
+  ],
+  "media": [
+    {
+      "label": "Talk: tracking RNA life cycles",
+      "href": "https://www.youtube.com/watch?v=XAKMASk_fc4"
+    },
+    {
+      "label": "Harvard cartoon: mitonuclear coordination",
+      "href": "https://www.youtube.com/watch?v=2YCgrx2wWfA"
+    },
+    {
+      "label": "WBUR's Curiosity Desk",
+      "href": "https://www.youtube.com/live/KLQA33z9A9A?t=9436s"
+    }
+  ]
+}

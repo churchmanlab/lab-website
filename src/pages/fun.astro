@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import RichText from "../components/RichText.astro";
 import labLife from "../data/lab-life.json";
+import content from "../data/pages/lab-life.json";
 import { u } from "../lib/path.js";
 
 const prepareAlbum = (album) => {
@@ -35,64 +37,19 @@ const eventAlbums = labLife.eventAlbums.map(prepareAlbum);
 const eventAlbumById = new Map(eventAlbums.map((album) => [album.id, album]));
 const pickEventAlbums = (ids) => ids.map((id) => eventAlbumById.get(id)).filter(Boolean);
 
-const collections = [
-  {
-    id: "retreats",
-    eyebrow: "Annual tradition · 2012–2025",
-    title: "Lab retreats",
-    description: "Chalk talks, shared meals, long hikes and the annual group portrait—one retreat for every year we gathered.",
-    albums: retreatAlbums,
-    previewAlbumIds: ["2025-retreat", "2012-retreat"],
-  },
-  {
-    id: "milestones",
-    eyebrow: "Thesis days & new candidates · 2019–2026",
-    title: "Milestones & defenses",
-    description: "Thesis defenses, candidacy dinners and the celebrations that follow big scientific milestones.",
-    albums: pickEventAlbums([
-      "2026-hope-defense",
-      "2025-candidate-dinner",
-      "2024-jake-defense",
-      "2023-tommy-defense",
-      "2019-blake-defense",
-      "2019-heather-defense",
-    ]),
-    previewAlbumIds: ["2025-candidate-dinner", "2024-jake-defense"],
-  },
-  {
-    id: "outings",
-    eyebrow: "Boats, dinners & celebrations · 2013–2022",
-    title: "Outings & celebrations",
-    description: "Cruises, conferences, baby showers and send-offs from the life of the lab beyond Longwood Avenue.",
-    albums: pickEventAlbums([
-      "2022-charles-cruise",
-      "2022-keystone",
-      "2022-katja-baby-shower",
-      "2021-lab-party",
-      "2015-seth-farewell",
-      "2013-harpoon-outing",
-    ]),
-    previewAlbumIds: ["2022-charles-cruise", "2013-harpoon-outing"],
-  },
-  {
-    id: "beginnings",
-    eyebrow: "The first years · 2011–2012",
-    title: "Building the lab",
-    description: "The original empty room, unpacking day and the small collection of photographs from the lab’s first year.",
-    albums: pickEventAlbums(["2012-lab-move-in", "2011-first-year"]),
-    previewAlbumIds: ["2012-lab-move-in", "2011-first-year"],
-  },
-].map((collection) => {
+const collections = content.collections.map((collection) => {
+  const albums = collection.albumSource === "retreats" ? retreatAlbums : pickEventAlbums(collection.albumIds);
   const previews = collection.previewAlbumIds.map((albumId) => {
-    const album = collection.albums.find((candidate) => candidate.id === albumId);
+    const album = albums.find((candidate) => candidate.id === albumId);
     const photo = album?.cover[0];
     return album && photo ? { src: album.photoPath(photo.file), alt: photo.alt } : null;
   }).filter(Boolean);
 
   return {
     ...collection,
+    albums,
     previews,
-    photoCount: collection.albums.reduce((sum, album) => sum + album.photos.length, 0),
+    photoCount: albums.reduce((sum, album) => sum + album.photos.length, 0),
   };
 });
 
@@ -103,18 +60,15 @@ const clientAlbums = Object.fromEntries(
   collections.flatMap((collection) => collection.albums.map((album) => [album.id, album.clientPhotos])),
 );
 
-const description =
-  "Lab life in the Churchman Lab: annual retreats, celebrations, thesis defenses and boat trips on the Charles, from the lab's first day in 2011 to now.";
+const description = content.seoDescription;
 ---
 
 <Base title="Lab Life" description={description}>
   <section class="section" style="padding-bottom:34px">
     <div class="wrap">
-      <p class="eyebrow">Lab life</p>
-      <h1>Retreats, milestones and boats on the Charles</h1>
-      <p class="lede prose">
-        The lab has taken an annual retreat since 2012. Here's a glimpse of what life in the Churchman lab is like.
-      </p>
+      <p class="eyebrow">{content.eyebrow}</p>
+      <h1>{content.title}</h1>
+      <RichText class="lede prose" html={content.intro} />
     </div>
   </section>
 
@@ -122,11 +76,10 @@ const description =
     <div class="wrap">
       <div class="collection-index-head">
         <div>
-          <p class="eyebrow">Through the years</p>
-          <h2>Choose a collection</h2>
+          <p class="eyebrow">{content.indexEyebrow}</p>
+          <h2>{content.indexTitle}</h2>
           <p class="prose">
-            Browse a few highlights, then open any collection to explore its {totalAlbums} albums and {totalPhotos}
-            photographs.
+            {content.indexIntro} its {totalAlbums} albums and {totalPhotos} photographs.
           </p>
         </div>
         <button class="btn collection-load-all" type="button" data-load-all-collections>

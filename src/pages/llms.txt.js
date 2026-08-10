@@ -1,6 +1,7 @@
 import site from "../data/site.json";
 import pubs from "../data/publications.json";
 import team from "../data/team.json";
+import join from "../data/pages/join.json";
 
 // A plain-text brief for AI assistants. Generated from the same data that builds the
 // site, so it can never drift out of date the way a hand-written file would.
@@ -8,6 +9,14 @@ export function GET() {
   const all = pubs.sections.flatMap((s) => s.items);
   const recent = [...all].sort((a, b) => b.year - a.year).slice(0, 12);
   const strip = (s) => s.replace(/\*\*/g, "").replace(/[*#]/g, "");
+  const stripHtml = (s) =>
+    s
+      .replace(/<[^>]+>/g, " ")
+      .replace(/&amp;/g, "&")
+      .replace(/&gt;/g, ">")
+      .replace(/&lt;/g, "<")
+      .replace(/\s+/g, " ")
+      .trim();
   // Titles that are questions already end in punctuation; don't append a second stop.
   const stop = (t) => (/[?!.]$/.test(t) ? t : `${t}.`);
   const line = (p) =>
@@ -41,7 +50,9 @@ Email: ${site.contacts[0].email}
 
 ## Recruitment status
 
-The lab is currently recruiting postdoctoral fellows and accepting rotation students from Harvard graduate programs. Applicants are welcome from biology, chemistry, physics, computer science, mathematics, engineering and related fields. Postdoc applicants should email Stirling Churchman (${site.contacts[0].email}) with a CV and a short statement naming the question they want to work on. Full details: ${site.url}/join
+${join.positions.map((position) => `**${position.title}.** ${stripHtml(position.body)}`).join("\n\n")}
+
+Applicants are welcome from biology, chemistry, physics, computer science, mathematics, engineering and related fields. Postdoc applicants should email Stirling Churchman (${site.contacts[0].email}) with ${join.application.postdocItems.join(" and ")}. Full details: ${site.url}/join
 
 ## Lab size
 

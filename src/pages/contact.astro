@@ -1,12 +1,13 @@
 ---
 import Base from "../layouts/Base.astro";
+import RichText from "../components/RichText.astro";
 import site from "../data/site.json";
+import content from "../data/pages/contact.json";
 import { u } from "../lib/path.js";
 
 const img = (p) => u(p);
 
-const description =
-  "Contact the Churchman Lab, Department of Genetics, Harvard Medical School, New Research Building Room 356, 77 Avenue Louis Pasteur, Boston MA 02115.";
+const description = content.seoDescription;
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -21,15 +22,15 @@ const jsonld = {
 <Base title="Contact" description={description} jsonld={jsonld}>
   <section class="section" style="padding-bottom:34px">
     <div class="wrap">
-      <p class="eyebrow">Contact</p>
-      <h1>Get in touch</h1>
+      <p class="eyebrow">{content.eyebrow}</p>
+      <h1>{content.title}</h1>
     </div>
   </section>
 
   <section class="section" style="padding-top:0">
     <div class="wrap two-col">
       <div>
-        <h2>Who to email</h2>
+        <h2>{content.contactsTitle}</h2>
         {site.contacts.map((c) => (
           <div class="qa">
             <h3>{c.role}</h3>
@@ -40,15 +41,12 @@ const jsonld = {
         ))}
 
         <div class="box accent" style="margin-top:30px">
-          <p style="margin-bottom:0">
-            Interested in joining the lab? Read <a href={u("/join")}>what we look for and how to apply</a> before
-            emailing.
-          </p>
+          <p style="margin-bottom:0"><RichText inline html={content.joiningNote} /></p>
         </div>
       </div>
 
       <div>
-        <h2>Where we are</h2>
+        <h2>{content.locationTitle}</h2>
         <p>
           {site.department}<br />
           {site.division}, {site.institution}<br />
@@ -57,12 +55,12 @@ const jsonld = {
           {site.address.city}, {site.address.state} {site.address.zip}
         </p>
         <p class="side-note">
-          The M2 shuttle runs regularly from Cambridge to the Longwood Medical Area —
+          {content.travelNote} —
           <a href="https://www.masco.org/directions/m2-cambridge-harvard-shuttle">schedule</a>.
         </p>
         <p style="margin-top:1.5rem">
           <a class="btn ghost" href="https://maps.google.com/?q=77+Avenue+Louis+Pasteur,+Boston,+MA+02115">
-            Open in Maps
+            {content.mapButtonLabel}
           </a>
         </p>
         <img
