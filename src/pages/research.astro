@@ -25,11 +25,13 @@ const jsonld = {
 ---
 
 <Base title="Research" description={description} jsonld={jsonld}>
-  <section class="section" style="padding-bottom:34px">
-    <div class="wrap">
-      <p class="eyebrow">Research</p>
-      <h1>Two genomes, one proteome</h1>
-      <div class="prose">
+  <section class="section research-intro">
+    <div class="wrap research-intro-grid">
+      <div class="research-intro-heading">
+        <p class="eyebrow">Research</p>
+        <h1>Two genomes, one proteome</h1>
+      </div>
+      <div class="prose research-intro-copy">
         <p class="lede">
           In eukaryotic cells, we have nuclear DNA and mitochondrial DNA which are expressed and regulated by
           completely different machinery and regulatory principles. Human mtDNA encodes 13 proteins, all core
@@ -52,6 +54,19 @@ const jsonld = {
           cycles are regulated in healthy cells and how their misregulation leads to disease.
         </p>
       </div>
+      <figure class="research-intro-art">
+        <div class="research-art-crop">
+          <img
+            src={img("/images/research/synchronized-translation-programs.jpg")}
+            alt="Synchronized mitochondrial and cytosolic translation programs, a painting by Leidy Churchman"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+        <figcaption class="figcap">
+          Leidy Churchman, <em>Synchronized mitochondrial and cytosolic translation programs</em> (2016)
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -71,32 +86,27 @@ const jsonld = {
 
       <img
         class="research-cartoon research-cartoon-wide"
-        src={img("/images/research/mrna-life-cycle.png")}
-        alt="Schematic of the mRNA life cycle across subcellular compartments"
+        src={img("/images/research/timelapse-seq.png")}
+        alt="4sU metabolic labeling of RNA across subcellular compartments"
         loading="lazy"
         style="border-radius:3px;margin-bottom:44px"
       />
 
-      <div class="two-col">
-        <div>
-          <h3>How are pre-mRNAs transcribed and processed on chromatin?</h3>
-          <p class="prose">
-            In human cells, genes contain numerous introns that need to be excised to form a functional mRNA. We
-            developed direct RNA nanopore sequencing methods, such as nanopore analysis of co-transcriptional
-            processing (nano-COP), to study pre-mRNA processing without the length-associated biases found in
-            techniques that rely on cDNA synthesis and PCR.
-          </p>
-          <p class="prose">
-            We found that 60% of introns are removed co-transcriptionally, while the pre-mRNA is still attached to
-            Pol II. Splicing catalysis, however, largely occurs after Pol II has transcribed thousands of further
-            nucleotides. Examining the sequence of intron removal across pre-mRNAs, we found that introns tend to be
-            excised in one or occasionally two preferred orders that were constant across cell types and alternative
-            splicing, and identified roles for specific <em>cis</em>-elements in controlling splicing order.
-          </p>
-        </div>
-        <div>
-          <img class="research-cartoon" src={img("/images/research/timelapse-seq.png")} alt="Subcellular TimeLapse-seq schematic" loading="lazy" style="border-radius:3px" />
-        </div>
+      <div class="prose">
+        <h3>How are pre-mRNAs transcribed and processed on chromatin?</h3>
+        <p>
+          In human cells, genes contain numerous introns that need to be excised to form a functional mRNA. We
+          developed direct RNA nanopore sequencing methods, such as nanopore analysis of co-transcriptional
+          processing (nano-COP), to study pre-mRNA processing without the length-associated biases found in
+          techniques that rely on cDNA synthesis and PCR.
+        </p>
+        <p>
+          We found that 60% of introns are removed co-transcriptionally, while the pre-mRNA is still attached to
+          Pol II. Splicing catalysis, however, largely occurs after Pol II has transcribed thousands of further
+          nucleotides. Examining the sequence of intron removal across pre-mRNAs, we found that introns tend to be
+          excised in one or occasionally two preferred orders that were constant across cell types and alternative
+          splicing, and identified roles for specific <em>cis</em>-elements in controlling splicing order.
+        </p>
       </div>
 
       <div class="box" style="margin-top:34px">
@@ -232,6 +242,14 @@ const jsonld = {
         </p>
       </div>
 
+      <img
+        class="research-cartoon research-cartoon-wide"
+        src={img("/images/research/mrna-life-cycle.png")}
+        alt="Drexler schematic of mitonuclear co-regulation"
+        loading="lazy"
+        style="border-radius:3px;margin-bottom:44px"
+      />
+
       <div class="two-col">
         <div class="prose">
           <p>
@@ -258,7 +276,7 @@ const jsonld = {
             loading="lazy"
             style="border-radius:3px;margin-bottom:24px"
           />
-          <img class="research-cartoon" src={img("/images/research/mitochondria-metabolome.png")} alt="Mitochondria and the metabolome" loading="lazy" style="border-radius:3px" />
+          <img class="research-cartoon research-cartoon-half" src={img("/images/research/mitochondria-metabolome.png")} alt="Mitochondria and the metabolome" loading="lazy" style="border-radius:3px" />
         </div>
       </div>
 
@@ -357,7 +375,19 @@ const jsonld = {
     }
 
     .research-cartoon-wide {
-      max-width: 920px;
+      width: 42%;
+      max-width: 460px;
+    }
+
+    .research-cartoon-half {
+      width: 42%;
+    }
+
+    @media (max-width: 700px) {
+      .research-cartoon-wide,
+      .research-cartoon-half {
+        width: 72%;
+      }
     }
   </style>
 </Base>

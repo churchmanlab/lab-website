@@ -95,6 +95,38 @@ p { margin: 0 0 1.15em; }
 .btn.ghost { background: transparent; color: var(--accent); }
 .btn.ghost:hover { background: var(--accent-wash); }
 .btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.6rem; }
+.jump-links {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: .35rem 1.1rem;
+  margin-top: 1.25rem; font-size: .86rem; color: var(--ink-3);
+}
+.jump-links span { font-size: .72rem; font-weight: 650; letter-spacing: .1em; text-transform: uppercase; }
+.jump-links a { color: var(--ink-2); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.jump-links a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+.join-hero { padding-top: 70px; padding-bottom: 54px; }
+.join-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+.join-art { width: 100%; max-width: 360px; margin: 0; justify-self: end; }
+.join-art img {
+  width: 100%; height: auto;
+  border-radius: 3px; box-shadow: 0 18px 44px -22px rgba(23,22,26,.5);
+}
+.research-intro { padding-bottom: 42px; }
+.research-intro-grid {
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .62fr);
+  grid-template-areas: "heading art" "copy art";
+  column-gap: 56px; row-gap: 0; align-items: start;
+}
+.research-intro-heading { grid-area: heading; }
+.research-intro-copy { grid-area: copy; }
+.research-intro-art { grid-area: art; width: 100%; max-width: 390px; margin: 190px 0 0; justify-self: end; }
+.research-art-crop {
+  position: relative; overflow: hidden; width: 100%; aspect-ratio: 4 / 5;
+  border-radius: 3px; box-shadow: 0 18px 44px -22px rgba(23,22,26,.5);
+}
+.research-art-crop img {
+  position: absolute; left: 50%; bottom: -12%; width: 150%; max-width: none;
+  transform: translateX(-50%);
+}
 
 /* ---------- sections ---------- */
 .section { padding: 62px 0; }
@@ -147,6 +179,7 @@ p { margin: 0 0 1.15em; }
 .pub-section-title { font-size: 1.05rem; font-family: var(--sans); font-weight: 650; letter-spacing: .02em; text-transform: uppercase; color: var(--ink-3); margin: 42px 0 4px; }
 ol.pubs { list-style: none; padding: 0; margin: 0; }
 .pub { padding: 18px 0; border-bottom: 1px solid var(--line-2); display: grid; grid-template-columns: 62px 1fr; gap: 20px; }
+.pub[hidden], .pub-group[hidden] { display: none; }
 .pub .yr { font-family: var(--mono); font-size: .82rem; color: var(--ink-3); padding-top: .25rem; }
 .pub .ttl { font-family: var(--serif); font-size: 1.09rem; font-weight: 600; line-height: 1.35; margin: 0 0 .3rem; color: var(--ink); }
 .pub .au { font-size: .875rem; color: var(--ink-2); line-height: 1.55; margin: 0 0 .35rem; }
@@ -328,7 +361,7 @@ body:has(.photo-lightbox[open]) { overflow: hidden; }
 
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--line); margin-top: 70px; padding: 46px 0 60px; background: var(--paper-2); }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; max-width: 760px; }
+.footer-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; }
 .site-footer h4 { font-size: .74rem; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-3); margin-bottom: .8rem; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: .45rem; font-size: .9rem; }
@@ -340,7 +373,10 @@ body:has(.photo-lightbox[open]) { overflow: hidden; }
 .skip:focus { left: 12px; top: 10px; z-index: 100; background: #fff; padding: 8px 14px; border: 2px solid var(--accent); }
 
 @media (max-width: 900px) {
-  .hero-grid, .two-col, .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-grid, .join-hero-grid, .research-intro-grid, .two-col, .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .join-art { justify-self: start; }
+  .research-intro-grid { grid-template-areas: "heading" "art" "copy"; row-gap: 28px; }
+  .research-intro-art { margin-top: 0; justify-self: start; }
   .alumni-list { columns: 1; }
   .site-header .wrap { height: auto; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
   .site-nav { margin-left: 0; width: 100%; gap: 16px; }

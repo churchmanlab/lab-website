@@ -162,7 +162,7 @@ async function main() {
     ? new Set((await readdir(STAGED)).filter((f) => f.endsWith(".pdf")).map((f) => f.slice(0, -4)))
     : new Set();
 
-  const todo = items.filter((p) => !p.noImage && (FORCE || !p.image));
+  const todo = items.filter((p) => p.type !== "preprint" && !p.noImage && (FORCE || !p.image));
   console.log(
     `${items.length} publications · ${items.filter((p) => p.image).length} already have an image · ` +
       `${items.filter((p) => p.noImage).length} opted out · ${todo.length} to try\n`,
