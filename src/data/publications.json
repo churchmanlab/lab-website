@@ -126,10 +126,7 @@
           "doi": "10.1016/j.cell.2025.01.046",
           "pmid": "40023154",
           "pdf": "/pdfs/2025-hif-regulates-multiple-translated-endogenous.pdf",
-          "image": "/images/pubs/2025-hif-regulates-multiple-translated-endogenous.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 673
+          "noImage": "NIH Public Access author manuscript, not the publisher-formatted article"
         },
         {
           "authors": "**Choquet K**, **Chaumont LP**, **Bache S**, **Baxter-Koenigs AR**, **Churchman LS**",
@@ -204,10 +201,10 @@
           "type": "research",
           "doi": "10.1016/j.molcel.2024.02.028",
           "pmid": "38503286",
-          "image": "/images/pubs/2024-a-kinetic-dichotomy-between-mitochondrial-and.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 675,
+          "image": "/images/pubs/cover-molcell-2024-kinetic-dichotomy.jpg",
+          "imageKind": "cover",
+          "imageW": 591,
+          "imageH": 768,
           "pdf": "/pdfs/2024-a-kinetic-dichotomy-between-mitochondrial-and.pdf"
         },
         {
@@ -251,10 +248,10 @@
           "type": "research",
           "doi": "10.1038/s41594-024-01225-6",
           "pmid": "38347148",
-          "image": "/images/pubs/2024-single-nucleoid-architecture-reveals-heterogeneous.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 691,
+          "image": "/images/pubs/cover-nsmb-2024-single-nucleoid.jpg",
+          "imageKind": "cover",
+          "imageW": 440,
+          "imageH": 584,
           "pdf": "/pdfs/2024-single-nucleoid-architecture-reveals-heterogeneous.pdf"
         },
         {
@@ -300,10 +297,7 @@
           "doi": "10.1016/j.devcel.2023.07.018",
           "pmid": "37586368",
           "pdf": "/pdfs/2023-rna-polymerase-ii-pausing-temporally-coordinates.pdf",
-          "image": "/images/pubs/2023-rna-polymerase-ii-pausing-temporally-coordinates.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 673
+          "noImage": "Available PDF is the medRxiv preprint, not the publisher-formatted article"
         },
         {
           "authors": "**Choquet K**, **Baxter-Koenigs AR**, Dülk SL, **Smalec BM**, Rouskin S, **Churchman LS**",
@@ -315,11 +309,7 @@
           "type": "research",
           "doi": "10.1038/s41594-023-01035-2",
           "pmid": "37443198",
-          "pdf": "/pdfs/2023-pre-mrna-splicing-order-is-predetermined-and.pdf",
-          "image": "/images/pubs/2023-pre-mrna-splicing-order-is-predetermined-and.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 673
+          "noImage": "Available local PDF is an unrelated article"
         },
         {
           "authors": "Bergeron D, Faucher-Giguère L, Emmerichs A-K, **Choquet K**, Song KS, Deschamps-Francoeur G, Fafard-Couture É, Rivera A, Couture S, **Churchman LS**, Heyd F, Abou Elela S, Scott MS",
@@ -394,11 +384,8 @@
           "type": "research",
           "doi": "10.1091/mbc.E21-01-0014",
           "pmid": "34191586",
-          "image": "/images/pubs/2021-hsf1-activation-by-proteotoxic-stress-requires.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 673,
-          "pdf": "/pdfs/2021-hsf1-activation-by-proteotoxic-stress-requires.pdf"
+          "pdf": "/pdfs/2021-hsf1-activation-by-proteotoxic-stress-requires.pdf",
+          "noImage": "Available PDF is an author-formatted manuscript, not the published journal layout"
         },
         {
           "authors": "Viktorovskaya O, Chuang J, Jain D, Reim NI, López-Rivera F, Murawska M, Spatt D, **Churchman LS**, Park PJ, Winston F",
@@ -458,11 +445,8 @@
           "type": "research",
           "doi": "10.1074/jbc.RA120.013426",
           "pmid": "32518159",
-          "image": "/images/pubs/2020-the-yeast-exoribonuclease-xrn1-and-associated.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 673,
-          "pdf": "/pdfs/2020-the-yeast-exoribonuclease-xrn1-and-associated.pdf"
+          "pdf": "/pdfs/2020-the-yeast-exoribonuclease-xrn1-and-associated.pdf",
+          "noImage": "Available PDF is a JBC Papers in Press manuscript, not the final journal layout"
         },
         {
           "authors": "**Drexler HL**, **Choquet K**, **Churchman LS**",
@@ -633,10 +617,10 @@
           "type": "research",
           "doi": "10.1038/nature18015",
           "pmid": "27225121",
-          "image": "/images/pubs/2016-synchronized-mitochondrial-and-cytosolic-translation.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 683,
+          "image": "/images/pubs/cover-nature-2016-synchronized-translation.jpg",
+          "imageKind": "cover",
+          "imageW": 504,
+          "imageH": 627,
           "pdf": "/pdfs/2016-synchronized-mitochondrial-and-cytosolic-translation.pdf"
         },
         {
@@ -649,10 +633,10 @@
           "type": "research",
           "doi": "10.1016/j.cell.2015.03.010",
           "pmid": "25910208",
-          "image": "/images/pubs/2015-native-elongating-transcript-sequencing-reveals.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 675,
+          "image": "/images/pubs/cover-cell-2015-net-seq-human.jpg",
+          "imageKind": "cover",
+          "imageW": 591,
+          "imageH": 768,
           "pdf": "/pdfs/2015-native-elongating-transcript-sequencing-reveals.pdf"
         },
         {
@@ -681,11 +665,7 @@
           "type": "research",
           "doi": "10.1016/j.cell.2014.06.038",
           "pmid": "28915368",
-          "pdf": "/pdfs/2014-a-chromatin-based-mechanism-for-limiting-divergent.pdf",
-          "image": "/images/pubs/2014-a-chromatin-based-mechanism-for-limiting-divergent.jpg",
-          "imageKind": "firstpage",
-          "imageW": 520,
-          "imageH": 675
+          "noImage": "Available local PDF is a correction notice, not the article"
         }
       ]
     },

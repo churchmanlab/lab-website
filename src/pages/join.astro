@@ -11,35 +11,41 @@ const description =
 ---
 
 <Base title="Join Us" description={description}>
-  <section class="section" style="padding-bottom:30px">
-    <div class="wrap">
-      <p class="eyebrow">Join us</p>
-      <h1>We are hiring postdocs and taking rotation students</h1>
-      <p class="lede prose">
-        We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want
-        to answer a question about gene regulation with our novel set of methods or develop your own, our lab is the
-        place to do it!
-      </p>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0">
-    <div class="wrap">
-      <figure style="margin:0">
+  <section class="section join-hero">
+    <div class="wrap join-hero-grid">
+      <div>
+        <p class="eyebrow">Join us</p>
+        <h1>We are hiring postdocs and taking rotation students</h1>
+        <p class="lede prose">
+          We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want
+          to answer a question about gene regulation with our novel set of methods or develop your own, our lab is the
+          place to do it!
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="#apply">How to apply</a>
+        </div>
+        <nav class="jump-links" aria-label="On this page">
+          <span>On this page</span>
+          <a href="#positions">Open positions</a>
+          <a href="#qualities">What we look for</a>
+          <a href="#values">Our values</a>
+        </nav>
+      </div>
+      <figure class="join-art">
         <img
-          src={img("/images/site/join-art.jpg")}
-          alt="Synchronized mitochondrial and cytosolic translation programs, a painting by Leidy Churchman"
-          loading="lazy"
-          style="border-radius:3px"
+          src={img("/images/site/join-transcription.jpg")}
+          alt="Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution, a painting by Leidy Churchman"
+          loading="eager"
+          fetchpriority="high"
         />
         <figcaption class="figcap">
-          Leidy Churchman, <em>Synchronized mitochondrial and cytosolic translation programs</em> (2016)
+          Leidy Churchman, <em>Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution</em> (2015)
         </figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="positions">
     <div class="wrap two-col">
       <div>
         <h2>Open positions</h2>
@@ -57,13 +63,13 @@ const description =
           <p>
             We take rotation students from Harvard's graduate programs, including BBS, MCO, Chemical Biology,
             Systems Biology and Biological Sciences in Public Health. Email Stirling to set up a meeting to discuss
-            potential rotation projects! There’s room for 1-2 students to join the lab in Summer 2027.
+            potential rotation projects. There’s room for 1-2 students to join the lab in Summer 2027.
           </p>
         </div>
       </div>
 
       <div>
-        <div class="box accent">
+        <div class="box accent" id="apply">
           <h3 style="margin-top:0">How to apply</h3>
           <p style="font-size:.94rem"><strong>Postdocs.</strong> Email Stirling (<a href={`mailto:${pi.email}`}>{pi.email}</a>) with:</p>
           <ul style="font-size:.94rem;color:var(--ink-2);padding-left:1.1em">
@@ -94,7 +100,7 @@ const description =
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="qualities">
     <div class="wrap">
       <div class="section-head">
         <h2>What we look for</h2>
@@ -172,7 +178,7 @@ const description =
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="values">
     <div class="wrap">
       <div class="box">
         <h2 style="margin-top:0">Our values</h2>
