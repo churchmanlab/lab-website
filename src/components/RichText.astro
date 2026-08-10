@@ -1,0 +1,19 @@
+---
+import { contentHtml } from "../lib/path.js";
+
+const { html = "", class: className, inline = false, ...attributes } = Astro.props;
+const Element = inline ? "span" : "div";
+const renderedHtml = contentHtml(html);
+// Rich-text editors commonly wrap a one-line caption or callout in <p>. Strip
+// that one wrapper when the component is used inside an existing inline element.
+const normalizedHtml = inline
+  ? renderedHtml.replace(/^\s*<p>([\s\S]*?)<\/p>\s*$/, "$1")
+  : renderedHtml;
+---
+
+<Element class:list={["cms-rich-text", className]} set:html={normalizedHtml} {...attributes} />
+
+<style>
+  .cms-rich-text > :first-child { margin-top: 0; }
+  .cms-rich-text > :last-child { margin-bottom: 0; }
+</style>

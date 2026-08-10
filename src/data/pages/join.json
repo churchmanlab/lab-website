@@ -1,0 +1,64 @@
+{
+  "seoDescription": "The Churchman Lab at Harvard Medical School is recruiting postdoctoral fellows and rotation students. What we look for, what projects are open, what to put in your email, and what to expect from the process.",
+  "hero": {
+    "eyebrow": "Join us",
+    "title": "We are hiring postdocs and taking rotation students",
+    "body": "<p>We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want to answer a question about gene regulation with our novel set of methods or develop your own, our lab is the place to do it!</p>",
+    "image": "/images/site/join-transcription.jpg",
+    "imageAlt": "Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution, a painting by Leidy Churchman",
+    "caption": "Leidy Churchman, <em>Native elongating transcript sequencing reveals human transcriptional activity at nucleotide resolution</em> (2015)"
+  },
+  "positions": [
+    {
+      "title": "Postdoctoral fellows",
+      "body": "<p>We are always actively recruiting. Projects are available across both research programs — the nuclear mRNA life cycle and mitonuclear co-regulation — and in method development that cuts across both.</p>"
+    },
+    {
+      "title": "Rotation students",
+      "body": "<p>We take rotation students from Harvard's graduate programs, including BBS, MCO, Chemical Biology, Systems Biology and Biological Sciences in Public Health. Email Stirling to set up a meeting to discuss potential rotation projects. There’s room for 1-2 students to join the lab in Summer 2027.</p>"
+    }
+  ],
+  "application": {
+    "title": "How to apply",
+    "postdocIntro": "Email Stirling",
+    "postdocItems": [
+      "your CV",
+      "a short paragraph on why this lab, ideally naming an open question that would be well addressed in our lab and why it grabs your attention"
+    ],
+    "postdocNote": "You do not need a full research proposal, just a good starting point for a conversation.",
+    "rotationNote": "Just email Stirling, no formal application required, but your CV and a brief note on “why us” can help shape our first conversation.",
+    "processTitle": "What happens after you email",
+    "processBody": "<p>Stirling replies within two weeks, and if she doesn’t, please email again. Hiring needs change faster than this website is updated, so if there is space, promising applicants have a video call; candidates then visit for a day, give a seminar, and meet everyone in the lab.</p>"
+  },
+  "qualitiesTitle": "What we look for",
+  "qualities": [
+    {
+      "title": "Curiosity, resourcefulness, and dedication with an open mind",
+      "body": "<p>Many of our projects begin because the existing method cannot answer the question. Or a foundational question is stalled, and our existing tools can push it forward. Or the data don’t add up, so a new hypothesis emerges. We look for people who can identify the next tractable step, pursue it rigorously and revise their assumptions when the evidence requires it.</p>"
+    },
+    {
+      "title": "Comfort being the only one in the room with your background",
+      "body": "<p>We all have different backgrounds, so none of us understands everything. We work together to help fill each other's gaps. Some of us come in with tremendous bench experience, and some with none at all. Some of us have never used a programming language and for some of us, it’s all we know. A willingness to learn is all we ask, and we firmly believe that our sum is greater than its parts! And besides, we all love learning new things.</p>"
+    },
+    {
+      "title": "Care about other people's science",
+      "body": "<p>Nearly every paper on our <a href=\"/publications\">publications page</a> has multiple lab authors, which is reflected in how we naturally love to jump in and help with projects while leading our own. We look for people who help maintain a rigorous, collaborative and supportive environment.</p>"
+    }
+  ],
+  "ai": {
+    "title": "How we use AI",
+    "body": "<p>We are AI-curious, AI-aware, and AI-cautious. We are excited about AI’s potential to advance scientific work, and we welcome people who are eager to use these tools—or open to learning about them—thoughtfully. We use AI for exploration and assistance, not as evidence or authority, and we independently verify the work it helps produce. Learning to use AI critically is becoming an important scientific skill, and we want everyone in the lab to gain thoughtful experience with it while continuing to develop their own analytical, coding, and writing abilities.</p>"
+  },
+  "funding": {
+    "title": "Funding and support",
+    "body": "<p>While lab funding is available for trainees without an external fellowship, many people in the lab hold their own fellowships: currently the Helen Hay Whitney, an NIH F32, an NSF Graduate Research Fellowship and a Parkinson's Foundation fellowship are represented. We support fellowship applications actively and early.</p>"
+  },
+  "alumni": {
+    "title": "Where people go afterwards",
+    "body": "<p>Lab alumni have gone on to faculty positions at the University of Washington, Boston University, the Université de Sherbrooke and the Max Planck Institute for Molecular Genetics, and to senior scientific roles in biotech and consulting.</p>"
+  },
+  "values": {
+    "title": "Our values",
+    "body": "<p>We strongly affirm that anyone is welcome in the lab, regardless of race, gender identity, sexual orientation, religion, ethnicity, nationality, or ability. We strive to create a supportive lab atmosphere so that everyone feels welcome and can fulfill their potential.</p>"
+  }
+}

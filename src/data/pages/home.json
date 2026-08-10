@@ -1,0 +1,77 @@
+{
+  "seoDescription": "The Churchman Lab at Harvard Medical School studies how gene expression is regulated across the cell, from the nucleus to the mitochondria. We build quantitative sequencing methods — NET-seq, nano-COP, subcellular TimeLapse-seq, mtFiber-seq — to measure transcription, RNA processing, RNA flow between compartments, and mitonuclear coordination.",
+  "hero": {
+    "eyebrow": "Department of Genetics · Harvard Medical School",
+    "title": "From the nucleus to mitochondria, we study the many layers of gene regulation.",
+    "body": "<p>A cell makes thousands of mRNAs every minute and controls every one of them — where it is made, how it is processed, how long it survives, and whether it is ever translated. We build quantitative methods that make those steps measurable, in both the nuclear and the mitochondrial genome.</p>",
+    "image": "/images/site/hero-art.webp",
+    "imageAlt": "Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA, a painting by Leidy Churchman",
+    "caption": "Leidy Churchman, <em>Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA</em> (2024)"
+  },
+  "recentWork": {
+    "eyebrow": "Recent work",
+    "title": "Three things we have learned lately",
+    "items": [
+      {
+        "title": "Two genomes run on different clocks",
+        "body": "<p>By measuring RNA production, processing, ribosome association and degradation across both genomes, we found that nearly every step runs at a starkly different rate. The mitoribosome acts as a key point of coordination between the two systems.</p>",
+        "image": "/images/pubs/cover-molcell-2024-kinetic-dichotomy.jpg",
+        "imageAlt": "A kinetic dichotomy between mitochondrial and nuclear gene expression processes, a painting by Leidy Churchman",
+        "href": "/research#mitonuclear",
+        "citation": "McShane et al., Molecular Cell 2024",
+        "linkLabel": "How this fits together →"
+      },
+      {
+        "title": "Single-molecule views of transcription and chromatin",
+        "body": "<p>Long-read chromatin fiber sequencing lets us see RNA polymerases in their native chromatin context along 30 kb fibers, revealing direct coordination and anti-coordination between neighboring genes, enhancers and insulators.</p>",
+        "image": "/images/research/agtd-poster.png",
+        "imageAlt": "",
+        "href": "https://doi.org/10.1016/j.molcel.2024.08.013",
+        "citation": "Tullius et al., Molecular Cell 2024",
+        "linkLabel": "Read the paper →"
+      },
+      {
+        "title": "RNA kinetics from an ordinary RNA-seq library",
+        "body": "<p>AIR-seq marks new RNA with N4-hydroxycytidine, which base-pairs ambiguously and so shows up as mismatches in standard libraries — no chemical conversion, no enrichment. RNA synthesis and decay rates now come out of ordinary bulk and single-cell experiments.</p>",
+        "image": "/images/research/air-seq-workflow.jpg",
+        "imageAlt": "",
+        "href": "/research#mrna-life-cycle",
+        "citation": "Hansen & Couvillion et al., bioRxiv 2026",
+        "linkLabel": "How this fits together →"
+      }
+    ]
+  },
+  "lab": {
+    "eyebrow": "The lab",
+    "title": "Biologists, physicists, chemists and computational scientists in one room",
+    "body": "<p>The lab has always been a mix. Stirling trained as a physicist; the people here now came in through biochemistry, neuroscience, chemistry, and computation.</p>",
+    "image": "/images/site/lab-group.jpg",
+    "imageAlt": "Members of the Churchman lab together"
+  },
+  "resources": {
+    "eyebrow": "Use our work",
+    "title": "Methods, code and protocols, all publicly available",
+    "items": [
+      {
+        "title": "GeneWalk",
+        "body": "<p>Identifies which functions of a gene actually matter in your biological context, by learning vector representations of genes and GO terms on a condition-specific network. <code>pip install genewalk</code>.</p>",
+        "href": "/tools/genewalk",
+        "linkLabel": "Documentation and tutorial →"
+      },
+      {
+        "title": "Protocols",
+        "body": "<p>Published, benchtop-ready protocols for NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling — with the corrections we have issued since publication.</p>",
+        "href": "/tools#protocols",
+        "linkLabel": "Browse protocols →"
+      }
+    ],
+    "publicationsTitle": "Publications",
+    "publicationsBody": "papers, every one linked out to the journal or PubMed record, searchable by title, author, method or year.",
+    "publicationsLinkLabel": "All publications →"
+  },
+  "recruitment": {
+    "title": "We are recruiting postdocs and rotation students",
+    "body": "<p>We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want to answer a question about gene regulation with our novel set of methods (or develop your own method!), we should talk!</p>",
+    "buttonLabel": "How to apply"
+  }
+}

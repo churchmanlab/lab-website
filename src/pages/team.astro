@@ -1,7 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
+import RichText from "../components/RichText.astro";
 import site from "../data/site.json";
 import team from "../data/team.json";
+import content from "../data/pages/team.json";
 import { u } from "../lib/path.js";
 
 const img = (p) => u(p);
@@ -13,8 +15,7 @@ const initials = (name) =>
     .slice(0, 2)
     .toUpperCase();
 
-const description =
-  "The Churchman Lab is a multidisciplinary group of biologists, chemists, physicists and computational scientists at Harvard Medical School, led by Professor L. Stirling Churchman. Current members and lab alumni.";
+const description = content.seoDescription;
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -59,12 +60,9 @@ const jsonld = {
 <Base title="Team" description={description} jsonld={jsonld}>
   <section class="section" style="padding-bottom:36px">
     <div class="wrap">
-      <p class="eyebrow">Team</p>
-      <h1>Our team</h1>
-      <p class="lede prose">
-        A multidisciplinary group of scientists who love gene expression, mitochondria and RNA — with training in
-        biology, chemistry, physics, neuroscience, public health and computation.
-      </p>
+      <p class="eyebrow">{content.eyebrow}</p>
+      <h1>{content.title}</h1>
+      <RichText class="lede prose" html={content.intro} />
     </div>
   </section>
 
@@ -96,9 +94,9 @@ const jsonld = {
       </div>
 
       <div class="box accent" style="margin-top:52px">
-        <h3 style="margin-top:0">There is room for more</h3>
+        <h3 style="margin-top:0">{content.recruitmentTitle}</h3>
         <p style="margin-bottom:0;color:var(--ink-2)">
-          We are recruiting postdoctoral fellows and taking rotation students.
+          {content.recruitmentBody}
           <a href={u("/join")}>See what we look for and how to apply →</a>
         </p>
       </div>
@@ -108,8 +106,8 @@ const jsonld = {
   <section class="section" id="alumni">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Alumni</p>
-        <h2>Where people went next</h2>
+        <p class="eyebrow">{content.alumniEyebrow}</p>
+        <h2>{content.alumniTitle}</h2>
       </div>
 
       <h3>Former postdocs</h3>

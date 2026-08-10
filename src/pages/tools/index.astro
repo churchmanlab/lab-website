@@ -1,71 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
+import RichText from "../../components/RichText.astro";
 import site from "../../data/site.json";
+import content from "../../data/pages/tools.json";
 import { u } from "../../lib/path.js";
 
 const img = (p) => u(p);
 
-const description =
-  "Methods, code and benchtop protocols from the Churchman Lab: GeneWalk, NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling, with analysis scripts on GitHub and post-publication corrections.";
-
-const protocols = [
-  {
-    group: "Transcription and splicing in the nucleus",
-    items: [
-      {
-        name: "nano-COP — nanopore analysis of co-transcriptional processing",
-        cite: "Drexler HL, Choquet K, Merens HE, Tang PS, Simpson JT, Churchman LS (2021) Revealing nascent RNA processing dynamics with nano-COP. Nature Protocols 16(3):1343–1375.",
-        links: [
-          { label: "Protocol PDF", href: "/documents/protocols/nanoCOP_protocol_2021.pdf" },
-          { label: "Analysis scripts", href: "https://github.com/churchmanlab/nano-COP" },
-        ],
-        erratum:
-          "Page 18, In-house 10× poly(A) buffer (for poly(A) tailing only) should read: “Contains 25 mM MnCl₂, 10 mM DTT, and 5 mg/ml BSA. Mix 1 μl of 1 M MnCl₂, 4 μl of 100 mM DTT, 4 μl of 50 mg/ml BSA, and 31 μl of nuclease-free water.” 1 M MnCl₂ can be purchased from Sigma (cat. no. M1785).",
-      },
-      {
-        name: "subRNA-seq — subcellular RNA sequencing",
-        cite: "Mayer A, Churchman LS (2017) A Detailed Protocol for Subcellular RNA Sequencing (subRNA-seq). Current Protocols in Molecular Biology 120:4.29.1–4.29.18.",
-        links: [{ label: "Protocol PDF", href: "/documents/protocols/subRNA-seq_protocol_2017.pdf" }],
-      },
-      {
-        name: "NET-seq in yeast",
-        cite: "Churchman LS, Weissman JS (2012) Native elongating transcript sequencing (NET-seq). Current Protocols in Molecular Biology, Chapter 4:Unit 4.14.1–17.",
-        links: [
-          { label: "Protocol PDF", href: "/documents/protocols/Churchman-and-Weissman-2012-NET-seq.pdf" },
-          { label: "Analysis scripts", href: "https://github.com/churchmanlab/Nature2011yeast_NETseq" },
-        ],
-      },
-      {
-        name: "NET-seq in mammalian cells",
-        cite: "Mayer A, Churchman LS (2016) Genome-wide profiling of RNA polymerase transcription at nucleotide resolution in human cells with native elongating transcript sequencing. Nature Protocols 11(4):813–833.",
-        links: [{ label: "Protocol PDF", href: "/documents/protocols/NET-seq_protocol_2016.pdf" }],
-      },
-      {
-        name: "NET-seq in metazoans (updated)",
-        cite: "Martell-Smart D, Ietswaart R, Smalec B, Churchman LS (2020) Profiling metazoan transcription genome-wide with nucleotide resolution using NET-seq. protocols.io.",
-        links: [
-          { label: "Online protocol", href: "https://www.protocols.io/view/profiling-metazoan-transcription-genome-wide-with-bpymmpu6" },
-          { label: "Analysis scripts", href: "https://github.com/churchmanlab/MiMB2019NETseq" },
-        ],
-      },
-    ],
-  },
-  {
-    group: "Mitochondrial gene expression",
-    items: [
-      {
-        name: "Mitoribosome profiling in yeast",
-        cite: "Couvillion MT, Churchman LS (2017) Mitochondrial Ribosome (Mitoribosome) Profiling for Monitoring Mitochondrial Translation In Vivo. Current Protocols in Molecular Biology 119:4.28.1–4.28.25.",
-        links: [{ label: "Protocol PDF", href: "/documents/protocols/Mitoribosome_profiling_protocol_2017.pdf" }],
-      },
-      {
-        name: "Human mitoribosome profiling",
-        cite: "Soto I, Couvillion M, Churchman LS (2024) Human mitoribosome profiling: a re-engineered approach tailored to study mitochondrial translation. Methods in Molecular Biology 2661:257–280.",
-        links: [{ label: "PubMed", href: "https://pubmed.ncbi.nlm.nih.gov/37166642/" }],
-      },
-    ],
-  },
-];
+const description = content.seoDescription;
+const protocols = content.protocolGroups;
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -75,7 +18,7 @@ const jsonld = {
   description,
   about: { "@id": `${site.url}/#lab` },
   hasPart: protocols.flatMap((g) =>
-    g.items.map((p) => ({ "@type": "HowTo", name: p.name, description: p.cite })),
+    g.items.map((p) => ({ "@type": "HowTo", name: p.name, description: p.citation })),
   ),
 };
 ---
@@ -83,47 +26,23 @@ const jsonld = {
 <Base title="Tools & Protocols" description={description} jsonld={jsonld}>
   <section class="section" style="padding-bottom:34px">
     <div class="wrap">
-      <p class="eyebrow">Tools &amp; protocols</p>
-      <h1>Experimental and computational methods</h1>
-      <p class="lede prose">
-        We develop methods for studying transcription, RNA processing, RNA flow between cellular compartments and
-        mitochondrial gene expression. Published protocols, software and analysis code are available below and on{" "}
-        <a href={site.links.github}>GitHub</a>; post-publication corrections are listed with the corresponding
-        protocol.
-      </p>
+      <p class="eyebrow">{content.eyebrow}</p>
+      <h1>{content.title}</h1>
+      <RichText class="lede prose" html={content.intro} />
     </div>
   </section>
 
   <section class="section" style="padding-top:0">
     <div class="wrap">
       <div class="cards">
-        <article class="card">
-          <img src={img("/images/tools/genewalk-card.webp")} alt="GeneWalk schematic" loading="lazy" />
-          <h3>GeneWalk</h3>
-          <p>
-            Works out which of a gene's annotated functions are actually relevant in <em>your</em> experimental
-            context, using representation learning on a condition-specific gene network.
-          </p>
-          <a class="more" href={u("/tools/genewalk")}>Full tutorial and documentation →</a>
-        </article>
-        <article class="card">
-          <img src={img("/images/tools/bench-work.jpg")} alt="Bench work in the Churchman lab" loading="lazy" />
-          <h3>Benchtop protocols</h3>
-          <p>
-            NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling — published protocols with PDFs and
-            matching analysis pipelines.
-          </p>
-          <a class="more" href="#protocols">Jump to protocols →</a>
-        </article>
-        <article class="card">
-          <img src={img("/images/tools/transcription-schematic.jpg")} alt="Transcription schematic" loading="lazy" />
-          <h3>Code</h3>
-          <p>
-            Analysis pipelines for every method we publish, plus GeneWalk itself, live under the churchmanlab
-            organization on GitHub.
-          </p>
-          <a class="more" href={site.links.github}>github.com/churchmanlab →</a>
-        </article>
+        {content.cards.map((card) => (
+          <article class="card">
+            <img src={img(card.image)} alt={card.imageAlt} loading="lazy" />
+            <h3>{card.title}</h3>
+            <RichText html={card.body} />
+            <a class="more" href={u(card.href)}>{card.linkLabel}</a>
+          </article>
+        ))}
       </div>
     </div>
   </section>
@@ -131,24 +50,24 @@ const jsonld = {
   <section class="section" id="protocols">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Protocols</p>
-        <h2>Protocols from the lab</h2>
+        <p class="eyebrow">{content.protocolsEyebrow}</p>
+        <h2>{content.protocolsTitle}</h2>
       </div>
 
       {protocols.map((g) => (
         <div style="margin-bottom:44px">
-          <h3>{g.group}</h3>
+          <h3>{g.title}</h3>
           {g.items.map((p) => (
             <div class="qa">
               <h3 style="font-family:var(--serif);font-size:1.12rem">{p.name}</h3>
-              <p style="font-size:.88rem;color:var(--ink-3);margin-bottom:.5rem">{p.cite}</p>
+              <p style="font-size:.88rem;color:var(--ink-3);margin-bottom:.5rem">{p.citation}</p>
               <div class="pub-links">
                 {p.links.map((l) => <a href={u(l.href)}>{l.label}</a>)}
               </div>
-              {p.erratum && (
+              {p.correction && (
                 <div class="box" style="margin-top:14px;background:#fff8e1;border-color:#f0e0b0">
                   <h4 style="margin-top:0">Correction since publication</h4>
-                  <p style="margin-bottom:0;font-size:.9rem;color:#5c4a00">{p.erratum}</p>
+                  <RichText class="correction" html={p.correction} />
                 </div>
               )}
             </div>
@@ -159,3 +78,7 @@ const jsonld = {
     </div>
   </section>
 </Base>
+
+<style>
+  .correction { font-size: .9rem; color: #5c4a00; }
+</style>

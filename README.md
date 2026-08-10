@@ -16,14 +16,18 @@ npm install
 npm run dev          # http://localhost:4321
 ```
 
-Want to edit content without running anything? See [CONTRIBUTING.md](CONTRIBUTING.md) — most
-changes are one field in a JSON file and can be made entirely on github.com.
+Want to edit content without running anything? Open the repository in
+[Pages CMS](https://app.pagescms.org/). It provides labeled forms, rich-text editing, image
+selection, team records, publication records and Lab Life album metadata; saving writes the
+change to GitHub, where the existing deployment workflow rebuilds the site. The one-time GitHub
+authorization and the complete editing guide are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What's here
 
 ```
 src/
   data/            the content that changes most — edit these first
+    pages/               page copy used by the Pages CMS rich-text forms
     publications.json    publication bibliography; kept current by scripts/sync-publications.mjs
     team.json            current members and alumni
     site.json            address, emails, nav, external links
@@ -38,6 +42,7 @@ scripts/
 .github/workflows/
   deploy.yml             builds and publishes to GitHub Pages on push to main
   sync-publications.yml  monthly PubMed sync, opens a PR
+.pages.yml               Pages CMS fields, media folders and editor navigation
 ```
 
 ## Commands

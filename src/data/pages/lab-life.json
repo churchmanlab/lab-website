@@ -1,0 +1,47 @@
+{
+  "seoDescription": "Lab life in the Churchman Lab: annual retreats, celebrations, thesis defenses and boat trips on the Charles, from the lab's first day in 2011 to now.",
+  "eyebrow": "Lab life",
+  "title": "Retreats, milestones and boats on the Charles",
+  "intro": "<p>The lab has taken an annual retreat since 2012. Here's a glimpse of what life in the Churchman lab is like.</p>",
+  "indexEyebrow": "Through the years",
+  "indexTitle": "Choose a collection",
+  "indexIntro": "Browse a few highlights, then open any collection to explore",
+  "collections": [
+    {
+      "id": "retreats",
+      "eyebrow": "Annual tradition · 2012–2025",
+      "title": "Lab retreats",
+      "description": "Chalk talks, shared meals, long hikes and the annual group portrait—one retreat for every year we gathered.",
+      "albumSource": "retreats",
+      "albumIds": [],
+      "previewAlbumIds": ["2025-retreat", "2012-retreat"]
+    },
+    {
+      "id": "milestones",
+      "eyebrow": "Thesis days & new candidates · 2019–2026",
+      "title": "Milestones & defenses",
+      "description": "Thesis defenses, candidacy dinners and the celebrations that follow big scientific milestones.",
+      "albumSource": "events",
+      "albumIds": ["2026-hope-defense", "2025-candidate-dinner", "2024-jake-defense", "2023-tommy-defense", "2019-blake-defense", "2019-heather-defense"],
+      "previewAlbumIds": ["2025-candidate-dinner", "2024-jake-defense"]
+    },
+    {
+      "id": "outings",
+      "eyebrow": "Boats, dinners & celebrations · 2013–2022",
+      "title": "Outings & celebrations",
+      "description": "Cruises, conferences, baby showers and send-offs from the life of the lab beyond Longwood Avenue.",
+      "albumSource": "events",
+      "albumIds": ["2022-charles-cruise", "2022-keystone", "2022-katja-baby-shower", "2021-lab-party", "2015-seth-farewell", "2013-harpoon-outing"],
+      "previewAlbumIds": ["2022-charles-cruise", "2013-harpoon-outing"]
+    },
+    {
+      "id": "beginnings",
+      "eyebrow": "The first years · 2011–2012",
+      "title": "Building the lab",
+      "description": "The original empty room, unpacking day and the small collection of photographs from the lab’s first year.",
+      "albumSource": "events",
+      "albumIds": ["2012-lab-move-in", "2011-first-year"],
+      "previewAlbumIds": ["2012-lab-move-in", "2011-first-year"]
+    }
+  ]
+}

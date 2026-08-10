@@ -1,43 +1,14 @@
 ---
 import Base from "../layouts/Base.astro";
+import RichText from "../components/RichText.astro";
 import site from "../data/site.json";
 import pubs from "../data/publications.json";
+import content from "../data/pages/home.json";
 import { u } from "../lib/path.js";
 
 const img = (p) => u(p);
 
-const highlights = [
-  {
-    title: "Two genomes run on different clocks",
-    blurb:
-      "By measuring RNA production, processing, ribosome association and degradation across both genomes, we found that nearly every step runs at a starkly different rate. The mitoribosome acts as a key point of coordination between the two systems.",
-    img: "/images/pubs/cover-molcell-2024-kinetic-dichotomy.jpg",
-    imgAlt:
-      "A kinetic dichotomy between mitochondrial and nuclear gene expression processes, a painting by Leidy Churchman",
-    href: "/research#mitonuclear",
-    cite: "McShane et al., Molecular Cell 2024",
-  },
-  {
-    title: "Single-molecule views of transcription and chromatin",
-    blurb:
-      "Long-read chromatin fiber sequencing lets us see RNA polymerases in their native chromatin context along 30 kb fibers, revealing direct coordination and anti-coordination between neighboring genes, enhancers and insulators.",
-    img: "/images/research/agtd-poster.png",
-    href: "https://doi.org/10.1016/j.molcel.2024.08.013",
-    linkLabel: "Read the paper →",
-    cite: "Tullius et al., Molecular Cell 2024",
-  },
-  {
-    title: "RNA kinetics from an ordinary RNA-seq library",
-    blurb:
-      "AIR-seq marks new RNA with N4-hydroxycytidine, which base-pairs ambiguously and so shows up as mismatches in standard libraries — no chemical conversion, no enrichment. RNA synthesis and decay rates now come out of ordinary bulk and single-cell experiments.",
-    img: "/images/research/air-seq-workflow.jpg",
-    href: "/research#mrna-life-cycle",
-    cite: "Hansen & Couvillion et al., bioRxiv 2026",
-  },
-];
-
-const description =
-  "The Churchman Lab at Harvard Medical School studies how gene expression is regulated across the cell, from the nucleus to the mitochondria. We build quantitative sequencing methods — NET-seq, nano-COP, subcellular TimeLapse-seq, mtFiber-seq — to measure transcription, RNA processing, RNA flow between compartments, and mitonuclear coordination.";
+const description = content.seoDescription;
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -63,13 +34,9 @@ const jsonld = {
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Department of Genetics · Harvard Medical School</p>
-        <h1>From the nucleus to mitochondria, we study the many layers of gene regulation.</h1>
-        <p class="lede">
-          A cell makes thousands of mRNAs every minute and controls every one of them — where it is made, how it is
-          processed, how long it survives, and whether it is ever translated. We build quantitative methods that make
-          those steps measurable, in both the nuclear and the mitochondrial genome.
-        </p>
+        <p class="eyebrow">{content.hero.eyebrow}</p>
+        <h1>{content.hero.title}</h1>
+        <RichText class="lede" html={content.hero.body} />
         <div class="btn-row">
           <a class="btn" href={u("/research")}>Read about our research</a>
           <a class="btn ghost" href={u("/join")}>Join the lab</a>
@@ -77,14 +44,11 @@ const jsonld = {
       </div>
       <div class="hero-art">
         <img
-          src={img("/images/site/hero-art.webp")}
-          alt="Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA, a painting by Leidy Churchman"
+          src={img(content.hero.image)}
+          alt={content.hero.imageAlt}
           loading="eager"
         />
-        <p class="figcap">
-          Leidy Churchman, <em>Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA</em>
-          (2024)
-        </p>
+        <p class="figcap"><RichText inline html={content.hero.caption} /></p>
       </div>
     </div>
   </section>
@@ -92,17 +56,17 @@ const jsonld = {
   <section class="section">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Recent work</p>
-        <h2>Three things we have learned lately</h2>
+        <p class="eyebrow">{content.recentWork.eyebrow}</p>
+        <h2>{content.recentWork.title}</h2>
       </div>
       <div class="cards">
-        {highlights.map((h) => (
+        {content.recentWork.items.map((h) => (
           <article class="card">
-            <img src={img(h.img)} alt={h.imgAlt ?? ""} loading="lazy" />
+            <img src={img(h.image)} alt={h.imageAlt} loading="lazy" />
             <h3>{h.title}</h3>
-            <p>{h.blurb}</p>
-            <p class="figcap" style="margin-top:-.3rem">{h.cite}</p>
-            <a class="more" href={u(h.href)}>{h.linkLabel ?? "How this fits together →"}</a>
+            <RichText html={h.body} />
+            <p class="figcap" style="margin-top:-.3rem">{h.citation}</p>
+            <a class="more" href={u(h.href)}>{h.linkLabel}</a>
           </article>
         ))}
       </div>
@@ -112,12 +76,9 @@ const jsonld = {
   <section class="section">
     <div class="wrap two-col">
       <div>
-        <p class="eyebrow">The lab</p>
-        <h2>Biologists, physicists, chemists and computational scientists in one room</h2>
-        <p class="prose">
-          The lab has always been a mix. Stirling trained as a physicist; the people here now came in through
-          biochemistry, neuroscience, chemistry, and computation.
-        </p>
+        <p class="eyebrow">{content.lab.eyebrow}</p>
+        <h2>{content.lab.title}</h2>
+        <RichText class="prose" html={content.lab.body} />
         <div class="btn-row">
           <a class="btn ghost" href={u("/team")}>Meet the team</a>
           <a class="btn ghost" href={u("/fun")}>See lab life</a>
@@ -125,8 +86,8 @@ const jsonld = {
       </div>
       <div>
         <img
-          src={img("/images/site/lab-group.jpg")}
-          alt="Members of the Churchman lab together"
+          src={img(content.lab.image)}
+          alt={content.lab.imageAlt}
           loading="lazy"
           style="border-radius:3px"
         />
@@ -137,33 +98,23 @@ const jsonld = {
   <section class="section">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Use our work</p>
-        <h2>Methods, code and protocols, all publicly available</h2>
+        <p class="eyebrow">{content.resources.eyebrow}</p>
+        <h2>{content.resources.title}</h2>
       </div>
       <div class="cards">
+        {content.resources.items.map((item) => (
+          <article class="card">
+            <h3>{item.title}</h3>
+            <RichText html={item.body} />
+            <a class="more" href={u(item.href)}>{item.linkLabel}</a>
+          </article>
+        ))}
         <article class="card">
-          <h3>GeneWalk</h3>
+          <h3>{content.resources.publicationsTitle}</h3>
           <p>
-            Identifies which functions of a gene actually matter in your biological context, by learning vector
-            representations of genes and GO terms on a condition-specific network. <code>pip install genewalk</code>.
+            {pubs.sections.reduce((n, s) => n + s.items.length, 0)} {content.resources.publicationsBody}
           </p>
-          <a class="more" href={u("/tools/genewalk")}>Documentation and tutorial →</a>
-        </article>
-        <article class="card">
-          <h3>Protocols</h3>
-          <p>
-            Published, benchtop-ready protocols for NET-seq, nano-COP, subcellular RNA-seq and mitoribosome
-            profiling — with the corrections we have issued since publication.
-          </p>
-          <a class="more" href={u("/tools#protocols")}>Browse protocols →</a>
-        </article>
-        <article class="card">
-          <h3>Publications</h3>
-          <p>
-            {pubs.sections.reduce((n, s) => n + s.items.length, 0)} papers, every one linked out to the journal or
-            PubMed record, searchable by title, author, method or year.
-          </p>
-          <a class="more" href={u("/publications")}>All publications →</a>
+          <a class="more" href={u("/publications")}>{content.resources.publicationsLinkLabel}</a>
         </article>
       </div>
     </div>
@@ -173,17 +124,17 @@ const jsonld = {
     <div class="wrap">
       <div class="box accent" style="display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:center">
         <div>
-          <h2 style="margin-top:0">We are recruiting postdocs and rotation students</h2>
-          <p style="margin-bottom:0;color:var(--ink-2)">
-            We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you
-            want to answer a question about gene regulation with our novel set of methods (or develop your own
-            method!), we should talk!
-          </p>
+          <h2 style="margin-top:0">{content.recruitment.title}</h2>
+          <RichText class="recruitment-copy" html={content.recruitment.body} />
         </div>
         <div>
-          <a class="btn" href={u("/join")}>How to apply</a>
+          <a class="btn" href={u("/join")}>{content.recruitment.buttonLabel}</a>
         </div>
       </div>
     </div>
   </section>
 </Base>
+
+<style>
+  .recruitment-copy { color: var(--ink-2); }
+</style>

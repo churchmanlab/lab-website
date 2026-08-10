@@ -1,0 +1,105 @@
+{
+  "seoDescription": "Methods, code and benchtop protocols from the Churchman Lab: GeneWalk, NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling, with analysis scripts on GitHub and post-publication corrections.",
+  "eyebrow": "Tools & protocols",
+  "title": "Experimental and computational methods",
+  "intro": "<p>We develop methods for studying transcription, RNA processing, RNA flow between cellular compartments and mitochondrial gene expression. Published protocols, software and analysis code are available below and on <a href=\"https://github.com/churchmanlab\">GitHub</a>; post-publication corrections are listed with the corresponding protocol.</p>",
+  "cards": [
+    {
+      "title": "GeneWalk",
+      "body": "<p>Works out which of a gene's annotated functions are actually relevant in <em>your</em> experimental context, using representation learning on a condition-specific gene network.</p>",
+      "image": "/images/tools/genewalk-card.webp",
+      "imageAlt": "GeneWalk schematic",
+      "href": "/tools/genewalk",
+      "linkLabel": "Full tutorial and documentation →"
+    },
+    {
+      "title": "Benchtop protocols",
+      "body": "<p>NET-seq, nano-COP, subcellular RNA-seq and mitoribosome profiling — published protocols with PDFs and matching analysis pipelines.</p>",
+      "image": "/images/tools/bench-work.jpg",
+      "imageAlt": "Bench work in the Churchman lab",
+      "href": "#protocols",
+      "linkLabel": "Jump to protocols →"
+    },
+    {
+      "title": "Code",
+      "body": "<p>Analysis pipelines for every method we publish, plus GeneWalk itself, live under the churchmanlab organization on GitHub.</p>",
+      "image": "/images/tools/transcription-schematic.jpg",
+      "imageAlt": "Transcription schematic",
+      "href": "https://github.com/churchmanlab",
+      "linkLabel": "github.com/churchmanlab →"
+    }
+  ],
+  "protocolsEyebrow": "Protocols",
+  "protocolsTitle": "Protocols from the lab",
+  "protocolGroups": [
+    {
+      "title": "Transcription and splicing in the nucleus",
+      "items": [
+        {
+          "name": "nano-COP — nanopore analysis of co-transcriptional processing",
+          "citation": "Drexler HL, Choquet K, Merens HE, Tang PS, Simpson JT, Churchman LS (2021) Revealing nascent RNA processing dynamics with nano-COP. Nature Protocols 16(3):1343–1375.",
+          "links": [
+            { "label": "Protocol PDF", "href": "/documents/protocols/nanoCOP_protocol_2021.pdf" },
+            { "label": "Analysis scripts", "href": "https://github.com/churchmanlab/nano-COP" }
+          ],
+          "correction": "<p>Page 18, In-house 10× poly(A) buffer (for poly(A) tailing only) should read: “Contains 25 mM MnCl₂, 10 mM DTT, and 5 mg/ml BSA. Mix 1 μl of 1 M MnCl₂, 4 μl of 100 mM DTT, 4 μl of 50 mg/ml BSA, and 31 μl of nuclease-free water.” 1 M MnCl₂ can be purchased from Sigma (cat. no. M1785).</p>"
+        },
+        {
+          "name": "subRNA-seq — subcellular RNA sequencing",
+          "citation": "Mayer A, Churchman LS (2017) A Detailed Protocol for Subcellular RNA Sequencing (subRNA-seq). Current Protocols in Molecular Biology 120:4.29.1–4.29.18.",
+          "links": [
+            { "label": "Protocol PDF", "href": "/documents/protocols/subRNA-seq_protocol_2017.pdf" }
+          ],
+          "correction": ""
+        },
+        {
+          "name": "NET-seq in yeast",
+          "citation": "Churchman LS, Weissman JS (2012) Native elongating transcript sequencing (NET-seq). Current Protocols in Molecular Biology, Chapter 4:Unit 4.14.1–17.",
+          "links": [
+            { "label": "Protocol PDF", "href": "/documents/protocols/Churchman-and-Weissman-2012-NET-seq.pdf" },
+            { "label": "Analysis scripts", "href": "https://github.com/churchmanlab/Nature2011yeast_NETseq" }
+          ],
+          "correction": ""
+        },
+        {
+          "name": "NET-seq in mammalian cells",
+          "citation": "Mayer A, Churchman LS (2016) Genome-wide profiling of RNA polymerase transcription at nucleotide resolution in human cells with native elongating transcript sequencing. Nature Protocols 11(4):813–833.",
+          "links": [
+            { "label": "Protocol PDF", "href": "/documents/protocols/NET-seq_protocol_2016.pdf" }
+          ],
+          "correction": ""
+        },
+        {
+          "name": "NET-seq in metazoans (updated)",
+          "citation": "Martell-Smart D, Ietswaart R, Smalec B, Churchman LS (2020) Profiling metazoan transcription genome-wide with nucleotide resolution using NET-seq. protocols.io.",
+          "links": [
+            { "label": "Online protocol", "href": "https://www.protocols.io/view/profiling-metazoan-transcription-genome-wide-with-bpymmpu6" },
+            { "label": "Analysis scripts", "href": "https://github.com/churchmanlab/MiMB2019NETseq" }
+          ],
+          "correction": ""
+        }
+      ]
+    },
+    {
+      "title": "Mitochondrial gene expression",
+      "items": [
+        {
+          "name": "Mitoribosome profiling in yeast",
+          "citation": "Couvillion MT, Churchman LS (2017) Mitochondrial Ribosome (Mitoribosome) Profiling for Monitoring Mitochondrial Translation In Vivo. Current Protocols in Molecular Biology 119:4.28.1–4.28.25.",
+          "links": [
+            { "label": "Protocol PDF", "href": "/documents/protocols/Mitoribosome_profiling_protocol_2017.pdf" }
+          ],
+          "correction": ""
+        },
+        {
+          "name": "Human mitoribosome profiling",
+          "citation": "Soto I, Couvillion M, Churchman LS (2024) Human mitoribosome profiling: a re-engineered approach tailored to study mitochondrial translation. Methods in Molecular Biology 2661:257–280.",
+          "links": [
+            { "label": "PubMed", "href": "https://pubmed.ncbi.nlm.nih.gov/37166642/" }
+          ],
+          "correction": ""
+        }
+      ]
+    }
+  ]
+}

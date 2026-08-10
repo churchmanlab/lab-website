@@ -1,0 +1,1049 @@
+media:
+  - name: images
+    label: Website images
+    input: public/images
+    output: /images
+    categories: [image]
+    rename: safe
+  - name: documents
+    label: PDFs and documents
+    input: public/documents
+    output: /documents
+    categories: [document]
+    rename: safe
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "content: add {name}"
+      update: "content: update {name}"
+      delete: "content: remove {name}"
+      rename: "content: rename {oldFilename} to {newFilename}"
+
+components:
+  rich_text:
+    type: rich-text
+    options:
+      format: html
+      media: images
+      switcher: true
+  image:
+    type: image
+    options:
+      media: images
+  link:
+    type: object
+    fields:
+      - name: label
+        label: Link text
+        type: string
+        required: true
+      - name: href
+        label: Link URL
+        type: string
+        required: true
+  current_member:
+    type: object
+    fields:
+      - name: name
+        type: string
+        required: true
+      - name: degree
+        type: string
+      - name: role
+        type: string
+        required: true
+      - name: detail
+        label: Education or detail
+        type: text
+      - name: award
+        type: text
+      - name: email
+        type: string
+      - name: photo
+        component: image
+      - name: href
+        label: Profile link
+        type: string
+      - name: pi
+        label: Principal investigator
+        type: boolean
+      - name: homeLab
+        label: Home lab
+        type: string
+      - name: homeLabUrl
+        label: Home lab URL
+        type: string
+      - name: homeLabInstitution
+        label: Home lab institution
+        type: string
+  alumnus:
+    type: object
+    fields:
+      - name: name
+        type: string
+        required: true
+      - name: now
+        label: Current position
+        type: text
+      - name: href
+        label: Profile link
+        type: string
+  publication:
+    type: object
+    fields:
+      - name: authors
+        type: text
+        required: true
+        description: Wrap Churchman Lab authors in double asterisks, for example **Churchman LS**.
+      - name: title
+        type: text
+        required: true
+      - name: journal
+        type: string
+        required: true
+      - name: year
+        type: number
+        required: true
+      - name: type
+        type: select
+        required: true
+        options:
+          values:
+            - name: research
+              label: Research article
+            - name: review
+              label: Review or commentary
+            - name: protocol
+              label: Protocol
+            - name: preprint
+              label: Preprint
+      - name: volume
+        type: string
+      - name: pages
+        type: string
+      - name: doi
+        label: DOI
+        type: string
+      - name: pmid
+        label: PubMed ID
+        type: string
+      - name: pdf
+        label: PDF path
+        type: string
+      - name: image
+        component: image
+      - name: imageKind
+        label: Image kind
+        type: select
+        options:
+          values: [cover, page]
+      - name: imageW
+        label: Image width
+        type: number
+      - name: imageH
+        label: Image height
+        type: number
+      - name: noImage
+        label: Why no image is available
+        type: text
+  research_topic:
+    type: object
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: body
+        component: rich_text
+        required: true
+      - name: openQuestions
+        label: Open questions
+        component: rich_text
+      - name: backgroundReading
+        label: Background reading
+        component: rich_text
+  protocol:
+    type: object
+    fields:
+      - name: name
+        type: string
+        required: true
+      - name: citation
+        type: text
+        required: true
+      - name: links
+        component: link
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+      - name: correction
+        label: Correction since publication
+        component: rich_text
+  album:
+    type: object
+    fields:
+      - name: id
+        label: Album ID
+        type: string
+        required: true
+        description: Used in image paths. Change only when the matching folder is renamed.
+      - name: title
+        type: string
+        required: true
+      - name: date
+        type: string
+        required: true
+      - name: location
+        type: string
+        required: true
+      - name: description
+        type: text
+        required: true
+      - name: cover
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{file}"
+        fields:
+          - name: file
+            type: string
+            required: true
+            description: Filename without the .jpg extension.
+          - name: alt
+            label: Image description
+            type: text
+            required: true
+      - name: groups
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "Photos by {credit}"
+        fields:
+          - name: credit
+            type: string
+            required: true
+          - name: files
+            type: string
+            list: true
+            required: true
+
+content:
+  - name: pages
+    label: Page copy
+    type: group
+    items:
+      - name: home
+        label: Home page
+        type: file
+        path: src/data/pages/home.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+            required: true
+          - name: hero
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: text
+                required: true
+              - name: body
+                component: rich_text
+                required: true
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+              - name: caption
+                component: rich_text
+          - name: recentWork
+            label: Recent work
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: title
+                    type: string
+                    required: true
+                  - name: body
+                    component: rich_text
+                    required: true
+                  - name: image
+                    component: image
+                  - name: imageAlt
+                    label: Image description
+                    type: text
+                  - name: href
+                    label: Link URL
+                    type: string
+                  - name: citation
+                    type: string
+                  - name: linkLabel
+                    label: Link text
+                    type: string
+          - name: lab
+            label: The lab section
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: text
+              - name: body
+                component: rich_text
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+          - name: resources
+            label: Use our work section
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: text
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: title
+                    type: string
+                  - name: body
+                    component: rich_text
+                  - name: href
+                    label: Link URL
+                    type: string
+                  - name: linkLabel
+                    label: Link text
+                    type: string
+              - name: publicationsTitle
+                label: Publications card title
+                type: string
+              - name: publicationsBody
+                label: Publications card text after the paper count
+                type: text
+              - name: publicationsLinkLabel
+                label: Publications link text
+                type: string
+          - name: recruitment
+            type: object
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+              - name: buttonLabel
+                label: Button text
+                type: string
+
+      - name: research
+        label: Research page
+        type: file
+        path: src/data/pages/research.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+            required: true
+          - name: intro
+            label: Introduction
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+              - name: caption
+                component: rich_text
+          - name: nuclear
+            label: Nuclear mRNA life cycle
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: lede
+                label: Introduction
+                component: rich_text
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+              - name: topics
+                component: research_topic
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+          - name: rnaFlow
+            label: RNA flow method
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+              - name: openQuestions
+                label: Open questions
+                component: rich_text
+              - name: backgroundReading
+                label: Background reading
+                component: rich_text
+          - name: mitonuclear
+            label: Mitonuclear co-regulation
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: lede
+                label: Introduction
+                component: rich_text
+              - name: heroImage
+                label: Main image
+                component: image
+              - name: heroImageAlt
+                label: Main image description
+                type: text
+              - name: overview
+                component: rich_text
+              - name: diagramImage
+                label: Diagram image
+                component: image
+              - name: diagramImageAlt
+                label: Diagram image description
+                type: text
+              - name: secondaryImage
+                component: image
+              - name: secondaryImageAlt
+                label: Secondary image description
+                type: text
+              - name: topics
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: title
+                    type: string
+                  - name: body
+                    component: rich_text
+              - name: openQuestions
+                label: Open questions
+                component: rich_text
+              - name: backgroundReading
+                label: Background reading
+                component: rich_text
+          - name: mtFiber
+            label: mtFiber-seq method
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+
+      - name: join
+        label: Join Us page
+        type: file
+        path: src/data/pages/join.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+          - name: hero
+            type: object
+            fields:
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+              - name: caption
+                component: rich_text
+          - name: positions
+            label: Open positions
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+          - name: application
+            label: Application process
+            type: object
+            fields:
+              - name: title
+                type: string
+              - name: postdocIntro
+                label: Postdoc email introduction
+                type: string
+              - name: postdocItems
+                label: Postdoc email should include
+                type: string
+                list: true
+              - name: postdocNote
+                type: text
+              - name: rotationNote
+                type: text
+              - name: processTitle
+                type: string
+              - name: processBody
+                component: rich_text
+          - name: qualitiesTitle
+            label: Qualities section title
+            type: string
+          - name: qualities
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+          - name: ai
+            label: How we use AI
+            type: object
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+          - name: funding
+            type: object
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+          - name: alumni
+            label: Alumni outcomes
+            type: object
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+          - name: values
+            type: object
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+
+      - name: team_page
+        label: Team page introduction
+        type: file
+        path: src/data/pages/team.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+          - name: eyebrow
+            label: Small heading
+            type: string
+          - name: title
+            type: string
+          - name: intro
+            component: rich_text
+          - name: recruitmentTitle
+            label: Recruitment callout title
+            type: string
+          - name: recruitmentBody
+            label: Recruitment callout text
+            type: text
+          - name: alumniEyebrow
+            label: Alumni small heading
+            type: string
+          - name: alumniTitle
+            label: Alumni heading
+            type: string
+
+      - name: tools_page
+        label: Tools and Protocols page
+        type: file
+        path: src/data/pages/tools.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+          - name: eyebrow
+            label: Small heading
+            type: string
+          - name: title
+            type: string
+          - name: intro
+            component: rich_text
+          - name: cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+              - name: body
+                component: rich_text
+              - name: image
+                component: image
+              - name: imageAlt
+                label: Image description
+                type: text
+              - name: href
+                label: Link URL
+                type: string
+              - name: linkLabel
+                label: Link text
+                type: string
+          - name: protocolsEyebrow
+            label: Protocols small heading
+            type: string
+          - name: protocolsTitle
+            label: Protocols heading
+            type: string
+          - name: protocolGroups
+            label: Protocol groups
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+              - name: items
+                component: protocol
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+
+      - name: lab_life_page
+        label: Lab Life page copy
+        type: file
+        path: src/data/pages/lab-life.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+          - name: eyebrow
+            label: Small heading
+            type: string
+          - name: title
+            type: string
+          - name: intro
+            component: rich_text
+          - name: indexEyebrow
+            label: Collection index small heading
+            type: string
+          - name: indexTitle
+            label: Collection index heading
+            type: string
+          - name: indexIntro
+            label: Collection index introduction
+            type: text
+            description: The album and photograph totals are added automatically.
+          - name: collections
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: id
+                type: string
+              - name: eyebrow
+                label: Small heading
+                type: string
+              - name: title
+                type: string
+              - name: description
+                type: text
+              - name: albumSource
+                label: Album source
+                type: select
+                options:
+                  values:
+                    - name: retreats
+                      label: All retreat albums
+                    - name: events
+                      label: Selected event albums
+              - name: albumIds
+                label: Event album IDs
+                type: string
+                list: true
+                description: Used only when the album source is selected events.
+              - name: previewAlbumIds
+                label: Preview album IDs
+                type: string
+                list: true
+
+      - name: contact_page
+        label: Contact page
+        type: file
+        path: src/data/pages/contact.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+          - name: eyebrow
+            label: Small heading
+            type: string
+          - name: title
+            type: string
+          - name: contactsTitle
+            label: Contacts heading
+            type: string
+          - name: joiningNote
+            label: Joining callout
+            component: rich_text
+          - name: locationTitle
+            label: Location heading
+            type: string
+          - name: travelNote
+            label: Travel note
+            type: text
+          - name: mapButtonLabel
+            label: Map button text
+            type: string
+
+      - name: stirling
+        label: Stirling biography
+        type: file
+        path: src/data/pages/stirling.json
+        format: json
+        fields:
+          - name: seoDescription
+            label: Search description
+            type: text
+          - name: eyebrow
+            label: Small heading
+            type: string
+          - name: name
+            type: string
+          - name: title
+            type: string
+          - name: biography
+            component: rich_text
+          - name: photo
+            component: image
+          - name: photoAlt
+            label: Photo description
+            type: text
+          - name: awards
+            type: string
+            list: true
+          - name: media
+            label: Watch and listen links
+            component: link
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+
+  - name: records
+    label: People and records
+    type: group
+    items:
+      - name: team
+        label: Team members and alumni
+        type: file
+        path: src/data/team.json
+        format: json
+        fields:
+          - name: current
+            label: Current members
+            component: current_member
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name} — {role}"
+          - name: alumniPostdocs
+            label: Former postdocs
+            component: alumnus
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+          - name: alumniStudents
+            label: Former graduate students
+            component: alumnus
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+          - name: alumniUndergraduates
+            label: Former undergraduate students
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: award
+                type: text
+              - name: program
+                label: Graduate program
+                type: text
+              - name: now
+                label: Current position
+                type: text
+              - name: href
+                label: Profile link
+                type: string
+          - name: alumniTechnicians
+            label: Former technicians and lab managers
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: program
+                label: Graduate program
+                type: text
+              - name: now
+                label: Current position
+                type: text
+              - name: href
+                label: Profile link
+                type: string
+
+      - name: site
+        label: Address, contacts, navigation and links
+        type: file
+        path: src/data/site.json
+        format: json
+        fields:
+          - name: name
+            type: string
+          - name: tagline
+            type: text
+          - name: url
+            label: Website URL
+            type: string
+          - name: institution
+            type: string
+          - name: department
+            type: string
+          - name: division
+            type: string
+          - name: address
+            type: object
+            fields:
+              - name: line1
+                label: Building and room
+                type: string
+              - name: line2
+                label: Street address
+                type: string
+              - name: city
+                type: string
+              - name: state
+                type: string
+              - name: zip
+                label: ZIP code
+                type: string
+              - name: country
+                type: string
+          - name: contacts
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{role}: {name}"
+            fields:
+              - name: role
+                type: string
+              - name: name
+                type: string
+              - name: email
+                type: string
+          - name: links
+            type: object
+            fields:
+              - name: googleScholar
+                label: Google Scholar
+                type: string
+              - name: ncbiBibliography
+                label: NCBI bibliography
+                type: string
+              - name: github
+                label: GitHub
+                type: string
+              - name: x
+                label: X / Twitter
+                type: string
+              - name: cv
+                label: CV file path
+                type: string
+          - name: nav
+            label: Main navigation
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - name: label
+                type: string
+              - name: href
+                label: URL
+                type: string
+
+      - name: publications
+        label: Publications
+        type: file
+        path: src/data/publications.json
+        format: json
+        fields:
+          - name: _comment
+            label: Editing note
+            type: text
+            readonly: true
+          - name: legend
+            type: text
+          - name: fullListUrl
+            label: NCBI bibliography URL
+            type: string
+          - name: lastSynced
+            label: Last PubMed sync
+            type: string
+            readonly: true
+          - name: sections
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: id
+                type: string
+              - name: title
+                type: string
+              - name: items
+                component: publication
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{year}: {title}"
+
+  - name: galleries
+    label: Lab Life galleries
+    type: file
+    path: src/data/lab-life.json
+    format: json
+    fields:
+      - name: albums
+        label: Retreat albums
+        component: album
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+      - name: eventAlbums
+        label: Events and milestone albums
+        component: album
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+
+  - name: advanced
+    label: Advanced page source
+    type: group
+    items:
+      - name: genewalk_source
+        label: GeneWalk technical guide
+        type: file
+        path: src/pages/tools/genewalk.astro
+        format: code
+      - name: publications_source
+        label: Publications page layout
+        type: file
+        path: src/pages/publications.astro
+        format: code

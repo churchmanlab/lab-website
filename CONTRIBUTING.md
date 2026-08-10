@@ -1,8 +1,40 @@
 # Editing the lab website
 
-Most changes don't need you to run anything. Edit a file on github.com, describe what you
-changed, and open a pull request — GitHub Actions builds it, checks every internal link, and
-Stirling gets a preview to look at before it goes live.
+## Fastest option: Pages CMS
+
+Most changes can be made in a friendly editor without running the site or touching code:
+
+1. Go to [app.pagescms.org](https://app.pagescms.org/) and sign in with GitHub.
+2. The first time, install the Pages CMS GitHub App for the `churchmanlab` organization and
+   grant it access to `churchmanlab/lab-website`.
+3. Open the repository and select the branch you want to edit. Choose `main` to publish after
+   the automated checks pass, or make/select a working branch when the change needs review.
+4. Choose a page or record in the left sidebar, edit the labeled fields, and save.
+
+The editor is configured by `.pages.yml`. It writes the content files in `src/data/` directly;
+there is no separate CMS database. A save to `main` triggers the existing GitHub Pages workflow.
+
+The editor currently provides structured forms for:
+
+- Home, Research, Join Us, Team, Contact, Stirling, Tools & Protocols, and the Lab Life landing
+  page
+- current members and every alumni category
+- address, contacts, navigation, and external links
+- publications, including thumbnails and PDFs
+- Lab Life album titles, dates, descriptions, covers, photo credits, and file lists
+- website images and documents
+
+The long GeneWalk technical guide and the Publications layout are available under **Advanced
+page source**. Those two entries contain Astro markup; use the regular page forms for everything
+else, and use chat for a larger structural change.
+
+Pages CMS supports formatted text and links. Internal links should begin with `/`, for example
+`/research#mitonuclear`; the site automatically adjusts them for the GitHub Pages preview.
+
+## Editing directly on GitHub
+
+You can still edit a file on github.com, describe what you changed, and open a pull request.
+GitHub Actions builds it and checks every internal link and spelling before it goes live.
 
 ## The things people change most
 
@@ -92,15 +124,13 @@ thumbnail you don't want.
 
 ### Wording on a page
 
-Each page is one file in `src/pages/`. The words are plain HTML — you can safely edit anything
-between the tags without knowing Astro. Don't touch the block between the `---` markers at the
-top unless you mean to.
+Routine page wording lives in `src/data/pages/` and is presented as labeled fields in Pages CMS.
+The corresponding files in `src/pages/` control layout and should not normally need editing.
 
 ### Recruitment status
 
-Recruitment details live in `src/pages/join.astro` and the summary in `src/pages/llms.txt.js`.
-Review both whenever hiring status, rotation availability, funding or the application process
-changes so visitors and AI assistants receive the same answer.
+Use **Page copy → Join Us page**. The human-facing page and the recruitment section of
+`/llms.txt` now use the same content, so visitors and AI assistants receive the same answer.
 
 ### Address, emails, navigation
 
