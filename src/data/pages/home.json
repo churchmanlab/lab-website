@@ -6,7 +6,7 @@
     "body": "<p>A cell makes thousands of mRNAs every minute and controls every one of them — where it is made, how it is processed, how long it survives, and whether it is ever translated. We build quantitative methods that make those steps measurable, in both the nuclear and the mitochondrial genome.</p>",
     "image": "/images/site/hero-art.webp",
     "imageAlt": "Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA, a painting by Leidy Churchman",
-    "caption": "Leidy Churchman, <em>Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA</em> (2024)"
+    "caption": "<p>Leidy Churchman, <em>Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA</em> (2024)</p>"
   },
   "recentWork": {
     "eyebrow": "Recent work",
@@ -25,7 +25,6 @@
         "title": "Single-molecule views of transcription and chromatin",
         "body": "<p>Long-read chromatin fiber sequencing lets us see RNA polymerases in their native chromatin context along 30 kb fibers, revealing direct coordination and anti-coordination between neighboring genes, enhancers and insulators.</p>",
         "image": "/images/research/agtd-poster.png",
-        "imageAlt": "",
         "href": "https://doi.org/10.1016/j.molcel.2024.08.013",
         "citation": "Tullius et al., Molecular Cell 2024",
         "linkLabel": "Read the paper →"
@@ -34,7 +33,6 @@
         "title": "RNA kinetics from an ordinary RNA-seq library",
         "body": "<p>AIR-seq marks new RNA with N4-hydroxycytidine, which base-pairs ambiguously and so shows up as mismatches in standard libraries — no chemical conversion, no enrichment. RNA synthesis and decay rates now come out of ordinary bulk and single-cell experiments.</p>",
         "image": "/images/research/air-seq-workflow.jpg",
-        "imageAlt": "",
         "href": "/research#mrna-life-cycle",
         "citation": "Hansen & Couvillion et al., bioRxiv 2026",
         "linkLabel": "How this fits together →"
@@ -43,8 +41,8 @@
   },
   "lab": {
     "eyebrow": "The lab",
-    "title": "Biologists, physicists, chemists and computational scientists in one room",
-    "body": "<p>The lab has always been a mix. Stirling trained as a physicist; the people here now came in through biochemistry, neuroscience, chemistry, and computation.</p>",
+    "title": "Biologists, physicists, chemists and computational scientists working together",
+    "body": "<p>The lab has always been a mix. Stirling trained as a physicist and the people here now came in through biochemistry, neuroscience, chemistry, and computation.</p>",
     "image": "/images/site/lab-group.jpg",
     "imageAlt": "Members of the Churchman lab together"
   },
@@ -71,7 +69,7 @@
   },
   "recruitment": {
     "title": "We are recruiting postdocs and rotation students",
-    "body": "<p>We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want to answer a question about gene regulation with our novel set of methods (or develop your own method!), we should talk!</p>",
+    "body": "<p>We take people from biology, chemistry, physics, computer science, mathematics and engineering. If you want to answer a question about gene regulation with our novel set of methods--or develop your own--we should talk!</p>",
     "buttonLabel": "How to apply"
   }
 }
