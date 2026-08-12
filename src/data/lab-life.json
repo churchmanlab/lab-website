@@ -1331,19 +1331,27 @@
       "title": "Hope’s PhD Defense",
       "date": "April 2, 2026",
       "location": "VSC 350, Harvard Medical School",
-      "description": "Friends and colleagues filling the room before Hope’s PhD defense at Harvard Medical School.",
+      "description": "Hope’s defense talk, friends and colleagues celebrating afterwards, and congratulations for Dr. Merens.",
       "cover": [
+        {
+          "file": "photo-007",
+          "alt": "Hope celebrating with friends and colleagues after her PhD defense"
+        },
+        {
+          "file": "photo-004",
+          "alt": "Hope presenting her research during her PhD defense"
+        },
+        {
+          "file": "photo-018",
+          "alt": "Hope posing with family after her PhD defense"
+        },
         {
           "file": "photo-002",
           "alt": "Friends and colleagues gathering for Hope’s PhD defense"
         },
         {
-          "file": "photo-003",
-          "alt": "The audience waiting for Hope’s defense to begin"
-        },
-        {
-          "file": "photo-001",
-          "alt": "VSC 350 before Hope’s PhD defense"
+          "file": "photo-006",
+          "alt": "A congratulatory display for Dr. Merens"
         }
       ],
       "groups": [
@@ -1353,6 +1361,26 @@
             "photo-001",
             "photo-002",
             "photo-003"
+          ]
+        },
+        {
+          "credit": "Hope Merens",
+          "files": [
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013",
+            "photo-014",
+            "photo-015",
+            "photo-016",
+            "photo-017",
+            "photo-018"
           ]
         }
       ]
