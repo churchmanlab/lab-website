@@ -89,6 +89,12 @@
       "detail": "BS in Biochemistry and Molecular Biology, Marquette University",
       "email": "clairenuessmeier@g.harvard.edu",
       "photo": "/images/team/claire-nuessmeier.jpg"
+    },
+    {
+      "name": "Jiaming Huang",
+      "role": "HSPH Master's Student",
+      "detail": "Developing computational methods for RNA velocity using NHC metabolic-labeling and chromatin accessibility data",
+      "email": "jiaming_huang@hsph.harvard.edu"
     }
   ],
   "alumniPostdocs": [
