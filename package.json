@@ -10,9 +10,11 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:domain": "astro build --site https://churchman.med.harvard.edu --base /",
     "preview": "astro preview",
     "preview:file": "astro build && node scripts/make-preview.mjs",
     "check:links": "node scripts/check-links.mjs",
+    "check:domain": "npm run build:domain && npm run check:links",
     "check:spelling": "node scripts/check-spelling.mjs",
     "check": "astro check && node scripts/check-links.mjs && node scripts/check-spelling.mjs",
     "sync:pubs": "node scripts/sync-publications.mjs",

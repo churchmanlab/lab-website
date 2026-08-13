@@ -52,10 +52,28 @@ jobs:
         with:
           path: dist
 
+  # Keep the future churchman.med.harvard.edu version continuously tested while
+  # the published preview still lives under /lab-website. This runs in a separate
+  # job so its root-relative dist/ never replaces the preview deployment artifact.
+  production-domain-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build and check churchman.med.harvard.edu
+        run: npm run check:domain
+
   deploy:
     # Pull requests build and link-check, but only main actually publishes.
     if: github.event_name != 'pull_request'
-    needs: build
+    needs: [build, production-domain-check]
     runs-on: ubuntu-latest
     environment:
       name: github-pages

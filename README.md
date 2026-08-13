@@ -51,8 +51,10 @@ scripts/
 | --- | --- |
 | `npm run dev` | Local dev server with live reload |
 | `npm run build` | Static build into `dist/` |
+| `npm run build:domain` | Build for `churchman.med.harvard.edu` at the domain root |
 | `npm run check` | Type-checks pages and verifies links and spelling |
 | `npm run check:links` | Verifies every internal link resolves |
+| `npm run check:domain` | Build and link-check the future custom-domain version |
 | `npm run preview:file` | Build, then bundle everything into one shareable `dist/preview.html` |
 | `npm run sync:pubs` | Fill in DOIs and PMIDs from PubMed |
 | `npm run sync:pubs -- --add` | ...and append papers PubMed has that the site doesn't |
@@ -100,17 +102,20 @@ Build targets:
 ```bash
 npm run build                                            # root-relative, local
 SITE=https://churchmanlab.github.io SITE_BASE=/lab-website npm run build   # Pages
-SITE=https://churchman.med.harvard.edu npm run build     # the real domain, eventually
+npm run build:domain                                    # the real domain
 ```
 
 ## Deploying
 
-The GitHub Actions workflow is ready, but hosted runners are not currently picking up jobs for
-this repository. Until that is fixed, build the Pages version locally and publish `dist/` to the
-`gh-pages` branch as described in `CLAUDE.md`.
+Every push to `main` publishes the preview at
+`https://churchmanlab.github.io/lab-website/`. The same workflow also builds and link-checks a
+separate root-domain version for `https://churchman.med.harvard.edu/`, but does not publish that
+version yet. This keeps the future production build ready without disturbing the existing
+Squarespace site or the GitHub preview.
 
-Going live on `churchman.med.harvard.edu` is a separate decision: the domain is Harvard's, so
-HMS IT would need to repoint DNS. Worth asking them before committing either way.
+Going live remains a coordinated cutover: verify the exact lab subdomain, configure it in the
+repository's GitHub Pages settings, change the deployment job's `SITE` to
+`https://churchman.med.harvard.edu` and `SITE_BASE` to `/`, and then have HMS IT repoint DNS.
 
 ## Known gaps
 
