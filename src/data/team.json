@@ -3,7 +3,8 @@
     {
       "name": "L. Stirling Churchman",
       "degree": "PhD",
-      "role": "Professor of Genetics, Harvard Medical School",
+      "role": "Professor of Genetics",
+      "detail": "PhD in Physics, Stanford University",
       "email": "churchman@genetics.med.harvard.edu",
       "photo": "/images/team/stirling-churchman.webp",
       "href": "/stirling",
@@ -13,7 +14,7 @@
       "name": "Mary Couvillion",
       "degree": "PhD",
       "role": "Computational Biologist",
-      "detail": "Analysis wizard",
+      "detail": "PhD in Molecular and Cell Biology, University of California, Berkeley",
       "photo": "/images/team/mary-couvillion.jpg"
     },
     {
@@ -93,7 +94,7 @@
     {
       "name": "Jiaming Huang",
       "role": "HSPH Master's Student",
-      "detail": "Developing computational methods for RNA velocity using NHC metabolic-labeling and chromatin accessibility data",
+      "detail": "BS in Bioinformatics, Xi’an Jiaotong-Liverpool University",
       "email": "jiaming_huang@hsph.harvard.edu"
     }
   ],

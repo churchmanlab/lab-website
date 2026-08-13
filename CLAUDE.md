@@ -30,15 +30,15 @@ links survive being served from a subpath. `npm run check:links` catches violati
 
 ## Deploying
 
-GitHub Actions currently does not run on this repo — pushes do not trigger workflows and the
-deploy job never acquires a hosted runner. Until that is fixed, Pages serves the `gh-pages`
-branch, which is built and pushed manually:
+GitHub Pages deploys through `.github/workflows/deploy.yml`. Every push to `main` builds,
+checks and publishes the preview at `https://churchmanlab.github.io/lab-website/`. Pull requests
+run the build and checks but do not deploy.
 
 ```bash
-SITE=https://churchmanlab.github.io SITE_BASE=/lab-website npm run build
-npm run check          # links + spelling, before publishing
+npm run check
+git push origin main
 ```
 
-then copy `dist/` onto the `gh-pages` branch (keeping `.nojekyll`, which stops Jekyll stripping
-Astro's `_astro/` directory) and push. `.github/workflows/deploy.yml` is correct and ready to
-take over whenever Actions works again.
+After pushing, verify that the `Deploy to GitHub Pages` workflow completes successfully and that
+the public page serves the new content. Do not manually build or push `gh-pages`; the repository's
+Pages source is GitHub Actions, so that branch does not control the deployment.
