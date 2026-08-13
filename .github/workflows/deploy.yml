@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 
-# Every push to main rebuilds the preview at
-# https://churchmanlab.github.io/lab-website/
+# Every push to main builds the production site for
+# https://churchman.med.harvard.edu/ at the domain root.
 #
 # One-time setup: repo Settings → Pages → Source: "GitHub Actions".
 on:
@@ -24,11 +24,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # Job-level so the build and the link checker always agree on the base path.
-    # check-links.mjs resolves hrefs against SITE_BASE; when only the build step
-    # set it, the checker saw base "/" and reported every prefixed link as broken.
     env:
-      SITE: https://churchmanlab.github.io
-      SITE_BASE: /lab-website
+      SITE: https://churchman.med.harvard.edu
+      SITE_BASE: /
     steps:
       - uses: actions/checkout@v4
 
@@ -52,28 +50,10 @@ jobs:
         with:
           path: dist
 
-  # Keep the future churchman.med.harvard.edu version continuously tested while
-  # the published preview still lives under /lab-website. This runs in a separate
-  # job so its root-relative dist/ never replaces the preview deployment artifact.
-  production-domain-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-
-      - run: npm ci
-
-      - name: Build and check churchman.med.harvard.edu
-        run: npm run check:domain
-
   deploy:
     # Pull requests build and link-check, but only main actually publishes.
     if: github.event_name != 'pull_request'
-    needs: [build, production-domain-check]
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages

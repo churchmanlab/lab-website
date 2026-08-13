@@ -4,7 +4,7 @@ Source for the website of the [Churchman Lab](https://churchman.med.harvard.edu)
 Genetics, Blavatnik Institute, Harvard Medical School. Built with [Astro](https://astro.build)
 as a static site.
 
-**Preview:** https://churchmanlab.github.io/lab-website/ *(live once the repo is pushed and Pages is enabled)*
+**Production domain:** https://churchman.med.harvard.edu/ *(the DNS cutover from Squarespace is pending)*
 
 This is a rebuild of the Squarespace site, not yet the live site. The domain still points at
 Squarespace.
@@ -54,7 +54,7 @@ scripts/
 | `npm run build:domain` | Build for `churchman.med.harvard.edu` at the domain root |
 | `npm run check` | Type-checks pages and verifies links and spelling |
 | `npm run check:links` | Verifies every internal link resolves |
-| `npm run check:domain` | Build and link-check the future custom-domain version |
+| `npm run check:domain` | Build and link-check the custom-domain version |
 | `npm run preview:file` | Build, then bundle everything into one shareable `dist/preview.html` |
 | `npm run sync:pubs` | Fill in DOIs and PMIDs from PubMed |
 | `npm run sync:pubs -- --add` | ...and append papers PubMed has that the site doesn't |
@@ -107,15 +107,14 @@ npm run build:domain                                    # the real domain
 
 ## Deploying
 
-Every push to `main` publishes the preview at
-`https://churchmanlab.github.io/lab-website/`. The same workflow also builds and link-checks a
-separate root-domain version for `https://churchman.med.harvard.edu/`, but does not publish that
-version yet. This keeps the future production build ready without disturbing the existing
-Squarespace site or the GitHub preview.
+Every push to `main` builds and publishes the GitHub Pages site for
+`https://churchman.med.harvard.edu/` at the domain root. The repository's GitHub Pages custom
+domain must also be set to `churchman.med.harvard.edu`.
 
-Going live remains a coordinated cutover: verify the exact lab subdomain, configure it in the
-repository's GitHub Pages settings, change the deployment job's `SITE` to
-`https://churchman.med.harvard.edu` and `SITE_BASE` to `/`, and then have HMS IT repoint DNS.
+Until HMS IT changes DNS, that public address continues to serve the existing Squarespace site.
+The remaining cutover step is to replace its current Squarespace DNS record with a CNAME to
+`churchmanlab.github.io` (with no `/lab-website` path). The GitHub domain-verification TXT record
+should remain in place.
 
 ## Known gaps
 

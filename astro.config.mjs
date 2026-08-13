@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
  *
  *   npm run build                                  → root-relative, for local preview
  *   SITE_BASE=/lab-website npm run build           → GitHub Pages project site
- *   SITE=https://churchman.med.harvard.edu ...      → the real domain, when you're ready
+ *   SITE=https://churchman.med.harvard.edu ...      → production custom domain
  *
  * The GitHub Pages workflow sets SITE and SITE_BASE for you.
  */
