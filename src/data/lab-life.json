@@ -1502,18 +1502,44 @@
       "location": "Charles River, Cambridge",
       "description": "A summer evening on the Charles with a very patient photographer and increasingly exuberant group portraits.",
       "cover": [
-        { "file": "photo-005", "alt": "Churchman Lab group portrait aboard a boat on the Charles River" },
-        { "file": "photo-001", "alt": "The green riverbank seen from the boat" },
-        { "file": "photo-003", "alt": "Lab members gathering for a group photograph on the boat" },
-        { "file": "photo-009", "alt": "The lab making faces during a group portrait" },
-        { "file": "photo-013", "alt": "A final group portrait from the Charles River cruise" }
+        {
+          "file": "photo-005",
+          "alt": "Churchman Lab group portrait aboard a boat on the Charles River"
+        },
+        {
+          "file": "photo-001",
+          "alt": "The green riverbank seen from the boat"
+        },
+        {
+          "file": "photo-003",
+          "alt": "Lab members gathering for a group photograph on the boat"
+        },
+        {
+          "file": "photo-009",
+          "alt": "The lab making faces during a group portrait"
+        },
+        {
+          "file": "photo-013",
+          "alt": "A final group portrait from the Charles River cruise"
+        }
       ],
       "groups": [
         {
           "credit": "Stirling Churchman",
           "files": [
-            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006", "photo-007",
-            "photo-008", "photo-009", "photo-010", "photo-011", "photo-012", "photo-013"
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013"
           ]
         }
       ]
@@ -1525,15 +1551,22 @@
       "location": "Plaza Galería",
       "description": "A late-night gathering after the Gene Expression Keystone meeting at Plaza Galería.",
       "cover": [
-        { "file": "photo-003", "alt": "Churchman Lab friends gathered around a table after the Keystone meeting" },
-        { "file": "photo-005", "alt": "A late-night group selfie at the Gene Expression Keystone meeting" },
-        { "file": "photo-001", "alt": "The interior of Plaza Galería" },
-        { "file": "photo-002", "alt": "The bar at Plaza Galería after the meeting" }
+        {
+          "file": "photo-003",
+          "alt": "Churchman Lab friends gathered around a table after the Keystone meeting"
+        },
+        {
+          "file": "photo-005",
+          "alt": "A late-night group selfie at the Gene Expression Keystone meeting"
+        }
       ],
       "groups": [
         {
           "credit": "Stirling Churchman",
-          "files": ["photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006"]
+          "files": [
+            "photo-003",
+            "photo-005"
+          ]
         }
       ]
     },
@@ -1544,15 +1577,30 @@
       "location": "Back Bay, Boston",
       "description": "An outdoor baby shower for Katja, with friends, family and plenty of group portraits.",
       "cover": [
-        { "file": "photo-003", "alt": "Friends and lab members gathered for Katja’s baby shower" },
-        { "file": "photo-009", "alt": "A second group portrait at Katja’s outdoor baby shower" }
+        {
+          "file": "photo-003",
+          "alt": "Friends and lab members gathered for Katja’s baby shower"
+        },
+        {
+          "file": "photo-009",
+          "alt": "A second group portrait at Katja’s outdoor baby shower"
+        }
       ],
       "groups": [
         {
           "credit": "Stirling Churchman",
           "files": [
-            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006",
-            "photo-007", "photo-008", "photo-009", "photo-010", "photo-011"
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011"
           ]
         }
       ]
@@ -1564,15 +1612,30 @@
       "location": "Cambridge riverside",
       "description": "Riverside group portraits from the lab’s 2021 summer cruise on the Charles.",
       "cover": [
-        { "file": "photo-001", "alt": "Churchman Lab group portrait beside the Charles River" },
-        { "file": "photo-006", "alt": "Lab members waving during the 2021 summer party" }
+        {
+          "file": "photo-001",
+          "alt": "Churchman Lab group portrait beside the Charles River"
+        },
+        {
+          "file": "photo-006",
+          "alt": "Lab members waving during the 2021 summer party"
+        }
       ],
       "groups": [
         {
           "credit": "Stirling Churchman",
           "files": [
-            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006",
-            "photo-007", "photo-008", "photo-009", "photo-010", "photo-011"
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011"
           ]
         }
       ]
@@ -1636,15 +1699,26 @@
       "location": "Harvard Medical School",
       "description": "Heather Drexler’s thesis defense followed by a lab group portrait, a congratulatory cake and a celebratory toast.",
       "cover": [
-        { "file": "photo-001", "alt": "Heather Drexler with friends and lab members after her thesis defense" },
-        { "file": "photo-002", "alt": "A cake reading Congratulations Dr. Drexler" },
-        { "file": "photo-003", "alt": "Heather celebrating after her thesis defense" }
+        {
+          "file": "photo-001",
+          "alt": "Heather Drexler with friends and lab members after her thesis defense"
+        },
+        {
+          "file": "photo-002",
+          "alt": "A cake reading Congratulations Dr. Drexler"
+        },
+        {
+          "file": "photo-003",
+          "alt": "Heather celebrating after her thesis defense"
+        }
       ],
       "groups": [
         {
           "credit": "Churchman Lab members",
           "files": [
-            "photo-001", "photo-002", "photo-003"
+            "photo-001",
+            "photo-002",
+            "photo-003"
           ]
         }
       ]
@@ -1742,20 +1816,53 @@
       "location": "Harvard Medical School",
       "description": "The new lab’s benches, instruments, cold storage, coffee station and unmistakable red chairs.",
       "cover": [
-        { "file": "photo-006", "alt": "A wide view across the newly equipped Churchman Lab" },
-        { "file": "photo-001", "alt": "The first coffee station being put to work" },
-        { "file": "photo-004", "alt": "Red chairs in the new lab meeting area" },
-        { "file": "photo-007", "alt": "Newly labeled equipment arranged across a lab bench" },
-        { "file": "photo-022", "alt": "Door sign for L. Stirling Churchman outside the new lab" }
+        {
+          "file": "photo-006",
+          "alt": "A wide view across the newly equipped Churchman Lab"
+        },
+        {
+          "file": "photo-001",
+          "alt": "The first coffee station being put to work"
+        },
+        {
+          "file": "photo-004",
+          "alt": "Red chairs in the new lab meeting area"
+        },
+        {
+          "file": "photo-007",
+          "alt": "Newly labeled equipment arranged across a lab bench"
+        },
+        {
+          "file": "photo-022",
+          "alt": "Door sign for L. Stirling Churchman outside the new lab"
+        }
       ],
       "groups": [
         {
           "credit": "Stirling Churchman",
           "files": [
-            "photo-001", "photo-002", "photo-003", "photo-004", "photo-005", "photo-006",
-            "photo-007", "photo-008", "photo-009", "photo-010", "photo-011", "photo-012",
-            "photo-013", "photo-014", "photo-015", "photo-016", "photo-017", "photo-018",
-            "photo-019", "photo-020", "photo-021", "photo-022"
+            "photo-001",
+            "photo-002",
+            "photo-003",
+            "photo-004",
+            "photo-005",
+            "photo-006",
+            "photo-007",
+            "photo-008",
+            "photo-009",
+            "photo-010",
+            "photo-011",
+            "photo-012",
+            "photo-013",
+            "photo-014",
+            "photo-015",
+            "photo-016",
+            "photo-017",
+            "photo-018",
+            "photo-019",
+            "photo-020",
+            "photo-021",
+            "photo-022"
           ]
         }
       ]
@@ -1767,14 +1874,27 @@
       "location": "Harvard Medical School and Cambridge",
       "description": "Boxes arriving for the new lab, the first Churchman Lab outing for ice cream on Nava’s birthday, and the Churchman–Gray holiday party at FuGaKu.",
       "cover": [
-        { "file": "photo-002", "alt": "Churchman and Gray lab members getting ice cream for Nava’s birthday" },
-        { "file": "photo-003", "alt": "The first Churchman–Gray holiday party over sushi at FuGaKu" },
-        { "file": "photo-001", "alt": "Boxes of equipment arriving for the new Churchman Lab" }
+        {
+          "file": "photo-002",
+          "alt": "Churchman and Gray lab members getting ice cream for Nava’s birthday"
+        },
+        {
+          "file": "photo-003",
+          "alt": "The first Churchman–Gray holiday party over sushi at FuGaKu"
+        },
+        {
+          "file": "photo-001",
+          "alt": "Boxes of equipment arriving for the new Churchman Lab"
+        }
       ],
       "groups": [
         {
           "credit": "Churchman Lab members",
-          "files": ["photo-001", "photo-002", "photo-003"]
+          "files": [
+            "photo-001",
+            "photo-002",
+            "photo-003"
+          ]
         }
       ]
     }
