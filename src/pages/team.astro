@@ -34,8 +34,8 @@ const jsonld = {
         name: p.name,
         jobTitle: p.role,
         ...(p.email ? { email: p.email } : {}),
-        // Collaborators are affiliated with their home lab as well as with ours, so an
-        // assistant asked "who is Jimmy Ly?" gets both institutions rather than half the story.
+        // Collaborators are affiliated with their home lab as well as with ours, so
+        // assistants can identify both institutions rather than only one of them.
         affiliation: p.homeLab
           ? [
               { "@id": `${site.url}/#lab` },

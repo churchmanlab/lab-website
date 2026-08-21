@@ -64,6 +64,18 @@
       "photo": "/images/team/jimmy-ly.jpg"
     },
     {
+      "name": "Erin Duffy",
+      "degree": "PhD",
+      "role": "Collaborating Postdoctoral Fellow",
+      "homeLab": "Greenberg Lab",
+      "homeLabUrl": "https://greenberg.hms.harvard.edu/",
+      "homeLabInstitution": "Harvard Medical School",
+      "detail": "PhD in Molecular Biophysics and Biochemistry, Yale University",
+      "award": "Dale F. Frey Award for Breakthrough Scientists, Damon Runyon Cancer Foundation",
+      "email": "erin_duffylacy@hms.harvard.edu",
+      "photo": "/images/team/erin-duffy.jpg"
+    },
+    {
       "name": "Hope Merens",
       "role": "MCO Graduate Student",
       "detail": "BA in Biochemistry and Neurobiology, MS in Chemistry, University of Pennsylvania",
@@ -96,7 +108,8 @@
       "name": "Jiaming Huang",
       "role": "HSPH Master's Student",
       "detail": "BS in Bioinformatics, Xi’an Jiaotong-Liverpool University",
-      "email": "jiaming_huang@hsph.harvard.edu"
+      "email": "jiaming_huang@hsph.harvard.edu",
+      "photo": "/images/team/jiaming-huang.jpg"
     }
   ],
   "alumniPostdocs": [
