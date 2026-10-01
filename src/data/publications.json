@@ -2,7 +2,7 @@
   "_comment": "Lab members are wrapped in **double asterisks**. * = equal authorship, # = co-corresponding. doi/pmid are filled in automatically by `npm run sync:pubs`.",
   "legend": "*equal authorship; #co-corresponding authorship; Churchman Lab members in bold.",
   "fullListUrl": "https://www.ncbi.nlm.nih.gov/myncbi/lee.churchman.1/bibliography/public/",
-  "lastSynced": "2026-08-06",
+  "lastSynced": "2026-10-01",
   "sections": [
     {
       "id": "preprints",
@@ -25,7 +25,7 @@
           "year": 2026,
           "type": "preprint",
           "doi": "10.64898/2026.07.27.741041",
-          "pmid": null,
+          "pmid": "42619851",
           "pdf": "/pdfs/2026-analog-intrinsic-recoding-measures-rna-dynamics.pdf"
         },
         {
@@ -55,6 +55,18 @@
       "title": "Research articles",
       "items": [
         {
+          "authors": "Krebs AR, Altemose N, Churchman LS, Greenleaf WJ, Ramani V, Stadler MB, Stergachis AB",
+          "title": "A practical guide to studying genome function using single-molecule genomics",
+          "journal": "Nature reviews. Molecular cell biology",
+          "year": 2026,
+          "volume": null,
+          "pages": null,
+          "type": "review",
+          "doi": "10.1038/s41580-026-01017-4",
+          "pmid": "42736336",
+          "_needsReview": "Auto-added from PubMed — check author bolding and section placement."
+        },
+        {
           "authors": "**Bridgers JB***, Carlström A*, Sherpa D*, **Couvillion MT**, Rovšnik U, Gao J, Wan B, Shao S#, Ott M#, **Churchman LS**#",
           "title": "Translational activators align mRNAs at the small mitoribosomal subunit for translation initiation",
           "journal": "Nature Structural & Molecular Biology",
@@ -82,7 +94,9 @@
           "image": "/images/pubs/2026-copper-depletion-boosts-cns-leukemia-therapy-by.jpg",
           "imageKind": "firstpage",
           "imageW": 520,
-          "imageH": 691
+          "imageH": 691,
+          "volume": "7",
+          "pages": "1227-1242"
         },
         {
           "authors": "**Hansen KG**, **Baxter-Koenigs A**, **Weiss CA**, **McShane E**, **Churchman LS**",
@@ -158,6 +172,18 @@
           "imageW": 520,
           "imageH": 673,
           "pdf": "/pdfs/2025-context-specific-inhibition-of-mitochondrial.pdf"
+        },
+        {
+          "authors": "Singh V, Moran JC, Itoh Y, Soto IC, Fontanesi F, Couvillion M, Huynen MA, Churchman LS, Barrientos A, Amunts A",
+          "title": "Publisher Correction: Structural basis of LRPPRC-SLIRP-dependent translation by the mitoribosome",
+          "journal": "Nature structural & molecular biology",
+          "year": 2024,
+          "volume": "31",
+          "pages": "1809",
+          "type": "research",
+          "doi": "10.1038/s41594-024-01402-7",
+          "pmid": "39300173",
+          "_needsReview": "Auto-added from PubMed — check author bolding and section placement."
         },
         {
           "authors": "**Tullius TW**, **Isaac RS**, Ranchalis J, Dubocanin D, **Churchman LS**#, Stergachis AB#",
@@ -269,6 +295,42 @@
           "imageW": 520,
           "imageH": 691,
           "pdf": "/pdfs/2024-structural-basis-of-lrpprc-slirp-dependent.pdf"
+        },
+        {
+          "authors": "Kramer NJ, Prakash G, Choquet K, Soto I, Petrova B, Merens HE, Kanarek N, Churchman LS",
+          "title": "Genome-wide screens for mitonuclear co-regulators uncover links between compartmentalized metabolism and mitochondrial gene expression",
+          "journal": "bioRxiv : the preprint server for biology",
+          "year": 2023,
+          "volume": null,
+          "pages": null,
+          "type": "research",
+          "doi": "10.1101/2023.02.11.528118",
+          "pmid": "36798306",
+          "_needsReview": "Auto-added from PubMed — check author bolding and section placement."
+        },
+        {
+          "authors": "McShane E, Couvillion M, Ietswaart R, Prakash G, Smalec BM, Soto I, Baxter-Koenigs AR, Choquet K, Churchman LS",
+          "title": "A kinetic dichotomy between mitochondrial and nuclear gene expression drives OXPHOS biogenesis",
+          "journal": "bioRxiv : the preprint server for biology",
+          "year": 2023,
+          "volume": null,
+          "pages": null,
+          "type": "research",
+          "doi": "10.1101/2023.02.09.527880",
+          "pmid": "36824735",
+          "_needsReview": "Auto-added from PubMed — check author bolding and section placement."
+        },
+        {
+          "authors": "Tullius TW, Isaac RS, Ranchalis J, Dubocanin D, Churchman LS, Stergachis AB",
+          "title": "RNA polymerases reshape chromatin and coordinate transcription on individual fibers",
+          "journal": "bioRxiv : the preprint server for biology",
+          "year": 2023,
+          "volume": null,
+          "pages": null,
+          "type": "research",
+          "doi": "10.1101/2023.12.22.573133",
+          "pmid": "38187631",
+          "_needsReview": "Auto-added from PubMed — check author bolding and section placement."
         },
         {
           "authors": "**Kramer NJ***, **Prakash G***, **Choquet K**, **Soto I**, Petrova B, **Merens HE**, Kanarek N, **Churchman LS**",
@@ -1043,7 +1105,10 @@
           "journal": "Single-Molecule Techniques: A Laboratory Manual",
           "year": 2007,
           "pages": "73–84",
-          "type": "protocol"
+          "type": "protocol",
+          "pmid": "22301660",
+          "doi": "10.1101/pdb.top067918",
+          "volume": "2012"
         },
         {
           "authors": "**Churchman LS**, Flyvbjerg H, Spudich JA",
