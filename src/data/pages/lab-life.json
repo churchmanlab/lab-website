@@ -9,12 +9,12 @@
   "collections": [
     {
       "id": "retreats",
-      "eyebrow": "Annual tradition · 2012–2025",
+      "eyebrow": "Annual tradition · 2012–2026",
       "title": "Lab retreats",
       "description": "Chalk talks, shared meals, long hikes and the annual group portrait—one retreat for every year we gathered.",
       "albumSource": "retreats",
       "albumIds": [],
-      "previewAlbumIds": ["2025-retreat", "2012-retreat"]
+      "previewAlbumIds": ["2026-retreat", "2012-retreat"]
     },
     {
       "id": "milestones",

@@ -1,6 +1,79 @@
 {
   "albums": [
     {
+      "id": "2026-retreat",
+      "title": "2026 Lab Retreat",
+      "date": "September 22–24, 2026",
+      "location": "The farm, Alstead, New Hampshire",
+      "description": "Chalk talks, evening presentations, a group hike and portraits on the farmhouse steps.",
+      "cover": [
+        {
+          "file": "IMG_3401",
+          "alt": "Churchman Lab group portrait on the farmhouse steps"
+        },
+        {
+          "file": "IMG_3415",
+          "alt": "Lab members taking a group selfie during the retreat hike"
+        },
+        {
+          "file": "IMG_3382",
+          "alt": "A lab member giving a chalk talk in the farmhouse"
+        },
+        {
+          "file": "IMG_3384",
+          "alt": "Three lab members relaxing together in the farmhouse"
+        },
+        {
+          "file": "IMG_3392",
+          "alt": "A lab member sharing a humorous presentation during the retreat"
+        }
+      ],
+      "groups": [
+        {
+          "credit": "Stirling Churchman",
+          "files": [
+            "IMG_3380",
+            "IMG_3381",
+            "IMG_3382",
+            "IMG_3383",
+            "IMG_3384",
+            "IMG_3385",
+            "IMG_3386",
+            "IMG_3387",
+            "IMG_3388",
+            "IMG_3389",
+            "IMG_3390",
+            "IMG_3391",
+            "IMG_3392",
+            "IMG_3393",
+            "IMG_3394",
+            "IMG_3395",
+            "IMG_3396",
+            "IMG_3397",
+            "IMG_3398",
+            "IMG_3399",
+            "IMG_3400",
+            "IMG_3401",
+            "IMG_3402",
+            "IMG_3403",
+            "IMG_3404",
+            "IMG_3405",
+            "IMG_3406",
+            "IMG_3407",
+            "IMG_3408",
+            "IMG_3409",
+            "IMG_3410",
+            "IMG_3411",
+            "IMG_3412",
+            "IMG_3413",
+            "IMG_3414",
+            "IMG_3415",
+            "IMG_3416"
+          ]
+        }
+      ]
+    },
+    {
       "id": "2025-retreat",
       "title": "2025 Lab Retreat",
       "date": "September 29–30, 2025",
