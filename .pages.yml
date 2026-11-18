@@ -575,14 +575,6 @@ content:
                 type: string
               - name: body
                 component: rich_text
-          - name: ai
-            label: How we use AI
-            type: object
-            fields:
-              - name: title
-                type: string
-              - name: body
-                component: rich_text
           - name: funding
             type: object
             fields:
